@@ -3,6 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Route } from "next";
 import { siteConfig } from "@/lib/site";
+import { Logo } from "@/components/logo";
+
+const paymentIcons = [
+  { src: "/payment/visa.png", alt: "Visa" },
+  { src: "/payment/Mastercard-logo.svg_.png", alt: "Mastercard" },
+  { src: "/payment/mobilepay.jpg", alt: "MobilePay" },
+] as const;
 
 const route = (href: string) => href as Route;
 
@@ -32,16 +39,20 @@ const areaLinks = [
   { label: "Om os", href: route("/om-os") },
 ];
 
-const trustLinks = [
+const quickLinks = [
+  { label: "Book tid online", href: route("/booking") },
+  { label: "Om os", href: route("/om-os") },
   { label: "Kontakt", href: route("/kontakt") },
+  { label: "Handelsbetingelser", href: route("/handelsbetingelser") },
+  { label: "Privatlivspolitik", href: route("/persondatapolitik") },
+];
+
+const guideLinks = [
   { label: "Anmeldelser", href: route("/anmeldelser") },
   { label: "Før og efter", href: route("/foer-efter") },
   { label: "Serviceområder", href: route("/serviceomraader") },
   { label: "Garanti", href: route("/garanti") },
   { label: "Miljø", href: route("/miljoe") },
-];
-
-const guideLinks = [
   { label: "Blog", href: route("/blog") },
   { label: "Bedste bilvask København", href: route("/bedste-bilvask-koebenhavn") },
   { label: "Billigste bilvask Sjælland", href: route("/billigste-bilvask-sjaelland") },
@@ -76,55 +87,57 @@ const SOCIALS = [
 
 export function SiteFooter() {
   return (
-    <footer className="px-4 pb-8 pt-8 sm:px-6">
-      <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-[var(--line)] bg-white/92 px-6 py-10 shadow-[0_18px_60px_rgba(11,31,58,0.10)] backdrop-blur-xl sm:px-10">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.65fr_0.65fr_0.65fr_0.65fr_0.75fr]">
+    <footer className="border-t border-white/10 bg-[var(--color-primary)] text-white/75">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-10">
+        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.6fr_0.65fr_0.65fr_0.7fr_0.75fr]">
           <div className="max-w-xl">
-            <Image
-              src="/logo.png"
-              alt="Eluxus professionel bilvask"
-              width={220}
-              height={48}
-              className="h-12 w-auto max-w-[14rem] object-contain"
-            />
-            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">
-              Mobil bilvask i København og på Sjælland.
+            <Logo />
+            <h2 className="mt-5 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+              Mobil bilvask med damp i København og på Sjælland.
             </h2>
-            <p className="mt-4 text-sm leading-7 text-[var(--muted)] sm:text-base">
+            <p className="mt-4 text-sm leading-7 text-white/60 sm:text-base">
               Eluxus kommer ud til dig privat, på jobbet eller der hvor bilen holder.
               Book online på få minutter og få professionel bilrengøring uden kø.
             </p>
+            <div className="mt-5 inline-flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-xs text-white/55">
+              <span>{siteConfig.address.street}, {siteConfig.address.postalCode} {siteConfig.address.city}</span>
+              <span>CVR: {siteConfig.cvr}</span>
+            </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
+              Genveje
+            </h3>
+            <div className="mt-5 grid gap-3 text-sm">
+              {quickLinks.map((item) => (
+                <Link key={item.href} href={item.href} className="transition hover:text-white">
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
               Services
             </h3>
-            <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
+            <div className="mt-5 grid gap-3 text-sm">
               {serviceLinks.map((item) => (
-                <Link key={item.href} href={item.href} className="transition hover:text-[var(--ink)]">
+                <Link key={item.href} href={item.href} className="transition hover:text-white">
                   {item.label}
                 </Link>
               ))}
-              <Link href="/booking" className="transition hover:text-[var(--ink)]">
-                Book bilvask
-              </Link>
-              <Link href={"/kontakt" as import("next").Route} className="transition hover:text-[var(--ink)]">
-                Kontakt os
-              </Link>
-              <a href={`mailto:${siteConfig.email}`} className="transition hover:text-[var(--ink)]">
-                Skriv til os
-              </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
               Områder
             </h3>
-            <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
+            <div className="mt-5 grid gap-3 text-sm">
               {areaLinks.map((item) => (
-                <Link key={item.href} href={item.href} className="transition hover:text-[var(--ink)]">
+                <Link key={item.href} href={item.href} className="transition hover:text-white">
                   {item.label}
                 </Link>
               ))}
@@ -132,25 +145,12 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
-              Tillid
-            </h3>
-            <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
-              {trustLinks.map((item) => (
-                <Link key={item.href} href={item.href} className="transition hover:text-[var(--ink)]">
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
               Guides
             </h3>
-            <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
+            <div className="mt-5 grid gap-3 text-sm">
               {guideLinks.map((item) => (
-                <Link key={item.href} href={item.href} className="transition hover:text-[var(--ink)]">
+                <Link key={item.href} href={item.href} className="transition hover:text-white">
                   {item.label}
                 </Link>
               ))}
@@ -158,14 +158,14 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
               Kontakt
             </h3>
-            <div className="mt-5 grid gap-3 text-sm text-[var(--muted)]">
-              <a href={siteConfig.phoneHref} className="transition hover:text-[var(--ink)]">
+            <div className="mt-5 grid gap-3 text-sm">
+              <a href={siteConfig.phoneHref} className="transition hover:text-white">
                 {siteConfig.phoneDisplay}
               </a>
-              <a href={`mailto:${siteConfig.email}`} className="transition hover:text-[var(--ink)]">
+              <a href={`mailto:${siteConfig.email}`} className="transition hover:text-white">
                 {siteConfig.email}
               </a>
               <p>Alle ugens dage kl. 06-23</p>
@@ -173,14 +173,14 @@ export function SiteFooter() {
             </div>
             <Link
               href="/booking"
-              className="mt-6 inline-flex h-11 items-center justify-center rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(245,158,11,0.24)] transition hover:bg-[var(--cta-hover)]"
+              className="mt-6 inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-[var(--color-cta)] to-[#8a6c14] px-5 text-sm font-semibold text-[#171310] shadow-[0_14px_34px_rgba(184,134,11,0.3)] transition hover:brightness-110"
             >
               Book bilvask
             </Link>
 
             {/* Social icons */}
             <div className="mt-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
                 Følg os
               </p>
               <div className="mt-3 flex items-center gap-2">
@@ -191,11 +191,34 @@ export function SiteFooter() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="social-btn flex h-9 w-9 items-center justify-center rounded-xl border border-[var(--line)] bg-white text-[var(--muted)] shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-transparent hover:text-white hover:shadow-md"
+                    className="social-btn flex h-9 w-9 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white/70 transition-all duration-200 hover:-translate-y-0.5 hover:border-transparent hover:text-white"
                     style={{ "--sc-brand": hoverColor } as CSSProperties}
                   >
                     {icon}
                   </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Payment icons */}
+            <div className="mt-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+                Betaling
+              </p>
+              <div className="mt-3 flex flex-wrap items-center gap-2">
+                {paymentIcons.map((item) => (
+                  <span
+                    key={item.alt}
+                    className="flex h-8 w-12 items-center justify-center rounded-md bg-white p-1"
+                  >
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      width={40}
+                      height={24}
+                      className="h-full w-full object-contain"
+                    />
+                  </span>
                 ))}
               </div>
             </div>
@@ -206,24 +229,15 @@ export function SiteFooter() {
           .social-btn:hover { background: var(--sc-brand); }
         `}</style>
 
-        <div className="mt-10 flex flex-col gap-3 border-t border-[var(--line)] pt-6 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex flex-col gap-1">
-            <p>&copy; {new Date().getFullYear()} Eluxus. Alle rettigheder forbeholdes.</p>
-          </div>
-          <div className="flex items-center gap-2">
-            {SOCIALS.map(({ label, href, icon, hoverColor }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="social-btn flex h-8 w-8 items-center justify-center rounded-lg border border-[var(--line)] bg-white text-[var(--muted)] transition-all duration-200 hover:-translate-y-0.5 hover:border-transparent hover:text-white"
-                style={{ "--sc-brand": hoverColor } as CSSProperties}
-              >
-                {icon}
-              </a>
-            ))}
+        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; {new Date().getFullYear()} Eluxus Autoclean. Alle rettigheder forbeholdes.</p>
+          <div className="flex items-center gap-4 text-xs">
+            <Link href={route("/handelsbetingelser")} className="transition hover:text-white">
+              Handelsbetingelser
+            </Link>
+            <Link href={route("/persondatapolitik")} className="transition hover:text-white">
+              Privatlivspolitik
+            </Link>
           </div>
         </div>
       </div>

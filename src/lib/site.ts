@@ -9,6 +9,12 @@ export const siteConfig = {
   email: "info@eluxus.dk",
   bookingExternalUrl: "/booking",
   giftCardUrl: "/booking",
+  cvr: "46049594",
+  address: {
+    street: "Galgebakken Neder 304",
+    postalCode: "2620",
+    city: "Albertslund",
+  },
 };
 
 export const navItems = [
