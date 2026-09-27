@@ -303,7 +303,7 @@ function KeywordClusters({ page }: { page: SeoPageConfig }) {
               {group.terms.map((term) => (
                 <span
                   key={term}
-                  className="rounded-full border border-[var(--line)] bg-[#eefbfc] px-3 py-1.5 text-xs font-semibold text-[var(--ink)]"
+                  className="rounded-full border border-[var(--line)] bg-[#f3ead4] px-3 py-1.5 text-xs font-semibold text-[var(--ink)]"
                 >
                   {term}
                 </span>
@@ -333,7 +333,7 @@ export function ServiceBenefits({
             key={benefit.title}
             className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(27,23,18,0.08)]"
           >
-            <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#eefbfc] text-[var(--brand)]">
+            <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#f3ead4] text-[var(--brand)]">
               <ShieldCheck className="h-5 w-5" />
             </span>
             <h3 className="mt-4 font-display text-2xl font-semibold text-[var(--ink)]">

@@ -225,7 +225,7 @@ export function AdminAgentsView({
               type="button"
               variant="outline"
               onClick={() => setShowCreate((v) => !v)}
-              className="gap-1.5 border-[#b8860b] text-[#b8860b] hover:bg-[#EEFBFC]"
+              className="gap-1.5 border-[#b8860b] text-[#b8860b] hover:bg-[#f3ead4]"
             >
               <Plus className="h-4 w-4" />
               Ny agent
@@ -395,7 +395,7 @@ export function AdminAgentsView({
                       <div key={agent.agentId}>
                         <div className="mb-1.5 flex items-center justify-between gap-2">
                           <div className="flex items-center gap-2 min-w-0">
-                            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#EEFBFC] text-[11px] font-bold text-[#b8860b]">
+                            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[11px] font-bold text-[#b8860b]">
                               {(agent.agentName || "A").slice(0, 2).toUpperCase()}
                             </span>
                             <span className="truncate text-[13px] font-semibold text-[#111827]">
@@ -767,7 +767,7 @@ function ScheduleTab({ agentId }: { agentId: string }) {
               key={dayOfWeek}
               className={cn(
                 "flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150",
-                row.isActive ? "bg-[#EEFBFC]" : "bg-white/40"
+                row.isActive ? "bg-[#f3ead4]" : "bg-white/40"
               )}
             >
               <Toggle
@@ -877,7 +877,7 @@ function HistoryTab({ agentId }: { agentId: string }) {
               className={cn(
                 "rounded-full px-2 py-0.5 text-[10px] font-bold",
                 entry.assignedBy === "system"
-                  ? "bg-[#EEFBFC] text-[#b8860b]"
+                  ? "bg-[#f3ead4] text-[#b8860b]"
                   : "bg-[#FEF3C7] text-[#92400E]"
               )}
             >
@@ -992,7 +992,7 @@ function AssignRow({
             onClick={handleAuto}
             disabled={!autoEnabled || autoLoading}
             variant="outline"
-            className="h-9 border-[#b8860b] px-3 text-[#b8860b] hover:bg-[#EEFBFC]"
+            className="h-9 border-[#b8860b] px-3 text-[#b8860b] hover:bg-[#f3ead4]"
           >
             {autoLoading ? <RefreshCw className="h-3.5 w-3.5 animate-spin" /> : <Zap className="h-3.5 w-3.5" />}
             Auto
@@ -1032,7 +1032,7 @@ function KpiTile({
 }) {
   return (
     <div className="flex items-center gap-3 rounded-2xl border border-white/55 bg-white/[0.65] px-4 py-3 shadow-[0_4px_16px_rgba(184,134,11,0.06)] backdrop-blur-2xl">
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#EEFBFC]">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4]">
         <Icon className="h-5 w-5 text-[#b8860b]" />
       </span>
       <div>
@@ -1087,7 +1087,7 @@ function AgentAvatar({ agent, size = "sm" }: { agent: AdminAgentSummary; size?: 
     );
   }
   return (
-    <span className={cn("flex shrink-0 items-center justify-center bg-[#EEFBFC] font-bold text-[#b8860b]", cls)}>
+    <span className={cn("flex shrink-0 items-center justify-center bg-[#f3ead4] font-bold text-[#b8860b]", cls)}>
       {(agent.fullName || agent.email || "A").slice(0, 2).toUpperCase()}
     </span>
   );

@@ -177,7 +177,7 @@ export function HomePlateForm() {
             "mt-3 max-w-2xl rounded-md border px-4 py-3 text-sm",
             status.type === "error"
               ? "border-red-200 bg-red-50 text-red-700"
-              : "border-[#b8860b]/30 bg-[#eefbfc] text-[var(--accent)]",
+              : "border-[#b8860b]/30 bg-[#f3ead4] text-[var(--accent)]",
           ].join(" ")}
         >
           {status.message}

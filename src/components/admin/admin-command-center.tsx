@@ -426,7 +426,7 @@ function BusinessSnapshotCard({
               key={item.label}
               className="flex items-center gap-3 rounded-2xl border border-white/55 bg-white/50 px-3 py-3"
             >
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl bg-[#EEFBFC] text-[#b8860b]">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl bg-[#f3ead4] text-[#b8860b]">
                 <Icon className="h-5 w-5" />
               </span>
               <span className="min-w-0">
@@ -516,7 +516,7 @@ function KpiBookingsModal({
           <button
             type="button"
             onClick={onClose}
-            className="flex h-8 w-8 items-center justify-center rounded-2xl border border-[#ece1c8] bg-white/70 text-[#6B7280] transition hover:bg-[#EEFBFC] hover:text-[#b8860b]"
+            className="flex h-8 w-8 items-center justify-center rounded-2xl border border-[#ece1c8] bg-white/70 text-[#6B7280] transition hover:bg-[#f3ead4] hover:text-[#b8860b]"
           >
             <X className="h-4 w-4" />
           </button>
@@ -536,7 +536,7 @@ function KpiBookingsModal({
             <tbody className="divide-y divide-[#F0F9FA]">
               {pageBookings.length > 0 ? (
                 pageBookings.map((booking) => (
-                  <tr key={booking.id} className="transition hover:bg-[#EEFBFC]/60">
+                  <tr key={booking.id} className="transition hover:bg-[#f3ead4]/60">
                     <td className="px-4 py-3">
                       <button
                         type="button"

@@ -1053,7 +1053,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
               <div className="flex flex-col gap-3 pt-2 sm:flex-row">
                 <a
                   href={(() => { try { const u = new URL(confirmation.portalUrl, window.location.origin); u.searchParams.set("booking", "confirmed"); return u.toString(); } catch { return confirmation.portalUrl; } })()}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[var(--brand)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#008a99]"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[var(--brand)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#8a6c14]"
                 >
                   <CalendarDays className="h-4 w-4" />
                   Se mine bookinger
@@ -1129,7 +1129,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
         </Button>
       </form>
       {lookupStatus ? (
-        <div className={cn("mt-4 rounded-md border px-4 py-3 text-sm", lookupStatus.type === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-[#b8860b]/30 bg-[#eefbfc] text-[var(--accent)]")}>
+        <div className={cn("mt-4 rounded-md border px-4 py-3 text-sm", lookupStatus.type === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-[#b8860b]/30 bg-[#f3ead4] text-[var(--accent)]")}>
           {lookupStatus.message}
         </div>
       ) : null}
@@ -1172,7 +1172,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
             {/* Vehicle bar */}
             <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[var(--line)] bg-white px-4 py-3">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#eefbfc] text-[var(--brand)]">🚗</span>
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#f3ead4] text-[var(--brand)]">🚗</span>
                 <div>
                   <p className="text-base font-bold text-[var(--ink)] sm:text-lg">
                     {manualMode ? (activeSelectionCategory?.label ?? "Din bil") : activeSelectionVehicleName}
@@ -1186,7 +1186,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
               </div>
               <div className="flex items-center gap-2">
                 {hasSecondCar ? (
-                  <div className="flex rounded-xl bg-[#eefbfc] p-1">
+                  <div className="flex rounded-xl bg-[#f3ead4] p-1">
                     {(["Bil 1", "Bil 2"] as const).map((label, index) => (
                       <button
                         key={label}
@@ -1323,7 +1323,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                 >
                   <span className={cn(
                     "flex h-8 w-8 shrink-0 items-center justify-center rounded-xl transition",
-                    hasSecondCar ? "bg-[var(--brand)] text-white" : "bg-[#eefbfc] text-[var(--brand)]"
+                    hasSecondCar ? "bg-[var(--brand)] text-white" : "bg-[#f3ead4] text-[var(--brand)]"
                   )}>
                     <Car className="h-4 w-4" />
                   </span>
@@ -1351,7 +1351,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     <button
                       type="button"
                       onClick={handleEditSecondCar}
-                      className="inline-flex h-10 items-center justify-center rounded-xl bg-[#eefbfc] px-4 text-sm font-semibold text-[var(--brand)] transition hover:bg-[#dff7fa]"
+                      className="inline-flex h-10 items-center justify-center rounded-xl bg-[#f3ead4] px-4 text-sm font-semibold text-[var(--brand)] transition hover:bg-[#f5edd8]"
                     >
                       Rediger bil 2
                     </button>
@@ -1452,7 +1452,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                       </>
                     ) : (
                       <div className="flex h-full flex-col items-center justify-center py-10 text-center text-[var(--muted)]">
-                        <CalendarDays className="mb-3 h-8 w-8 text-[#99dfe7]" />
+                        <CalendarDays className="mb-3 h-8 w-8 text-[#e8c468]" />
                         <p className="text-sm font-semibold">Vælg en dag i kalenderen</p>
                         <p className="mt-1 text-xs">Derefter vises ledige tider her.</p>
                       </div>
@@ -1483,15 +1483,15 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
               >
                 <form id="booking-details" onSubmit={onSubmit} className="space-y-6">
                   <div className="grid gap-3 sm:grid-cols-2">
-                    <button type="button" onClick={() => form.setValue("customerType", "private")} className={cn("rounded-2xl border px-4 py-4 text-sm font-semibold transition", customerType === "private" ? "border-[var(--brand)] bg-[#eefbfc] text-[var(--brand)]" : "border-[var(--line)] bg-white text-[var(--ink)]")}>
+                    <button type="button" onClick={() => form.setValue("customerType", "private")} className={cn("rounded-2xl border px-4 py-4 text-sm font-semibold transition", customerType === "private" ? "border-[var(--brand)] bg-[#f3ead4] text-[var(--brand)]" : "border-[var(--line)] bg-white text-[var(--ink)]")}>
                       Privat
                     </button>
-                    <button type="button" onClick={() => form.setValue("customerType", "business")} className={cn("rounded-2xl border px-4 py-4 text-sm font-semibold transition", customerType === "business" ? "border-[var(--brand)] bg-[#eefbfc] text-[var(--brand)]" : "border-[var(--line)] bg-white text-[var(--ink)]")}>
+                    <button type="button" onClick={() => form.setValue("customerType", "business")} className={cn("rounded-2xl border px-4 py-4 text-sm font-semibold transition", customerType === "business" ? "border-[var(--brand)] bg-[#f3ead4] text-[var(--brand)]" : "border-[var(--line)] bg-white text-[var(--ink)]")}>
                       Erhverv
                     </button>
                   </div>
                   {manualMode && (
-                    <div className="rounded-2xl border border-[#b8860b]/25 bg-[#eefbfc] px-4 py-4">
+                    <div className="rounded-2xl border border-[#b8860b]/25 bg-[#f3ead4] px-4 py-4">
                       <p className="flex items-center gap-2 text-sm font-bold text-[var(--ink)]">
                         <Car className="h-4 w-4 text-[var(--brand)]" />
                         Bilmærke og model
@@ -1630,14 +1630,14 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
           <aside className="hidden xl:sticky xl:top-28 xl:block">
             <Card className="rounded-[1.5rem] border-[var(--line)] p-6 shadow-none">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#eefbfc] text-[var(--brand)]">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#f3ead4] text-[var(--brand)]">
                   <CalendarDays className="h-5 w-5" />
                 </span>
                 <h3 className="font-display text-2xl font-semibold text-[var(--ink)]">Din booking</h3>
               </div>
               <div className="mt-6 space-y-3">
                 {bookingVehicles.length > 1 ? (
-                  <div className="rounded-xl bg-[#eefbfc] px-4 py-3 text-sm font-semibold text-[var(--accent)]">
+                  <div className="rounded-xl bg-[#f3ead4] px-4 py-3 text-sm font-semibold text-[var(--accent)]">
                     Din booking indeholder 2 biler
                   </div>
                 ) : null}
@@ -1673,7 +1673,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     ) : null}
                   </div>
                 ) : null}
-                <div className="rounded-xl bg-[#eefbfc] px-4 py-4">
+                <div className="rounded-xl bg-[#f3ead4] px-4 py-4">
                   <div className="flex items-center justify-between gap-4">
                     <span className="text-sm font-semibold text-[var(--ink)]">Total</span>
                     <span className="text-2xl font-semibold text-[var(--brand)]">{formatShortPrice(finalTotal)}</span>
@@ -1700,7 +1700,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
               <div role="dialog" aria-modal="true" aria-labelledby="mobile-booking-summary-title" className="mx-auto flex max-h-[calc(100dvh-3rem)] max-w-xl flex-col overflow-hidden rounded-t-2xl bg-white shadow-[0_-20px_60px_rgba(0,0,0,0.22)]">
                 <div className="flex items-start justify-between gap-4 border-b border-[var(--line)] px-5 py-4">
                   <div className="flex items-center gap-2">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#eefbfc] text-[var(--brand)]"><CalendarDays className="h-4 w-4" /></span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#f3ead4] text-[var(--brand)]"><CalendarDays className="h-4 w-4" /></span>
                     <h3 id="mobile-booking-summary-title" className="font-display text-xl font-semibold text-[var(--ink)]">Din booking</h3>
                   </div>
                   <button type="button" onClick={() => setIsMobileSummaryOpen(false)} aria-label="Luk" className="rounded-md p-2 text-[var(--muted)] transition hover:bg-[#f2f7f9]">
@@ -1709,7 +1709,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                 </div>
                 <div className="space-y-4 overflow-y-auto px-5 py-4">
                   {bookingVehicles.length > 1 ? (
-                    <div className="rounded-xl bg-[#eefbfc] px-4 py-3 text-sm font-semibold text-[var(--accent)]">
+                    <div className="rounded-xl bg-[#f3ead4] px-4 py-3 text-sm font-semibold text-[var(--accent)]">
                       Din booking indeholder 2 biler
                     </div>
                   ) : null}
@@ -1734,7 +1734,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                       </div>
                     </div>
                   ) : null}
-                  <div className="rounded-xl bg-[#eefbfc] px-4 py-4">
+                  <div className="rounded-xl bg-[#f3ead4] px-4 py-4">
                     <div className="flex items-center justify-between gap-4">
                       <span className="text-lg font-semibold text-[var(--ink)]">Total</span>
                       <span className="text-2xl font-semibold text-[var(--brand)]">{formatShortPrice(finalTotal)}</span>
@@ -1754,7 +1754,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
           {/* ── Mobile bottom bar ────────────────────────────────── */}
           <div className={cn("fixed inset-x-0 bottom-0 z-50 border-t border-[var(--line)] bg-white/95 px-4 py-3 shadow-[0_-16px_40px_rgba(8,27,21,0.12)] backdrop-blur xl:hidden", isMobileSummaryOpen && "hidden")}>
             <div className="mx-auto flex max-w-xl items-center gap-2 overflow-hidden">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#eefbfc] text-[var(--brand)]"><CalendarDays className="h-5 w-5" /></span>
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[var(--brand)]"><CalendarDays className="h-5 w-5" /></span>
               <div className="min-w-0 flex-1">
                 <p className="text-xl font-semibold leading-none text-[var(--brand)]">{formatShortPrice(finalTotal)}</p>
                 <p className="mt-1 truncate text-xs font-medium text-[var(--muted)]">
@@ -1950,8 +1950,8 @@ function PackageCard({
             ) : null}
           </div>
         ) : (
-          <div className="flex h-32 items-center justify-center rounded-t-[14px] bg-[#eefbfc]">
-            <Sparkles className={cn("h-10 w-10", isActive ? "text-[var(--brand)]" : "text-[#99dfe7]")} />
+          <div className="flex h-32 items-center justify-center rounded-t-[14px] bg-[#f3ead4]">
+            <Sparkles className={cn("h-10 w-10", isActive ? "text-[var(--brand)]" : "text-[#e8c468]")} />
           </div>
         )}
 
@@ -2071,7 +2071,7 @@ function AddonCard({
         {addon.imageUrl ? (
           <Image src={addon.imageUrl} alt="" fill sizes="(max-width:640px) 50vw,25vw" className="object-cover" />
         ) : (
-          <div className={cn("h-full w-full", isSelected ? "bg-[var(--accent)]" : "bg-[#eefbfc]")} />
+          <div className={cn("h-full w-full", isSelected ? "bg-[var(--accent)]" : "bg-[#f3ead4]")} />
         )}
         {/* Price badge */}
         {addon.price ? (
@@ -2134,7 +2134,7 @@ function BookingSubmitOverlay({ phase, progress }: { phase: "loading" | "success
         <div
           className={cn(
             "mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full transition-colors duration-300 sm:h-20 sm:w-20",
-            phase === "success" ? "bg-[var(--color-success)]/10 ring-4 ring-[var(--color-success)]/20" : "bg-[#eefbfc]"
+            phase === "success" ? "bg-[var(--color-success)]/10 ring-4 ring-[var(--color-success)]/20" : "bg-[#f3ead4]"
           )}
         >
           {phase === "success" ? (
@@ -2194,7 +2194,7 @@ function PlateLookupOverlay({ phase, progress }: { phase: "checking" | "notfound
         <div
           className={cn(
             "mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full sm:h-20 sm:w-20",
-            phase === "notfound" ? "bg-red-50" : "bg-[#eefbfc]"
+            phase === "notfound" ? "bg-red-50" : "bg-[#f3ead4]"
           )}
         >
           {phase === "notfound" ? (
@@ -2320,7 +2320,7 @@ function BookingAccordion({
                 ? "bg-[var(--brand)] text-white"
                 : isCompleted
                 ? "bg-[var(--color-success)] text-white"
-                : "bg-[#eefbfc] text-[var(--muted)]"
+                : "bg-[#f3ead4] text-[var(--muted)]"
             )}
           >
             {isCompleted && !isOpen ? <Check className="h-3.5 w-3.5" /> : step}
@@ -2334,14 +2334,14 @@ function BookingAccordion({
             {title}
           </span>
           {summary && !isOpen ? (
-            <span className="rounded-full bg-[#eefbfc] px-3 py-1 text-xs font-semibold text-[var(--brand)]">
+            <span className="rounded-full bg-[#f3ead4] px-3 py-1 text-xs font-semibold text-[var(--brand)]">
               {summary}
             </span>
           ) : null}
         </div>
         <div className="flex shrink-0 items-center gap-2">
           {!isOpen && !isLocked && icon ? (
-            <span className="text-[#99dfe7]">{icon}</span>
+            <span className="text-[#e8c468]">{icon}</span>
           ) : null}
           {isCompleted && !isOpen && onEdit ? (
             <span className="text-xs font-semibold text-[var(--brand)]">Rediger</span>

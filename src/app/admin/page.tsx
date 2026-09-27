@@ -468,8 +468,8 @@ function KpiCard({
   tone?: "violet" | "blue" | "green" | "orange";
 }) {
   const toneClass = {
-    violet: "bg-[#EEFBFC] text-[#b8860b] ring-[#99DFE7]/30",
-    blue: "bg-[#EEFBFC] text-[#b8860b] ring-[#99DFE7]/30",
+    violet: "bg-[#f3ead4] text-[#b8860b] ring-[#e8c468]/30",
+    blue: "bg-[#f3ead4] text-[#b8860b] ring-[#e8c468]/30",
     green: "bg-[#10B981]/10 text-[#047857] ring-[#10B981]/20",
     orange: "bg-[#caa036]/10 text-[#92400E] ring-[#caa036]/20",
   }[tone];
@@ -494,7 +494,7 @@ function StatusBadge({ status }: { status: BookingStatus }) {
   const styles: Record<BookingStatus, string> = {
     pending: "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]",
     approved: "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]",
-    completed: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#008A99]",
+    completed: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#8a6c14]",
     cancelled: "border-[#EF4444]/20 bg-[#EF4444]/10 text-[#B91C1C]",
   };
 
@@ -1516,7 +1516,7 @@ function BookingsView({
         action={
           <Link
             href="/admin/bookings/new"
-            className="inline-flex h-9 items-center gap-2 rounded-xl bg-[#b8860b] px-4 text-[12.5px] font-semibold text-white shadow-[0_4px_14px_rgba(184,134,11,0.28)] transition hover:bg-[#008A99]"
+            className="inline-flex h-9 items-center gap-2 rounded-xl bg-[#b8860b] px-4 text-[12.5px] font-semibold text-white shadow-[0_4px_14px_rgba(184,134,11,0.28)] transition hover:bg-[#8a6c14]"
           >
             <CalendarPlus className="h-3.5 w-3.5" />
             Ny booking
@@ -1537,7 +1537,7 @@ function BookingsView({
             className={cn(
               "block rounded-2xl border px-4 py-4 shadow-[0_2px_12px_rgba(184,134,11,0.07)] backdrop-blur-xl transition hover:-translate-y-0.5",
               statusFilter === item.status
-                ? "border-[#b8860b] bg-[#EEFBFC]"
+                ? "border-[#b8860b] bg-[#f3ead4]"
                 : "border-white/60 bg-white/80"
             )}
           >
@@ -1549,7 +1549,7 @@ function BookingsView({
               <span className={cn("flex h-9 w-9 shrink-0 items-center justify-center rounded-xl", {
                 blue: "bg-[#EFF6FF] text-[#2563EB]",
                 orange: "bg-[#FFF7ED] text-[#96721a]",
-                violet: "bg-[#EEFBFC] text-[#b8860b]",
+                violet: "bg-[#f3ead4] text-[#b8860b]",
                 green: "bg-[#ECFDF5] text-[#059669]",
               }[item.tone])}>
                 <item.icon className="h-[18px] w-[18px]" />
@@ -1560,7 +1560,7 @@ function BookingsView({
       </div>
 
       {statusFilter ? (
-        <div className="flex items-center gap-3 rounded-2xl border border-[#b8860b]/20 bg-[#EEFBFC] px-4 py-3">
+        <div className="flex items-center gap-3 rounded-2xl border border-[#b8860b]/20 bg-[#f3ead4] px-4 py-3">
           <StatusPill status={statusFilter as BookingStatus} />
           <p className="flex-1 text-[13px] font-semibold text-[#b8860b]">
             Filtreret: {filtered.length} booking{filtered.length !== 1 ? "er" : ""}
@@ -2719,7 +2719,7 @@ function SettingsView({
                         defaultChecked={dashboard.settings.defaultBookingStatus === option.value}
                         className="peer sr-only"
                       />
-                      <span className="flex items-start gap-3 rounded-xl border border-[var(--line)] bg-white px-4 py-3 transition peer-checked:border-[#b8860b] peer-checked:bg-[#EEFBFC] peer-checked:shadow-[0_4px_16px_rgba(184,134,11,0.12)]">
+                      <span className="flex items-start gap-3 rounded-xl border border-[var(--line)] bg-white px-4 py-3 transition peer-checked:border-[#b8860b] peer-checked:bg-[#f3ead4] peer-checked:shadow-[0_4px_16px_rgba(184,134,11,0.12)]">
                         <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#f2f7fa] text-[#b8860b]">
                           <Icon className="h-4 w-4" />
                         </span>
@@ -2769,7 +2769,7 @@ function SettingsView({
             <p className="mt-2 text-[13px] leading-5 text-[#6B7280]">
               {getAutoBookingStatusDescription(dashboard.settings.defaultBookingStatus)}
             </p>
-            <div className="mt-3 rounded-xl bg-[#EEFBFC] px-4 py-3 text-[12px] text-[#b8860b]">
+            <div className="mt-3 rounded-xl bg-[#f3ead4] px-4 py-3 text-[12px] text-[#b8860b]">
               Denne indstilling påvirker både website-bookinger og manuelle bookinger fra admin.
             </div>
           </div>
@@ -2897,7 +2897,7 @@ function BookingActionCard({
                                       ? "bg-[#ebf8f1] text-[#1f7a4b]"
                                       : email.status === "failed"
                                         ? "bg-[#fff0f0] text-[#c43d3d]"
-                                        : "bg-[#EEFBFC] text-[#b8860b]"
+                                        : "bg-[#f3ead4] text-[#b8860b]"
                                   )}
                                 >
                                   {getEmailStatusLabel(email.status)}
@@ -3136,7 +3136,7 @@ function CustomerCard({
             </p>
           </div>
           <div>
-            <span className="inline-flex rounded-full bg-[#EEFBFC] px-2.5 py-1 text-[11px] font-semibold text-[#b8860b]">
+            <span className="inline-flex rounded-full bg-[#f3ead4] px-2.5 py-1 text-[11px] font-semibold text-[#b8860b]">
               {customer.bookingsCount} booking{customer.bookingsCount !== 1 ? "er" : ""}
             </span>
           </div>
@@ -3313,7 +3313,7 @@ function AdminInvoicesView({ invoices, page }: { invoices: Invoice[]; page: numb
                       href={invoice.publicUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex h-8 items-center justify-center rounded-lg border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#EEFBFC]"
+                      className="inline-flex h-8 items-center justify-center rounded-lg border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
                     >
                       Vis / print
                     </a>
@@ -3452,7 +3452,7 @@ function CouponsView({ coupons }: { coupons: Coupon[] }) {
                       <input type="hidden" name="return_view" value="coupons" />
                       <button
                         type="submit"
-                        className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#EEFBFC]"
+                        className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
                       >
                         {coupon.is_active ? "Deaktiver" : "Aktiver"}
                       </button>
@@ -3556,7 +3556,7 @@ function AdminManagementView({
                         <button
                           type="submit"
                           disabled={isSelf}
-                          className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#EEFBFC] disabled:cursor-not-allowed disabled:opacity-40"
+                          className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4] disabled:cursor-not-allowed disabled:opacity-40"
                         >
                           {admin.status === "active" ? "Deaktiver" : "Aktiver"}
                         </button>
@@ -3702,7 +3702,7 @@ function TrustpilotView({
                         <input type="hidden" name="return_view" value="trustpilot" />
                         <button
                           type="submit"
-                          className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#EEFBFC]"
+                          className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
                         >
                           {booking.trustpilotReviewSentAt ? "Send igen" : "Send mail"}
                         </button>
@@ -3880,7 +3880,7 @@ function MetricCard({
   tone?: "violet" | "green" | "orange" | "red" | "blue";
 }) {
   const iconStyles = {
-    violet: "bg-[#EEFBFC] text-[#b8860b]",
+    violet: "bg-[#f3ead4] text-[#b8860b]",
     green: "bg-[#ECFDF5] text-[#059669]",
     orange: "bg-[#FFF7ED] text-[#96721a]",
     red: "bg-[#FEF2F2] text-[#DC2626]",
@@ -3937,7 +3937,7 @@ function ViewHeader({
   return (
     <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-white/60 bg-white/80 px-5 py-4 shadow-[0_2px_12px_rgba(184,134,11,0.06)] backdrop-blur-xl">
       <div className="flex items-center gap-3">
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#EEFBFC] text-[#b8860b]">
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[#b8860b]">
           <Icon className="h-5 w-5" />
         </div>
         <div>
@@ -3989,7 +3989,7 @@ function StatusPill({ status }: { status: BookingStatus }) {
   const styles: Record<BookingStatus, string> = {
     pending: "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]",
     approved: "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]",
-    completed: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#008A99]",
+    completed: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#8a6c14]",
     cancelled: "border-[#EF4444]/20 bg-[#EF4444]/10 text-[#B91C1C]",
   };
 
@@ -4010,7 +4010,7 @@ function PaymentPill({ status }: { status: (typeof paymentStatuses)[number] }) {
     unpaid: "border-[#EF4444]/20 bg-[#EF4444]/10 text-[#B91C1C]",
     pending: "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]",
     paid: "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]",
-    refunded: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#008A99]",
+    refunded: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#8a6c14]",
   };
 
   return (
@@ -4029,7 +4029,7 @@ function InvoicePill({ status }: { status: (typeof invoiceStatuses)[number] }) {
   const styles: Record<(typeof invoiceStatuses)[number], string> = {
     not_requested: "border-[#ece1c8] bg-white/60 text-[#6B7280]",
     ready: "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]",
-    sent: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#008A99]",
+    sent: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#8a6c14]",
     paid: "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]",
   };
 

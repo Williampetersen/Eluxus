@@ -319,7 +319,7 @@ function ConfirmPanel({
 }) {
   const config = {
     approve:  { label: "Godkend booking",    color: "text-[#047857]", bg: "bg-[#F0FDF9]",  border: "border-[#10B981]/30", icon: CheckCircle2, btnClass: "bg-[#10B981] hover:bg-[#059669] text-white", desc: "Kunden modtager en bekræftelsesmail." },
-    complete: { label: "Afslut booking",     color: "text-[#008A99]", bg: "bg-[#EEFBFC]",  border: "border-[#b8860b]/30", icon: CheckCircle2, btnClass: "bg-[#b8860b] hover:bg-[#008A99] text-white", desc: "Markerer bookingen som udført." },
+    complete: { label: "Afslut booking",     color: "text-[#8a6c14]", bg: "bg-[#f3ead4]",  border: "border-[#b8860b]/30", icon: CheckCircle2, btnClass: "bg-[#b8860b] hover:bg-[#8a6c14] text-white", desc: "Markerer bookingen som udført." },
     cancel:   { label: "Annuller booking",   color: "text-[#B45309]", bg: "bg-[#FFFBEB]",  border: "border-[#caa036]/30", icon: AlertTriangle, btnClass: "bg-[#caa036] hover:bg-[#96721a] text-white", desc: "Kunden modtager en afbestillingsmail." },
     delete:   { label: "Slet booking",       color: "text-[#B91C1C]", bg: "bg-[#FEF2F2]",  border: "border-[#EF4444]/30", icon: Trash2,        btnClass: "bg-[#EF4444] hover:bg-[#DC2626] text-white", desc: "Bookingen slettes permanent og kan ikke gendannes." },
   }[action];
@@ -387,7 +387,7 @@ function ActionButton({
 }) {
   const toneClass = {
     green: "border-[#10B981]/20 bg-[#F0FDF9] text-[#047857] hover:bg-[#D1FAE5]",
-    blue:  "border-[#b8860b]/20 bg-[#EEFBFC] text-[#008A99] hover:bg-[#CFFAFE]",
+    blue:  "border-[#b8860b]/20 bg-[#f3ead4] text-[#8a6c14] hover:bg-[#CFFAFE]",
     red:   "border-[#EF4444]/20 bg-[#FEF2F2] text-[#B91C1C] hover:bg-[#FEE2E2]",
   }[tone];
 
@@ -554,7 +554,7 @@ function ActivityTab({ booking }: { booking: DashboardBooking }) {
             <div key={i} className="relative flex gap-3 pl-8">
               <span className={cn(
                 "absolute left-0 top-1 flex h-7 w-7 items-center justify-center rounded-full border-2 border-white",
-                item.type === "email" ? "bg-[#EFF6FF]" : "bg-[#EEFBFC]"
+                item.type === "email" ? "bg-[#EFF6FF]" : "bg-[#f3ead4]"
               )}>
                 {item.type === "email"
                   ? <Mail className="h-3.5 w-3.5 text-[#3B82F6]" />
@@ -590,7 +590,7 @@ function DrawerInfo({
 }) {
   return (
     <div className="flex min-w-0 gap-3 rounded-3xl border border-white/55 bg-white/50 px-4 py-3">
-      <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#EEFBFC] text-[#b8860b]">
+      <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[#b8860b]">
         <Icon className="h-4 w-4" />
       </span>
       <div className="min-w-0">

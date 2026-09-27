@@ -282,7 +282,7 @@ export function HtmlInvoiceManager({
                     ? "bg-[#E0F2FE] text-[#0369A1]"
                     : invoice.status === "cancelled"
                       ? "bg-[#FEF2F2] text-[#B91C1C]"
-                      : "bg-[#EEFBFC] text-[#b8860b]"
+                      : "bg-[#f3ead4] text-[#b8860b]"
               }`}
             >
               {STATUS_LABELS[invoice.status] || invoice.status}
@@ -296,7 +296,7 @@ export function HtmlInvoiceManager({
               href={invoice.publicUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-[#ece1c8] bg-white px-3 py-1.5 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#EEFBFC]"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-[#ece1c8] bg-white px-3 py-1.5 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
             >
               <ExternalLink className="h-3.5 w-3.5" />
               Vis / print faktura
@@ -413,7 +413,7 @@ export function HtmlInvoiceManager({
             <button
               type="button"
               onClick={addLine}
-              className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-dashed border-[#b8860b]/40 px-3 py-2 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#EEFBFC]"
+              className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-dashed border-[#b8860b]/40 px-3 py-2 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
             >
               <Plus className="h-3.5 w-3.5" />
               Tilføj linje

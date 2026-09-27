@@ -52,7 +52,7 @@ export default async function AgentLoginPage({
 
           <Card className="p-8">
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#eefbfc] text-[var(--brand)]">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f3ead4] text-[var(--brand)]">
                 <LockKeyhole className="h-6 w-6" />
               </span>
               <div>
@@ -88,7 +88,7 @@ export default async function AgentLoginPage({
               </Button>
             </form>
 
-            <div className="mt-6 flex items-center gap-2 rounded-2xl bg-[#eefbfc] px-4 py-3 text-sm text-[var(--accent)]">
+            <div className="mt-6 flex items-center gap-2 rounded-2xl bg-[#f3ead4] px-4 py-3 text-sm text-[var(--accent)]">
               <ShieldCheck className="h-4 w-4" />
               Agentadgang er separat fra admin-login.
             </div>

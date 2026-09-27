@@ -194,7 +194,7 @@ export default function ReturLeasebilPage() {
                 </div>
               ))}
             </div>
-            <div className="mt-5 flex items-center gap-3 rounded-xl bg-[#eefbfc] px-4 py-3 text-sm font-semibold text-[var(--ink)]">
+            <div className="mt-5 flex items-center gap-3 rounded-xl bg-[#f3ead4] px-4 py-3 text-sm font-semibold text-[var(--ink)]">
               <Clock className="h-5 w-5 text-[var(--brand)]" />
               Tager ca. 2 timer — uanset bilstørrelse
             </div>
@@ -231,7 +231,7 @@ export default function ReturLeasebilPage() {
               key={value.title}
               className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(27,23,18,0.08)]"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#eefbfc] text-[var(--brand)]">
+              <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#f3ead4] text-[var(--brand)]">
                 <ShieldCheck className="h-5 w-5" />
               </span>
               <h3 className="mt-4 font-display text-2xl font-semibold text-[var(--ink)]">

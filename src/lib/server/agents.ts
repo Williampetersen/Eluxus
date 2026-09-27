@@ -1317,7 +1317,7 @@ export const listNotifications = async (input?: {
 export const buildAgentStats = (bookings: AgentBooking[]): AgentStats => {
   const currentMonth = getMonthKey(new Date());
   const statusItems = [
-    { status: "pending_agent_acceptance", label: "Pending", color: "#F59E0B" },
+    { status: "pending_agent_acceptance", label: "Pending", color: "#caa036" },
     { status: "accepted", label: "Accepted", color: "#2563EB" },
     { status: "in_progress", label: "In progress", color: "#7C3AED" },
     { status: "done", label: "Done", color: "#10B981" },

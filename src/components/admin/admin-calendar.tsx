@@ -342,7 +342,7 @@ function CalendarMetric({
 }) {
   const toneClasses: Record<typeof tone, { bg: string; text: string; icon: string }> = {
     blue:   { bg: "bg-[#EFF6FF]", text: "text-[#1D4ED8]", icon: "text-[#3B82F6]" },
-    teal:   { bg: "bg-[#EEFBFC]", text: "text-[#008A99]", icon: "text-[#b8860b]" },
+    teal:   { bg: "bg-[#f3ead4]", text: "text-[#8a6c14]", icon: "text-[#b8860b]" },
     orange: { bg: "bg-[#FFF7ED]", text: "text-[#9A3412]", icon: "text-[#F97316]" },
     red:    { bg: "bg-[#FEF2F2]", text: "text-[#991B1B]", icon: "text-[#EF4444]" },
   };
@@ -376,8 +376,8 @@ function getStatusClasses(status: BookingStatus) {
     case "completed":
       return {
         borderClass: "border-[#b8860b]/25",
-        bgClass: "bg-[#EEFBFC]",
-        textClass: "text-[#008A99]",
+        bgClass: "bg-[#f3ead4]",
+        textClass: "text-[#8a6c14]",
         barClass: "bg-[#b8860b]",
       };
     case "cancelled":

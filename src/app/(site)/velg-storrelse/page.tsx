@@ -140,7 +140,7 @@ export default async function VelgStorrelse() {
 
         {/* Hero */}
         <div className="mt-8">
-          <span className="inline-block rounded-full bg-[#eefbfc] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[var(--brand)]">
+          <span className="inline-block rounded-full bg-[#f3ead4] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[var(--brand)]">
             Manuel valg
           </span>
           <h1 className="mt-4 font-display text-[2.5rem] font-bold leading-tight text-[var(--ink)] sm:text-5xl">

@@ -138,7 +138,7 @@ export default function VerifyForm({
         <div className="px-6 py-7">
           {/* Icon + title */}
           <div className="mb-5 flex items-start gap-4">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#eefbfc] text-[var(--brand)]">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[var(--brand)]">
               <ShieldCheck className="h-6 w-6" />
             </span>
             <div>
@@ -165,7 +165,7 @@ export default function VerifyForm({
 
           {/* Success banner */}
           {successMsg ? (
-            <div className="mb-4 rounded-lg border border-[var(--line)] bg-[#eefbfc] px-4 py-3 text-sm font-medium text-[var(--accent)]">
+            <div className="mb-4 rounded-lg border border-[var(--line)] bg-[#f3ead4] px-4 py-3 text-sm font-medium text-[var(--accent)]">
               {successMsg}
             </div>
           ) : null}

@@ -254,7 +254,7 @@ export default function AboutPage() {
               key={value.title}
               className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(27,23,18,0.08)]"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#eefbfc] text-[var(--brand)]">
+              <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#f3ead4] text-[var(--brand)]">
                 <ShieldCheck className="h-5 w-5" />
               </span>
               <h3 className="mt-4 font-display text-2xl font-semibold text-[var(--ink)]">
@@ -279,7 +279,7 @@ export default function AboutPage() {
               {areas.map((area) => (
                 <div
                   key={area}
-                  className="flex items-center gap-3 rounded-xl bg-[#eefbfc] px-4 py-4"
+                  className="flex items-center gap-3 rounded-xl bg-[#f3ead4] px-4 py-4"
                 >
                   <MapPinned className="h-5 w-5 text-[var(--brand)]" />
                   <span className="font-semibold text-[var(--ink)]">{area}</span>

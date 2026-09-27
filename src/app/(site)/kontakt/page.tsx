@@ -64,7 +64,7 @@ export default function KontaktPage() {
             </h2>
             <div className="mt-6 space-y-5">
               <a href={siteConfig.phoneHref} className="group flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#eefbfc] text-[var(--brand)]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[var(--brand)]">
                   <Phone className="h-5 w-5" />
                 </span>
                 <div>
@@ -78,7 +78,7 @@ export default function KontaktPage() {
               </a>
 
               <a href={`mailto:${siteConfig.email}`} className="group flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#eefbfc] text-[var(--brand)]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[var(--brand)]">
                   <Mail className="h-5 w-5" />
                 </span>
                 <div>
@@ -92,7 +92,7 @@ export default function KontaktPage() {
               </a>
 
               <div className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#eefbfc] text-[var(--brand)]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[var(--brand)]">
                   <Clock className="h-5 w-5" />
                 </span>
                 <div>
@@ -107,7 +107,7 @@ export default function KontaktPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#eefbfc] text-[var(--brand)]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[var(--brand)]">
                   <MapPin className="h-5 w-5" />
                 </span>
                 <div>

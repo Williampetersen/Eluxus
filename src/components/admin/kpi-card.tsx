@@ -23,8 +23,8 @@ export function KpiCard({
   onClick?: () => void;
 }) {
   const toneClass: Record<KpiTone, string> = {
-    violet: "bg-[#EEFBFC] text-[#b8860b] ring-[#99DFE7]/30",
-    blue: "bg-[#EEFBFC] text-[#b8860b] ring-[#99DFE7]/30",
+    violet: "bg-[#f3ead4] text-[#b8860b] ring-[#e8c468]/30",
+    blue: "bg-[#f3ead4] text-[#b8860b] ring-[#e8c468]/30",
     green: "bg-[#10B981]/10 text-[#047857] ring-[#10B981]/20",
     orange: "bg-[#caa036]/10 text-[#92400E] ring-[#caa036]/20",
     red: "bg-[#EF4444]/10 text-[#B91C1C] ring-[#EF4444]/20",

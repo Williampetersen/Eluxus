@@ -184,7 +184,7 @@ export function LeasebilPriceChecker() {
           </button>
         </div>
 
-        <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl bg-[#eefbfc] px-5 py-5 sm:flex-row sm:items-center">
+        <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl bg-[#f3ead4] px-5 py-5 sm:flex-row sm:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">Din pris</p>
             <p className="mt-1 font-display text-4xl font-semibold text-[var(--ink)]">

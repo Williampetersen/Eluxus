@@ -63,7 +63,7 @@ export function BookingSetupView({
     <div className="space-y-4">
       {/* Page header */}
       <div className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EEFBFC] text-[#b8860b]">
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#f3ead4] text-[#b8860b]">
           <Settings2 className="h-5 w-5" />
         </div>
         <div>
@@ -971,7 +971,7 @@ function CreateInlineButton({ label, formId }: { label: string; formId: string }
     <button
       type="submit"
       form={formId}
-      className="shrink-0 rounded-xl bg-[#b8860b] px-4 py-2 text-[12px] font-semibold text-white shadow-[0_4px_12px_rgba(184,134,11,0.22)] transition hover:bg-[#008A99]"
+      className="shrink-0 rounded-xl bg-[#b8860b] px-4 py-2 text-[12px] font-semibold text-white shadow-[0_4px_12px_rgba(184,134,11,0.22)] transition hover:bg-[#8a6c14]"
     >
       {label}
     </button>
@@ -982,7 +982,7 @@ function SetupPanel({ title, icon, children }: { title: string; icon: ReactNode;
   return (
     <section className="rounded-3xl border border-white/55 bg-white/[0.65] p-4 shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl">
       <div className="mb-4 flex items-center gap-2">
-        <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[#EEFBFC] text-[#b8860b]">{icon}</span>
+        <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[#f3ead4] text-[#b8860b]">{icon}</span>
         <p className="text-[14px] font-semibold text-[#111827]">{title}</p>
       </div>
       {children}

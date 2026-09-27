@@ -229,7 +229,7 @@ export default function LoginForm() {
                 <Button
                   type="submit"
                   disabled={loading}
-                  className="h-11 w-full bg-[var(--brand)] font-semibold text-white hover:bg-[#008A99]"
+                  className="h-11 w-full bg-[var(--brand)] font-semibold text-white hover:bg-[#8a6c14]"
                 >
                   {loading ? "Sender kode…" : "Send kode til e-mail"}
                 </Button>
@@ -281,7 +281,7 @@ export default function LoginForm() {
                   <Button
                     type="submit"
                     disabled={loading || code.length !== 6 || !portalToken}
-                    className="h-11 w-full bg-[var(--brand)] font-semibold text-white hover:bg-[#008A99]"
+                    className="h-11 w-full bg-[var(--brand)] font-semibold text-white hover:bg-[#8a6c14]"
                   >
                     {loading ? "Bekræfter…" : "Bekræft og log ind"}
                   </Button>

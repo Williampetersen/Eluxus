@@ -68,7 +68,7 @@ export default async function AdminLoginPage({
 
           <Card className="p-8">
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#eefbfc] text-[var(--brand)]">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f3ead4] text-[var(--brand)]">
                 <LockKeyhole className="h-6 w-6" />
               </span>
               <div>
@@ -88,7 +88,7 @@ export default async function AdminLoginPage({
             ) : null}
 
             {!isAdminConfigured() ? (
-              <div className="mt-6 rounded-2xl border border-[var(--line)] bg-[#eefbfc] px-4 py-4 text-sm text-[var(--accent)]">
+              <div className="mt-6 rounded-2xl border border-[var(--line)] bg-[#f3ead4] px-4 py-4 text-sm text-[var(--accent)]">
                 Mangler opsætning. Du skal have disse variabler i Vercel:
                 ADMIN_EMAIL, ADMIN_PASSWORD og ADMIN_SESSION_SECRET.
               </div>
@@ -111,7 +111,7 @@ export default async function AdminLoginPage({
               </Button>
             </form>
 
-            <div className="mt-6 flex items-center gap-2 rounded-2xl bg-[#eefbfc] px-4 py-3 text-sm text-[var(--accent)]">
+            <div className="mt-6 flex items-center gap-2 rounded-2xl bg-[#f3ead4] px-4 py-3 text-sm text-[var(--accent)]">
               <ShieldCheck className="h-4 w-4" />
               Sessionen gemmes i en sikker cookie i 12 timer.
             </div>

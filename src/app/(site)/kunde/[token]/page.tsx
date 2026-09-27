@@ -80,7 +80,7 @@ export default async function CustomerPortalPage({
     return (
       <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#EEF9FA] via-[#F7F9FF] to-[#EFF6FF] px-4">
         <section className="mx-auto max-w-lg overflow-hidden rounded-3xl border border-white/55 bg-white/[0.82] p-10 text-center shadow-[0_24px_64px_rgba(184,134,11,0.13)] backdrop-blur-2xl">
-          <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-3xl bg-[#EEFBFC]">
+          <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-3xl bg-[#f3ead4]">
             <CalendarDays className="h-8 w-8 text-[#b8860b]" />
           </div>
           <h1 className="text-2xl font-bold text-[#111827]">Linket er udlobet</h1>
@@ -89,7 +89,7 @@ export default async function CustomerPortalPage({
           </p>
           <Link
             href="/booking"
-            className="mt-7 inline-flex h-11 items-center gap-2 rounded-2xl bg-[#b8860b] px-6 text-[14px] font-semibold text-white shadow-[0_8px_20px_rgba(184,134,11,0.28)] transition hover:bg-[#008A99]"
+            className="mt-7 inline-flex h-11 items-center gap-2 rounded-2xl bg-[#b8860b] px-6 text-[14px] font-semibold text-white shadow-[0_8px_20px_rgba(184,134,11,0.28)] transition hover:bg-[#8a6c14]"
           >
             <CalendarPlus className="h-4 w-4" />
             Book en tid
@@ -250,7 +250,7 @@ export default async function CustomerPortalPage({
                     </div>
                     <Link
                       href="/booking"
-                      className="inline-flex h-11 items-center gap-2 rounded-2xl bg-[#b8860b] px-5 text-[13px] font-bold text-white shadow-[0_6px_20px_rgba(184,134,11,0.25)] transition hover:bg-[#008A99]"
+                      className="inline-flex h-11 items-center gap-2 rounded-2xl bg-[#b8860b] px-5 text-[13px] font-bold text-white shadow-[0_6px_20px_rgba(184,134,11,0.25)] transition hover:bg-[#8a6c14]"
                     >
                       <Sparkles className="h-4 w-4" />
                       Book ny vask
@@ -282,7 +282,7 @@ export default async function CustomerPortalPage({
                     value={completedBookings.length.toString()}
                     sub="Gennemført"
                     icon={CheckCircle2}
-                    gradient="from-[#EEFBFC] to-[#CFFAFE]"
+                    gradient="from-[#f3ead4] to-[#CFFAFE]"
                     iconColor="text-[#b8860b]"
                   />
                   <StatCard
@@ -311,7 +311,7 @@ export default async function CustomerPortalPage({
                       </p>
                       <h2 className="mt-0.5 text-[15px] font-bold text-[#111827]">Alle bookinger</h2>
                     </div>
-                    <span className="rounded-full border border-[#ece1c8] bg-[#EEFBFC] px-3 py-1 text-[12px] font-semibold text-[#b8860b]">
+                    <span className="rounded-full border border-[#ece1c8] bg-[#f3ead4] px-3 py-1 text-[12px] font-semibold text-[#b8860b]">
                       {bookings.length} i alt
                     </span>
                   </div>
@@ -353,7 +353,7 @@ export default async function CustomerPortalPage({
                         className="group relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-white/60 bg-white/[0.82] px-5 py-4 shadow-[0_4px_16px_rgba(184,134,11,0.05)] backdrop-blur-xl transition hover:shadow-[0_8px_28px_rgba(184,134,11,0.10)] sm:flex-row sm:items-center sm:justify-between"
                       >
                         <div className="flex items-center gap-4">
-                          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#EEFBFC] text-[#b8860b]">
+                          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#f3ead4] text-[#b8860b]">
                             <ReceiptText className="h-5 w-5" />
                           </div>
                           <div>
@@ -378,7 +378,7 @@ export default async function CustomerPortalPage({
                             href={invoice.publicUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex h-9 items-center gap-2 rounded-xl border border-[#ece1c8] bg-[#EEFBFC] px-4 text-[12px] font-bold text-[#b8860b] transition hover:border-[#b8860b]/40 hover:bg-[#D5F5F8]"
+                            className="inline-flex h-9 items-center gap-2 rounded-xl border border-[#ece1c8] bg-[#f3ead4] px-4 text-[12px] font-bold text-[#b8860b] transition hover:border-[#b8860b]/40 hover:bg-[#D5F5F8]"
                           >
                             <ExternalLink className="h-3.5 w-3.5" />
                             Vis / print
@@ -461,7 +461,7 @@ export default async function CustomerPortalPage({
                       <div className="mt-5">
                         <Button
                           type="submit"
-                          className="h-11 rounded-2xl bg-[#b8860b] px-7 text-[13px] font-bold text-white hover:bg-[#008A99]"
+                          className="h-11 rounded-2xl bg-[#b8860b] px-7 text-[13px] font-bold text-white hover:bg-[#8a6c14]"
                         >
                           Gem ændringer
                         </Button>
@@ -554,7 +554,7 @@ function Banner({ type, text }: { type: "success" | "info"; text: string }) {
         "flex items-center gap-3 rounded-2xl border px-5 py-4 text-[13px] font-semibold",
         type === "success"
           ? "border-[#10B981]/20 bg-[#ECFDF5] text-[#065F46]"
-          : "border-[#b8860b]/20 bg-[#EEFBFC] text-[#00717D]"
+          : "border-[#b8860b]/20 bg-[#f3ead4] text-[#00717D]"
       )}
     >
       <CheckCircle2 className="h-4 w-4 shrink-0" />
@@ -574,7 +574,7 @@ function PageHeader({
 }) {
   return (
     <div className="flex items-center gap-4 rounded-2xl border border-white/60 bg-white/[0.82] px-5 py-4 shadow-[0_4px_16px_rgba(184,134,11,0.06)] backdrop-blur-xl">
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#EEFBFC] text-[#b8860b]">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[#b8860b]">
         <Icon className="h-5 w-5" />
       </div>
       <div>
@@ -623,7 +623,7 @@ function NextBookingHero({ booking }: { booking: DashboardBooking }) {
   const statusConfig: Record<string, { label: string; color: string; bg: string }> = {
     pending:   { label: "Afventer godkendelse", color: "text-[#92400E]", bg: "bg-[#FEF3C7]" },
     approved:  { label: "Bekræftet",            color: "text-[#065F46]", bg: "bg-[#D1FAE5]" },
-    completed: { label: "Afsluttet",            color: "text-[#008A99]", bg: "bg-[#CFFAFE]" },
+    completed: { label: "Afsluttet",            color: "text-[#8a6c14]", bg: "bg-[#CFFAFE]" },
     cancelled: { label: "Annulleret",           color: "text-[#991B1B]", bg: "bg-[#FEE2E2]" },
   };
   const sc = statusConfig[booking.status] ?? statusConfig.pending;
@@ -694,7 +694,7 @@ function NextBookingHero({ booking }: { booking: DashboardBooking }) {
           </a>
           <Link
             href="/booking"
-            className="inline-flex h-9 items-center gap-2 rounded-xl bg-[#b8860b] px-4 text-[12px] font-bold text-white shadow-[0_4px_14px_rgba(184,134,11,0.25)] transition hover:bg-[#008A99]"
+            className="inline-flex h-9 items-center gap-2 rounded-xl bg-[#b8860b] px-4 text-[12px] font-bold text-white shadow-[0_4px_14px_rgba(184,134,11,0.25)] transition hover:bg-[#8a6c14]"
           >
             <CalendarPlus className="h-3.5 w-3.5" />
             Book endnu en tid
@@ -709,7 +709,7 @@ function EmptyBookingHero({ href }: { href: string }) {
   return (
     <section className="relative overflow-hidden rounded-3xl border border-dashed border-[#ece1c8] bg-white/50 shadow-[0_8px_32px_rgba(184,134,11,0.04)]">
       <div className="flex flex-col items-center py-12 text-center">
-        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#EEFBFC]">
+        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f3ead4]">
           <CalendarDays className="h-7 w-7 text-[#b8860b]" />
         </div>
         <h3 className="mt-4 text-[16px] font-bold text-[#374151]">Ingen kommende aftale</h3>
@@ -718,7 +718,7 @@ function EmptyBookingHero({ href }: { href: string }) {
         </p>
         <a
           href={href}
-          className="mt-5 inline-flex h-10 items-center gap-2 rounded-xl bg-[#b8860b] px-5 text-[13px] font-bold text-white shadow-[0_4px_14px_rgba(184,134,11,0.25)] transition hover:bg-[#008A99]"
+          className="mt-5 inline-flex h-10 items-center gap-2 rounded-xl bg-[#b8860b] px-5 text-[13px] font-bold text-white shadow-[0_4px_14px_rgba(184,134,11,0.25)] transition hover:bg-[#8a6c14]"
         >
           <CalendarPlus className="h-4 w-4" />
           Book en tid
@@ -803,7 +803,7 @@ function FactBox({
       className={cn(
         "min-w-0 rounded-xl border px-3 py-3",
         highlight
-          ? "border-[#b8860b]/20 bg-[#EEFBFC]"
+          ? "border-[#b8860b]/20 bg-[#f3ead4]"
           : "border-white/70 bg-white/60"
       )}
     >
@@ -823,7 +823,7 @@ function InvoiceStatusChip({ status }: { status: string }) {
     draft:    "border-[#E5E7EB] bg-[#F9FAFB] text-[#6B7280]",
     ready:    "border-[#2563EB]/20 bg-[#EFF6FF] text-[#1D4ED8]",
     sent:     "border-[#10B981]/20 bg-[#ECFDF5] text-[#047857]",
-    paid:     "border-[#b8860b]/20 bg-[#EEFBFC] text-[#00717D]",
+    paid:     "border-[#b8860b]/20 bg-[#f3ead4] text-[#00717D]",
     cancelled:"border-[#EF4444]/20 bg-[#FEF2F2] text-[#B91C1C]",
   };
   const labels: Record<string, string> = {
@@ -840,11 +840,11 @@ function StatusPill({ status }: { status: DashboardBooking["status"] }) {
   const styles: Record<string, string> = {
     pending:   "border-[#caa036]/20 bg-[#FEF3C7] text-[#92400E]",
     approved:  "border-[#10B981]/20 bg-[#D1FAE5] text-[#065F46]",
-    completed: "border-[#b8860b]/20 bg-[#CFFAFE] text-[#008A99]",
+    completed: "border-[#b8860b]/20 bg-[#CFFAFE] text-[#8a6c14]",
     cancelled: "border-[#EF4444]/20 bg-[#FEE2E2] text-[#B91C1C]",
   };
   return (
-    <span className={cn("inline-flex rounded-full border px-2.5 py-0.5 text-[11px] font-bold", styles[status] ?? "border-[#ece1c8] bg-[#EEFBFC] text-[#b8860b]")}>
+    <span className={cn("inline-flex rounded-full border px-2.5 py-0.5 text-[11px] font-bold", styles[status] ?? "border-[#ece1c8] bg-[#f3ead4] text-[#b8860b]")}>
       {getStatusLabel(status)}
     </span>
   );
@@ -917,9 +917,9 @@ function ContactLink({
   return (
     <a
       href={href}
-      className="flex items-center gap-3 rounded-2xl border border-white/55 bg-white/60 px-3.5 py-3 transition hover:border-[#b8860b]/30 hover:bg-[#EEFBFC]"
+      className="flex items-center gap-3 rounded-2xl border border-white/55 bg-white/60 px-3.5 py-3 transition hover:border-[#b8860b]/30 hover:bg-[#f3ead4]"
     >
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#EEFBFC] text-[#b8860b]">
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[#b8860b]">
         <Icon className="h-4 w-4" />
       </div>
       <div className="min-w-0">
@@ -945,7 +945,7 @@ function EmptyState({
 }) {
   return (
     <div className="flex flex-col items-center py-4 text-center">
-      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#EEFBFC]">
+      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f3ead4]">
         <Icon className="h-6 w-6 text-[#b8860b]" />
       </div>
       <h3 className="mt-3 text-[14px] font-bold text-[#374151]">{title}</h3>
@@ -953,7 +953,7 @@ function EmptyState({
       {href && cta ? (
         <a
           href={href}
-          className="mt-4 inline-flex h-9 items-center gap-2 rounded-xl bg-[#b8860b] px-4 text-[12px] font-bold text-white shadow-[0_4px_14px_rgba(184,134,11,0.22)] transition hover:bg-[#008A99]"
+          className="mt-4 inline-flex h-9 items-center gap-2 rounded-xl bg-[#b8860b] px-4 text-[12px] font-bold text-white shadow-[0_4px_14px_rgba(184,134,11,0.22)] transition hover:bg-[#8a6c14]"
         >
           <CalendarPlus className="h-3.5 w-3.5" />
           {cta}

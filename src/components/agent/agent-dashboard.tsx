@@ -158,7 +158,7 @@ export function AgentDashboard({
                   "rounded-2xl border px-4 py-3 text-[13px] font-semibold",
                   error
                     ? "border-red-200 bg-red-50 text-red-700"
-                    : "border-[#ece1c8] bg-[#EEFBFC] text-[#b8860b]"
+                    : "border-[#ece1c8] bg-[#f3ead4] text-[#b8860b]"
                 )}
               >
                 {error ? "Handlingen kunne ikke gennemføres." : "Ændringen er gemt."}
@@ -234,7 +234,7 @@ function Overview({ data }: { data: AgentDashboardData }) {
           const toneClass = {
             blue: "bg-[#EFF6FF] text-[#2563EB]",
             orange: "bg-[#FFF7ED] text-[#96721a]",
-            violet: "bg-[#EEFBFC] text-[#b8860b]",
+            violet: "bg-[#f3ead4] text-[#b8860b]",
             green: "bg-[#ECFDF5] text-[#059669]",
           }[card.tone];
           return (
@@ -334,7 +334,7 @@ function NextJobCard({ booking }: { booking?: AgentBooking }) {
         {booking.customerPhone ? (
           <a
             href={`tel:${booking.customerPhone.replace(/\s+/g, "")}`}
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-2xl bg-[#b8860b] px-4 text-[13px] font-semibold text-white shadow-[0_4px_14px_rgba(184,134,11,0.28)] transition hover:bg-[#008A99]"
+            className="inline-flex h-10 items-center justify-center gap-2 rounded-2xl bg-[#b8860b] px-4 text-[13px] font-semibold text-white shadow-[0_4px_14px_rgba(184,134,11,0.28)] transition hover:bg-[#8a6c14]"
           >
             <Phone className="h-4 w-4" />
             Ring til kunde
@@ -709,7 +709,7 @@ function AgentInvoicesView({ invoices }: { invoices: Invoice[] }) {
                       href={invoice.publicUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex h-8 items-center justify-center rounded-lg border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#EEFBFC]"
+                      className="inline-flex h-8 items-center justify-center rounded-lg border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
                     >
                       Vis / print
                     </a>
@@ -1028,7 +1028,7 @@ function AgentAvatar({
     <span
       className={cn(
         size,
-        "flex shrink-0 items-center justify-center rounded-2xl bg-[#EEFBFC] font-bold text-[#b8860b]"
+        "flex shrink-0 items-center justify-center rounded-2xl bg-[#f3ead4] font-bold text-[#b8860b]"
       )}
     >
       {(name || "A").slice(0, 2).toUpperCase()}

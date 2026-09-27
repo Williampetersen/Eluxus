@@ -14,7 +14,7 @@ export default function TakPage() {
     <main className="flex min-h-[60vh] items-center justify-center px-4 py-16 sm:px-6">
       <div className="mx-auto max-w-lg text-center">
         <div className="flex justify-center">
-          <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#eefbfc] text-[var(--brand)]">
+          <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#f3ead4] text-[var(--brand)]">
             <CheckCircle className="h-10 w-10" />
           </span>
         </div>

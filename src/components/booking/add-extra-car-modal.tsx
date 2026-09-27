@@ -174,7 +174,7 @@ export function AddExtraCarModal({
         </button>
 
         <div className="px-5 pb-6 pt-8 sm:px-7">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#eefbfc] text-[var(--brand)]">
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#f3ead4] text-[var(--brand)]">
             <Car className="h-5 w-5" />
           </span>
           <h2
@@ -250,7 +250,7 @@ export function AddExtraCarModal({
           ) : null}
 
           {foundVehicle ? (
-            <div className="mt-4 rounded-2xl border border-[#b8860b]/25 bg-[#eefbfc] px-4 py-4">
+            <div className="mt-4 rounded-2xl border border-[#b8860b]/25 bg-[#f3ead4] px-4 py-4">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--brand)]" />
                 <div>

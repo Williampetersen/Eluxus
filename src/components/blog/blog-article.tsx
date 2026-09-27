@@ -107,7 +107,7 @@ function KeyTakeaways({ items }: { items: string[] }) {
   return (
     <section
       aria-labelledby="key-takeaways-heading"
-      className="rounded-[1.75rem] border border-[#b8860b]/25 bg-[#eefbfc] px-6 py-7 sm:px-8"
+      className="rounded-[1.75rem] border border-[#b8860b]/25 bg-[#f3ead4] px-6 py-7 sm:px-8"
     >
       <h2 id="key-takeaways-heading" className="font-display text-2xl font-semibold text-[var(--ink)]">
         Kort fortalt

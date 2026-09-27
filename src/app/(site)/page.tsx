@@ -303,7 +303,7 @@ export default function HomePage() {
       <section className="mx-auto mt-12 max-w-7xl">
         <div className="grid gap-3 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-[0_24px_70px_rgba(27,23,18,0.12)] backdrop-blur sm:grid-cols-2 lg:grid-cols-5">
           {benefits.map((item) => (
-            <div key={item} className="flex items-center gap-3 rounded-xl bg-[#eefbfc] px-4 py-3">
+            <div key={item} className="flex items-center gap-3 rounded-xl bg-[#f3ead4] px-4 py-3">
               <ShieldCheck className="h-5 w-5 shrink-0 text-[var(--brand)]" />
               <span className="text-sm font-semibold text-[var(--ink)]">{item}</span>
             </div>
@@ -629,7 +629,7 @@ export default function HomePage() {
               </p>
               <div className="mt-6 grid gap-2 sm:grid-cols-2">
                 {businessItems.map((item) => (
-                  <div key={item} className="flex items-center gap-3 rounded-xl bg-[#eefbfc] px-4 py-3">
+                  <div key={item} className="flex items-center gap-3 rounded-xl bg-[#f3ead4] px-4 py-3">
                     <Building2 className="h-4 w-4 shrink-0 text-[var(--brand)]" />
                     <span className="text-sm font-semibold text-[var(--ink)]">{item}</span>
                   </div>
