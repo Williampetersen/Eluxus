@@ -13,31 +13,31 @@ const esc = (s: string) =>
     .replace(/'/g, "&#39;");
 
 const emailWrap = (content: string) =>
-  `<div style="margin:0;padding:0;background:#F6FBFC;">` +
-  `<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F6FBFC;font-family:Arial,Helvetica,sans-serif;">` +
+  `<div style="margin:0;padding:0;background:#faf7f0;">` +
+  `<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#faf7f0;font-family:Arial,Helvetica,sans-serif;">` +
   `<tr><td align="center" style="padding:32px 16px;">` +
   `<table width="640" cellpadding="0" cellspacing="0" border="0" style="max-width:640px;width:100%;">` +
   `<tr><td>` +
-  `<div style="background:#FFFFFF;border-radius:16px;overflow:hidden;border:1px solid #DCEEF2;box-shadow:0 4px 24px rgba(11,31,58,0.07);">` +
+  `<div style="background:#FFFFFF;border-radius:16px;overflow:hidden;border:1px solid #ece1c8;box-shadow:0 4px 24px rgba(27,23,18,0.07);">` +
   content +
   `</div></td></tr></table></td></tr></table></div>`;
 
 const emailHeader =
-  `<div style="background:#0B1F3A;padding:26px 32px 22px;">` +
+  `<div style="background:#1b1712;padding:26px 32px 22px;">` +
   `<p style="margin:0;color:#FFFFFF;font-size:20px;font-weight:700;font-family:Arial,Helvetica,sans-serif;">Eluxus</p>` +
-  `<p style="margin:5px 0 0;color:#00A7B8;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">Professionel bilvask</p>` +
+  `<p style="margin:5px 0 0;color:#b8860b;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">Professionel bilvask</p>` +
   `</div>`;
 
 const emailFooter = (supportEmail: string) =>
-  `<div style="background:#F6FBFC;border-top:1px solid #DCEEF2;padding:22px 32px;text-align:center;">` +
+  `<div style="background:#faf7f0;border-top:1px solid #ece1c8;padding:22px 32px;text-align:center;">` +
   `<p style="margin:0;font-size:13px;font-weight:600;color:#374151;font-family:Arial,Helvetica,sans-serif;">Eluxus</p>` +
   `<p style="margin:3px 0 0;font-size:12px;color:#6B7280;font-family:Arial,Helvetica,sans-serif;">Professionel bilvask</p>` +
   `<p style="margin:10px 0 0;font-size:12px;color:#6B7280;font-family:Arial,Helvetica,sans-serif;">` +
-  `Kontakt: <a href="mailto:${esc(supportEmail)}" style="color:#00A7B8;text-decoration:none;font-weight:600;">${esc(supportEmail)}</a>` +
+  `Kontakt: <a href="mailto:${esc(supportEmail)}" style="color:#b8860b;text-decoration:none;font-weight:600;">${esc(supportEmail)}</a>` +
   `</p></div>`;
 
 const emailBadge = (label: string) =>
-  `<span style="display:inline-block;background:#00A7B8;color:#FFFFFF;font-size:11px;font-weight:700;padding:5px 14px;border-radius:999px;letter-spacing:0.08em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">${esc(label)}</span>`;
+  `<span style="display:inline-block;background:#b8860b;color:#FFFFFF;font-size:11px;font-weight:700;padding:5px 14px;border-radius:999px;letter-spacing:0.08em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">${esc(label)}</span>`;
 
 const emailRow = (label: string, value: string) =>
   `<table width="100%" cellpadding="0" cellspacing="0" style="border-bottom:1px solid #F3F4F6;"><tr>` +
@@ -46,19 +46,19 @@ const emailRow = (label: string, value: string) =>
   `</tr></table>`;
 
 const emailCard = (title: string, rows: Array<[string, string]>) =>
-  `<div style="background:#F6FBFC;border:1px solid #DCEEF2;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
-  `<p style="margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00A7B8;font-family:Arial,Helvetica,sans-serif;">${esc(title)}</p>` +
+  `<div style="background:#faf7f0;border:1px solid #ece1c8;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
+  `<p style="margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#b8860b;font-family:Arial,Helvetica,sans-serif;">${esc(title)}</p>` +
   rows.map(([l, v]) => emailRow(l, v)).join("") +
   `</div>`;
 
 const emailMessageBox = (title: string, safeHtmlText: string) =>
-  `<div style="background:#F6FBFC;border:1px solid #DCEEF2;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
-  `<p style="margin:0 0 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00A7B8;font-family:Arial,Helvetica,sans-serif;">${esc(title)}</p>` +
+  `<div style="background:#faf7f0;border:1px solid #ece1c8;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
+  `<p style="margin:0 0 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#b8860b;font-family:Arial,Helvetica,sans-serif;">${esc(title)}</p>` +
   `<p style="margin:0;font-size:14px;color:#111827;line-height:1.6;font-family:Arial,Helvetica,sans-serif;">${safeHtmlText}</p>` +
   `</div>`;
 
 const emailCta = (url: string, label: string) =>
-  `<a href="${esc(url)}" style="display:inline-block;background:#F59E0B;color:#FFFFFF;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:700;font-size:15px;font-family:Arial,Helvetica,sans-serif;">${esc(label)}</a>`;
+  `<a href="${esc(url)}" style="display:inline-block;background:#caa036;color:#FFFFFF;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:700;font-size:15px;font-family:Arial,Helvetica,sans-serif;">${esc(label)}</a>`;
 
 function buildAdminEmail(fields: {
   name: string;
@@ -104,8 +104,8 @@ function buildUserEmail(fields: {
     `<div style="padding:8px 32px 32px;">` +
     (fields.reason ? emailCard("Din henvendelse", [["Årsag", fields.reason]]) : "") +
     emailMessageBox("Din besked", safeMsg) +
-    `<div style="background:#F0FAFB;border-left:4px solid #00A7B8;border-radius:0 8px 8px 0;padding:14px 18px;margin-bottom:24px;">` +
-    `<p style="margin:0;font-size:14px;color:#0B1F3A;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">Har du brug for hurtig hjælp? Ring til os på <strong>93 96 85 96</strong> — alle ugens dage kl. 06–23.</p>` +
+    `<div style="background:#F0FAFB;border-left:4px solid #b8860b;border-radius:0 8px 8px 0;padding:14px 18px;margin-bottom:24px;">` +
+    `<p style="margin:0;font-size:14px;color:#1b1712;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">Har du brug for hurtig hjælp? Ring til os på <strong>93 96 85 96</strong> — alle ugens dage kl. 06–23.</p>` +
     `</div>` +
     `<div style="text-align:center;margin-bottom:16px;">${emailCta(`${siteUrl}/booking`, "Book bilvask")}</div>` +
     `</div>` +

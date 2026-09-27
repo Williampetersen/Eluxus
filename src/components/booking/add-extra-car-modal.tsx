@@ -161,13 +161,13 @@ export function AddExtraCarModal({
         aria-modal="true"
         aria-labelledby="add-extra-car-title"
         aria-describedby="add-extra-car-description"
-        className="relative w-full max-w-lg overflow-hidden rounded-3xl border border-white/70 bg-white shadow-[0_30px_90px_rgba(11,31,58,0.28)]"
+        className="relative w-full max-w-lg overflow-hidden rounded-3xl border border-white/70 bg-white shadow-[0_30px_90px_rgba(27,23,18,0.28)]"
       >
-        <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#00A7B8,#F59E0B)]" />
+        <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#b8860b,#caa036)]" />
         <button
           type="button"
           onClick={onClose}
-          className="absolute right-4 top-4 rounded-full p-2 text-[var(--muted)] transition hover:bg-[#f6fbfc] hover:text-[var(--ink)]"
+          className="absolute right-4 top-4 rounded-full p-2 text-[var(--muted)] transition hover:bg-[#faf7f0] hover:text-[var(--ink)]"
           aria-label="Luk"
         >
           <X className="h-5 w-5" />
@@ -235,7 +235,7 @@ export function AddExtraCarModal({
           </div>
 
           {lookupState.status === "loading" ? (
-            <div className="mt-4 rounded-2xl border border-[#DCEEF2] bg-[#f6fbfc] px-4 py-3 text-sm font-medium text-[var(--brand)]">
+            <div className="mt-4 rounded-2xl border border-[#ece1c8] bg-[#faf7f0] px-4 py-3 text-sm font-medium text-[var(--brand)]">
               Finder bilen…
             </div>
           ) : null}
@@ -250,7 +250,7 @@ export function AddExtraCarModal({
           ) : null}
 
           {foundVehicle ? (
-            <div className="mt-4 rounded-2xl border border-[#00A7B8]/25 bg-[#eefbfc] px-4 py-4">
+            <div className="mt-4 rounded-2xl border border-[#b8860b]/25 bg-[#eefbfc] px-4 py-4">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--brand)]" />
                 <div>
@@ -286,7 +286,7 @@ export function AddExtraCarModal({
                 }
                 onClose();
               }}
-              className="inline-flex h-11 items-center justify-center rounded-xl border border-[var(--line)] bg-white px-4 text-sm font-semibold text-[var(--ink)] transition hover:bg-[#f6fbfc]"
+              className="inline-flex h-11 items-center justify-center rounded-xl border border-[var(--line)] bg-white px-4 text-sm font-semibold text-[var(--ink)] transition hover:bg-[#faf7f0]"
             >
               {foundVehicle ? "Ret nummerplade" : "Spring over"}
             </button>

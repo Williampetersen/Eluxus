@@ -34,14 +34,14 @@ export function MobileMenu() {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-[min(20rem,calc(100vw-2rem))] rounded-[1.5rem] border border-[var(--line)] bg-white p-4 shadow-[0_20px_60px_rgba(11,31,58,0.14)]">
+        <div className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-[min(20rem,calc(100vw-2rem))] rounded-[1.5rem] border border-[var(--line)] bg-white p-4 shadow-[0_20px_60px_rgba(27,23,18,0.14)]">
           <div className="flex flex-col gap-2">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={close}
-                className="rounded-2xl px-4 py-3 text-sm text-[var(--ink)] transition hover:bg-[#eef8fa]"
+                className="rounded-2xl px-4 py-3 text-sm text-[var(--ink)] transition hover:bg-[#f3ead4]"
               >
                 {item.label}
               </Link>

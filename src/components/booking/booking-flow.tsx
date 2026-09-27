@@ -1022,7 +1022,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
 
             {/* Summary */}
             <div className="space-y-4 px-8 py-8">
-              <div className="grid gap-3 rounded-2xl bg-[#f6fbfc] p-5 text-sm">
+              <div className="grid gap-3 rounded-2xl bg-[#faf7f0] p-5 text-sm">
                 <ConfirmRow icon="🚗" label="Biler" value={confirmation.vehicleCount > 1 ? "2 biler i samme besøg" : confirmation.vehicleName} />
                 <ConfirmRow icon="✨" label="Pakke" value={confirmation.packageLabel} />
                 <ConfirmRow icon="📅" label="Tidspunkt" value={confirmation.appointmentLabel} />
@@ -1061,7 +1061,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                 <button
                   type="button"
                   onClick={handleChangeVehicle}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-[var(--line)] bg-white px-5 py-3 text-sm font-semibold text-[var(--ink)] transition hover:bg-[#f6fbfc]"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-[var(--line)] bg-white px-5 py-3 text-sm font-semibold text-[var(--ink)] transition hover:bg-[#faf7f0]"
                 >
                   <RotateCcw className="h-4 w-4" />
                   Ny booking
@@ -1085,7 +1085,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
         Du har valgt bilstørrelse manuelt. Vælg pakke og tilvalg herunder, og angiv bilmærke og model under &ldquo;Dine oplysninger&rdquo;.
       </p>
       <div className="mt-5 flex flex-wrap items-center gap-3">
-        <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--line)] bg-[#f6fbfc] px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
+        <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--line)] bg-[#faf7f0] px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
           <Car className="h-4 w-4 text-[var(--brand)]" />
           {category?.label ?? "Bilstørrelse"}
         </span>
@@ -1107,7 +1107,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
       <form onSubmit={(event) => { event.preventDefault(); submitPlateLookup(); }} className="mt-6 grid max-w-xl gap-3">
         <label className="block">
           <span className="sr-only">Dansk nummerplade</span>
-          <div className="flex w-full max-w-full overflow-hidden rounded-md border border-[var(--line)] bg-white focus-within:border-[var(--brand)] focus-within:ring-4 focus-within:ring-[#00A7B8]/15">
+          <div className="flex w-full max-w-full overflow-hidden rounded-md border border-[var(--line)] bg-white focus-within:border-[var(--brand)] focus-within:ring-4 focus-within:ring-[#b8860b]/15">
             <Image src="/DKEU.svg" alt="DK" width={48} height={54} className="h-[4.35rem] w-14 shrink-0 object-cover" />
             <input
               name="plate"
@@ -1129,7 +1129,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
         </Button>
       </form>
       {lookupStatus ? (
-        <div className={cn("mt-4 rounded-md border px-4 py-3 text-sm", lookupStatus.type === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-[#00A7B8]/30 bg-[#eefbfc] text-[var(--accent)]")}>
+        <div className={cn("mt-4 rounded-md border px-4 py-3 text-sm", lookupStatus.type === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-[#b8860b]/30 bg-[#eefbfc] text-[var(--accent)]")}>
           {lookupStatus.message}
         </div>
       ) : null}
@@ -1298,7 +1298,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                   <button
                     type="button"
                     onClick={handleContinueAfterAddons}
-                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(245,158,11,0.22)] transition hover:bg-[var(--cta-hover)]"
+                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)]"
                   >
                     {hasSecondCar && !secondPackageData ? "Vælg bilvask til bil 2" : "Videre til dato og tid"} <ArrowRight className="h-4 w-4" />
                   </button>
@@ -1308,7 +1308,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
 
             {/* ── Second car optional flow ────────────────────────── */}
             {openStep >= 2 ? (
-              <div className="overflow-hidden rounded-2xl border border-[var(--line)] bg-white shadow-[0_16px_40px_rgba(11,31,58,0.06)]">
+              <div className="overflow-hidden rounded-2xl border border-[var(--line)] bg-white shadow-[0_16px_40px_rgba(27,23,18,0.06)]">
                 <button
                   ref={addCarButtonRef}
                   type="button"
@@ -1319,7 +1319,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     }
                     setIsAddCarModalOpen(true);
                   }}
-                  className="flex w-full items-center gap-3 px-4 py-3.5 text-left transition hover:bg-[#f6fbfc]"
+                  className="flex w-full items-center gap-3 px-4 py-3.5 text-left transition hover:bg-[#faf7f0]"
                 >
                   <span className={cn(
                     "flex h-8 w-8 shrink-0 items-center justify-center rounded-xl transition",
@@ -1464,7 +1464,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     type="button"
                     onClick={() => goToStep(4)}
                     disabled={!appointmentTime}
-                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(245,158,11,0.22)] transition hover:bg-[var(--cta-hover)] disabled:cursor-not-allowed disabled:opacity-50"
+                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)] disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     Videre til dine oplysninger <ArrowRight className="h-4 w-4" />
                   </button>
@@ -1491,7 +1491,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     </button>
                   </div>
                   {manualMode && (
-                    <div className="rounded-2xl border border-[#00A7B8]/25 bg-[#eefbfc] px-4 py-4">
+                    <div className="rounded-2xl border border-[#b8860b]/25 bg-[#eefbfc] px-4 py-4">
                       <p className="flex items-center gap-2 text-sm font-bold text-[var(--ink)]">
                         <Car className="h-4 w-4 text-[var(--brand)]" />
                         Bilmærke og model
@@ -1576,7 +1576,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                       <span>Ja tak, jeg vil gerne modtage tilbud og nyheder</span>
                     </label>
                   </div>
-                  <div className="rounded-2xl border border-[var(--line)] bg-[#f6fbfc] px-4 py-4">
+                  <div className="rounded-2xl border border-[var(--line)] bg-[#faf7f0] px-4 py-4">
                     <p className="flex items-center gap-2 text-sm font-semibold text-[var(--ink)]">
                       <Tag className="h-4 w-4 text-[var(--brand)]" /> Rabatkode
                     </p>
@@ -1599,7 +1599,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                           value={couponCode}
                           onChange={(e) => { setCouponCode(e.target.value.toUpperCase()); setCouponError(""); }}
                           onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); void validateCoupon(); } }}
-                          className="min-w-0 flex-1 rounded-xl border border-[var(--line)] bg-white px-3 py-2 text-sm font-semibold uppercase tracking-wider outline-none focus:border-[var(--brand)] focus:ring-2 focus:ring-[#00A7B8]/15"
+                          className="min-w-0 flex-1 rounded-xl border border-[var(--line)] bg-white px-3 py-2 text-sm font-semibold uppercase tracking-wider outline-none focus:border-[var(--brand)] focus:ring-2 focus:ring-[#b8860b]/15"
                         />
                         <button
                           type="button"
@@ -1649,11 +1649,11 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     onRemove={item.id === "car-2" ? handleRemoveSecondCar : undefined}
                   />
                 ))}
-                <div className="rounded-xl bg-[#f6fbfc] px-4 py-4">
+                <div className="rounded-xl bg-[#faf7f0] px-4 py-4">
                   <SummaryRow label="Dato og tid" value={appointmentLabel} />
                 </div>
                 {travelSurcharge > 0 ? (
-                  <div className="rounded-xl bg-[#f6fbfc] px-4 py-4">
+                  <div className="rounded-xl bg-[#faf7f0] px-4 py-4">
                     <SummaryRow label="Kørselstillæg" value={formatPrice(travelSurcharge)} />
                   </div>
                 ) : null}
@@ -1722,7 +1722,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                       onRemove={item.id === "car-2" ? handleRemoveSecondCar : undefined}
                     />
                   ))}
-                  <div className="rounded-xl bg-[#f6fbfc] px-4 py-4 text-sm">
+                  <div className="rounded-xl bg-[#faf7f0] px-4 py-4 text-sm">
                     <p className="font-semibold text-[var(--ink)]">Tidspunkt</p>
                     <p className="mt-2 text-[var(--muted)]">{appointmentLabel}</p>
                   </div>
@@ -1743,7 +1743,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                   </div>
                 </div>
                 <div className="border-t border-[var(--line)] bg-white px-5 py-4">
-                  <button type="button" onClick={() => { setIsMobileSummaryOpen(false); document.getElementById("booking-details")?.scrollIntoView({ behavior: "smooth", block: "start" }); }} className="flex h-12 w-full items-center justify-center rounded-xl bg-[var(--cta)] px-4 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(245,158,11,0.24)]">
+                  <button type="button" onClick={() => { setIsMobileSummaryOpen(false); document.getElementById("booking-details")?.scrollIntoView({ behavior: "smooth", block: "start" }); }} className="flex h-12 w-full items-center justify-center rounded-xl bg-[var(--cta)] px-4 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.24)]">
                     Fortsæt booking · {formatShortPrice(finalTotal)}
                   </button>
                 </div>
@@ -1761,7 +1761,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                   {bookingVehicles.length > 1 ? "2 biler" : activePackageData?.title || "Bilvask"} · Trin {openStep} af 4
                 </p>
               </div>
-              <button type="button" onClick={() => setIsMobileSummaryOpen(true)} className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl bg-[var(--cta)] px-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(245,158,11,0.22)]">
+              <button type="button" onClick={() => setIsMobileSummaryOpen(true)} className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl bg-[var(--cta)] px-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(202,160,54,0.22)]">
                 Se oversigt
               </button>
             </div>
@@ -1811,7 +1811,7 @@ function BookingVehicleSummaryCard({
   onRemove?: () => void;
 }) {
   return (
-    <div className="rounded-xl bg-[#f6fbfc] px-4 py-4 text-sm">
+    <div className="rounded-xl bg-[#faf7f0] px-4 py-4 text-sm">
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="font-semibold text-[var(--ink)]">{item.label}</p>
@@ -1928,7 +1928,7 @@ function PackageCard({
 
   return (
     <div className={cn("pkg-wrap", isActive && "pkg-wrap--active")}
-      style={isActive ? { background: "linear-gradient(135deg,#00A7B8,#22d3ee,#00A7B8)" } : undefined}
+      style={isActive ? { background: "linear-gradient(135deg,#b8860b,#e8c468,#b8860b)" } : undefined}
     >
       {/* Spinning border ring */}
       <div className="pkg-ring" />
@@ -1937,7 +1937,7 @@ function PackageCard({
         type="button"
         onClick={onClick}
         className="relative z-10 flex w-full flex-col overflow-hidden rounded-[14px] bg-white text-left transition hover:shadow-md"
-        style={isActive ? { boxShadow: "0 8px 32px rgba(0,167,184,0.18)" } : undefined}
+        style={isActive ? { boxShadow: "0 8px 32px rgba(184,134,11,0.18)" } : undefined}
       >
         {/* Image */}
         {item.imageUrl ? (
@@ -2053,7 +2053,7 @@ function AddonCard({
       className={cn(
         "relative flex flex-col overflow-hidden rounded-2xl border text-left transition",
         isSelected
-          ? "border-[var(--brand)] shadow-[0_4px_16px_rgba(0,167,184,0.18)]"
+          ? "border-[var(--brand)] shadow-[0_4px_16px_rgba(184,134,11,0.18)]"
           : "border-[var(--line)] bg-white hover:border-[var(--brand)] hover:shadow-sm"
       )}
     >
@@ -2217,7 +2217,7 @@ function PlateLookupOverlay({ phase, progress }: { phase: "checking" | "notfound
           <div className="mt-6">
             <div className="h-2.5 w-full overflow-hidden rounded-full bg-[#e7f3ef]">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-[#00A7B8] to-[#4ade80] transition-[width] duration-150 ease-out"
+                className="h-full rounded-full bg-gradient-to-r from-[#b8860b] to-[#4ade80] transition-[width] duration-150 ease-out"
                 style={{ width: `${pct}%` }}
               />
             </div>
@@ -2287,10 +2287,10 @@ function BookingAccordion({
       className={cn(
         "overflow-hidden rounded-2xl border transition-all",
         isOpen
-          ? "border-[var(--brand)] bg-white shadow-[0_8px_32px_rgba(0,167,184,0.12)]"
+          ? "border-[var(--brand)] bg-white shadow-[0_8px_32px_rgba(184,134,11,0.12)]"
           : isCompleted
           ? "border-[var(--line)] bg-white"
-          : "border-[var(--line)] bg-[#f6fbfc]"
+          : "border-[var(--line)] bg-[#faf7f0]"
       )}
     >
       <div
@@ -2309,7 +2309,7 @@ function BookingAccordion({
         }
         className={cn(
           "flex items-center justify-between gap-3 px-5 py-4",
-          isCompleted && !isOpen && "cursor-pointer select-none hover:bg-[#f6fbfc]"
+          isCompleted && !isOpen && "cursor-pointer select-none hover:bg-[#faf7f0]"
         )}
       >
         <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2.5">

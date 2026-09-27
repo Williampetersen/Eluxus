@@ -38,7 +38,7 @@ export default async function AgentLoginPage({
     <main className="px-4 pb-12 pt-10 sm:px-6">
       <section className="mx-auto max-w-5xl">
         <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
-          <div className="rounded-[2rem] bg-[linear-gradient(155deg,#0B1F3A,#12345A_52%,#00A7B8)] p-8 text-white shadow-[0_30px_80px_rgba(11,31,58,0.2)]">
+          <div className="rounded-[2rem] bg-[linear-gradient(155deg,#1b1712,#2e2519_52%,#b8860b)] p-8 text-white shadow-[0_30px_80px_rgba(27,23,18,0.2)]">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
               Eluxus Agents
             </p>

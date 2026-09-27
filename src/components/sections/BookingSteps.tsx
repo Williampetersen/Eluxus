@@ -30,7 +30,7 @@ export function BookingSteps() {
     <section
       id="hvordan"
       aria-labelledby="booking-steps-title"
-      className="mx-auto mt-12 max-w-7xl rounded-[2rem] border border-[var(--line)] bg-white/92 px-5 py-12 shadow-[0_24px_70px_rgba(11,31,58,0.10)] sm:px-8 lg:px-10 lg:py-16"
+      className="mx-auto mt-12 max-w-7xl rounded-[2rem] border border-[var(--line)] bg-white/92 px-5 py-12 shadow-[0_24px_70px_rgba(27,23,18,0.10)] sm:px-8 lg:px-10 lg:py-16"
     >
       <div className="mx-auto max-w-3xl text-center">
         <span className="eyebrow">Booking</span>
@@ -55,7 +55,7 @@ export function BookingSteps() {
         >
           <path
             d="M36 78 C150 148 232 152 330 82 C438 4 558 6 662 82 C756 150 830 144 884 88"
-            stroke="#DCEEF2"
+            stroke="#ece1c8"
             strokeWidth="6"
             strokeLinecap="round"
             strokeDasharray="14 14"
@@ -93,7 +93,7 @@ export function BookingSteps() {
       <div className="mt-12 text-center">
         <Link
           href="/booking"
-          className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-6 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(245,158,11,0.24)] transition hover:-translate-y-0.5 hover:bg-[var(--cta-hover)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand)] focus-visible:ring-offset-2"
+          className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-6 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(202,160,54,0.24)] transition hover:-translate-y-0.5 hover:bg-[var(--cta-hover)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand)] focus-visible:ring-offset-2"
         >
           Book bilvask nu
           <ArrowRight className="h-4 w-4" />

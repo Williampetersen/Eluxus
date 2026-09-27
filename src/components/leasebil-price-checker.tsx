@@ -43,7 +43,7 @@ const LEASE_CATEGORIES: VehicleCategory[] = [
 ];
 
 const inputClass =
-  "w-full rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-sm text-[var(--ink)] shadow-sm placeholder:text-[var(--muted)] transition focus:border-[var(--brand)] focus:outline-none focus:ring-2 focus:ring-[#00A7B8]/20";
+  "w-full rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-sm text-[var(--ink)] shadow-sm placeholder:text-[var(--muted)] transition focus:border-[var(--brand)] focus:outline-none focus:ring-2 focus:ring-[#b8860b]/20";
 
 type LookupStatus = { type: "error" | "info"; message: string } | null;
 
@@ -169,9 +169,9 @@ export function LeasebilPriceChecker() {
 
   if (category) {
     return (
-      <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 p-6 shadow-[0_18px_60px_rgba(11,31,58,0.08)] sm:p-8">
+      <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 p-6 shadow-[0_18px_60px_rgba(27,23,18,0.08)] sm:p-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--line)] bg-[#f6fbfc] px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
+          <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--line)] bg-[#faf7f0] px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
             <Car className="h-4 w-4 text-[var(--brand)]" />
             {vehicle?.registration_number ?? sanitizePlate(plate)} · {category.label}
           </span>
@@ -281,7 +281,7 @@ export function LeasebilPriceChecker() {
   }
 
   return (
-    <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 p-6 shadow-[0_18px_60px_rgba(11,31,58,0.08)] sm:p-8">
+    <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 p-6 shadow-[0_18px_60px_rgba(27,23,18,0.08)] sm:p-8">
       <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">Tjek din pris</p>
       <h2 className="mt-2 font-display text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
         Indtast nummerplade
@@ -297,7 +297,7 @@ export function LeasebilPriceChecker() {
         }}
         className="mt-5 flex max-w-md gap-3"
       >
-        <div className="flex w-full overflow-hidden rounded-md border border-[var(--line)] bg-white focus-within:border-[var(--brand)] focus-within:ring-4 focus-within:ring-[#00A7B8]/15">
+        <div className="flex w-full overflow-hidden rounded-md border border-[var(--line)] bg-white focus-within:border-[var(--brand)] focus-within:ring-4 focus-within:ring-[#b8860b]/15">
           <Image src="/DKEU.svg" alt="DK" width={48} height={54} className="h-[3.5rem] w-12 shrink-0 object-cover" />
           <Input
             type="text"
@@ -331,7 +331,7 @@ export function LeasebilPriceChecker() {
               key={cat.id}
               type="button"
               onClick={() => selectManualCategory(cat.id)}
-              className="flex flex-col items-start rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-left transition hover:border-[var(--brand)] hover:bg-[#f6fbfc]"
+              className="flex flex-col items-start rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-left transition hover:border-[var(--brand)] hover:bg-[#faf7f0]"
             >
               <span className="flex items-center gap-2 text-sm font-semibold text-[var(--ink)]">
                 <CheckCircle2 className="h-4 w-4 text-[var(--brand)]" />

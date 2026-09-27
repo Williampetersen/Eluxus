@@ -16,7 +16,7 @@ export function EmailLogList({ emails }: { emails: BookingEmailLog[] }) {
 
   if (emails.length === 0) {
     return (
-      <div className="rounded-3xl border border-dashed border-[#DCEEF2] bg-white/55 px-4 py-4 text-[13px] font-medium text-[#6B7280]">
+      <div className="rounded-3xl border border-dashed border-[#ece1c8] bg-white/55 px-4 py-4 text-[13px] font-medium text-[#6B7280]">
         Ingen mailhistorik endnu.
       </div>
     );
@@ -36,7 +36,7 @@ export function EmailLogList({ emails }: { emails: BookingEmailLog[] }) {
             type="button"
             disabled={page === 0}
             onClick={() => setPage((p) => p - 1)}
-            className="flex items-center gap-1.5 rounded-2xl border border-[#DCEEF2] bg-white/70 px-3 py-1.5 text-[12px] font-semibold text-[#6B7280] transition hover:border-[#00A7B8] hover:text-[#00A7B8] disabled:cursor-not-allowed disabled:opacity-40"
+            className="flex items-center gap-1.5 rounded-2xl border border-[#ece1c8] bg-white/70 px-3 py-1.5 text-[12px] font-semibold text-[#6B7280] transition hover:border-[#b8860b] hover:text-[#b8860b] disabled:cursor-not-allowed disabled:opacity-40"
           >
             <ChevronLeft className="h-3.5 w-3.5" />
             Forrige
@@ -48,7 +48,7 @@ export function EmailLogList({ emails }: { emails: BookingEmailLog[] }) {
             type="button"
             disabled={page === totalPages - 1}
             onClick={() => setPage((p) => p + 1)}
-            className="flex items-center gap-1.5 rounded-2xl border border-[#DCEEF2] bg-white/70 px-3 py-1.5 text-[12px] font-semibold text-[#6B7280] transition hover:border-[#00A7B8] hover:text-[#00A7B8] disabled:cursor-not-allowed disabled:opacity-40"
+            className="flex items-center gap-1.5 rounded-2xl border border-[#ece1c8] bg-white/70 px-3 py-1.5 text-[12px] font-semibold text-[#6B7280] transition hover:border-[#b8860b] hover:text-[#b8860b] disabled:cursor-not-allowed disabled:opacity-40"
           >
             Næste
             <ChevronRight className="h-3.5 w-3.5" />

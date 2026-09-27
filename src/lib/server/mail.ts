@@ -167,7 +167,7 @@ const getBookingVehicles = (booking: MailBooking) =>
 
 // ============================================================
 // SHARED EMAIL DESIGN SYSTEM
-// Brand colors: navy #0B1F3A · teal #00A7B8 · orange #F59E0B
+// Brand colors: navy #1b1712 · teal #b8860b · orange #caa036
 // ============================================================
 
 const getBadgeColors = (eyebrow: string): { bg: string; text: string } => {
@@ -179,9 +179,9 @@ const getBadgeColors = (eyebrow: string): { bg: string; text: string } => {
     return { bg: "#EF4444", text: "#FFFFFF" };
   }
   if (lower.includes("afventer")) {
-    return { bg: "#F59E0B", text: "#FFFFFF" };
+    return { bg: "#caa036", text: "#FFFFFF" };
   }
-  return { bg: "#00A7B8", text: "#FFFFFF" };
+  return { bg: "#b8860b", text: "#FFFFFF" };
 };
 
 const renderEmailWrapper = (content: string) =>
@@ -196,12 +196,12 @@ const renderEmailWrapper = (content: string) =>
   `.ebtn a{display:block!important;width:100%!important;box-sizing:border-box!important;text-align:center!important;}` +
   `h1{font-size:20px!important;}` +
   `}` +
-  `</style></head><body style="margin:0;padding:0;background:#F6FBFC;">` +
-  `<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F6FBFC;font-family:Arial,Helvetica,sans-serif;">` +
+  `</style></head><body style="margin:0;padding:0;background:#faf7f0;">` +
+  `<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#faf7f0;font-family:Arial,Helvetica,sans-serif;">` +
   `<tr><td align="center" class="ewrap" style="padding:24px 16px;">` +
   `<table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">` +
   `<tr><td>` +
-  `<div style="background:#FFFFFF;border-radius:16px;overflow:hidden;border:1px solid #DCEEF2;box-shadow:0 4px 24px rgba(11,31,58,0.07);">` +
+  `<div style="background:#FFFFFF;border-radius:16px;overflow:hidden;border:1px solid #ece1c8;box-shadow:0 4px 24px rgba(27,23,18,0.07);">` +
   content +
   `</div>` +
   `</td></tr></table>` +
@@ -209,17 +209,17 @@ const renderEmailWrapper = (content: string) =>
   `</body></html>`;
 
 const renderEmailHeader = (companyName: string) =>
-  `<div class="ehead" style="background:#0B1F3A;padding:26px 32px 22px;">` +
+  `<div class="ehead" style="background:#1b1712;padding:26px 32px 22px;">` +
   `<p style="margin:0;color:#FFFFFF;font-size:20px;font-weight:700;letter-spacing:-0.01em;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(companyName)}</p>` +
-  `<p style="margin:5px 0 0;color:#00A7B8;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">Professionel bilvask</p>` +
+  `<p style="margin:5px 0 0;color:#b8860b;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">Professionel bilvask</p>` +
   `</div>`;
 
 const renderEmailFooter = (companyName: string, supportEmail: string) =>
-  `<div class="efoot" style="background:#F6FBFC;border-top:1px solid #DCEEF2;padding:22px 32px;text-align:center;">` +
+  `<div class="efoot" style="background:#faf7f0;border-top:1px solid #ece1c8;padding:22px 32px;text-align:center;">` +
   `<p style="margin:0;font-size:13px;font-weight:600;color:#374151;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(companyName)}</p>` +
   `<p style="margin:3px 0 0;font-size:12px;color:#6B7280;font-family:Arial,Helvetica,sans-serif;">Professionel bilvask</p>` +
   (supportEmail
-    ? `<p style="margin:10px 0 0;font-size:12px;color:#6B7280;font-family:Arial,Helvetica,sans-serif;">Support: <a href="mailto:${escapeHtml(supportEmail)}" style="color:#00A7B8;text-decoration:none;font-weight:600;">${escapeHtml(supportEmail)}</a></p>`
+    ? `<p style="margin:10px 0 0;font-size:12px;color:#6B7280;font-family:Arial,Helvetica,sans-serif;">Support: <a href="mailto:${escapeHtml(supportEmail)}" style="color:#b8860b;text-decoration:none;font-weight:600;">${escapeHtml(supportEmail)}</a></p>`
     : "") +
   `</div>`;
 
@@ -235,7 +235,7 @@ const renderStatusBadge = (label: string, eyebrow: string) => {
 
 const renderCTAButton = (url: string, label: string) =>
   `<a href="${escapeHtml(url)}" ` +
-  `style="display:inline-block;background:#F59E0B;color:#FFFFFF;text-decoration:none;` +
+  `style="display:inline-block;background:#caa036;color:#FFFFFF;text-decoration:none;` +
   `padding:14px 28px;border-radius:8px;font-weight:700;font-size:15px;` +
   `letter-spacing:0.01em;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(label)}</a>`;
 
@@ -247,14 +247,14 @@ const renderCardRow = (label: string, value: string) =>
   `</tr></table>`;
 
 const renderInfoCard = (title: string, rows: Array<[string, string]>) =>
-  `<div style="background:#F6FBFC;border:1px solid #DCEEF2;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
-  `<p style="margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00A7B8;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(title)}</p>` +
+  `<div style="background:#faf7f0;border:1px solid #ece1c8;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
+  `<p style="margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#b8860b;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(title)}</p>` +
   rows.map(([l, v]) => renderCardRow(l, v)).join("") +
   `</div>`;
 
 const renderHighlightBox = (text: string) =>
-  `<div style="background:#F0FAFB;border-left:4px solid #00A7B8;border-radius:0 8px 8px 0;padding:14px 18px;margin-bottom:20px;">` +
-  `<p style="margin:0;font-size:14px;color:#0B1F3A;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(text)}</p>` +
+  `<div style="background:#F0FAFB;border-left:4px solid #b8860b;border-radius:0 8px 8px 0;padding:14px 18px;margin-bottom:20px;">` +
+  `<p style="margin:0;font-size:14px;color:#1b1712;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(text)}</p>` +
   `</div>`;
 
 const renderAdminNote = (adminNotes?: string) => {
@@ -262,7 +262,7 @@ const renderAdminNote = (adminNotes?: string) => {
   if (!note) return "";
   return (
     `<div style="background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:16px 20px;margin-bottom:16px;">` +
-    `<p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#D97706;font-family:Arial,Helvetica,sans-serif;">Besked fra Eluxus</p>` +
+    `<p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#96721a;font-family:Arial,Helvetica,sans-serif;">Besked fra Eluxus</p>` +
     `<p style="margin:0;font-size:14px;color:#92400E;line-height:1.6;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(note)}</p>` +
     `</div>`
   );
@@ -273,15 +273,15 @@ const renderVehicleDetailsHtml = (booking: MailBooking) => {
   const cards = vehicles
     .map(
       (vehicle, idx) =>
-        `<div style="background:#F6FBFC;border:1px solid #DCEEF2;border-radius:12px;padding:16px 20px;margin-bottom:12px;">` +
+        `<div style="background:#faf7f0;border:1px solid #ece1c8;border-radius:12px;padding:16px 20px;margin-bottom:12px;">` +
         `<table width="100%" cellpadding="0" cellspacing="0">` +
         `<tr>` +
         `<td style="vertical-align:middle;">` +
-        `<span style="display:inline-block;background:#0B1F3A;color:#FFFFFF;font-size:10px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:0.06em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(`Bil ${idx + 1}`)}</span>` +
+        `<span style="display:inline-block;background:#1b1712;color:#FFFFFF;font-size:10px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:0.06em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(`Bil ${idx + 1}`)}</span>` +
         `<span style="margin-left:10px;font-size:16px;font-weight:700;color:#111827;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(vehicle.registrationNumber.toUpperCase())}</span>` +
         `</td>` +
         `<td style="text-align:right;vertical-align:middle;">` +
-        `<span style="font-size:15px;font-weight:700;color:#0B1F3A;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(formatPrice(vehicle.totalPrice))}</span>` +
+        `<span style="font-size:15px;font-weight:700;color:#1b1712;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(formatPrice(vehicle.totalPrice))}</span>` +
         `</td>` +
         `</tr></table>` +
         (vehicle.vehicleName
@@ -298,7 +298,7 @@ const renderVehicleDetailsHtml = (booking: MailBooking) => {
 
   return (
     `<div style="margin-bottom:16px;">` +
-    `<p style="margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00A7B8;font-family:Arial,Helvetica,sans-serif;">Biloplysninger</p>` +
+    `<p style="margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#b8860b;font-family:Arial,Helvetica,sans-serif;">Biloplysninger</p>` +
     cards +
     `</div>`
   );
@@ -313,14 +313,14 @@ const renderPriceSummaryCard = (booking: MailBooking) => {
       : "";
 
   return (
-    `<div style="background:#F6FBFC;border:1px solid #DCEEF2;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
-    `<p style="margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00A7B8;font-family:Arial,Helvetica,sans-serif;">Prisoversigt</p>` +
+    `<div style="background:#faf7f0;border:1px solid #ece1c8;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
+    `<p style="margin:0 0 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#b8860b;font-family:Arial,Helvetica,sans-serif;">Prisoversigt</p>` +
     vehicleRows +
     discountRow +
-    `<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:8px;border-top:2px solid #0B1F3A;">` +
+    `<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:8px;border-top:2px solid #1b1712;">` +
     `<tr>` +
     `<td style="padding:12px 0 4px;font-size:15px;font-weight:700;color:#111827;font-family:Arial,Helvetica,sans-serif;">Total</td>` +
-    `<td style="padding:12px 0 4px;font-size:17px;font-weight:700;color:#0B1F3A;text-align:right;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(formatPrice(booking.total))}</td>` +
+    `<td style="padding:12px 0 4px;font-size:17px;font-weight:700;color:#1b1712;text-align:right;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(formatPrice(booking.total))}</td>` +
     `</tr></table>` +
     `</div>`
   );
@@ -365,8 +365,8 @@ const renderCustomerEmailHtml = (input: {
     renderVehicleDetailsHtml(input.booking) +
     renderPriceSummaryCard(input.booking) +
     renderAdminNote(input.booking.adminNotes) +
-    `<div style="background:#F6FBFC;border:1px solid #DCEEF2;border-radius:12px;padding:18px 20px;margin-bottom:${input.portalUrl ? "24px" : "8px"};">` +
-    `<p style="margin:0 0 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00A7B8;font-family:Arial,Helvetica,sans-serif;">Hvad sker der nu?</p>` +
+    `<div style="background:#faf7f0;border:1px solid #ece1c8;border-radius:12px;padding:18px 20px;margin-bottom:${input.portalUrl ? "24px" : "8px"};">` +
+    `<p style="margin:0 0 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#b8860b;font-family:Arial,Helvetica,sans-serif;">Hvad sker der nu?</p>` +
     `<p style="margin:0;font-size:14px;color:#111827;line-height:1.6;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(input.footer)}</p>` +
     `</div>` +
     (input.portalUrl
@@ -713,8 +713,8 @@ export const sendAdminNewBookingAlert = async (input: {
     renderVehicleDetailsHtml(input.booking) +
     renderPriceSummaryCard(input.booking) +
     (input.customer.notes
-      ? `<div style="background:#F6FBFC;border:1px solid #DCEEF2;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
-        `<p style="margin:0 0 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00A7B8;font-family:Arial,Helvetica,sans-serif;">Bemærkning fra kunde</p>` +
+      ? `<div style="background:#faf7f0;border:1px solid #ece1c8;border-radius:12px;padding:18px 20px;margin-bottom:16px;">` +
+        `<p style="margin:0 0 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#b8860b;font-family:Arial,Helvetica,sans-serif;">Bemærkning fra kunde</p>` +
         `<p style="margin:0;font-size:14px;color:#111827;line-height:1.6;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(input.customer.notes)}</p>` +
         `</div>`
       : "") +
@@ -831,9 +831,9 @@ export const sendTrustpilotDiscountWinnerEmail = async (input: {
       `${greeting}. Tak fordi du delte din oplevelse på Trustpilot – du er blevet udtrukket som denne uges heldige vinder af 30% rabat på din næste booking.`
     ) +
     `</p>` +
-    `<div style="background:#F6FBFC;border:1px dashed #00A7B8;border-radius:12px;padding:20px;margin-bottom:22px;text-align:center;">` +
-    `<p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00A7B8;font-family:Arial,Helvetica,sans-serif;">Din rabatkode</p>` +
-    `<p style="margin:0;font-size:28px;font-weight:700;letter-spacing:0.1em;color:#0B1F3A;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(input.couponCode)}</p>` +
+    `<div style="background:#faf7f0;border:1px dashed #b8860b;border-radius:12px;padding:20px;margin-bottom:22px;text-align:center;">` +
+    `<p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#b8860b;font-family:Arial,Helvetica,sans-serif;">Din rabatkode</p>` +
+    `<p style="margin:0;font-size:28px;font-weight:700;letter-spacing:0.1em;color:#1b1712;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(input.couponCode)}</p>` +
     `</div>` +
     `<div class="ebtn" style="text-align:center;margin:0 0 22px;">` +
     renderCTAButton(`${APP_URL}/booking`, "Book din næste bilvask") +
@@ -897,7 +897,7 @@ export const sendCustomerInvoiceEmail = async (input: {
     renderCTAButton(input.invoiceUrl, "Se og print faktura") +
     `</div>` +
     `<p style="margin:0;font-size:13px;color:#6B7280;text-align:center;line-height:1.6;font-family:Arial,Helvetica,sans-serif;">Fra fakturasiden kan du vælge Print / Save as PDF. Der er ingen PDF-vedhæftning.</p>` +
-    `<p style="margin:10px 0 0;font-size:13px;color:#6B7280;text-align:center;font-family:Arial,Helvetica,sans-serif;">Hvis knappen ikke virker: <a href="${escapeHtml(input.invoiceUrl)}" style="color:#00A7B8;text-decoration:none;">${escapeHtml(input.invoiceUrl)}</a></p>` +
+    `<p style="margin:10px 0 0;font-size:13px;color:#6B7280;text-align:center;font-family:Arial,Helvetica,sans-serif;">Hvis knappen ikke virker: <a href="${escapeHtml(input.invoiceUrl)}" style="color:#b8860b;text-decoration:none;">${escapeHtml(input.invoiceUrl)}</a></p>` +
     `</div>` +
     renderEmailFooter(input.settings.companyName, input.settings.supportEmail);
 
@@ -951,9 +951,9 @@ export const sendCustomerVerificationCodeEmail = async (input: {
     `<p style="margin:0 0 24px;font-size:15px;color:#6B7280;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">Brug koden herunder for at få adgang til din booking og kundeprofil.</p>` +
     `</div>` +
     `<div class="epad3" style="padding:0 32px 32px;">` +
-    `<div style="background:#F6FBFC;border:1px solid #DCEEF2;border-radius:12px;padding:28px 20px;margin-bottom:20px;text-align:center;">` +
+    `<div style="background:#faf7f0;border:1px solid #ece1c8;border-radius:12px;padding:28px 20px;margin-bottom:20px;text-align:center;">` +
     `<p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#6B7280;font-family:Arial,Helvetica,sans-serif;">Din kode</p>` +
-    `<p style="margin:0;font-size:40px;font-weight:700;letter-spacing:0.22em;color:#0B1F3A;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(codeDigits)}</p>` +
+    `<p style="margin:0;font-size:40px;font-weight:700;letter-spacing:0.22em;color:#1b1712;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(codeDigits)}</p>` +
     `</div>` +
     `<div style="background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:14px 18px;margin-bottom:8px;">` +
     `<p style="margin:0;font-size:13px;color:#92400E;line-height:1.6;font-family:Arial,Helvetica,sans-serif;">Koden udløber om <strong>10 minutter</strong>. Hvis du ikke har bedt om denne kode, kan du ignorere denne e-mail.</p>` +

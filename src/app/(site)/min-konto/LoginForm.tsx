@@ -151,7 +151,7 @@ export default function LoginForm() {
   return (
     <div className="mx-auto w-full max-w-[420px]">
       {/* Card */}
-      <div className="overflow-hidden rounded-3xl border border-[var(--line)] bg-white shadow-[0_20px_60px_rgba(11,31,58,0.10)]">
+      <div className="overflow-hidden rounded-3xl border border-[var(--line)] bg-white shadow-[0_20px_60px_rgba(27,23,18,0.10)]">
         {/* Logo header */}
         <div className="flex flex-col items-center gap-3 px-8 pb-5 pt-8">
           <Link href="/">
@@ -172,7 +172,7 @@ export default function LoginForm() {
         </div>
 
         {/* Tab switcher */}
-        <div className="mx-6 mb-5 flex rounded-2xl border border-[var(--line)] bg-[#f6fbfc] p-1">
+        <div className="mx-6 mb-5 flex rounded-2xl border border-[var(--line)] bg-[#faf7f0] p-1">
           {(["login", "signup"] as Tab[]).map((t) => (
             <button
               key={t}
@@ -185,7 +185,7 @@ export default function LoginForm() {
               className={cn(
                 "flex-1 rounded-xl py-2.5 text-[13px] font-semibold transition-all duration-150",
                 tab === t
-                  ? "bg-white text-[var(--accent)] shadow-[0_2px_8px_rgba(11,31,58,0.08)]"
+                  ? "bg-white text-[var(--accent)] shadow-[0_2px_8px_rgba(27,23,18,0.08)]"
                   : "text-[var(--muted)] hover:text-[var(--ink)]"
               )}
             >
@@ -242,7 +242,7 @@ export default function LoginForm() {
               /* OTP phase */
               <div className="space-y-4">
                 {/* Masked email pill */}
-                <div className="flex items-center gap-3 rounded-2xl border border-[var(--line)] bg-[#f6fbfc] px-4 py-3">
+                <div className="flex items-center gap-3 rounded-2xl border border-[var(--line)] bg-[#faf7f0] px-4 py-3">
                   <Mail className="h-4 w-4 shrink-0 text-[var(--brand)]" />
                   <div className="min-w-0">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
@@ -323,7 +323,7 @@ export default function LoginForm() {
         {/* ── Opret konto ─────────────────────────────────── */}
         {tab === "signup" && (
           <div className="px-6 pb-7 space-y-4">
-            <div className="rounded-2xl border border-[var(--line)] bg-[#f6fbfc] px-5 py-5">
+            <div className="rounded-2xl border border-[var(--line)] bg-[#faf7f0] px-5 py-5">
               <p className="text-[13px] font-semibold text-[var(--ink)]">
                 Din konto oprettes automatisk, når du laver din første booking.
               </p>
@@ -334,7 +334,7 @@ export default function LoginForm() {
 
             <Link
               href="/booking"
-              className="flex h-12 items-center justify-center gap-2 rounded-2xl bg-[var(--cta)] font-semibold text-white shadow-[0_8px_24px_rgba(245,158,11,0.22)] transition hover:bg-[var(--cta-hover)]"
+              className="flex h-12 items-center justify-center gap-2 rounded-2xl bg-[var(--cta)] font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)]"
             >
               <CalendarPlus className="h-5 w-5" />
               Book din første bilvask
@@ -354,7 +354,7 @@ export default function LoginForm() {
         )}
 
         {/* Footer */}
-        <div className="border-t border-[var(--line)] bg-[#f6fbfc] px-6 py-3 text-center">
+        <div className="border-t border-[var(--line)] bg-[#faf7f0] px-6 py-3 text-center">
           <p className="text-[11px] text-[var(--muted)]">
             Eluxus · Professionel mobil bilvask · København &amp; Sjælland
           </p>

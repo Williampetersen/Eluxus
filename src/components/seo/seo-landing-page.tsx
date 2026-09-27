@@ -49,10 +49,10 @@ export function Breadcrumbs({ page }: { page: SeoPageConfig }) {
 
 export function SEOHero({ page }: { page: SeoPageConfig }) {
   return (
-    <section className="mx-auto mt-6 max-w-7xl overflow-hidden rounded-[2rem] bg-[var(--accent)] shadow-[0_28px_90px_rgba(11,31,58,0.22)]">
+    <section className="mx-auto mt-6 max-w-7xl overflow-hidden rounded-[2rem] bg-[var(--accent)] shadow-[0_28px_90px_rgba(27,23,18,0.22)]">
       <div className="grid lg:grid-cols-[1.04fr_0.96fr]">
         <div className="relative px-6 py-12 text-white sm:px-10 lg:px-12 lg:py-16">
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,167,184,0.18),transparent_48%,rgba(245,158,11,0.10))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(184,134,11,0.18),transparent_48%,rgba(202,160,54,0.10))]" />
           <div className="relative">
             <span className="inline-flex rounded-full border border-white/12 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
               {page.eyebrow}
@@ -66,7 +66,7 @@ export function SEOHero({ page }: { page: SeoPageConfig }) {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/booking"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(245,158,11,0.26)] transition hover:bg-[var(--cta-hover)]"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)]"
               >
                 <Search className="h-5 w-5" />
                 Book bilvask
@@ -107,7 +107,7 @@ function ShortSummary({ items }: { items: string[] }) {
         {items.map((item) => (
           <p
             key={item}
-            className="rounded-lg border border-[var(--line)] bg-white/82 px-5 py-4 text-sm font-medium leading-7 text-[var(--ink)] shadow-[0_14px_34px_rgba(11,31,58,0.06)]"
+            className="rounded-lg border border-[var(--line)] bg-white/82 px-5 py-4 text-sm font-medium leading-7 text-[var(--ink)] shadow-[0_14px_34px_rgba(27,23,18,0.06)]"
           >
             {item}
           </p>
@@ -131,7 +131,7 @@ function ContentSections({ page }: { page: SeoPageConfig }) {
           <div className="mt-6">
             <Link
               href="/booking"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(245,158,11,0.22)] transition hover:bg-[var(--cta-hover)]"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)]"
             >
               Book tid
               <ArrowRight className="h-4 w-4" />
@@ -222,7 +222,7 @@ function ResultProof({ page }: { page: SeoPageConfig }) {
             {proofPoints.map((point) => (
               <div
                 key={point.title}
-                className="rounded-lg border border-[var(--line)] bg-white/88 p-4 shadow-[0_12px_28px_rgba(11,31,58,0.05)]"
+                className="rounded-lg border border-[var(--line)] bg-white/88 p-4 shadow-[0_12px_28px_rgba(27,23,18,0.05)]"
               >
                 <h3 className="font-semibold text-[var(--ink)]">{point.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{point.text}</p>
@@ -237,7 +237,7 @@ function ResultProof({ page }: { page: SeoPageConfig }) {
           {gallery.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-lg border border-[var(--line)] bg-white/88 shadow-[0_16px_36px_rgba(11,31,58,0.08)]"
+              className="overflow-hidden rounded-lg border border-[var(--line)] bg-white/88 shadow-[0_16px_36px_rgba(27,23,18,0.08)]"
             >
               <div className="relative aspect-[4/3]">
                 <Image
@@ -294,7 +294,7 @@ function KeywordClusters({ page }: { page: SeoPageConfig }) {
         {groups.map((group) => (
           <article
             key={group.title}
-            className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_14px_32px_rgba(11,31,58,0.06)]"
+            className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_14px_32px_rgba(27,23,18,0.06)]"
           >
             <h3 className="font-display text-2xl font-semibold text-[var(--ink)]">
               {group.title}
@@ -331,7 +331,7 @@ export function ServiceBenefits({
         {benefits.map((benefit) => (
           <article
             key={benefit.title}
-            className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(11,31,58,0.08)]"
+            className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(27,23,18,0.08)]"
           >
             <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#eefbfc] text-[var(--brand)]">
               <ShieldCheck className="h-5 w-5" />
@@ -358,7 +358,7 @@ export function ServiceProcess({ steps }: { steps: SeoPageConfig["process"] }) {
         {steps.map((step, index) => (
           <article
             key={step.title}
-            className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(11,31,58,0.08)]"
+            className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(27,23,18,0.08)]"
           >
             <span className="flex h-10 w-10 items-center justify-center rounded-md bg-[var(--accent)] text-sm font-semibold text-white">
               {index + 1}
@@ -385,7 +385,7 @@ export function FAQ({ faqs }: { faqs: SeoPageConfig["faqs"] }) {
         {faqs.map((faq) => (
           <details
             key={faq.question}
-            className="group rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_14px_32px_rgba(11,31,58,0.06)]"
+            className="group rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_14px_32px_rgba(27,23,18,0.06)]"
           >
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--ink)]">
               {faq.question}
@@ -411,7 +411,7 @@ export function InternalLinks({ links }: { links: SeoPageConfig["relatedLinks"] 
           <Link
             key={link.href}
             href={link.href as import("next").Route}
-            className="flex min-h-16 items-center justify-between gap-4 rounded-lg border border-[var(--line)] bg-white/88 px-5 py-4 text-sm font-semibold text-[var(--ink)] shadow-[0_14px_32px_rgba(11,31,58,0.06)] transition hover:-translate-y-0.5 hover:bg-white"
+            className="flex min-h-16 items-center justify-between gap-4 rounded-lg border border-[var(--line)] bg-white/88 px-5 py-4 text-sm font-semibold text-[var(--ink)] shadow-[0_14px_32px_rgba(27,23,18,0.06)] transition hover:-translate-y-0.5 hover:bg-white"
           >
             {link.label}
             <ArrowRight className="h-4 w-4 shrink-0 text-[var(--brand)]" />
@@ -424,7 +424,7 @@ export function InternalLinks({ links }: { links: SeoPageConfig["relatedLinks"] 
 
 function BottomCta({ page }: { page: SeoPageConfig }) {
   return (
-    <section className="rounded-[2rem] bg-[linear-gradient(135deg,#0B1F3A,#00A7B8)] px-6 py-10 text-white shadow-[0_24px_80px_rgba(11,31,58,0.22)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
+    <section className="rounded-[2rem] bg-[linear-gradient(135deg,#1b1712,#b8860b)] px-6 py-10 text-white shadow-[0_24px_80px_rgba(27,23,18,0.22)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/65">
           Book online
@@ -440,7 +440,7 @@ function BottomCta({ page }: { page: SeoPageConfig }) {
       <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:mt-0">
         <Link
           href="/booking"
-          className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(245,158,11,0.26)] transition hover:bg-[var(--cta-hover)]"
+          className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)]"
         >
           <Sparkles className="h-5 w-5" />
           Book bilvask

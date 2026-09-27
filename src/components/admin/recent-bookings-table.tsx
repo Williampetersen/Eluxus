@@ -15,7 +15,7 @@ export function RecentBookingsTable({
   onSelectBooking: (booking: DashboardBooking) => void;
 }) {
   return (
-    <div className="overflow-hidden rounded-3xl border border-white/55 bg-white/[0.65] text-[#111827] shadow-[0_8px_32px_rgba(0,167,184,0.08)] backdrop-blur-2xl transition duration-[250ms] hover:-translate-y-0.5">
+    <div className="overflow-hidden rounded-3xl border border-white/55 bg-white/[0.65] text-[#111827] shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl transition duration-[250ms] hover:-translate-y-0.5">
       <div className="flex items-center justify-between gap-3 border-b border-white/55 px-4 py-4">
         <div>
           <p className="text-[14px] font-semibold text-[#111827]">Recent bookings</p>
@@ -23,7 +23,7 @@ export function RecentBookingsTable({
             {searchQuery ? `Filtered by "${searchQuery}"` : "Latest matching records"}
           </p>
         </div>
-        <span className="inline-flex items-center gap-1 text-[12px] font-semibold text-[#00A7B8]">
+        <span className="inline-flex items-center gap-1 text-[12px] font-semibold text-[#b8860b]">
           Open drawer
           <ArrowRight className="h-4 w-4" />
         </span>
@@ -48,7 +48,7 @@ export function RecentBookingsTable({
                     <button
                       type="button"
                       onClick={() => onSelectBooking(booking)}
-                      className="text-left font-semibold text-[#111827] hover:text-[#00A7B8]"
+                      className="text-left font-semibold text-[#111827] hover:text-[#b8860b]"
                     >
                       {booking.customerName || booking.customerEmail}
                     </button>
@@ -67,7 +67,7 @@ export function RecentBookingsTable({
             ) : (
               <tr>
                 <td colSpan={5} className="px-4 py-8">
-                  <div className="rounded-2xl border border-dashed border-[#DCEEF2] bg-white/45 px-4 py-5 text-center">
+                  <div className="rounded-2xl border border-dashed border-[#ece1c8] bg-white/45 px-4 py-5 text-center">
                     <p className="text-[13px] font-semibold text-[#111827]">No matching bookings</p>
                     <p className="mt-1 text-[12px] font-medium text-[#6B7280]">Adjust search or create a new booking.</p>
                   </div>

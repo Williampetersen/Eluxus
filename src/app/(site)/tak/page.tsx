@@ -44,7 +44,7 @@ export default function TakPage() {
           </Link>
           <Link
             href="/booking"
-            className="inline-flex h-12 items-center justify-center rounded-xl bg-[var(--cta)] px-6 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(245,158,11,0.26)] transition hover:bg-[var(--cta-hover)]"
+            className="inline-flex h-12 items-center justify-center rounded-xl bg-[var(--cta)] px-6 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)]"
           >
             Book bilvask
           </Link>

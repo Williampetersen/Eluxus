@@ -96,7 +96,7 @@ export default function PersondatapolitikPage() {
             <div className="rounded-xl border border-[var(--line)] bg-white overflow-hidden">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--line)] bg-[#f6fbfc]">
+                  <tr className="border-b border-[var(--line)] bg-[#faf7f0]">
                     <th className="px-4 py-3 text-left font-semibold text-[var(--ink)]">Kategori</th>
                     <th className="px-4 py-3 text-left font-semibold text-[var(--ink)]">Oplysninger</th>
                   </tr>
@@ -390,7 +390,7 @@ export default function PersondatapolitikPage() {
             <div className="rounded-xl border border-[var(--line)] bg-white overflow-hidden">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[var(--line)] bg-[#f6fbfc]">
+                  <tr className="border-b border-[var(--line)] bg-[#faf7f0]">
                     <th className="px-4 py-3 text-left font-semibold text-[var(--ink)]">Type</th>
                     <th className="px-4 py-3 text-left font-semibold text-[var(--ink)]">Formål</th>
                     <th className="px-4 py-3 text-left font-semibold text-[var(--ink)]">Samtykke</th>
@@ -517,7 +517,7 @@ export default function PersondatapolitikPage() {
           </Section>
 
           {/* Contact */}
-          <div className="rounded-2xl border border-[var(--line)] bg-[#f6fbfc] px-6 py-6">
+          <div className="rounded-2xl border border-[var(--line)] bg-[#faf7f0] px-6 py-6">
             <h2 className="font-display text-xl font-semibold text-[var(--ink)]">
               Kontakt os om databeskyttelse
             </h2>

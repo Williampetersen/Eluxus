@@ -159,7 +159,7 @@ export default async function VelgStorrelse() {
               <Link
                 key={cat.id}
                 href={`/booking?category=${cat.id}&manual=true`}
-                className="group flex flex-col overflow-hidden rounded-3xl border border-[var(--line)] bg-white shadow-[0_8px_32px_rgba(11,31,58,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--brand)] hover:shadow-[0_20px_48px_rgba(0,167,184,0.13)]"
+                className="group flex flex-col overflow-hidden rounded-3xl border border-[var(--line)] bg-white shadow-[0_8px_32px_rgba(27,23,18,0.06)] transition duration-200 hover:-translate-y-1 hover:border-[var(--brand)] hover:shadow-[0_20px_48px_rgba(184,134,11,0.13)]"
               >
                 {/* Image area */}
                 <div className={`relative flex h-44 w-full items-center justify-center ${meta.bg}`}>

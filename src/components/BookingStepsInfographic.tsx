@@ -10,10 +10,10 @@ const STEPS = [
     Icon: CalendarDays,
     title: "Hurtig booking",
     text: "Book din dampbilvask online på få minutter – nemt og hurtigt.",
-    color: "#00A7B8",
-    glow: "rgba(0,167,184,0.28)",
-    iconBg: "rgba(0,167,184,0.10)",
-    ringColor: "rgba(0,167,184,0.20)",
+    color: "#b8860b",
+    glow: "rgba(184,134,11,0.28)",
+    iconBg: "rgba(184,134,11,0.10)",
+    ringColor: "rgba(184,134,11,0.20)",
     idleCls: "sc-icon-1",
   },
   {
@@ -21,10 +21,10 @@ const STEPS = [
     Icon: MapPin,
     title: "Vi kommer til dig",
     text: "Hjemme, på arbejdet eller hvor din bil holder – vi dækker Sjælland.",
-    color: "#F59E0B",
-    glow: "rgba(245,158,11,0.28)",
-    iconBg: "rgba(245,158,11,0.10)",
-    ringColor: "rgba(245,158,11,0.20)",
+    color: "#caa036",
+    glow: "rgba(202,160,54,0.28)",
+    iconBg: "rgba(202,160,54,0.10)",
+    ringColor: "rgba(202,160,54,0.20)",
     idleCls: "sc-icon-2",
   },
   {
@@ -119,7 +119,7 @@ function StepCard({
       {/* ── 3-D tilt card ── */}
       <div
         ref={cardRef}
-        className="sc-card mt-5 w-full cursor-default rounded-2xl border border-[var(--line)] bg-white p-6 text-left shadow-[0_8px_32px_rgba(11,31,58,0.07)]"
+        className="sc-card mt-5 w-full cursor-default rounded-2xl border border-[var(--line)] bg-white p-6 text-left shadow-[0_8px_32px_rgba(27,23,18,0.07)]"
         style={
           {
             "--sc-glow": step.glow,
@@ -241,7 +241,7 @@ export function BookingStepsInfographic() {
         ref={sectionRef}
         id="hvordan"
         aria-labelledby="steps-title"
-        className="mx-auto mt-12 max-w-7xl overflow-hidden rounded-[2rem] border border-[var(--line)] bg-white/92 px-5 py-12 shadow-[0_24px_70px_rgba(11,31,58,0.10)] sm:px-8 lg:px-10 lg:py-16"
+        className="mx-auto mt-12 max-w-7xl overflow-hidden rounded-[2rem] border border-[var(--line)] bg-white/92 px-5 py-12 shadow-[0_24px_70px_rgba(27,23,18,0.10)] sm:px-8 lg:px-10 lg:py-16"
       >
         {/* ── Header ── */}
         <div className="mx-auto max-w-xl text-center">
@@ -306,7 +306,7 @@ export function BookingStepsInfographic() {
         >
           <Link
             href="/booking"
-            className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-7 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(245,158,11,0.24)] transition hover:-translate-y-0.5 hover:bg-[var(--cta-hover)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand)] focus-visible:ring-offset-2"
+            className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-7 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(202,160,54,0.24)] transition hover:-translate-y-0.5 hover:bg-[var(--cta-hover)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand)] focus-visible:ring-offset-2"
           >
             Book bilvask nu
             <ArrowRight className="h-4 w-4" />

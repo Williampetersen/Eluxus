@@ -286,7 +286,7 @@ export default function HomePage() {
                 {["Hurtig service", "Indvendig & udvendig", "København & omegn"].map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-2 rounded-xl border border-[var(--line)] bg-white/88 px-4 py-2.5 shadow-[0_14px_34px_rgba(11,31,58,0.07)] backdrop-blur-sm"
+                    className="flex items-center gap-2 rounded-xl border border-[var(--line)] bg-white/88 px-4 py-2.5 shadow-[0_14px_34px_rgba(27,23,18,0.07)] backdrop-blur-sm"
                   >
                     <Check className="h-4 w-4 text-[var(--brand)]" />
                     <span className="text-sm font-semibold text-[var(--ink)]">{item}</span>
@@ -301,7 +301,7 @@ export default function HomePage() {
       <BookingStepsInfographic />
 
       <section className="mx-auto mt-12 max-w-7xl">
-        <div className="grid gap-3 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-[0_24px_70px_rgba(11,31,58,0.12)] backdrop-blur sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-3 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-[0_24px_70px_rgba(27,23,18,0.12)] backdrop-blur sm:grid-cols-2 lg:grid-cols-5">
           {benefits.map((item) => (
             <div key={item} className="flex items-center gap-3 rounded-xl bg-[#eefbfc] px-4 py-3">
               <ShieldCheck className="h-5 w-5 shrink-0 text-[var(--brand)]" />
@@ -317,7 +317,7 @@ export default function HomePage() {
 
         {/* 01 — Udvendig bilvask */}
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="group relative overflow-hidden rounded-3xl shadow-[0_24px_80px_rgba(11,31,58,0.18)]">
+          <div className="group relative overflow-hidden rounded-3xl shadow-[0_24px_80px_rgba(27,23,18,0.18)]">
             <div className="relative aspect-[4/3]">
               <Image
                 src="/eluxus/exterior-wash.jpg"
@@ -358,7 +358,7 @@ export default function HomePage() {
             <div className="mt-8">
               <Link
                 href="/booking"
-                className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(245,158,11,0.22)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(245,158,11,0.28)]"
+                className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(202,160,54,0.28)]"
               >
                 Book udvendig bilvask
                 <ArrowRight className="h-4 w-4" />
@@ -391,14 +391,14 @@ export default function HomePage() {
             <div className="mt-8">
               <Link
                 href="/booking"
-                className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(245,158,11,0.22)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(245,158,11,0.28)]"
+                className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(202,160,54,0.28)]"
               >
                 Book indvendig rengøring
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
-          <div className="group relative overflow-hidden rounded-3xl shadow-[0_24px_80px_rgba(11,31,58,0.18)]">
+          <div className="group relative overflow-hidden rounded-3xl shadow-[0_24px_80px_rgba(27,23,18,0.18)]">
             <div className="relative aspect-[4/3]">
               <Image
                 src="/eluxus/after-trunk.jpg"
@@ -420,10 +420,10 @@ export default function HomePage() {
         </div>
 
         {/* 03 — Komplet bilvask (dark featured card) */}
-        <div className="overflow-hidden rounded-3xl bg-[var(--accent)] shadow-[0_32px_100px_rgba(11,31,58,0.35)]">
+        <div className="overflow-hidden rounded-3xl bg-[var(--accent)] shadow-[0_32px_100px_rgba(27,23,18,0.35)]">
           <div className="grid lg:grid-cols-2">
             <div className="p-8 text-white sm:p-10 lg:p-14">
-              <span className="inline-flex rounded-full bg-[#00A7B8]/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-[#67e8f9]">
+              <span className="inline-flex rounded-full bg-[#b8860b]/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-[#67e8f9]">
                 03 — Anbefalet
               </span>
               <h2 className="mt-4 section-title text-white">Alt i én. Komplet bilvask.</h2>
@@ -436,7 +436,7 @@ export default function HomePage() {
                   "Perfekt til private og virksomheder",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-white/78">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00A7B8]/20 text-[#67e8f9]">
+                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#b8860b]/20 text-[#67e8f9]">
                       <Check className="h-3 w-3" />
                     </span>
                     {item}
@@ -446,7 +446,7 @@ export default function HomePage() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/booking"
-                  className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(245,158,11,0.28)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(245,158,11,0.34)]"
+                  className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.28)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(202,160,54,0.34)]"
                 >
                   Book komplet bilvask
                   <ArrowRight className="h-4 w-4" />
@@ -468,7 +468,7 @@ export default function HomePage() {
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover opacity-85 transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0B1F3A]/50 via-[#0B1F3A]/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#1b1712]/50 via-[#1b1712]/10 to-transparent" />
             </div>
           </div>
         </div>
@@ -487,7 +487,7 @@ export default function HomePage() {
 
         <div className="mt-12 grid items-start gap-6 lg:grid-cols-3">
           {/* Udvendig */}
-          <div className="rounded-2xl border border-[var(--line)] bg-white p-8 shadow-[0_18px_48px_rgba(11,31,58,0.07)]">
+          <div className="rounded-2xl border border-[var(--line)] bg-white p-8 shadow-[0_18px_48px_rgba(27,23,18,0.07)]">
             <h3 className="font-display text-2xl font-semibold text-[var(--ink)]">Udvendig vask</h3>
             <div className="mt-4 flex items-baseline gap-1.5">
               <span className="text-sm text-[var(--muted)]">fra</span>
@@ -509,16 +509,16 @@ export default function HomePage() {
             </ul>
             <Link
               href="/booking"
-              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_12px_30px_rgba(245,158,11,0.22)] transition hover:bg-[var(--cta-hover)]"
+              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)]"
             >
               Vælg pakke <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
 
           {/* Komplet — featured */}
-          <div className="relative rounded-2xl bg-[var(--accent)] p-8 shadow-[0_32px_80px_rgba(11,31,58,0.30)] lg:-mt-4 lg:pb-10 lg:pt-12">
+          <div className="relative rounded-2xl bg-[var(--accent)] p-8 shadow-[0_32px_80px_rgba(27,23,18,0.30)] lg:-mt-4 lg:pb-10 lg:pt-12">
             <div className="absolute -top-4 left-0 right-0 flex justify-center">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--brand)] px-4 py-1.5 text-sm font-bold text-white shadow-[0_4px_16px_rgba(0,167,184,0.28)]">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--brand)] px-4 py-1.5 text-sm font-bold text-white shadow-[0_4px_16px_rgba(184,134,11,0.28)]">
                 <Sparkles className="h-3.5 w-3.5" />
                 Mest populær
               </span>
@@ -545,14 +545,14 @@ export default function HomePage() {
             </ul>
             <Link
               href="/booking"
-              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_8px_24px_rgba(245,158,11,0.32)] transition hover:bg-[var(--cta-hover)]"
+              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.32)] transition hover:bg-[var(--cta-hover)]"
             >
               Vælg pakke <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
 
           {/* Premium */}
-          <div className="rounded-2xl border border-[var(--line)] bg-white p-8 shadow-[0_18px_48px_rgba(11,31,58,0.07)]">
+          <div className="rounded-2xl border border-[var(--line)] bg-white p-8 shadow-[0_18px_48px_rgba(27,23,18,0.07)]">
             <h3 className="font-display text-2xl font-semibold text-[var(--ink)]">Premium bilpleje</h3>
             <div className="mt-4 flex items-baseline gap-1.5">
               <span className="text-sm text-[var(--muted)]">fra</span>
@@ -574,7 +574,7 @@ export default function HomePage() {
             </ul>
             <Link
               href="/booking"
-              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_12px_30px_rgba(245,158,11,0.22)] transition hover:bg-[var(--cta-hover)]"
+              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)]"
             >
               Vælg pakke <ArrowRight className="h-4 w-4" />
             </Link>
@@ -584,7 +584,7 @@ export default function HomePage() {
 
 
       <section className="mx-auto mt-16 grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-        <div className="rounded-[2rem] bg-[var(--accent)] p-6 text-white shadow-[0_24px_70px_rgba(11,31,58,0.2)] sm:p-8">
+        <div className="rounded-[2rem] bg-[var(--accent)] p-6 text-white shadow-[0_24px_70px_rgba(27,23,18,0.2)] sm:p-8">
           <span className="inline-flex rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
             Hvorfor Eluxus
           </span>
@@ -600,7 +600,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-        <div className="group relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(11,31,58,0.18)]">
+        <div className="group relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(27,23,18,0.18)]">
           <div className="relative aspect-[4/3]">
             <Image
               src="/home/DeepSeat.jpg"
@@ -618,7 +618,7 @@ export default function HomePage() {
       </section>
 
       <section id="erhverv" className="mx-auto mt-16 max-w-7xl">
-        <div className="rounded-[2rem] border border-[var(--line)] bg-white/88 p-6 shadow-[0_24px_70px_rgba(11,31,58,0.1)] sm:p-8">
+        <div className="rounded-[2rem] border border-[var(--line)] bg-white/88 p-6 shadow-[0_24px_70px_rgba(27,23,18,0.1)] sm:p-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
             <div>
               <span className="eyebrow">Erhvervs bilvask</span>
@@ -650,7 +650,7 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-            <div className="group relative overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(11,31,58,0.14)]">
+            <div className="group relative overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(27,23,18,0.14)]">
               <div className="relative aspect-[4/3]">
                 <Image
                   src="/home/roof.jpg"
@@ -680,7 +680,7 @@ export default function HomePage() {
           {faqs.map((faq) => (
             <details
               key={faq.question}
-              className="group rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_14px_32px_rgba(11,31,58,0.06)]"
+              className="group rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_14px_32px_rgba(27,23,18,0.06)]"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--ink)]">
                 {faq.question}
@@ -693,7 +693,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto mt-16 max-w-7xl">
-        <div className="relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(11,31,58,0.26)]">
+        <div className="relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(27,23,18,0.26)]">
           {/* Background image */}
           <Image
             src="/home/vinyl.jpg"
@@ -704,7 +704,7 @@ export default function HomePage() {
             className="object-cover object-center"
           />
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(11,31,58,0.91)_0%,rgba(0,167,184,0.80)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(27,23,18,0.91)_0%,rgba(184,134,11,0.80)_100%)]" />
           {/* Content */}
           <div className="relative px-6 py-12 text-white sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8 lg:py-14">
             <div>
@@ -721,7 +721,7 @@ export default function HomePage() {
             <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:mt-0 lg:shrink-0">
               <Link
                 href="/booking"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(245,158,11,0.32)] transition hover:bg-[var(--cta-hover)]"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(202,160,54,0.32)] transition hover:bg-[var(--cta-hover)]"
               >
                 <Search className="h-5 w-5" />
                 Book bilvask

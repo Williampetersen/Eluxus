@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 type KpiTone = "violet" | "blue" | "green" | "orange" | "red";
 
 const cardBase =
-  "w-full rounded-3xl border border-white/55 bg-white/[0.65] text-[#111827] shadow-[0_8px_32px_rgba(0,167,184,0.08)] backdrop-blur-2xl transition duration-[250ms] hover:-translate-y-0.5 cursor-pointer p-4 text-left";
+  "w-full rounded-3xl border border-white/55 bg-white/[0.65] text-[#111827] shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl transition duration-[250ms] hover:-translate-y-0.5 cursor-pointer p-4 text-left";
 
 export function KpiCard({
   label,
@@ -23,10 +23,10 @@ export function KpiCard({
   onClick?: () => void;
 }) {
   const toneClass: Record<KpiTone, string> = {
-    violet: "bg-[#EEFBFC] text-[#00A7B8] ring-[#99DFE7]/30",
-    blue: "bg-[#EEFBFC] text-[#00A7B8] ring-[#99DFE7]/30",
+    violet: "bg-[#EEFBFC] text-[#b8860b] ring-[#99DFE7]/30",
+    blue: "bg-[#EEFBFC] text-[#b8860b] ring-[#99DFE7]/30",
     green: "bg-[#10B981]/10 text-[#047857] ring-[#10B981]/20",
-    orange: "bg-[#F59E0B]/10 text-[#92400E] ring-[#F59E0B]/20",
+    orange: "bg-[#caa036]/10 text-[#92400E] ring-[#caa036]/20",
     red: "bg-[#EF4444]/10 text-[#B91C1C] ring-[#EF4444]/20",
   };
 

@@ -63,7 +63,7 @@ export function BookingSetupView({
     <div className="space-y-4">
       {/* Page header */}
       <div className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EEFBFC] text-[#00A7B8]">
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EEFBFC] text-[#b8860b]">
           <Settings2 className="h-5 w-5" />
         </div>
         <div>
@@ -73,7 +73,7 @@ export function BookingSetupView({
       </div>
 
       {/* Sub-tab bar */}
-      <div className="flex gap-1 overflow-x-auto rounded-2xl border border-white/60 bg-white/80 p-1.5 shadow-[0_2px_12px_rgba(0,167,184,0.06)] backdrop-blur-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="flex gap-1 overflow-x-auto rounded-2xl border border-white/60 bg-white/80 p-1.5 shadow-[0_2px_12px_rgba(184,134,11,0.06)] backdrop-blur-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {setupTabs.map((tab) => {
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
@@ -85,7 +85,7 @@ export function BookingSetupView({
               className={cn(
                 "flex shrink-0 items-center gap-1.5 rounded-xl px-3.5 py-2 text-[12.5px] font-semibold whitespace-nowrap transition-all duration-150",
                 isActive
-                  ? "bg-[#00A7B8] text-white shadow-[0_4px_12px_rgba(0,167,184,0.25)]"
+                  ? "bg-[#b8860b] text-white shadow-[0_4px_12px_rgba(184,134,11,0.25)]"
                   : "text-[#6B7280] hover:bg-white hover:text-[#111827]"
               )}
             >
@@ -125,8 +125,8 @@ export function BookingSetupView({
                 data.optionGroups.find((g) => g.slug === "vehicle-category")?.options || []
               ).map((o) => ({ id: o.id, label: o.label, price: o.priceAdjustmentDkk }))}
             />
-            <div className="mt-4 rounded-2xl border border-dashed border-[#DCEEF2] bg-white/50 p-4">
-              <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#00A7B8]">
+            <div className="mt-4 rounded-2xl border border-dashed border-[#ece1c8] bg-white/50 p-4">
+              <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#b8860b]">
                 Ny ydelse
               </p>
               <form id="create-service-form" action="/api/admin/booking-setup/services" method="POST" className="grid gap-3">
@@ -162,8 +162,8 @@ export function BookingSetupView({
             description="Skjulte tilvalg vises ikke i den offentlige booking."
           >
             <AddonsList addons={data.addons} services={data.services} />
-            <div className="mt-4 rounded-2xl border border-dashed border-[#DCEEF2] bg-white/50 p-4">
-              <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#00A7B8]">
+            <div className="mt-4 rounded-2xl border border-dashed border-[#ece1c8] bg-white/50 p-4">
+              <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#b8860b]">
                 Nyt tilvalg
               </p>
               <form action="/api/admin/booking-setup/addons" method="POST" className="grid gap-3">
@@ -276,7 +276,7 @@ function ServiceItem({
   onToggle: () => void;
 }) {
   return (
-    <article className="overflow-hidden rounded-2xl border border-white/55 bg-white/60 shadow-[0_2px_8px_rgba(0,167,184,0.06)]">
+    <article className="overflow-hidden rounded-2xl border border-white/55 bg-white/60 shadow-[0_2px_8px_rgba(184,134,11,0.06)]">
       {/* Collapsed header */}
       <button
         type="button"
@@ -287,7 +287,7 @@ function ServiceItem({
           // eslint-disable-next-line @next/next/no-img-element
           <img src={service.imageUrl} alt="" className="h-10 w-14 shrink-0 rounded-xl object-cover ring-1 ring-white/70" />
         ) : (
-          <div className="flex h-10 w-14 shrink-0 items-center justify-center rounded-xl border border-dashed border-[#DCEEF2] bg-white/50">
+          <div className="flex h-10 w-14 shrink-0 items-center justify-center rounded-xl border border-dashed border-[#ece1c8] bg-white/50">
             <ImageIcon className="h-4 w-4 text-[#94A3B8]" />
           </div>
         )}
@@ -316,7 +316,7 @@ function ServiceItem({
 
       {/* Expanded editor */}
       {isOpen && (
-        <div className="border-t border-[#DCEEF2]/60 p-4">
+        <div className="border-t border-[#ece1c8]/60 p-4">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
             <div className="shrink-0 space-y-2">
               <ImagePreview imageUrl={service.imageUrl} label={service.name} />
@@ -445,7 +445,7 @@ function AddonItem({
         : "Antal";
 
   return (
-    <article className="overflow-hidden rounded-2xl border border-white/55 bg-white/60 shadow-[0_2px_8px_rgba(0,167,184,0.06)]">
+    <article className="overflow-hidden rounded-2xl border border-white/55 bg-white/60 shadow-[0_2px_8px_rgba(184,134,11,0.06)]">
       {/* Collapsed header */}
       <button
         type="button"
@@ -456,7 +456,7 @@ function AddonItem({
           // eslint-disable-next-line @next/next/no-img-element
           <img src={addon.imageUrl} alt="" className="h-10 w-14 shrink-0 rounded-xl object-cover ring-1 ring-white/70" />
         ) : (
-          <div className="flex h-10 w-14 shrink-0 items-center justify-center rounded-xl border border-dashed border-[#DCEEF2] bg-white/50">
+          <div className="flex h-10 w-14 shrink-0 items-center justify-center rounded-xl border border-dashed border-[#ece1c8] bg-white/50">
             <ImageIcon className="h-4 w-4 text-[#94A3B8]" />
           </div>
         )}
@@ -483,7 +483,7 @@ function AddonItem({
 
       {/* Expanded editor */}
       {isOpen && (
-        <div className="border-t border-[#DCEEF2]/60 p-4">
+        <div className="border-t border-[#ece1c8]/60 p-4">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
             <div className="shrink-0 space-y-2">
               <ImagePreview imageUrl={addon.imageUrl} label={addon.name} />
@@ -583,7 +583,7 @@ function OptionGroupItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-white/55 bg-white/60 shadow-[0_2px_8px_rgba(0,167,184,0.06)]">
+    <div className="overflow-hidden rounded-2xl border border-white/55 bg-white/60 shadow-[0_2px_8px_rgba(184,134,11,0.06)]">
       {/* Collapsed header */}
       <button
         type="button"
@@ -612,7 +612,7 @@ function OptionGroupItem({
 
       {/* Expanded options */}
       {isOpen && (
-        <div className="border-t border-[#DCEEF2]/60 p-4">
+        <div className="border-t border-[#ece1c8]/60 p-4">
           {/* Column labels */}
           <div className="mb-1 hidden grid-cols-[1fr_7rem_8rem_5rem_auto] gap-2 px-1 lg:grid">
             <span className="text-[11px] font-semibold uppercase tracking-[0.1em] text-[#6B7280]">Label</span>
@@ -675,7 +675,7 @@ function OptionGroupItem({
           <form
             action="/api/admin/booking-setup/options"
             method="POST"
-            className="mt-3 grid gap-2 rounded-xl border border-dashed border-[#DCEEF2] bg-white/45 p-3 lg:grid-cols-[1fr_7rem_8rem_auto]"
+            className="mt-3 grid gap-2 rounded-xl border border-dashed border-[#ece1c8] bg-white/45 p-3 lg:grid-cols-[1fr_7rem_8rem_auto]"
           >
             <input type="hidden" name="group_id" value={group.id} />
             <Field label="Ny mulighed" className="lg:hidden">
@@ -842,7 +842,7 @@ function TimeSettingsCard({ data }: { data: BookingSetupData }) {
 function UnavailableDatesCard({ data }: { data: BookingSetupData }) {
   return (
     <SetupPanel title="Unavailable dates" icon={<CalendarClock className="h-5 w-5" />}>
-      <form action="/api/admin/booking-setup/unavailable-dates" method="POST" className="grid gap-2 rounded-2xl border border-dashed border-[#DCEEF2] bg-white/45 p-3">
+      <form action="/api/admin/booking-setup/unavailable-dates" method="POST" className="grid gap-2 rounded-2xl border border-dashed border-[#ece1c8] bg-white/45 p-3">
         <Input name="title" placeholder="Holiday / vacation / closed" required />
         <div className="grid gap-2 sm:grid-cols-2">
           <Input type="date" name="start_date" required />
@@ -934,7 +934,7 @@ function ImagePreview({ imageUrl, label }: { imageUrl: string; label: string }) 
     );
   }
   return (
-    <div className="flex h-24 w-full items-center justify-center rounded-2xl border border-dashed border-[#DCEEF2] bg-white/50 text-[#6B7280] lg:w-32">
+    <div className="flex h-24 w-full items-center justify-center rounded-2xl border border-dashed border-[#ece1c8] bg-white/50 text-[#6B7280] lg:w-32">
       <ImageIcon className="h-5 w-5" />
       <span className="sr-only">{label}</span>
     </div>
@@ -952,10 +952,10 @@ function StatusPill({ visible }: { visible: boolean }) {
 
 function SetupSection({ eyebrow, title, description, children, action }: { eyebrow: string; title: string; description: string; children: ReactNode; action?: ReactNode }) {
   return (
-    <section className="rounded-3xl border border-white/55 bg-white/[0.65] p-5 shadow-[0_8px_32px_rgba(0,167,184,0.08)] backdrop-blur-2xl">
+    <section className="rounded-3xl border border-white/55 bg-white/[0.65] p-5 shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl">
       <div className="mb-5 flex items-start justify-between gap-3">
         <div>
-          <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#00A7B8]">{eyebrow}</p>
+          <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#b8860b]">{eyebrow}</p>
           <h2 className="mt-1 text-[18px] font-bold text-[#111827]">{title}</h2>
           <p className="mt-1 text-[12px] font-medium leading-5 text-[#6B7280]">{description}</p>
         </div>
@@ -971,7 +971,7 @@ function CreateInlineButton({ label, formId }: { label: string; formId: string }
     <button
       type="submit"
       form={formId}
-      className="shrink-0 rounded-xl bg-[#00A7B8] px-4 py-2 text-[12px] font-semibold text-white shadow-[0_4px_12px_rgba(0,167,184,0.22)] transition hover:bg-[#008A99]"
+      className="shrink-0 rounded-xl bg-[#b8860b] px-4 py-2 text-[12px] font-semibold text-white shadow-[0_4px_12px_rgba(184,134,11,0.22)] transition hover:bg-[#008A99]"
     >
       {label}
     </button>
@@ -980,9 +980,9 @@ function CreateInlineButton({ label, formId }: { label: string; formId: string }
 
 function SetupPanel({ title, icon, children }: { title: string; icon: ReactNode; children: ReactNode }) {
   return (
-    <section className="rounded-3xl border border-white/55 bg-white/[0.65] p-4 shadow-[0_8px_32px_rgba(0,167,184,0.08)] backdrop-blur-2xl">
+    <section className="rounded-3xl border border-white/55 bg-white/[0.65] p-4 shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl">
       <div className="mb-4 flex items-center gap-2">
-        <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[#EEFBFC] text-[#00A7B8]">{icon}</span>
+        <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-[#EEFBFC] text-[#b8860b]">{icon}</span>
         <p className="text-[14px] font-semibold text-[#111827]">{title}</p>
       </div>
       {children}
@@ -1000,4 +1000,4 @@ function Field({ label, className, children }: { label: string; className?: stri
 }
 
 const selectClassName =
-  "h-10 w-full rounded-2xl border border-[#DCEEF2] bg-white/70 px-3 text-[13px] font-medium text-[#111827] outline-none";
+  "h-10 w-full rounded-2xl border border-[#ece1c8] bg-white/70 px-3 text-[13px] font-medium text-[#111827] outline-none";

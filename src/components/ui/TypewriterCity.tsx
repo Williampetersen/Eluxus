@@ -72,7 +72,7 @@ export function TypewriterCity({
     <span
       aria-hidden="true"
       className={cn(
-        "inline-flex min-w-[12.5ch] items-baseline whitespace-nowrap rounded-xl bg-[#00A7B8]/25 px-[0.18em] py-[0.03em] align-baseline text-[var(--accent)] shadow-[0_14px_32px_rgba(0,167,184,0.14)] ring-1 ring-[#00A7B8]/20",
+        "inline-flex min-w-[12.5ch] items-baseline whitespace-nowrap rounded-xl bg-[#b8860b]/25 px-[0.18em] py-[0.03em] align-baseline text-[var(--accent)] shadow-[0_14px_32px_rgba(184,134,11,0.14)] ring-1 ring-[#b8860b]/20",
         className
       )}
     >

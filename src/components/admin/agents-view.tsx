@@ -181,7 +181,7 @@ export function AdminAgentsView({
       </div>
 
       {/* Page tab bar */}
-      <div className="flex gap-1 rounded-2xl border border-white/55 bg-white/[0.65] p-1 shadow-[0_4px_16px_rgba(0,167,184,0.06)] backdrop-blur-2xl">
+      <div className="flex gap-1 rounded-2xl border border-white/55 bg-white/[0.65] p-1 shadow-[0_4px_16px_rgba(184,134,11,0.06)] backdrop-blur-2xl">
         {PAGE_TABS.map((t) => (
           <button
             key={t.key}
@@ -190,7 +190,7 @@ export function AdminAgentsView({
             className={cn(
               "flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-[13px] font-semibold transition-all duration-150",
               tab === t.key
-                ? "bg-[#00A7B8] text-white shadow-sm"
+                ? "bg-[#b8860b] text-white shadow-sm"
                 : "text-[#6B7280] hover:bg-white/60 hover:text-[#111827]"
             )}
           >
@@ -203,7 +203,7 @@ export function AdminAgentsView({
                     ? "bg-white/25 text-white"
                     : t.key === "auto"
                     ? "bg-[#FEF3C7] text-[#92400E]"
-                    : "bg-[#DCEEF2] text-[#00A7B8]"
+                    : "bg-[#ece1c8] text-[#b8860b]"
                 )}
               >
                 {t.badge}
@@ -225,7 +225,7 @@ export function AdminAgentsView({
               type="button"
               variant="outline"
               onClick={() => setShowCreate((v) => !v)}
-              className="gap-1.5 border-[#00A7B8] text-[#00A7B8] hover:bg-[#EEFBFC]"
+              className="gap-1.5 border-[#b8860b] text-[#b8860b] hover:bg-[#EEFBFC]"
             >
               <Plus className="h-4 w-4" />
               Ny agent
@@ -375,13 +375,13 @@ export function AdminAgentsView({
           {/* Balance chart */}
           <Card className="p-5">
             <div className="mb-4 flex items-center gap-2">
-              <BarChart3 className="h-5 w-5 text-[#00A7B8]" />
+              <BarChart3 className="h-5 w-5 text-[#b8860b]" />
               <h2 className="text-[15px] font-bold text-[#111827]">Arbejdsfordeling</h2>
             </div>
 
             {loadingStats ? (
               <div className="flex justify-center py-8">
-                <RefreshCw className="h-5 w-5 animate-spin text-[#00A7B8]" />
+                <RefreshCw className="h-5 w-5 animate-spin text-[#b8860b]" />
               </div>
             ) : balance.length === 0 ? (
               <EmptyState text="Ingen aktive agents." />
@@ -395,7 +395,7 @@ export function AdminAgentsView({
                       <div key={agent.agentId}>
                         <div className="mb-1.5 flex items-center justify-between gap-2">
                           <div className="flex items-center gap-2 min-w-0">
-                            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#EEFBFC] text-[11px] font-bold text-[#00A7B8]">
+                            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#EEFBFC] text-[11px] font-bold text-[#b8860b]">
                               {(agent.agentName || "A").slice(0, 2).toUpperCase()}
                             </span>
                             <span className="truncate text-[13px] font-semibold text-[#111827]">
@@ -403,7 +403,7 @@ export function AdminAgentsView({
                             </span>
                             {unbalanced && (
                               <span title="Denne agent har væsentligt mere arbejde end gennemsnittet">
-                                <AlertTriangle className="h-4 w-4 shrink-0 text-[#F59E0B]" />
+                                <AlertTriangle className="h-4 w-4 shrink-0 text-[#caa036]" />
                               </span>
                             )}
                           </div>
@@ -412,18 +412,18 @@ export function AdminAgentsView({
                               {agent.totalAssigned}
                             </span>
                             <span className="text-[12px] text-[#6B7280]"> tildelt</span>
-                            <span className="mx-1 text-[#DCEEF2]">·</span>
+                            <span className="mx-1 text-[#ece1c8]">·</span>
                             <span className="text-[12px] font-semibold text-[#111827]">
                               {agent.completed}
                             </span>
                             <span className="text-[12px] text-[#6B7280]"> afsluttet</span>
                           </div>
                         </div>
-                        <div className="h-2 overflow-hidden rounded-full bg-[#DCEEF2]">
+                        <div className="h-2 overflow-hidden rounded-full bg-[#ece1c8]">
                           <div
                             className={cn(
                               "h-full rounded-full transition-all duration-500",
-                              unbalanced ? "bg-[#F59E0B]" : "bg-[#00A7B8]"
+                              unbalanced ? "bg-[#caa036]" : "bg-[#b8860b]"
                             )}
                             style={{ width: `${Math.min(100, agent.fairnessPercent)}%` }}
                           />
@@ -498,7 +498,7 @@ function AgentCard({ agent }: { agent: AdminAgentSummary }) {
           {agent.unreadAdminMessages > 0 && (
             <div>
               <p className="text-[11px] text-[#6B7280]">Ulæst</p>
-              <p className="text-[15px] font-bold text-[#F59E0B]">{agent.unreadAdminMessages}</p>
+              <p className="text-[15px] font-bold text-[#caa036]">{agent.unreadAdminMessages}</p>
             </div>
           )}
         </div>
@@ -524,13 +524,13 @@ function AgentCard({ agent }: { agent: AdminAgentSummary }) {
                 className={cn(
                   "flex flex-1 items-center justify-center gap-1.5 rounded-lg px-3 py-2 text-[12px] font-semibold transition-all duration-150",
                   innerTab === t.key
-                    ? "bg-white text-[#00A7B8] shadow-sm"
+                    ? "bg-white text-[#b8860b] shadow-sm"
                     : "text-[#6B7280] hover:text-[#111827]"
                 )}
               >
                 {t.label}
                 {t.badge !== undefined && (
-                  <span className="rounded-full bg-[#F59E0B] px-1.5 py-0.5 text-[9px] font-bold leading-none text-white">
+                  <span className="rounded-full bg-[#caa036] px-1.5 py-0.5 text-[9px] font-bold leading-none text-white">
                     {t.badge}
                   </span>
                 )}
@@ -577,7 +577,7 @@ function ProfileTab({ agent }: { agent: AdminAgentSummary }) {
               <select
                 name="status"
                 defaultValue={agent.status}
-                className="h-10 w-full rounded-2xl border border-[#DCEEF2] bg-white/70 px-3 text-[13px] font-medium text-[#111827] outline-none"
+                className="h-10 w-full rounded-2xl border border-[#ece1c8] bg-white/70 px-3 text-[13px] font-medium text-[#111827] outline-none"
               >
                 <option value="active">Aktiv</option>
                 <option value="disabled">Deaktiveret</option>
@@ -659,7 +659,7 @@ function ProfileTab({ agent }: { agent: AdminAgentSummary }) {
                     "rounded-full border px-2.5 py-1 text-[12px] font-semibold",
                     s.isEnabled
                       ? "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]"
-                      : "border-[#DCEEF2] bg-white/60 text-[#6B7280]"
+                      : "border-[#ece1c8] bg-white/60 text-[#6B7280]"
                   )}
                 >
                   {s.serviceName}
@@ -745,7 +745,7 @@ function ScheduleTab({ agentId }: { agentId: string }) {
   };
 
   if (loading)
-    return <div className="flex justify-center py-8"><RefreshCw className="h-5 w-5 animate-spin text-[#00A7B8]" /></div>;
+    return <div className="flex justify-center py-8"><RefreshCw className="h-5 w-5 animate-spin text-[#b8860b]" /></div>;
 
   return (
     <div>
@@ -782,7 +782,7 @@ function ScheduleTab({ agentId }: { agentId: string }) {
                   value={row.startTime}
                   disabled={!row.isActive}
                   onChange={(e) => update(dayOfWeek, { startTime: e.target.value })}
-                  className="h-8 rounded-xl border border-[#DCEEF2] bg-white/70 px-2 text-[12px] outline-none disabled:opacity-40"
+                  className="h-8 rounded-xl border border-[#ece1c8] bg-white/70 px-2 text-[12px] outline-none disabled:opacity-40"
                 />
                 <span className="text-[12px] text-[#6B7280]">–</span>
                 <input
@@ -790,7 +790,7 @@ function ScheduleTab({ agentId }: { agentId: string }) {
                   value={row.endTime}
                   disabled={!row.isActive}
                   onChange={(e) => update(dayOfWeek, { endTime: e.target.value })}
-                  className="h-8 rounded-xl border border-[#DCEEF2] bg-white/70 px-2 text-[12px] outline-none disabled:opacity-40"
+                  className="h-8 rounded-xl border border-[#ece1c8] bg-white/70 px-2 text-[12px] outline-none disabled:opacity-40"
                 />
               </div>
             </div>
@@ -849,7 +849,7 @@ function HistoryTab({ agentId }: { agentId: string }) {
   }, [agentId]);
 
   if (loading)
-    return <div className="flex justify-center py-8"><RefreshCw className="h-5 w-5 animate-spin text-[#00A7B8]" /></div>;
+    return <div className="flex justify-center py-8"><RefreshCw className="h-5 w-5 animate-spin text-[#b8860b]" /></div>;
 
   if (history.length === 0)
     return <EmptyState text="Ingen tildelingshistorik endnu." />;
@@ -877,7 +877,7 @@ function HistoryTab({ agentId }: { agentId: string }) {
               className={cn(
                 "rounded-full px-2 py-0.5 text-[10px] font-bold",
                 entry.assignedBy === "system"
-                  ? "bg-[#EEFBFC] text-[#00A7B8]"
+                  ? "bg-[#EEFBFC] text-[#b8860b]"
                   : "bg-[#FEF3C7] text-[#92400E]"
               )}
             >
@@ -970,7 +970,7 @@ function AssignRow({
           name="agent_id"
           form={formId}
           defaultValue={booking.assignedAgentId}
-          className="h-9 flex-1 rounded-xl border border-[#DCEEF2] bg-white/70 px-3 text-[13px] text-[#111827] outline-none"
+          className="h-9 flex-1 rounded-xl border border-[#ece1c8] bg-white/70 px-3 text-[13px] text-[#111827] outline-none"
         >
           <option value="">Vælg agent…</option>
           {active.map((a) => (
@@ -985,14 +985,14 @@ function AssignRow({
         {autoResult === "success" ? (
           <span className="text-[13px] font-semibold text-[#10B981]">✓ {autoAgent}</span>
         ) : autoResult === "error" ? (
-          <span className="text-[13px] font-semibold text-[#F59E0B]">⚠ Ingen ledig</span>
+          <span className="text-[13px] font-semibold text-[#caa036]">⚠ Ingen ledig</span>
         ) : (
           <Button
             type="button"
             onClick={handleAuto}
             disabled={!autoEnabled || autoLoading}
             variant="outline"
-            className="h-9 border-[#00A7B8] px-3 text-[#00A7B8] hover:bg-[#EEFBFC]"
+            className="h-9 border-[#b8860b] px-3 text-[#b8860b] hover:bg-[#EEFBFC]"
           >
             {autoLoading ? <RefreshCw className="h-3.5 w-3.5 animate-spin" /> : <Zap className="h-3.5 w-3.5" />}
             Auto
@@ -1012,7 +1012,7 @@ function Card({ children, className }: { children: ReactNode; className?: string
   return (
     <div
       className={cn(
-        "rounded-2xl border border-white/55 bg-white/[0.65] shadow-[0_4px_24px_rgba(0,167,184,0.07)] backdrop-blur-2xl",
+        "rounded-2xl border border-white/55 bg-white/[0.65] shadow-[0_4px_24px_rgba(184,134,11,0.07)] backdrop-blur-2xl",
         className
       )}
     >
@@ -1031,9 +1031,9 @@ function KpiTile({
   icon: React.ElementType;
 }) {
   return (
-    <div className="flex items-center gap-3 rounded-2xl border border-white/55 bg-white/[0.65] px-4 py-3 shadow-[0_4px_16px_rgba(0,167,184,0.06)] backdrop-blur-2xl">
+    <div className="flex items-center gap-3 rounded-2xl border border-white/55 bg-white/[0.65] px-4 py-3 shadow-[0_4px_16px_rgba(184,134,11,0.06)] backdrop-blur-2xl">
       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#EEFBFC]">
-        <Icon className="h-5 w-5 text-[#00A7B8]" />
+        <Icon className="h-5 w-5 text-[#b8860b]" />
       </span>
       <div>
         <p className="text-[11px] font-medium text-[#6B7280]">{label}</p>
@@ -1064,7 +1064,7 @@ function Toggle({
       className={cn(
         "relative shrink-0 rounded-full transition-colors duration-200 focus:outline-none",
         w,
-        on ? "bg-[#00A7B8]" : "bg-[#D1D5DB]"
+        on ? "bg-[#b8860b]" : "bg-[#D1D5DB]"
       )}
     >
       <span
@@ -1087,7 +1087,7 @@ function AgentAvatar({ agent, size = "sm" }: { agent: AdminAgentSummary; size?: 
     );
   }
   return (
-    <span className={cn("flex shrink-0 items-center justify-center bg-[#EEFBFC] font-bold text-[#00A7B8]", cls)}>
+    <span className={cn("flex shrink-0 items-center justify-center bg-[#EEFBFC] font-bold text-[#b8860b]", cls)}>
       {(agent.fullName || agent.email || "A").slice(0, 2).toUpperCase()}
     </span>
   );
@@ -1131,7 +1131,7 @@ function Field({ label, children }: { label: string; children: ReactNode }) {
 
 function EmptyState({ text }: { text: string }) {
   return (
-    <div className="rounded-2xl border border-dashed border-[#DCEEF2] bg-white/40 px-4 py-6 text-center text-[13px] text-[#6B7280]">
+    <div className="rounded-2xl border border-dashed border-[#ece1c8] bg-white/40 px-4 py-6 text-center text-[13px] text-[#6B7280]">
       {text}
     </div>
   );

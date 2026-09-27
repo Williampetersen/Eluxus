@@ -126,11 +126,11 @@ export default function VerifyForm({
   return (
     <section className="mx-auto max-w-md">
       {/* Card */}
-      <div className="overflow-hidden rounded-xl border border-[var(--line)] bg-white shadow-[0_16px_42px_rgba(11,31,58,0.08)]">
+      <div className="overflow-hidden rounded-xl border border-[var(--line)] bg-white shadow-[0_16px_42px_rgba(27,23,18,0.08)]">
         {/* Header */}
-        <div className="bg-[#0B1F3A] px-6 py-5">
+        <div className="bg-[#1b1712] px-6 py-5">
           <p className="text-lg font-bold text-white">Eluxus</p>
-          <p className="mt-0.5 text-xs font-semibold uppercase tracking-widest text-[#00A7B8]">
+          <p className="mt-0.5 text-xs font-semibold uppercase tracking-widest text-[#b8860b]">
             Professionel bilvask
           </p>
         </div>
@@ -153,7 +153,7 @@ export default function VerifyForm({
           </div>
 
           {/* Masked email display */}
-          <div className="mb-5 flex items-center gap-3 rounded-lg border border-[var(--line)] bg-[#f6fbfc] px-4 py-3">
+          <div className="mb-5 flex items-center gap-3 rounded-lg border border-[var(--line)] bg-[#faf7f0] px-4 py-3">
             <Mail className="h-4 w-4 shrink-0 text-[var(--brand)]" />
             <div className="min-w-0">
               <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
@@ -182,7 +182,7 @@ export default function VerifyForm({
             <Button
               onClick={handleSendCode}
               disabled={isLoading}
-              className="h-11 w-full bg-[#F59E0B] font-semibold text-white hover:bg-[#D97706]"
+              className="h-11 w-full bg-[#caa036] font-semibold text-white hover:bg-[#96721a]"
             >
               {isLoading ? "Sender…" : "Send kode"}
             </Button>
@@ -216,7 +216,7 @@ export default function VerifyForm({
               <Button
                 onClick={handleVerifyCode}
                 disabled={isLoading || code.length !== 6 || Boolean(successMsg)}
-                className="h-11 w-full bg-[#F59E0B] font-semibold text-white hover:bg-[#D97706]"
+                className="h-11 w-full bg-[#caa036] font-semibold text-white hover:bg-[#96721a]"
               >
                 {isLoading ? "Bekræfter…" : "Bekræft og se min booking"}
               </Button>
@@ -247,7 +247,7 @@ export default function VerifyForm({
         </div>
 
         {/* Footer */}
-        <div className="border-t border-[var(--line)] bg-[#f6fbfc] px-6 py-4 text-center">
+        <div className="border-t border-[var(--line)] bg-[#faf7f0] px-6 py-4 text-center">
           <p className="text-xs text-[var(--muted)]">Eluxus · Professionel bilvask</p>
         </div>
       </div>
