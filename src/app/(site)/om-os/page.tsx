@@ -7,16 +7,16 @@ import { absoluteUrl } from "@/lib/seo-pages";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Om os | CleanWash",
+  title: "Om os | Eluxus Autoclean",
   description:
-    "Læs om CleanWash, professionel mobil bilvask i København og på Sjælland. Vi tilbyder bilvask, bilrengøring og bilpleje med nem booking.",
+    "Læs om Eluxus Autoclean, mobil bilvask med damp i København og på Sjælland med over 7 års erfaring. Vi tilbyder skånsom bilvask, bilrengøring og bilpleje med nem booking.",
   alternates: {
     canonical: "/om-os",
   },
   openGraph: {
-    title: "Om CleanWash | Professionel bilvask i København og på Sjælland",
+    title: "Om Eluxus Autoclean | Bilvask med damp i København og på Sjælland",
     description:
-      "CleanWash hjælper private og erhverv med mobil bilvask, indvendig bilrengøring, udvendig vask og bilpleje.",
+      "Eluxus Autoclean hjælper private og erhverv med mobil bilvask med damp, indvendig bilrengøring, udvendig vask og bilpleje – over 7 års erfaring i Danmark.",
     url: "/om-os",
     type: "website",
     locale: "da_DK",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "CleanWash professionel bilvask",
+        alt: "Eluxus professionel bilvask",
       },
     ],
   },
@@ -37,22 +37,22 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    title: "Nem booking",
-    text: "Kunder kan booke bilvask online og vælge den service, der passer til bilen.",
+    title: "Kvalitet",
+    text: "Grundigt arbejde, hver gang – med fokus på synlige resultater og en flot finish.",
   },
   {
-    title: "Grundigt arbejde",
-    text: "Vi fokuserer på synlige resultater, pæn finish og ordentlig behandling af bilen.",
+    title: "Miljøhensyn",
+    text: "Moderne dampteknologi med minimal vandbrug og skånsomme, biologisk nedbrydelige midler.",
   },
   {
-    title: "Lokal service",
-    text: "CleanWash hjælper kunder i København, Storkøbenhavn og store dele af Sjælland.",
+    title: "Tillid",
+    text: "Gennemsigtighed, punktlighed og god service – over 7 års erfaring med bilvask i Danmark.",
   },
 ];
 
 const services = [
-  "Udvendig bilvask",
-  "Indvendig bilrengøring",
+  "Udvendig bilvask med damp",
+  "Indvendig bilrengøring med damp",
   "Komplet bilpleje",
   "Sæderens og støvsugning",
   "Fælgrens og ruder",
@@ -67,15 +67,15 @@ const jsonLd: JsonValue = {
     {
       "@type": ["AutoWash", "LocalBusiness"],
       "@id": `${siteConfig.url}#localbusiness`,
-      name: "CleanWash",
+      name: "Eluxus",
       alternateName: siteConfig.name,
       url: siteConfig.url,
       image: absoluteUrl(siteConfig.ogImage),
       telephone: siteConfig.phoneDisplay,
       email: siteConfig.email,
-      openingHours: "Mo-Su 08:00-17:00",
+      openingHours: "Mo-Su 06:00-23:00",
       description:
-        "CleanWash tilbyder professionel mobil bilvask, bilrengøring og bilpleje i København og på Sjælland.",
+        "Eluxus Autoclean tilbyder professionel mobil bilvask med damp, bilrengøring og bilpleje i København og på Sjælland.",
       areaServed: ["København", "Copenhagen", "Sjælland", "Denmark"].map((area) => ({
         "@type": "Place",
         name: area,
@@ -85,13 +85,19 @@ const jsonLd: JsonValue = {
         target: absoluteUrl("/booking"),
         name: "Book bilvask online",
       },
-      // TODO: Add postalAddress when CleanWash has a confirmed public business address.
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Galgebakken Neder 304",
+        addressLocality: "Albertslund",
+        postalCode: "2620",
+        addressCountry: "DK",
+      },
     },
     {
       "@type": "AboutPage",
       "@id": `${absoluteUrl("/om-os")}#aboutpage`,
       url: absoluteUrl("/om-os"),
-      name: "Om CleanWash",
+      name: "Om Eluxus",
       about: {
         "@id": `${siteConfig.url}#localbusiness`,
       },
@@ -142,14 +148,15 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,167,184,0.20),transparent_48%,rgba(245,158,11,0.10))]" />
             <div className="relative">
               <span className="inline-flex rounded-full border border-white/12 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
-                Om CleanWash
+                Om Eluxus Autoclean
               </span>
               <h1 className="mt-5 max-w-3xl font-display text-[clamp(2.35rem,5vw,4.8rem)] font-semibold leading-[0.98] text-white">
-                Professionel bilvask gjort nemmere
+                Bilvask med damp, gjort nemmere
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-white/76 sm:text-lg">
-                CleanWash hjælper bilejere i København og på Sjælland med mobil bilvask,
-                indvendig bilrengøring, udvendig vask og bilpleje, der passer ind i hverdagen.
+                Eluxus Autoclean tilbyder professionel bilrengøring med fokus på kvalitet, skånsom
+                behandling og et synligt resultat. Vi kombinerer moderne dampteknologi med
+                grundighed og personlig service – med over 7 års erfaring i Danmark.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
@@ -170,8 +177,8 @@ export default function AboutPage() {
           </div>
           <div className="relative min-h-[18rem] lg:min-h-full">
             <Image
-              src="/service/helebil.jpg"
-              alt="CleanWash udfører professionel bilvask og bilpleje"
+              src="/eluxus/steam-clean.jpg"
+              alt="Eluxus udfører professionel bilvask med damp"
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover"
@@ -189,25 +196,27 @@ export default function AboutPage() {
               <span className="eyebrow">Kort fortalt</span>
               <h2 className="mt-5 section-title">Hvad vi laver</h2>
               <p className="mt-5 support-copy">
-                CleanWash tilbyder professionel bilvask i København og på Sjælland med nem online
-                booking. Kunder kan vælge bilvask, bilrengøring og bilpleje direkte på
-                booking-siden.
+                Vi er specialister i indvendig og udvendig bilrengøring og arbejder med effektive
+                dampmetoder, der er skånsomme mod både bilen og omgivelserne. Vores mål er
+                enkelt: at levere en renere biloplevelse, hvor detaljer, finish og
+                kundetilfredshed er i centrum.
               </p>
             </div>
           </div>
 
           <div className="space-y-5 text-base leading-8 text-[var(--muted)]">
             <p>
-              CleanWash er skabt til kunder, der gerne vil have en ren bil uden unødigt besvær.
-              Vi arbejder med mobil bilvask, indvendig bilrengøring, udvendig vask og komplet
-              bilpleje til både private og erhverv. Vores mål er enkelt: det skal være nemt at
-              booke en bilvask, tydeligt hvad du får, og rart at modtage bilen bagefter.
+              Eluxus er skabt til kunder, der gerne vil have en ren bil uden unødigt besvær.
+              Vi arbejder med mobil bilvask med damp, indvendig bilrengøring, udvendig vask og
+              komplet bilpleje til både private og erhverv. Vores mål er enkelt: det skal være
+              nemt at booke en bilvask, tydeligt hvad du får, og rart at modtage bilen bagefter.
             </p>
             <p>
               Mange biler bruges hver dag til arbejde, familie, pendling, møder og praktiske
               gøremål. Derfor bliver både kabine og udvendige flader hurtigt påvirket af støv,
-              snavs, vejr, pollen, vejsalt, sand, krummer og almindelig brug. CleanWash hjælper
-              med at få bilen tilbage til en renere og mere præsentabel stand.
+              snavs, vejr, pollen, vejsalt, sand, krummer og almindelig brug. Eluxus hjælper
+              med at få bilen tilbage til en renere og mere præsentabel stand – med minimal
+              vandforbrug og skånsom dampteknologi, der beskytter lak og interiør.
             </p>
             <p>
               Vi holder kommunikationen konkret. Du vælger service, oplyser bilens detaljer og
@@ -262,7 +271,7 @@ export default function AboutPage() {
               <span className="eyebrow">Hvor vi hjælper</span>
               <h2 className="mt-5 section-title">København og Sjælland</h2>
               <p className="mt-5 support-copy">
-                CleanWash dækker København, Storkøbenhavn og store dele af Sjælland. Den konkrete
+                Eluxus dækker København, Storkøbenhavn og store dele af Sjælland. Den konkrete
                 mulighed afhænger af adresse, booking, rute og valgt service.
               </p>
             </div>
@@ -297,7 +306,7 @@ export default function AboutPage() {
           <div className="section-shell px-6 py-8 sm:px-8">
             <div className="relative">
               <span className="eyebrow">Kontakt</span>
-              <h2 className="mt-5 section-title">Tal med CleanWash</h2>
+              <h2 className="mt-5 section-title">Tal med Eluxus</h2>
               <div className="mt-6 grid gap-4 text-sm font-semibold text-[var(--ink)]">
                 <a href={siteConfig.phoneHref} className="flex items-center gap-3">
                   <Sparkles className="h-5 w-5 text-[var(--brand)]" />
@@ -309,7 +318,7 @@ export default function AboutPage() {
                 </a>
                 <p className="flex items-center gap-3">
                   <Clock className="h-5 w-5 text-[var(--brand)]" />
-                  Alle ugens dage kl. 08-17
+                  Alle ugens dage kl. 06-23
                 </p>
               </div>
             </div>

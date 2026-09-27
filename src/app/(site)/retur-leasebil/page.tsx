@@ -18,14 +18,14 @@ import { absoluteUrl } from "@/lib/seo-pages";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Retur leasebil | Afleveringsvask til leasebil – CleanWash",
+  title: "Retur leasebil | Afleveringsvask til leasebil – Eluxus",
   description:
-    "Aflever din leasebil syns-klar. CleanWash tilbyder retur- og afleveringsvask til leasebil fra 2.200 kr. Tjek pris med din nummerplade og book online.",
+    "Aflever din leasebil syns-klar. Eluxus tilbyder retur- og afleveringsvask til leasebil fra 2.200 kr. Tjek pris med din nummerplade og book online.",
   alternates: {
     canonical: "/retur-leasebil",
   },
   openGraph: {
-    title: "Retur leasebil | Afleveringsvask til leasebil – CleanWash",
+    title: "Retur leasebil | Afleveringsvask til leasebil – Eluxus",
     description:
       "Professionel retur- og afleveringsvask til leasebil. Indtast din nummerplade og se prisen med det samme.",
     url: "/retur-leasebil",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "CleanWash retur leasebil",
+        alt: "Eluxus retur leasebil",
       },
     ],
   },
@@ -140,7 +140,7 @@ export default function ReturLeasebilPage() {
                 Aflever din leasebil 100% syns-klar
               </h1>
               <p className="mt-6 max-w-xl text-base leading-8 text-white/76 sm:text-lg">
-                CleanWash gør din leasebil grundigt ren ude og inde, før du afleverer den. Undgå
+                Eluxus gør din leasebil grundigt ren ude og inde, før du afleverer den. Undgå
                 ekstra gebyrer for snavs, pletter eller lugt — vi klargør bilen til syn på ca. 2 timer.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -163,7 +163,7 @@ export default function ReturLeasebilPage() {
           <div className="relative min-h-[18rem] lg:min-h-full">
             <Image
               src="/service/helebil.jpg"
-              alt="CleanWash klargør leasebil til aflevering"
+              alt="Eluxus klargør leasebil til aflevering"
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover"

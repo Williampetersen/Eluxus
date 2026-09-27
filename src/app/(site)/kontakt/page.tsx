@@ -5,13 +5,13 @@ import { ContactForm } from "@/components/contact-form";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Kontakt os | CleanWash — Professionel bilvask",
+  title: "Kontakt os | Eluxus — Professionel bilvask",
   description:
-    "Kontakt CleanWash med spørgsmål om bilvask, booking, erhvervsaftaler eller andet. Udfyld formularen eller ring til os på 42 50 45 51 — vi svarer inden for 24 timer.",
+    "Kontakt Eluxus med spørgsmål om bilvask, booking, erhvervsaftaler eller andet. Udfyld formularen eller ring til os på 93 96 85 96 — vi svarer inden for 24 timer.",
   openGraph: {
-    title: "Kontakt os | CleanWash",
+    title: "Kontakt os | Eluxus",
     description:
-      "Kontakt CleanWash med spørgsmål om bilvask, booking eller erhvervsaftaler. Vi svarer inden for 24 timer.",
+      "Kontakt Eluxus med spørgsmål om bilvask, booking eller erhvervsaftaler. Vi svarer inden for 24 timer.",
   },
 };
 
@@ -44,8 +44,9 @@ export default function KontaktPage() {
               Kontakt os
             </h1>
             <p className="mt-5 max-w-xl text-base leading-8 text-white/76">
-              Har du spørgsmål om bilvask, booking, erhvervsaftaler eller andet? Udfyld formularen,
-              ring eller skriv til os — vi svarer inden for 24 timer.
+              Mobil bilvask med damp i København og på Sjælland – professionel, skånsom og
+              miljøvenlig. Har du spørgsmål om bilvask, booking eller erhvervsaftaler? Udfyld
+              formularen, ring eller skriv til os — vi svarer inden for 24 timer.
             </p>
           </div>
         </div>
@@ -97,7 +98,7 @@ export default function KontaktPage() {
                   <p className="mt-0.5 text-sm font-semibold text-[var(--ink)]">
                     Alle ugens dage
                   </p>
-                  <p className="text-sm text-[var(--muted)]">kl. 08:00–17:00</p>
+                  <p className="text-sm text-[var(--muted)]">kl. 06:00–23:00</p>
                 </div>
               </div>
 
@@ -110,9 +111,11 @@ export default function KontaktPage() {
                     Serviceområde
                   </p>
                   <p className="mt-0.5 text-sm font-semibold text-[var(--ink)]">
-                    København og Sjælland
+                    Galgebakken Neder 304, 2620 Albertslund
                   </p>
-                  <p className="text-sm text-[var(--muted)]">Vi kommer ud til dig</p>
+                  <p className="text-sm text-[var(--muted)]">
+                    København og Sjælland — vi kommer ud til dig
+                  </p>
                 </div>
               </div>
             </div>

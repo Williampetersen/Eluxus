@@ -88,7 +88,7 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Admin",
-  description: "CleanWash admin dashboard.",
+  description: "Eluxus admin dashboard.",
   alternates: {
     canonical: "/admin",
   },
@@ -1123,7 +1123,7 @@ function AdminOverviewDashboard({
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#e9e6ff] text-lg font-semibold text-[#6257e8]">
             WM
           </div>
-          <p className="mt-3 font-semibold text-[#211955]">CleanWash Admin</p>
+          <p className="mt-3 font-semibold text-[#211955]">Eluxus Admin</p>
           <p className="mt-1 text-xs text-[#8b85aa]">{dashboard.settings.supportEmail}</p>
         </div>
 
@@ -1267,7 +1267,7 @@ function GlassCalendarPanel({
                 {monthName}
               </p>
               <p className="mt-3 max-w-xl text-sm leading-6 text-[#817b9f]">
-                Ugeplan med faktiske bookinger, arbejdstider og blokeringer fra CleanWash.
+                Ugeplan med faktiske bookinger, arbejdstider og blokeringer fra Eluxus.
               </p>
             </div>
 
@@ -3509,7 +3509,7 @@ function AdminManagementView({
         <form action="/api/admin/admins/action" method="POST" className="grid gap-4 px-5 py-5 sm:grid-cols-2 lg:grid-cols-3">
           <input type="hidden" name="action" value="create" />
           <Field label="E-mail">
-            <Input type="email" name="email" placeholder="admin@cleanwash.dk" required />
+            <Input type="email" name="email" placeholder="admin@eluxus.dk" required />
           </Field>
           <Field label="Adgangskode (min. 8 tegn)">
             <Input type="password" name="password" minLength={8} required autoComplete="new-password" />
@@ -3644,7 +3644,7 @@ function TrustpilotView({
           <p className="mt-2 text-[13px] leading-6 text-[#6B7280]">
             Når en booking markeres som &quot;Afsluttet&quot;, sender systemet automatisk en mail til kunden med link til{" "}
             <a
-              href="https://dk.trustpilot.com/evaluate/www.cleanwash.dk"
+              href="https://dk.trustpilot.com/evaluate/www.eluxus.dk"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-[#00A7B8]"

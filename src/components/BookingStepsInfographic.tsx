@@ -8,8 +8,8 @@ const STEPS = [
   {
     number: "01",
     Icon: CalendarDays,
-    title: "Vælg din service",
-    text: "Udvendig, indvendig eller komplet – find præcis det din bil har brug for.",
+    title: "Hurtig booking",
+    text: "Book din dampbilvask online på få minutter – nemt og hurtigt.",
     color: "#00A7B8",
     glow: "rgba(0,167,184,0.28)",
     iconBg: "rgba(0,167,184,0.10)",
@@ -19,8 +19,8 @@ const STEPS = [
   {
     number: "02",
     Icon: MapPin,
-    title: "Vi kører til dig",
-    text: "Vi møder op præcis der, hvor bilen holder – hjemme, på job eller i garagen.",
+    title: "Vi kommer til dig",
+    text: "Hjemme, på arbejdet eller hvor din bil holder – vi dækker Sjælland.",
     color: "#F59E0B",
     glow: "rgba(245,158,11,0.28)",
     iconBg: "rgba(245,158,11,0.10)",
@@ -30,8 +30,8 @@ const STEPS = [
   {
     number: "03",
     Icon: Sparkles,
-    title: "Bilen skinner igen",
-    text: "Sæt dig ind i en frisk og skinnende ren bil. Vi håndterer det hele.",
+    title: "Som ny igen",
+    text: "Din bil efterlades ren, frisk og med professionel finish.",
     color: "#3B82F6",
     glow: "rgba(59,130,246,0.28)",
     iconBg: "rgba(59,130,246,0.10)",
@@ -254,7 +254,7 @@ export function BookingStepsInfographic() {
                 : "none",
             }}
           >
-            Tre nemme trin
+            Vores koncept
           </span>
           <h2
             id="steps-title"
@@ -266,7 +266,7 @@ export function BookingStepsInfographic() {
                 : "none",
             }}
           >
-            Rent og enkelt
+            Så nemt er det
           </h2>
         </div>
 

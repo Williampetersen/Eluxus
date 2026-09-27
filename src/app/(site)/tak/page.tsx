@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Tak for din henvendelse | CleanWash",
+  title: "Tak for din henvendelse | Eluxus",
   description: "Vi har modtaget din henvendelse og vender tilbage inden for 24 timer.",
   robots: { index: false, follow: false },
 };

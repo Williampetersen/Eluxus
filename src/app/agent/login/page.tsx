@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 
 export const metadata: Metadata = {
   title: "Agent login",
-  description: "Log ind til CleanWash agent dashboard.",
+  description: "Log ind til Eluxus agent dashboard.",
   alternates: {
     canonical: "/agent/login",
   },
@@ -40,7 +40,7 @@ export default async function AgentLoginPage({
         <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
           <div className="rounded-[2rem] bg-[linear-gradient(155deg,#0B1F3A,#12345A_52%,#00A7B8)] p-8 text-white shadow-[0_30px_80px_rgba(11,31,58,0.2)]">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
-              CleanWash Agents
+              Eluxus Agents
             </p>
             <h1 className="mt-4 font-display text-4xl font-semibold leading-tight">
               Dine opgaver, kalender og beskeder samlet et sted.

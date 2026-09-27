@@ -9,7 +9,7 @@ const config = [
       ".vercel/**",
       "dist/**",
       "node_modules/**",
-      "CleanWash/**",
+      "Eluxus/**",
     ],
   },
   ...nextVitals,

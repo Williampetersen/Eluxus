@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "CleanWash",
+  name: "Eluxus",
   description:
-    "CleanWash tilbyder professionel mobil bilvask i København og på Sjælland. Book bilvask på adressen med nummerpladeopslag, klar pris og fleksible tider.",
-  url: process.env.APP_URL || "https://cleanwash.dk",
+    "Eluxus tilbyder professionel mobil bilvask med damp i København og på Sjælland. Book bilvask på adressen med nummerpladeopslag, klar pris og fleksible tider.",
+  url: process.env.APP_URL || "https://eluxus.dk",
   ogImage: "/opengraph.jpg",
-  phoneDisplay: "42 50 45 51",
-  phoneHref: "tel:+4542504551",
-  email: "info@cleanwash.dk",
+  phoneDisplay: "93 96 85 96",
+  phoneHref: "tel:+4593968596",
+  email: "info@eluxus.dk",
   bookingExternalUrl: "/booking",
   giftCardUrl: "/booking",
 };

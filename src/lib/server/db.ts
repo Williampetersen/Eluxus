@@ -3,12 +3,12 @@ import { defaultBookingSettings } from "@/lib/shared/booking";
 
 declare global {
   // Keep one postgres pool per server runtime, including Next.js dev hot reloads.
-  var CleanWashSql: Sql | null | undefined;
-  var CleanWashSchemaPromise: Promise<void> | null | undefined;
+  var EluxusSql: Sql | null | undefined;
+  var EluxusSchemaPromise: Promise<void> | null | undefined;
 }
 
-let cachedSql: Sql | null | undefined = globalThis.CleanWashSql;
-let schemaPromise: Promise<void> | null = globalThis.CleanWashSchemaPromise ?? null;
+let cachedSql: Sql | null | undefined = globalThis.EluxusSql;
+let schemaPromise: Promise<void> | null = globalThis.EluxusSchemaPromise ?? null;
 
 const getConnectionString = () => process.env.DATABASE_URL || process.env.POSTGRES_URL || "";
 export const shouldRunDatabaseSetup = () =>
@@ -35,7 +35,7 @@ const createClient = () => {
 export const getSql = () => {
   if (cachedSql === undefined) {
     cachedSql = createClient();
-    globalThis.CleanWashSql = cachedSql;
+    globalThis.EluxusSql = cachedSql;
   }
 
   if (!cachedSql) {
@@ -541,8 +541,8 @@ export const ensureSchema = async (options: { force?: boolean } = {}) => {
       await sql`
         ALTER TABLE booking_settings
           ADD COLUMN IF NOT EXISTS settings_key TEXT,
-          ADD COLUMN IF NOT EXISTS company_name TEXT NOT NULL DEFAULT 'CleanWash',
-          ADD COLUMN IF NOT EXISTS support_email TEXT NOT NULL DEFAULT 'info@cleanwash.dk',
+          ADD COLUMN IF NOT EXISTS company_name TEXT NOT NULL DEFAULT 'Eluxus',
+          ADD COLUMN IF NOT EXISTS support_email TEXT NOT NULL DEFAULT 'info@eluxus.dk',
           ADD COLUMN IF NOT EXISTS admin_notify_email TEXT NOT NULL DEFAULT '',
           ADD COLUMN IF NOT EXISTS default_booking_status TEXT NOT NULL DEFAULT 'pending',
           ADD COLUMN IF NOT EXISTS start_hour INTEGER NOT NULL DEFAULT 8,
@@ -718,8 +718,8 @@ export const ensureSchema = async (options: { force?: boolean } = {}) => {
           disabled_message TEXT NOT NULL DEFAULT 'Online booking is temporarily unavailable.',
           currency TEXT NOT NULL DEFAULT 'DKK',
           vat_rate INTEGER NOT NULL DEFAULT 25,
-          company_name TEXT NOT NULL DEFAULT 'CleanWash',
-          support_email TEXT NOT NULL DEFAULT 'info@cleanwash.dk',
+          company_name TEXT NOT NULL DEFAULT 'Eluxus',
+          support_email TEXT NOT NULL DEFAULT 'info@eluxus.dk',
           admin_notify_email TEXT NOT NULL DEFAULT '',
           admin_notify_email_2 TEXT NOT NULL DEFAULT '',
           admin_notify_email_3 TEXT NOT NULL DEFAULT '',
@@ -983,20 +983,20 @@ export const ensureSchema = async (options: { force?: boolean } = {}) => {
         );
       `;
     })();
-    globalThis.CleanWashSchemaPromise = schemaPromise;
+    globalThis.EluxusSchemaPromise = schemaPromise;
   }
 
   try {
     await schemaPromise;
   } catch (error) {
     schemaPromise = null;
-    globalThis.CleanWashSchemaPromise = null;
+    globalThis.EluxusSchemaPromise = null;
     throw error;
   }
 };
 
 export const runDatabaseMigrations = () => {
   schemaPromise = null;
-  globalThis.CleanWashSchemaPromise = null;
+  globalThis.EluxusSchemaPromise = null;
   return ensureSchema({ force: true });
 };

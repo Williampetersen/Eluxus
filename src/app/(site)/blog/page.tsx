@@ -10,14 +10,14 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Blog om bilvask og bilpleje",
   description:
-    "Guides om bilvask, bilpleje og lakbeskyttelse fra CleanWash: damprensning, keramisk forsegling, fjernelse af fugleklatter, forsikring og tegn på at bilen trænger til en professionel rens.",
+    "Guides om bilvask, bilpleje og lakbeskyttelse fra Eluxus: damprensning, keramisk forsegling, fjernelse af fugleklatter, forsikring og tegn på at bilen trænger til en professionel rens.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog om bilvask og bilpleje | CleanWash",
+    title: "Blog om bilvask og bilpleje | Eluxus",
     description:
-      "Guides om bilvask, bilpleje og lakbeskyttelse fra CleanWash, skrevet til bilejere i København og på Sjælland.",
+      "Guides om bilvask, bilpleje og lakbeskyttelse fra Eluxus, skrevet til bilejere i København og på Sjælland.",
   },
 };
 
@@ -53,7 +53,7 @@ export default function BlogIndexPage() {
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,167,184,0.18),transparent_48%,rgba(245,158,11,0.10))]" />
           <div className="relative max-w-2xl">
             <span className="inline-flex rounded-full border border-white/12 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
-              CleanWash blog
+              Eluxus blog
             </span>
             <h1 className="mt-5 font-display text-[clamp(2.35rem,5vw,4.2rem)] font-semibold leading-[0.98] text-white">
               Bilvask og bilpleje forklaret
@@ -116,7 +116,7 @@ export default function BlogIndexPage() {
               Klar til en renere bil?
             </h2>
             <p className="mt-4 max-w-2xl text-white/76">
-              Book professionel bilvask og bilpleje hos CleanWash. Du kan også kontakte os på{" "}
+              Book professionel bilvask og bilpleje hos Eluxus. Du kan også kontakte os på{" "}
               {siteConfig.phoneDisplay} eller {siteConfig.email}.
             </p>
           </div>

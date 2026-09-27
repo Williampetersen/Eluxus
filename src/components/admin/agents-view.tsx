@@ -89,7 +89,7 @@ export function AdminAgentsView({
   // auto-assign state
   const [autoEnabled, setAutoEnabled] = useState(() =>
     typeof window !== "undefined"
-      ? localStorage.getItem("washmax_auto") !== "false"
+      ? localStorage.getItem("eluxus_auto") !== "false"
       : true
   );
   const [balance, setBalance] = useState<AgentBalanceItem[]>([]);
@@ -335,7 +335,7 @@ export function AdminAgentsView({
                   onToggle={() => {
                     const next = !autoEnabled;
                     setAutoEnabled(next);
-                    localStorage.setItem("washmax_auto", String(next));
+                    localStorage.setItem("eluxus_auto", String(next));
                   }}
                 />
               </div>

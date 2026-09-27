@@ -19,7 +19,7 @@ const bookingSteps = [
   {
     number: "3",
     title: "Mød op – vi klarer resten",
-    text: "Kom med bilen til din aftalte tid, og lad Clean Wash sørge for en ren, frisk og velplejet bil.",
+    text: "Kom med bilen til din aftalte tid, og lad Eluxus sørge for en ren, frisk og velplejet bil.",
     color: "#514399",
     shadow: "shadow-[0_18px_34px_rgba(81,67,153,0.28)]",
   },

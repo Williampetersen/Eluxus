@@ -253,8 +253,8 @@ export const weekdayOptions = [
 ] as const;
 
 export const defaultBookingSettings: BookingSettings = {
-  companyName: "CleanWash",
-  supportEmail: "info@cleanwash.dk",
+  companyName: "Eluxus",
+  supportEmail: "info@eluxus.dk",
   adminNotifyEmail: "",
   defaultBookingStatus: "pending",
   timeZone: "Europe/Copenhagen",

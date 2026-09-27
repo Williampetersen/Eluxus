@@ -3,9 +3,9 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Persondatapolitik | CleanWash",
+  title: "Persondatapolitik | Eluxus",
   description:
-    "CleanWash's persondatapolitik. Læs om, hvilke oplysninger vi indsamler, hvordan vi behandler dine data, og dine rettigheder i henhold til GDPR.",
+    "Eluxus' persondatapolitik. Læs om, hvilke oplysninger vi indsamler, hvordan vi behandler dine data, og dine rettigheder i henhold til GDPR.",
   alternates: {
     canonical: "/persondatapolitik",
   },
@@ -61,7 +61,7 @@ export default function PersondatapolitikPage() {
               Den dataansvarlige for behandling af dine personoplysninger er:
             </p>
             <p>
-              <strong className="font-semibold text-[var(--ink)]">CleanWash</strong>
+              <strong className="font-semibold text-[var(--ink)]">Eluxus</strong>
               <br />
               Tlf.: {siteConfig.phoneDisplay}
               <br />
@@ -78,7 +78,7 @@ export default function PersondatapolitikPage() {
                 href={siteConfig.url}
                 className="font-medium text-[var(--brand)] underline-offset-2 hover:underline"
               >
-                cleanwash.dk
+                eluxus.dk
               </a>
             </p>
             <p>
@@ -144,7 +144,7 @@ export default function PersondatapolitikPage() {
                   <tr>
                     <td className="px-4 py-3 font-medium text-[var(--ink)]">Kommunikationsdata</td>
                     <td className="px-4 py-3 text-[var(--muted)]">
-                      E-mailkorrespondance, beskeder og henvendelser til CleanWash
+                      E-mailkorrespondance, beskeder og henvendelser til Eluxus
                     </td>
                   </tr>
                   <tr>
@@ -282,7 +282,7 @@ export default function PersondatapolitikPage() {
           {/* §5 */}
           <Section title="§ 5 — Videregivelse af oplysninger">
             <p>
-              CleanWash sælger aldrig dine personoplysninger til tredjepart.
+              Eluxus sælger aldrig dine personoplysninger til tredjepart.
             </p>
             <p>
               Vi kan videregive dine oplysninger til følgende kategorier af modtagere:
@@ -379,7 +379,7 @@ export default function PersondatapolitikPage() {
           {/* §7 */}
           <Section title="§ 7 — Cookies og webanalyse">
             <p>
-              CleanWash.dk bruger cookies og lignende teknologier til at sikre en velfungerende
+              Eluxus.dk bruger cookies og lignende teknologier til at sikre en velfungerende
               hjemmeside og til at forbedre vores services. Du accepterer brug af nødvendige
               cookies ved at bruge hjemmesiden.
             </p>
@@ -440,7 +440,7 @@ export default function PersondatapolitikPage() {
           {/* §8 */}
           <Section title="§ 8 — Sikkerhed">
             <p>
-              CleanWash tager datasikkerhed alvorligt. Vi benytter tekniske og organisatoriske
+              Eluxus tager datasikkerhed alvorligt. Vi benytter tekniske og organisatoriske
               foranstaltninger for at beskytte dine personoplysninger mod uautoriseret adgang,
               tab, misbrug og ændring. Herunder:
             </p>
@@ -476,7 +476,7 @@ export default function PersondatapolitikPage() {
           {/* §10 */}
           <Section title="§ 10 — Klage til Datatilsynet">
             <p>
-              Har du indsigelser mod CleanWash's behandling af dine personoplysninger, opfordrer
+              Har du indsigelser mod Eluxus' behandling af dine personoplysninger, opfordrer
               vi dig til at kontakte os direkte. Du har dog til enhver tid ret til at indgive
               klage til:
             </p>
@@ -503,13 +503,13 @@ export default function PersondatapolitikPage() {
           {/* §11 */}
           <Section title="§ 11 — Ændringer i persondatapolitikken">
             <p>
-              CleanWash forbeholder sig retten til at opdatere denne persondatapolitik. Den
+              Eluxus forbeholder sig retten til at opdatere denne persondatapolitik. Den
               gældende version er altid tilgængelig på{" "}
               <a
                 href={`${siteConfig.url}/persondatapolitik`}
                 className="font-medium text-[var(--brand)] underline-offset-2 hover:underline"
               >
-                cleanwash.dk/persondatapolitik
+                eluxus.dk/persondatapolitik
               </a>
               . Væsentlige ændringer meddeles via e-mail til berørte kunder eller ved et tydeligt
               varsel på hjemmesiden.
@@ -523,7 +523,7 @@ export default function PersondatapolitikPage() {
             </h2>
             <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
               Har du spørgsmål til vores behandling af personoplysninger, ønsker du at udøve
-              dine rettigheder, eller ønsker du at trække et samtykke tilbage? Kontakt CleanWash.
+              dine rettigheder, eller ønsker du at trække et samtykke tilbage? Kontakt Eluxus.
             </p>
             <div className="mt-4 flex flex-col gap-2 text-sm font-semibold sm:flex-row sm:gap-6">
               <a

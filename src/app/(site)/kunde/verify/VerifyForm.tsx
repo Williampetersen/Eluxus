@@ -129,7 +129,7 @@ export default function VerifyForm({
       <div className="overflow-hidden rounded-xl border border-[var(--line)] bg-white shadow-[0_16px_42px_rgba(11,31,58,0.08)]">
         {/* Header */}
         <div className="bg-[#0B1F3A] px-6 py-5">
-          <p className="text-lg font-bold text-white">Clean Wash</p>
+          <p className="text-lg font-bold text-white">Eluxus</p>
           <p className="mt-0.5 text-xs font-semibold uppercase tracking-widest text-[#00A7B8]">
             Professionel bilvask
           </p>
@@ -248,7 +248,7 @@ export default function VerifyForm({
 
         {/* Footer */}
         <div className="border-t border-[var(--line)] bg-[#f6fbfc] px-6 py-4 text-center">
-          <p className="text-xs text-[var(--muted)]">Clean Wash · Professionel bilvask</p>
+          <p className="text-xs text-[var(--muted)]">Eluxus · Professionel bilvask</p>
         </div>
       </div>
     </section>

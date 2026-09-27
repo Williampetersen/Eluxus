@@ -1190,7 +1190,7 @@
   background: var(--panel);
 }
 
-.cleanwashBadge {
+.eluxusBadge {
   display: flex;
   align-items: center;
   gap: 0.9rem;
@@ -1201,20 +1201,20 @@
   background: rgba(201, 255, 61, 0.045);
 }
 
-.cleanwashBadge svg {
+.eluxusBadge svg {
   color: var(--lime);
 }
 
-.cleanwashBadge strong,
-.cleanwashBadge span {
+.eluxusBadge strong,
+.eluxusBadge span {
   display: block;
 }
 
-.cleanwashBadge strong {
+.eluxusBadge strong {
   font-size: 0.85rem;
 }
 
-.cleanwashBadge span {
+.eluxusBadge span {
   margin-top: 0.4rem;
   color: #78889d;
   font-size: 0.62rem;
@@ -1928,12 +1928,12 @@
   color: #475467;
 }
 
-.cleanwashBadge {
+.eluxusBadge {
   border-color: rgba(111, 152, 0, 0.2);
   background: rgba(132, 204, 22, 0.07);
 }
 
-.cleanwashBadge span {
+.eluxusBadge span {
   color: #667085;
 }
 

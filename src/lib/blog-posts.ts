@@ -105,9 +105,9 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Sådan arbejder CleanWash med damp i praksis",
+        heading: "Sådan arbejder Eluxus med damp i praksis",
         paragraphs: [
-          "Hos CleanWash bruger vi damp som en del af den indvendige rengøring, når bilen har brug for en dybere rens af kabinen – for eksempel ved lugtgener, pletter i sæderne eller generel opfriskning efter længere tids brug. Det kombineres med støvsugning, aftørring og eventuel pletrensning af sæder og tæpper, så resultatet bliver konsekvent.",
+          "Hos Eluxus bruger vi damp som en del af den indvendige rengøring, når bilen har brug for en dybere rens af kabinen – for eksempel ved lugtgener, pletter i sæderne eller generel opfriskning efter længere tids brug. Det kombineres med støvsugning, aftørring og eventuel pletrensning af sæder og tæpper, så resultatet bliver konsekvent.",
           "Udvendigt bruger vi damp selektivt til detaljer og fastsiddende snavs, mens selve karrosseriet vaskes med metoder, der er testet til at fjerne vejsnavs og salt uden at gå på kompromis med lakken. Vil du booke en tid, hvor damp indgår som en del af den indvendige rens, kan du vælge det direkte i bookingflowet.",
         ],
       },
@@ -455,7 +455,7 @@ export const blogPosts: BlogPost[] = [
     ],
     relatedPosts: ["fjern-fugleklatter-insekter-uden-at-ridse-lakken", "5-tegn-paa-at-bilen-traenger-til-bilpleje"],
     relatedLinks: [
-      { label: "Garanti hos CleanWash", href: route("/garanti") },
+      { label: "Garanti hos Eluxus", href: route("/garanti") },
       { label: "Om os", href: route("/om-os") },
       { label: "Book bilvask", href: route("/booking") },
     ],

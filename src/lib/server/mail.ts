@@ -94,7 +94,7 @@ const getMailConfig = () => ({
   pass: process.env.SMTP_PASSWORD || "",
   from:
     process.env.MAIL_FROM ||
-    `${process.env.MAIL_FROM_NAME || "CleanWash"} <${process.env.SMTP_USER || ""}>`,
+    `${process.env.MAIL_FROM_NAME || "Eluxus"} <${process.env.SMTP_USER || ""}>`,
 });
 
 export const isMailConfigured = () => {
@@ -262,7 +262,7 @@ const renderAdminNote = (adminNotes?: string) => {
   if (!note) return "";
   return (
     `<div style="background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:16px 20px;margin-bottom:16px;">` +
-    `<p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#D97706;font-family:Arial,Helvetica,sans-serif;">Besked fra CleanWash</p>` +
+    `<p style="margin:0 0 6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#D97706;font-family:Arial,Helvetica,sans-serif;">Besked fra Eluxus</p>` +
     `<p style="margin:0;font-size:14px;color:#92400E;line-height:1.6;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(note)}</p>` +
     `</div>`
   );
@@ -409,7 +409,7 @@ const renderCustomerEmailText = (input: {
   ];
 
   if (input.booking.adminNotes?.trim()) {
-    lines.push("", `Besked fra CleanWash: ${input.booking.adminNotes.trim()}`);
+    lines.push("", `Besked fra Eluxus: ${input.booking.adminNotes.trim()}`);
   }
 
   if (input.portalUrl) {
@@ -467,7 +467,7 @@ const getCustomerCreationCopy = (
       return {
         subject: `${settings.companyName}: booking modtaget`,
         eyebrow: "Booking modtaget",
-        title: "Tak for din booking hos Clean Wash",
+        title: "Tak for din booking hos Eluxus",
         intro: `Vi har modtaget din booking hos ${settings.companyName} og glæder os til at gøre din bil ren og klar. Vi gennemgår nu forespørgslen for ${appointmentLabel}.`,
         highlight:
           "Du får en ny mail, så snart bookingen er godkendt eller hvis vi har brug for at justere noget.",
@@ -512,7 +512,7 @@ const getCustomerStatusCopy = (
         title: "Tak for din booking",
         intro: `Din booking for ${appointmentLabel} er nu afsluttet.`,
         highlight:
-          "Tak fordi du valgte CleanWash. Du kan altid finde forløbet igen i kundeportalen og booke en ny tid derfra.",
+          "Tak fordi du valgte Eluxus. Du kan altid finde forløbet igen i kundeportalen og booke en ny tid derfra.",
         footer:
           "Hvis du vil have en ny tid eller har feedback, er du altid velkommen til at kontakte os.",
         portalLabel: "Se bookinghistorik",
@@ -753,8 +753,8 @@ export const sendAdminNewBookingAlert = async (input: {
   });
 };
 
-const TRUSTPILOT_REVIEW_URL = "https://dk.trustpilot.com/evaluate/www.cleanwash.dk";
-const APP_URL = process.env.APP_URL || "https://cleanwash.dk";
+const TRUSTPILOT_REVIEW_URL = "https://dk.trustpilot.com/evaluate/www.eluxus.dk";
+const APP_URL = process.env.APP_URL || "https://eluxus.dk";
 const TRUSTPILOT_STARS_IMAGE_URL = `${APP_URL}/trustpilot-5stjerner.png`;
 
 export const sendTrustpilotReviewEmail = async (input: {

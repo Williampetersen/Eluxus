@@ -89,15 +89,15 @@ const relatedLinksWithout = (href: string) =>
 export const seoPages: SeoPageConfig[] = [
   {
     slug: "bilvask-koebenhavn",
-    title: "Bilvask København | Professionel bilvask hos CleanWash",
+    title: "Bilvask København | Professionel bilvask med damp hos Eluxus",
     description:
-      "Book professionel bilvask i København hos CleanWash. Få fleksibel bilpleje, indvendig og udvendig vask samt nem online booking.",
+      "Book professionel bilvask med damp i København hos Eluxus. Få fleksibel bilpleje, indvendig og udvendig vask samt nem online booking.",
     h1: "Bilvask København",
     eyebrow: "Professionel bilvask i København",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i København med online booking, klare servicevalg og bilpleje til både private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i København med online booking, klare servicevalg og bilpleje til både private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder professionel bilvask i København med online booking.",
+      "Eluxus tilbyder professionel bilvask med damp i København med online booking.",
       "Kunder kan booke bilvask direkte via booking-siden og vælge indvendig, udvendig eller komplet bilpleje.",
       "Servicen er relevant for bilejere i København, Frederiksberg, Amager, brokvartererne og Storkøbenhavn.",
     ],
@@ -124,7 +124,7 @@ export const seoPages: SeoPageConfig[] = [
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
     image: {
       src: "/service/helebil.jpg",
-      alt: "Professionel bilvask i København udført af CleanWash",
+      alt: "Professionel bilvask i København udført af Eluxus",
     },
     secondaryCta: {
       label: "Se mobil bilvask",
@@ -137,7 +137,7 @@ export const seoPages: SeoPageConfig[] = [
       },
       {
         title: "Indvendig og udvendig vask",
-        text: "CleanWash hjælper med både kabine, ruder, fælge, lak og den komplette bilvask.",
+        text: "Eluxus hjælper med både kabine, ruder, fælge, lak og den komplette bilvask.",
       },
       {
         title: "Lokal forståelse",
@@ -158,7 +158,7 @@ export const seoPages: SeoPageConfig[] = [
         text: "Udfyld nummerplade, kontaktoplysninger og ønsket tidspunkt, så bookingen kan planlægges.",
       },
       {
-        title: "CleanWash klargør opgaven",
+        title: "Eluxus klargør opgaven",
         text: "Teamet forbereder service, udstyr og rute ud fra den valgte løsning.",
       },
       {
@@ -170,21 +170,21 @@ export const seoPages: SeoPageConfig[] = [
       {
         heading: "Bilvask i København for en travl hverdag",
         paragraphs: [
-          "Når du søger efter bilvask København, leder du ofte efter mere end en hurtig tur gennem vaskehallen. Du vil have en løsning, der passer ind i hverdagen, giver et ordentligt resultat og gør det nemt at få bilen ren, når kalenderen allerede er fyldt. CleanWash arbejder med professionel bilvask, bilrengøring og bilpleje til kunder i København og nærliggende områder.",
-          "Siden her er lavet til bilejere, der vil forstå, hvad CleanWash tilbyder, hvordan booking fungerer, og hvilke typer opgaver der kan løses. CleanWash tilbyder både indvendig rengøring, udvendig bilvask og samlet bilpleje. Det betyder, at du kan vælge en løsning efter bilens behov i stedet for at gætte dig frem.",
+          "Når du søger efter bilvask København, leder du ofte efter mere end en hurtig tur gennem vaskehallen. Du vil have en løsning, der passer ind i hverdagen, giver et ordentligt resultat og gør det nemt at få bilen ren, når kalenderen allerede er fyldt. Eluxus arbejder med professionel bilvask, bilrengøring og bilpleje til kunder i København og nærliggende områder.",
+          "Siden her er lavet til bilejere, der vil forstå, hvad Eluxus tilbyder, hvordan booking fungerer, og hvilke typer opgaver der kan løses. Eluxus tilbyder både indvendig rengøring, udvendig bilvask og samlet bilpleje. Det betyder, at du kan vælge en løsning efter bilens behov i stedet for at gætte dig frem.",
         ],
       },
       {
-        heading: "Hvad er professionel bilvask hos CleanWash?",
+        heading: "Hvad er professionel bilvask hos Eluxus?",
         paragraphs: [
           "En professionel bilvask handler om at få bilen ren på en kontrolleret og skånsom måde. Det kan være vask af lak, fælge, ruder og udvendige flader, men det kan også være støvsugning, aftørring, måtter og kabinepleje. For mange kunder i København er den bedste løsning en kombination, fordi bilen både samler vejsnavs udenpå og støv, sand, kaffepletter eller børnespor indeni.",
-          "CleanWash beskriver ydelserne tydeligt i bookingflowet, så du kan vælge ud fra bilens stand og dit behov. Har bilen mest brug for en hurtig opfriskning, kan en udvendig vask være nok. Er bilen brugt dagligt af familie, pendler eller erhverv, giver komplet bilvask ofte bedre mening.",
+          "Eluxus beskriver ydelserne tydeligt i bookingflowet, så du kan vælge ud fra bilens stand og dit behov. Har bilen mest brug for en hurtig opfriskning, kan en udvendig vask være nok. Er bilen brugt dagligt af familie, pendler eller erhverv, giver komplet bilvask ofte bedre mening.",
         ],
       },
       {
         heading: "Lokale områder i København",
         paragraphs: [
-          "CleanWash er relevant for kunder i København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby og Storkøbenhavn. Dækningsområdet kan afhænge af ledige tider, ruteplanlægning og den konkrete adresse, men booking-siden er det bedste sted at starte, fordi den samler oplysningerne ét sted.",
+          "Eluxus er relevant for kunder i København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby og Storkøbenhavn. Dækningsområdet kan afhænge af ledige tider, ruteplanlægning og den konkrete adresse, men booking-siden er det bedste sted at starte, fordi den samler oplysningerne ét sted.",
           "Hvis du søger efter professionel bilvask nær mig, kan det være nyttigt at tænke i både afstand og fleksibilitet. En god bilvask skal ikke kun ligge tæt på; den skal også kunne bookes nemt, være tydelig om servicen og give et resultat, der passer til bilens brug.",
         ],
       },
@@ -192,15 +192,15 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Hvem passer siden til?",
         paragraphs: [
           "Denne service passer til private bilejere, pendlere, familier, firmabiler og kunder, der vil have bilen til at se præsentabel ud før et møde, en weekendtur eller et salg. Den passer også til dig, der gerne vil undgå at udskyde bilvasken, fordi det kræver transport, kø eller ekstra tid i kalenderen.",
-          "CleanWash gør bilvask i København konkret: vælg service, book online og få bilen gjort ren med fokus på kvalitet. Kunder kan booke bilvask direkte via booking-siden, og de vigtigste valg bliver samlet i et enkelt flow.",
+          "Eluxus gør bilvask i København konkret: vælg service, book online og få bilen gjort ren med fokus på kvalitet. Kunder kan booke bilvask direkte via booking-siden, og de vigtigste valg bliver samlet i et enkelt flow.",
         ],
       },
     ],
     faqs: [
       {
-        question: "Tilbyder CleanWash bilvask i København?",
+        question: "Tilbyder Eluxus bilvask i København?",
         answer:
-          "Ja. CleanWash tilbyder professionel bilvask i København og relevante nærområder med online booking.",
+          "Ja. Eluxus tilbyder professionel bilvask med damp i København og relevante nærområder med online booking.",
       },
       {
         question: "Kan jeg booke både indvendig og udvendig bilvask?",
@@ -218,14 +218,14 @@ export const seoPages: SeoPageConfig[] = [
           "Ja. Professionel bilvask kan være relevant for firmabiler, leasingbiler og biler, der skal fremstå præsentable.",
       },
       {
-        question: "Hvilke områder dækker CleanWash?",
+        question: "Hvilke områder dækker Eluxus?",
         answer:
-          "CleanWash dækker København, Storkøbenhavn og dele af Sjælland. Den konkrete mulighed afhænger af booking og rute.",
+          "Eluxus dækker København, Storkøbenhavn og dele af Sjælland. Den konkrete mulighed afhænger af booking og rute.",
       },
       {
         question: "Er siden kun for kunder i København?",
         answer:
-          "Denne side fokuserer på København, men CleanWash har også en side om bilvask på Sjælland.",
+          "Denne side fokuserer på København, men Eluxus har også en side om bilvask på Sjælland.",
       },
     ],
     relatedLinks: relatedLinksWithout("/bilvask-koebenhavn"),
@@ -235,13 +235,13 @@ export const seoPages: SeoPageConfig[] = [
     slug: "mobil-bilvask-koebenhavn",
     title: "Mobil bilvask København | Bilvask der passer ind i din hverdag",
     description:
-      "Book mobil bilvask i København hos CleanWash. Fleksibel booking, professionel bilrengøring og bilpleje, når hverdagen skal hænge sammen.",
+      "Book mobil bilvask i København hos Eluxus. Fleksibel booking, professionel bilrengøring og bilpleje, når hverdagen skal hænge sammen.",
     h1: "Mobil bilvask København",
     eyebrow: "Fleksibel bilvask i København",
     heroIntro:
-      "CleanWash gør det lettere at planlægge bilvask i København med fleksibel booking og professionel bilrengøring til hverdagsbiler.",
+      "Eluxus gør det lettere at planlægge bilvask i København med fleksibel booking og professionel bilrengøring til hverdagsbiler.",
     shortSummary: [
-      "CleanWash tilbyder mobil bilvask i København med online booking.",
+      "Eluxus tilbyder mobil bilvask i København med online booking.",
       "Kunder kan booke bilvask direkte via booking-siden og vælge den service, der passer til bilen.",
       "Serviceområdet og den præcise mulighed for hjemme- eller arbejdspladsservice bør bekræftes i bookingflowet.",
     ],
@@ -301,53 +301,53 @@ export const seoPages: SeoPageConfig[] = [
       },
       {
         title: "Vælg tidspunkt",
-        text: "Vælg en ledig tid, der passer med din hverdag og CleanWashs ruteplanlægning.",
+        text: "Vælg en ledig tid, der passer med din hverdag og Eluxuss ruteplanlægning.",
       },
       {
         title: "Få bilen rengjort",
-        text: "CleanWash udfører den valgte bilvask med fokus på grundighed og et pænt resultat.",
+        text: "Eluxus udfører den valgte bilvask med fokus på grundighed og et pænt resultat.",
       },
     ],
     sections: [
       {
         heading: "Mobil bilvask uden unødigt besvær",
         paragraphs: [
-          "Mobil bilvask København er relevant for dig, der gerne vil have bilen gjort ren uden at bygge hele dagen op omkring en tur i vaskehallen. CleanWash tilbyder fleksibel booking af bilvask, bilrengøring og bilpleje, så du kan planlægge opgaven digitalt og vælge den service, bilen har brug for.",
-          "Det vigtigste er, at servicen er tydelig. Mobil bilvask kan betyde forskellige ting fra virksomhed til virksomhed, og derfor lover denne side ikke mere, end der kan bekræftes i den konkrete booking. CleanWash beskriver mulighederne i bookingflowet, og serviceområde, adresse og tidspunkt skal altid passe med den aktuelle planlægning. TODO: Bekræft og opdater præcis formulering, hvis virksomheden har faste regler for hjemme- eller arbejdspladsservice.",
+          "Mobil bilvask København er relevant for dig, der gerne vil have bilen gjort ren uden at bygge hele dagen op omkring en tur i vaskehallen. Eluxus tilbyder fleksibel booking af bilvask, bilrengøring og bilpleje, så du kan planlægge opgaven digitalt og vælge den service, bilen har brug for.",
+          "Det vigtigste er, at servicen er tydelig. Mobil bilvask kan betyde forskellige ting fra virksomhed til virksomhed, og derfor lover denne side ikke mere, end der kan bekræftes i den konkrete booking. Eluxus beskriver mulighederne i bookingflowet, og serviceområde, adresse og tidspunkt skal altid passe med den aktuelle planlægning. TODO: Bekræft og opdater præcis formulering, hvis virksomheden har faste regler for hjemme- eller arbejdspladsservice.",
         ],
       },
       {
         heading: "For kunder der vil spare tid",
         paragraphs: [
           "I København er bilen ofte bare ét element i en travl dag. Der er arbejde, aflevering, møder, parkering, indkøb og fritid. Derfor er fleksibel bilrengøring en fordel, fordi du kan tage stilling til bilens behov online og undgå at stå med valget først, når du er fremme ved en vaskehal.",
-          "CleanWash hjælper med både udvendig vask og indvendig rengøring. Udvendigt kan bilen have brug for vask af lak, fælge og ruder. Indvendigt kan der være støv, sand, madrester, hundehår, kaffemærker eller almindeligt slid fra daglig brug. En mobil løsning giver især mening, når bilen bruges ofte og hurtigt bliver beskidt igen.",
+          "Eluxus hjælper med både udvendig vask og indvendig rengøring. Udvendigt kan bilen have brug for vask af lak, fælge og ruder. Indvendigt kan der være støv, sand, madrester, hundehår, kaffemærker eller almindeligt slid fra daglig brug. En mobil løsning giver især mening, når bilen bruges ofte og hurtigt bliver beskidt igen.",
         ],
       },
       {
         heading: "Bilvask hjemme, på arbejdsplads eller efter aftale",
         paragraphs: [
-          "Mange søger efter bilvask hjemme eller bilvask på arbejdsplads, fordi de vil undgå ekstra transport. CleanWash arbejder med fleksibel booking, men den konkrete adresse, adgangsforhold og dækningsområde skal kunne bekræftes. Det er vigtigt for både kvalitet, planlægning og et realistisk kundeforløb.",
-          "Hvis du ønsker mobil bilvask i København, er den bedste næste handling at starte på booking-siden. Her kan CleanWash indsamle de nødvendige oplysninger og vurdere, hvilken løsning der passer. Det gør processen mere præcis end en løs forespørgsel og hjælper både kunden og virksomheden med at undgå misforståelser.",
+          "Mange søger efter bilvask hjemme eller bilvask på arbejdsplads, fordi de vil undgå ekstra transport. Eluxus arbejder med fleksibel booking, men den konkrete adresse, adgangsforhold og dækningsområde skal kunne bekræftes. Det er vigtigt for både kvalitet, planlægning og et realistisk kundeforløb.",
+          "Hvis du ønsker mobil bilvask i København, er den bedste næste handling at starte på booking-siden. Her kan Eluxus indsamle de nødvendige oplysninger og vurdere, hvilken løsning der passer. Det gør processen mere præcis end en løs forespørgsel og hjælper både kunden og virksomheden med at undgå misforståelser.",
         ],
       },
       {
         heading: "Mobil bilpleje til private og erhverv",
         paragraphs: [
           "Mobil bilpleje er ikke kun for private bilejere. Den kan også være relevant for virksomheder med firmabiler, sælgere, servicebiler, leasingbiler eller biler, der skal være præsentable over for kunder. En ren bil sender et bedre signal og kan samtidig gøre hverdagen mere behagelig for den person, der kører i bilen.",
-          "CleanWash tilbyder professionel bilvask i København med fokus på nem booking, realistisk planlægning og klare servicevalg. Kunder kan booke bilvask direkte via booking-siden, og siden her forklarer, hvordan mobil bilvask passer ind i hverdagen.",
+          "Eluxus tilbyder professionel bilvask med damp i København med fokus på nem booking, realistisk planlægning og klare servicevalg. Kunder kan booke bilvask direkte via booking-siden, og siden her forklarer, hvordan mobil bilvask passer ind i hverdagen.",
         ],
       },
     ],
     faqs: [
       {
-        question: "Hvad betyder mobil bilvask hos CleanWash?",
+        question: "Hvad betyder mobil bilvask hos Eluxus?",
         answer:
           "Det betyder fleksibel booking af bilvask i København. Den konkrete adresse og serviceform skal bekræftes i bookingflowet.",
       },
       {
-        question: "Tilbyder CleanWash bilvask hjemme?",
+        question: "Tilbyder Eluxus bilvask hjemme?",
         answer:
-          "CleanWash arbejder med fleksibel booking. Mulighed for hjemmeadresse afhænger af område, adgang og ledige tider.",
+          "Eluxus arbejder med fleksibel booking. Mulighed for hjemmeadresse afhænger af område, adgang og ledige tider.",
       },
       {
         question: "Kan jeg booke bilvask på arbejdspladsen?",
@@ -360,9 +360,9 @@ export const seoPages: SeoPageConfig[] = [
           "Du kan vælge service efter behov, typisk udvendig vask, indvendig rengøring eller komplet bilpleje.",
       },
       {
-        question: "Dækker CleanWash hele København?",
+        question: "Dækker Eluxus hele København?",
         answer:
-          "CleanWash er relevant for København og Storkøbenhavn, men konkret dækning afhænger af booking og rute.",
+          "Eluxus er relevant for København og Storkøbenhavn, men konkret dækning afhænger af booking og rute.",
       },
       {
         question: "Hvordan booker jeg mobil bilvask?",
@@ -377,13 +377,13 @@ export const seoPages: SeoPageConfig[] = [
     slug: "bilvask-sjaelland",
     title: "Bilvask Sjælland | Professionel bilrengøring på Sjælland",
     description:
-      "Få professionel bilvask på Sjælland hos CleanWash. Book bilrengøring og bilpleje online i København, Storkøbenhavn og nærliggende byer.",
+      "Få professionel bilvask på Sjælland hos Eluxus. Book bilrengøring og bilpleje online i København, Storkøbenhavn og nærliggende byer.",
     h1: "Bilvask Sjælland",
     eyebrow: "Bilrengøring på Sjælland",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask og bilrengøring på Sjælland med online booking og løsninger til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask og bilrengøring på Sjælland med online booking og løsninger til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask på Sjælland med fokus på København, Storkøbenhavn og relevante nærområder.",
+      "Eluxus tilbyder bilvask på Sjælland med fokus på København, Storkøbenhavn og relevante nærområder.",
       "Kunder kan booke bilvask direkte via booking-siden.",
       "Servicen omfatter bilvask, bilrengøring og bilpleje til biler, der bruges i hverdagen.",
     ],
@@ -411,7 +411,7 @@ export const seoPages: SeoPageConfig[] = [
     schemaAreaServed: ["Sjælland", "Zealand", "København", "Copenhagen", "Denmark"],
     image: {
       src: "/service/helebil.jpg",
-      alt: "Bilvask og bilrengøring på Sjælland hos CleanWash",
+      alt: "Bilvask og bilrengøring på Sjælland hos Eluxus",
     },
     secondaryCta: {
       label: "Se bilvask i København",
@@ -420,7 +420,7 @@ export const seoPages: SeoPageConfig[] = [
     benefits: [
       {
         title: "Regional dækning",
-        text: "CleanWash hjælper kunder i København, Storkøbenhavn og dele af Sjælland efter aftale og booking.",
+        text: "Eluxus hjælper kunder i København, Storkøbenhavn og dele af Sjælland efter aftale og booking.",
       },
       {
         title: "Til flere biltyper",
@@ -450,44 +450,44 @@ export const seoPages: SeoPageConfig[] = [
       },
       {
         title: "Få professionel bilrengøring",
-        text: "CleanWash udfører den valgte service med fokus på kvalitet og finish.",
+        text: "Eluxus udfører den valgte service med fokus på kvalitet og finish.",
       },
     ],
     sections: [
       {
         heading: "Bilvask på Sjælland med lokal relevans",
         paragraphs: [
-          "Bilvask Sjælland er et bredt behov. Nogle kunder søger bilvask i København, andre søger bilrengøring i Roskilde, Køge, Hillerød, Helsingør eller andre byer på Sjælland. CleanWash fokuserer på professionel bilvask, bilrengøring og bilpleje, hvor booking, planlægning og serviceområde kan afklares digitalt.",
-          "Denne side samler den regionale information, så både kunder og søgemaskiner forstår, at CleanWash er en relevant bilvask-virksomhed for Sjælland og især København og Storkøbenhavn. Det er ikke en liste over ubegrænsede garantier; den konkrete service afhænger af område, rute, tidspunkt og bilens behov.",
+          "Bilvask Sjælland er et bredt behov. Nogle kunder søger bilvask i København, andre søger bilrengøring i Roskilde, Køge, Hillerød, Helsingør eller andre byer på Sjælland. Eluxus fokuserer på professionel bilvask, bilrengøring og bilpleje, hvor booking, planlægning og serviceområde kan afklares digitalt.",
+          "Denne side samler den regionale information, så både kunder og søgemaskiner forstår, at Eluxus er en relevant bilvask-virksomhed for Sjælland og især København og Storkøbenhavn. Det er ikke en liste over ubegrænsede garantier; den konkrete service afhænger af område, rute, tidspunkt og bilens behov.",
         ],
       },
       {
         heading: "Hvilke opgaver kan løses?",
         paragraphs: [
-          "CleanWash arbejder med bilvask og bilpleje, som kan omfatte udvendig vask, indvendig rengøring, støvsugning, aftørring, ruder, fælge, måtter og generel klargøring. For kunder på Sjælland er det ofte en fordel at vælge en samlet løsning, når bilen bruges meget i hverdagen eller skal stå flot til salg, leasingretur eller erhverv.",
+          "Eluxus arbejder med bilvask og bilpleje, som kan omfatte udvendig vask, indvendig rengøring, støvsugning, aftørring, ruder, fælge, måtter og generel klargøring. For kunder på Sjælland er det ofte en fordel at vælge en samlet løsning, når bilen bruges meget i hverdagen eller skal stå flot til salg, leasingretur eller erhverv.",
           "Udvendig bilvask hjælper med at fjerne vejsnavs, salt, støv og almindeligt snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabinen, hvor sæder, gulve, måtter, instrumentbræt og bagagerum ofte bærer præg af daglig brug. Samlet bilpleje giver den mest komplette oplevelse.",
         ],
       },
       {
         heading: "Områder og byer på Sjælland",
         paragraphs: [
-          "CleanWash er især relevant i København, Frederiksberg, Amager, Storkøbenhavn og omkringliggende områder, men siden dækker også bredere søgninger efter bilvask Sjælland og bilrengøring Sjælland. Kunder fra Roskilde, Køge, Hillerød, Helsingør, Holbæk, Ringsted, Næstved og Slagelse kan bruge booking eller kontaktmuligheder til at afklare, hvad der er muligt.",
-          "Det er vigtigt at være præcis med serviceområder. Derfor bør større geografiske løfter altid bekræftes i den konkrete booking. CleanWash kan planlægge ud fra ledige tider og rute, og kunden får en mere realistisk oplevelse, når adresse og behov er tydeligt oplyst fra starten.",
+          "Eluxus er især relevant i København, Frederiksberg, Amager, Storkøbenhavn og omkringliggende områder, men siden dækker også bredere søgninger efter bilvask Sjælland og bilrengøring Sjælland. Kunder fra Roskilde, Køge, Hillerød, Helsingør, Holbæk, Ringsted, Næstved og Slagelse kan bruge booking eller kontaktmuligheder til at afklare, hvad der er muligt.",
+          "Det er vigtigt at være præcis med serviceområder. Derfor bør større geografiske løfter altid bekræftes i den konkrete booking. Eluxus kan planlægge ud fra ledige tider og rute, og kunden får en mere realistisk oplevelse, når adresse og behov er tydeligt oplyst fra starten.",
         ],
       },
       {
         heading: "For private, familier og virksomheder",
         paragraphs: [
           "Bilvask på Sjælland er relevant for mange typer kunder. Familier har ofte behov for indvendig rengøring efter hverdag, sport, madpakker og ture. Pendlere vil gerne have en bil, der føles ren, selvom den bruges meget. Virksomheder kan have brug for løbende bilpleje, så firmabiler fremstår ordentlige over for kunder.",
-          "CleanWash tilbyder en praktisk vej ind: Kunden vælger service, booker online og giver de oplysninger, der skal bruges. Kunder kan booke bilvask direkte via booking-siden, og CleanWash kan derefter håndtere opgaven ud fra den valgte løsning.",
+          "Eluxus tilbyder en praktisk vej ind: Kunden vælger service, booker online og giver de oplysninger, der skal bruges. Kunder kan booke bilvask direkte via booking-siden, og Eluxus kan derefter håndtere opgaven ud fra den valgte løsning.",
         ],
       },
     ],
     faqs: [
       {
-        question: "Tilbyder CleanWash bilvask på Sjælland?",
+        question: "Tilbyder Eluxus bilvask på Sjælland?",
         answer:
-          "Ja. CleanWash tilbyder bilvask på Sjælland med fokus på København, Storkøbenhavn og relevante nærområder.",
+          "Ja. Eluxus tilbyder bilvask på Sjælland med fokus på København, Storkøbenhavn og relevante nærområder.",
       },
       {
         question: "Hvilke byer på Sjælland er relevante?",
@@ -497,7 +497,7 @@ export const seoPages: SeoPageConfig[] = [
       {
         question: "Kan jeg få indvendig bilrengøring på Sjælland?",
         answer:
-          "Ja. CleanWash tilbyder indvendig rengøring som del af bilrengøring og bilpleje.",
+          "Ja. Eluxus tilbyder indvendig rengøring som del af bilrengøring og bilpleje.",
       },
       {
         question: "Er bilvask på Sjælland egnet til erhverv?",
@@ -507,7 +507,7 @@ export const seoPages: SeoPageConfig[] = [
       {
         question: "Hvordan afklarer jeg, om min adresse dækkes?",
         answer:
-          "Start via /booking eller kontakt CleanWash, så adresse, tidspunkt og mulighed kan afklares.",
+          "Start via /booking eller kontakt Eluxus, så adresse, tidspunkt og mulighed kan afklares.",
       },
       {
         question: "Kan jeg vælge komplet bilpleje?",
@@ -522,13 +522,13 @@ export const seoPages: SeoPageConfig[] = [
     slug: "indvendig-bilrengoering-koebenhavn",
     title: "Indvendig bilrengøring København | Grundig rengøring af bilen",
     description:
-      "Book indvendig bilrengøring i København hos CleanWash. Grundig støvsugning, kabinerengøring, sæderens og bilpleje til hverdagsbiler.",
+      "Book indvendig bilrengøring i København hos Eluxus. Grundig støvsugning, kabinerengøring, sæderens og bilpleje til hverdagsbiler.",
     h1: "Indvendig bilrengøring København",
     eyebrow: "Ren kabine og bedre hverdagskomfort",
     heroIntro:
-      "CleanWash tilbyder indvendig bilrengøring i København til biler med støv, sand, pletter, lugt og spor fra daglig brug.",
+      "Eluxus tilbyder indvendig bilrengøring i København til biler med støv, sand, pletter, lugt og spor fra daglig brug.",
     shortSummary: [
-      "CleanWash tilbyder indvendig bilrengøring i København med online booking.",
+      "Eluxus tilbyder indvendig bilrengøring i København med online booking.",
       "Servicen er relevant for kabine, måtter, sæder, instrumentbræt, bagagerum og hverdagsbiler.",
       "Kunder kan booke bilvask direkte via booking-siden og vælge indvendig rengøring eller komplet bilpleje.",
     ],
@@ -553,7 +553,7 @@ export const seoPages: SeoPageConfig[] = [
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
     image: {
       src: "/service/inside.jpg",
-      alt: "Indvendig bilrengøring af kabine hos CleanWash i København",
+      alt: "Indvendig bilrengøring af kabine hos Eluxus i København",
     },
     secondaryCta: {
       label: "Se håndvask af bil",
@@ -588,7 +588,7 @@ export const seoPages: SeoPageConfig[] = [
       },
       {
         title: "Kabinen rengøres",
-        text: "CleanWash arbejder med støvsugning, aftørring, måtter og synlige kontaktflader.",
+        text: "Eluxus arbejder med støvsugning, aftørring, måtter og synlige kontaktflader.",
       },
       {
         title: "Afslut med frisk fornemmelse",
@@ -600,14 +600,14 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Indvendig bilrengøring til biler der bruges",
         paragraphs: [
           "Indvendig bilrengøring København er for dig, der mærker hverdagen i bilen. Kabinen samler støv, sand, pollen, krummer, hår, fugt, lugt og små pletter. Det sker især i familiebiler, pendlerbiler, firmabiler og biler, der bruges til transport af børn, udstyr eller kunder.",
-          "CleanWash tilbyder indvendig bilrengøring i København med fokus på de områder, du ser og rører ved hver dag: sæder, gulve, måtter, instrumentbræt, midterkonsol, dørfalser, bagagerum og ruder. Formålet er ikke kun, at bilen ser pænere ud. Den skal også føles rarere at køre i.",
+          "Eluxus tilbyder indvendig bilrengøring i København med fokus på de områder, du ser og rører ved hver dag: sæder, gulve, måtter, instrumentbræt, midterkonsol, dørfalser, bagagerum og ruder. Formålet er ikke kun, at bilen ser pænere ud. Den skal også føles rarere at køre i.",
         ],
       },
       {
         heading: "Hvad indvendig rengøring typisk omfatter",
         paragraphs: [
           "En indvendig rengøring kan omfatte støvsugning af kabine og bagagerum, rengøring af måtter, aftørring af paneler, instrumentbræt, rat, gearområde, kopholdere og andre kontaktflader. Hvis bilen har pletter, lugt eller meget snavs, kan der være behov for ekstra behandling eller en mere omfattende bilpleje.",
-          "Sæderens er et vigtigt søgeord, men behovet afhænger af sædetype, materiale og bilens stand. Derfor er det bedst at vælge den relevante service i bookingflowet og give tydelige oplysninger, hvis kabinen kræver særlig opmærksomhed. CleanWash kan derefter håndtere opgaven mere præcist.",
+          "Sæderens er et vigtigt søgeord, men behovet afhænger af sædetype, materiale og bilens stand. Derfor er det bedst at vælge den relevante service i bookingflowet og give tydelige oplysninger, hvis kabinen kræver særlig opmærksomhed. Eluxus kan derefter håndtere opgaven mere præcist.",
         ],
       },
       {
@@ -620,7 +620,7 @@ export const seoPages: SeoPageConfig[] = [
       {
         heading: "København og nærområder",
         paragraphs: [
-          "CleanWash er relevant for kunder i København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby og Storkøbenhavn. Hvis du søger efter rengøring af kabine, støvsugning bil eller bilpleje København, er denne side lavet til at forklare den indvendige del tydeligt.",
+          "Eluxus er relevant for kunder i København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby og Storkøbenhavn. Hvis du søger efter rengøring af kabine, støvsugning bil eller bilpleje København, er denne side lavet til at forklare den indvendige del tydeligt.",
           "Kunder kan booke bilvask direkte via booking-siden. Her kan du vælge indvendig rengøring, udvendig vask eller komplet bilpleje. Den bedste løsning afhænger af bilens brug, hvor længe siden den sidst blev rengjort, og hvilket resultat du ønsker.",
         ],
       },
@@ -632,9 +632,9 @@ export const seoPages: SeoPageConfig[] = [
           "Det er rengøring af kabine, måtter, sæder, paneler, gulve, bagagerum og andre indvendige flader.",
       },
       {
-        question: "Tilbyder CleanWash indvendig bilrengøring i København?",
+        question: "Tilbyder Eluxus indvendig bilrengøring i København?",
         answer:
-          "Ja. CleanWash tilbyder indvendig bilrengøring i København og nærliggende områder med online booking.",
+          "Ja. Eluxus tilbyder indvendig bilrengøring i København og nærliggende områder med online booking.",
       },
       {
         question: "Kan jeg få støvsuget bilen?",
@@ -664,13 +664,13 @@ export const seoPages: SeoPageConfig[] = [
     slug: "haandvask-bil-koebenhavn",
     title: "Håndvask af bil København | Skånsom og professionel bilvask",
     description:
-      "Book skånsom håndvask af bil i København hos CleanWash. Professionel udvendig bilvask, fælge, ruder og lakvenlig pleje med nem booking.",
+      "Book skånsom håndvask af bil i København hos Eluxus. Professionel udvendig bilvask, fælge, ruder og lakvenlig pleje med nem booking.",
     h1: "Håndvask af bil København",
     eyebrow: "Skånsom udvendig bilvask",
     heroIntro:
-      "CleanWash tilbyder skånsom håndvask af bil i København for kunder, der ønsker en grundig udvendig vask og pæn finish.",
+      "Eluxus tilbyder skånsom håndvask af bil i København for kunder, der ønsker en grundig udvendig vask og pæn finish.",
     shortSummary: [
-      "CleanWash tilbyder professionel håndvask af bil i København med online booking.",
+      "Eluxus tilbyder professionel håndvask af bil i København med online booking.",
       "Servicen fokuserer på skånsom udvendig bilvask, fælge, ruder og lakvenlig bilpleje.",
       "Kunder kan booke bilvask direkte via booking-siden.",
     ],
@@ -695,7 +695,7 @@ export const seoPages: SeoPageConfig[] = [
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
     image: {
       src: "/service/udenfor.jpg",
-      alt: "Skånsom håndvask af bil i København hos CleanWash",
+      alt: "Skånsom håndvask af bil i København hos Eluxus",
     },
     secondaryCta: {
       label: "Se indvendig rengøring",
@@ -730,7 +730,7 @@ export const seoPages: SeoPageConfig[] = [
       },
       {
         title: "Bilen håndvaskes",
-        text: "CleanWash arbejder skånsomt med lak, ruder, fælge og udvendige flader.",
+        text: "Eluxus arbejder skånsomt med lak, ruder, fælge og udvendige flader.",
       },
       {
         title: "Afslut med finish",
@@ -742,7 +742,7 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Håndvask af bil for en mere kontrolleret vask",
         paragraphs: [
           "Håndvask bil København er for kunder, der ønsker en skånsom og mere kontrolleret udvendig bilvask. En håndvask giver mulighed for at arbejde mere opmærksomt omkring fælge, ruder, spejle, lister og områder, hvor snavs ofte sætter sig fast. Det er især relevant for bilejere, der går op i bilens udtryk og vil undgå en tilfældig standardoplevelse.",
-          "CleanWash tilbyder professionel håndvask af bil i København med online booking. Servicen er relevant, når bilen skal se pæn ud til hverdag, arbejde, salg, fremvisning eller bare fordi det føles bedre at køre i en ren bil. Kunder kan booke bilvask direkte via booking-siden.",
+          "Eluxus tilbyder professionel håndvask af bil i København med online booking. Servicen er relevant, når bilen skal se pæn ud til hverdag, arbejde, salg, fremvisning eller bare fordi det føles bedre at køre i en ren bil. Kunder kan booke bilvask direkte via booking-siden.",
         ],
       },
       {
@@ -756,22 +756,22 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Udvendig bilvask i København",
         paragraphs: [
           "Udvendig bilvask kan omfatte vask af lak, ruder, spejle, fælge, hjulnære områder og synlige flader. København giver bilen mange typer snavs: bystøv, regn, pollen, bremsestøv, vejsalt og almindelig trafikfilm. En regelmæssig udvendig vask hjælper bilen med at se bedre ud og gør den mere behagelig at bruge.",
-          "CleanWash er relevant for kunder i København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby og Storkøbenhavn. Den konkrete mulighed afhænger af booking, rute og servicevalg, men siden her forklarer, hvornår håndvask er den rigtige retning.",
+          "Eluxus er relevant for kunder i København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby og Storkøbenhavn. Den konkrete mulighed afhænger af booking, rute og servicevalg, men siden her forklarer, hvornår håndvask er den rigtige retning.",
         ],
       },
       {
         heading: "Håndvask eller komplet bilpleje?",
         paragraphs: [
           "Hvis bilen primært er beskidt udenpå, kan håndvask eller udvendig bilvask være nok. Hvis kabinen også bærer præg af hverdagen, giver komplet bilpleje bedre mening. Mange kunder vælger en udvendig vask før en begivenhed, mens andre vælger komplet rengøring, når bilen trænger til en større opfriskning.",
-          "CleanWash gør valget nemmere ved at samle servicevalg i bookingflowet. Du kan vælge den løsning, der passer til bilen, og give oplysninger om behovet. På den måde bliver håndvask af bil i København ikke bare et søgeord, men en konkret og bookbar service.",
+          "Eluxus gør valget nemmere ved at samle servicevalg i bookingflowet. Du kan vælge den løsning, der passer til bilen, og give oplysninger om behovet. På den måde bliver håndvask af bil i København ikke bare et søgeord, men en konkret og bookbar service.",
         ],
       },
     ],
     faqs: [
       {
-        question: "Tilbyder CleanWash håndvask af bil i København?",
+        question: "Tilbyder Eluxus håndvask af bil i København?",
         answer:
-          "Ja. CleanWash tilbyder skånsom udvendig bilvask og håndvask-relevant bilpleje i København.",
+          "Ja. Eluxus tilbyder skånsom udvendig bilvask og håndvask-relevant bilpleje i København.",
       },
       {
         question: "Hvorfor vælge håndvask frem for automatisk vask?",
@@ -807,15 +807,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-frederiksberg",
-    title: "Bilvask Frederiksberg | Professionel bilpleje hos CleanWash",
+    title: "Bilvask Frederiksberg | Professionel bilpleje hos Eluxus",
     description:
-      "Book professionel bilvask i Frederiksberg hos CleanWash. Udvendig vask, indvendig rengøring og komplet bilpleje med nem online booking.",
+      "Book professionel bilvask med damp i Frederiksberg hos Eluxus. Udvendig vask, indvendig rengøring og komplet bilpleje med nem online booking.",
     h1: "Bilvask Frederiksberg",
     eyebrow: "Professionel bilvask i Frederiksberg",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Frederiksberg med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Frederiksberg med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Frederiksberg med online booking og tydelige servicevalg.",
+      "Eluxus tilbyder bilvask i Frederiksberg med online booking og tydelige servicevalg.",
       "Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje direkte i bookingflowet.",
       "Servicen er relevant for bilejere i Frederiksberg, Valby, Vanløse, Bispebjerg og nærliggende bydele.",
     ],
@@ -837,10 +837,10 @@ export const seoPages: SeoPageConfig[] = [
       "Storkøbenhavn",
     ],
     schemaAreaServed: ["Frederiksberg", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Frederiksberg hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Frederiksberg hos Eluxus" },
     secondaryCta: { label: "Se bilvask København", href: "/bilvask-koebenhavn" },
     benefits: [
-      { title: "Lokal service", text: "CleanWash er relevant for bilejere i Frederiksberg og nærliggende bydele i København." },
+      { title: "Lokal service", text: "Eluxus er relevant for bilejere i Frederiksberg og nærliggende bydele i København." },
       { title: "Nem online booking", text: "Vælg service, tidspunkt og biloplysninger direkte i bookingflowet uden kø." },
       { title: "Indvendig og udvendig", text: "Book udvendig vask, indvendig rengøring eller komplet bilpleje efter bilens behov." },
       { title: "Til private og erhverv", text: "Passer til familiebiler, firmabiler, leasingbiler og pendlerbiler i hverdagen." },
@@ -848,45 +848,45 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash klargør", text: "Teamet forbereder service og rute ud fra din booking." },
+      { title: "Eluxus klargør", text: "Teamet forbereder service og rute ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil uden kø og uden transport til en vaskehal." },
     ],
     sections: [
       {
         heading: "Bilvask i Frederiksberg til den travle hverdag",
         paragraphs: [
-          "Frederiksberg er en tæt bebygget bydel med mange bilejere, der bruger bilen dagligt til pendling, familieliv og arbejde. Når du søger efter bilvask Frederiksberg, leder du efter en løsning, der passer ind i hverdagen uden unødigt besvær. CleanWash tilbyder professionel bilvask, bilrengøring og bilpleje med online booking, så du kan planlægge opgaven digitalt.",
-          "Bilen samler snavs fra byens gader, parkeringspladser, vejsalt og daglig brug. En professionel bilvask hjælper bilen med at se bedre ud og giver en mere behagelig oplevelse. CleanWash tilbyder både udvendig vask og indvendig rengøring, så du kan vælge den service, der passer til bilens stand.",
+          "Frederiksberg er en tæt bebygget bydel med mange bilejere, der bruger bilen dagligt til pendling, familieliv og arbejde. Når du søger efter bilvask Frederiksberg, leder du efter en løsning, der passer ind i hverdagen uden unødigt besvær. Eluxus tilbyder professionel bilvask, bilrengøring og bilpleje med online booking, så du kan planlægge opgaven digitalt.",
+          "Bilen samler snavs fra byens gader, parkeringspladser, vejsalt og daglig brug. En professionel bilvask hjælper bilen med at se bedre ud og giver en mere behagelig oplevelse. Eluxus tilbyder både udvendig vask og indvendig rengøring, så du kan vælge den service, der passer til bilens stand.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Frederiksberg?",
+        heading: "Hvad tilbyder Eluxus i Frederiksberg?",
         paragraphs: [
-          "CleanWash tilbyder bilvask i Frederiksberg med fokus på udvendig vask, indvendig rengøring og komplet bilpleje. Udvendig vask omfatter lak, ruder, fælge og hjulbuer. Indvendig rengøring fokuserer på kabine, måtter, sæder, instrumentbræt og bagagerum. Komplet bilpleje kombinerer begge dele for det bedste resultat.",
-          "Booking fungerer online, og du vælger service, biloplysninger og tidspunkt i ét flow. Den konkrete mulighed afhænger af adresse, rute og ledige tider, men bookingflowet samler alle oplysninger, så CleanWash kan planlægge opgaven præcist.",
+          "Eluxus tilbyder bilvask i Frederiksberg med fokus på udvendig vask, indvendig rengøring og komplet bilpleje. Udvendig vask omfatter lak, ruder, fælge og hjulbuer. Indvendig rengøring fokuserer på kabine, måtter, sæder, instrumentbræt og bagagerum. Komplet bilpleje kombinerer begge dele for det bedste resultat.",
+          "Booking fungerer online, og du vælger service, biloplysninger og tidspunkt i ét flow. Den konkrete mulighed afhænger af adresse, rute og ledige tider, men bookingflowet samler alle oplysninger, så Eluxus kan planlægge opgaven præcist.",
         ],
       },
       {
         heading: "Lokale områder og nærliggende bydele",
         paragraphs: [
-          "Frederiksberg grænser op til Valby, Vanløse, Bispebjerg, Vesterbro og Indre By. CleanWash er relevant for kunder i hele dette område og kan håndtere booking fra kunder i Storkøbenhavn. Den konkrete dækning afhænger af booking, rute og tidspunkt, men du kan starte processen online.",
+          "Frederiksberg grænser op til Valby, Vanløse, Bispebjerg, Vesterbro og Indre By. Eluxus er relevant for kunder i hele dette område og kan håndtere booking fra kunder i Storkøbenhavn. Den konkrete dækning afhænger af booking, rute og tidspunkt, men du kan starte processen online.",
           "Hvis du søger bilvask nær mig i Frederiksberg, er det bedste næste skridt at starte booking-processen. Her kan du se tilgængelighed, vælge service og give de oplysninger, der er nødvendige for at planlægge bilvasken korrekt.",
         ],
       },
       {
         heading: "Frederiksberg: firmabiler og private bilejere",
         paragraphs: [
-          "I Frederiksberg finder du mange virksomheder, kontorer og selvstændige, der har behov for regelmæssig bilpleje. Firmabiler og leasingbiler skal fremstå præsentable, og CleanWash kan hjælpe med at sikre, at bilen er ren og klar til brug. Private bilejere nyder godt af en professionel bilvask, der sparer tid og giver et bedre resultat end en hurtig standardvask.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og CleanWash håndterer resten.",
+          "I Frederiksberg finder du mange virksomheder, kontorer og selvstændige, der har behov for regelmæssig bilpleje. Firmabiler og leasingbiler skal fremstå præsentable, og Eluxus kan hjælpe med at sikre, at bilen er ren og klar til brug. Private bilejere nyder godt af en professionel bilvask, der sparer tid og giver et bedre resultat end en hurtig standardvask.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og Eluxus håndterer resten.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Frederiksberg?", answer: "Ja. CleanWash tilbyder professionel bilvask i Frederiksberg og nærliggende bydele med online booking." },
+      { question: "Tilbyder Eluxus bilvask i Frederiksberg?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Frederiksberg og nærliggende bydele med online booking." },
       { question: "Kan jeg booke indvendig rengøring i Frederiksberg?", answer: "Ja. Du kan vælge indvendig rengøring, udvendig vask eller komplet bilpleje i bookingflowet." },
-      { question: "Dækker CleanWash hele Frederiksberg?", answer: "CleanWash er relevant for Frederiksberg og nærliggende områder. Konkret dækning afhænger af booking og rute." },
+      { question: "Dækker Eluxus hele Frederiksberg?", answer: "Eluxus er relevant for Frederiksberg og nærliggende områder. Konkret dækning afhænger af booking og rute." },
       { question: "Hvad koster bilvask i Frederiksberg?", answer: "Prisen afhænger af den valgte service. Se priser og book online via /booking." },
-      { question: "Kan firmabiler bookes i Frederiksberg?", answer: "Ja. CleanWash tilbyder bilvask til private og erhverv, herunder firmabiler og leasingbiler." },
+      { question: "Kan firmabiler bookes i Frederiksberg?", answer: "Ja. Eluxus tilbyder bilvask til private og erhverv, herunder firmabiler og leasingbiler." },
       { question: "Hvordan booker jeg bilvask i Frederiksberg?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil, adresse og ønsket tidspunkt." },
     ],
     relatedLinks: commonRelatedLinks.filter((link) => link.href !== "/bilvask-frederiksberg"),
@@ -895,15 +895,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-amager",
-    title: "Bilvask Amager | Professionel bilvask hos CleanWash",
+    title: "Bilvask Amager | Professionel bilvask med damp hos Eluxus",
     description:
-      "Book professionel bilvask på Amager hos CleanWash. Udvendig vask, indvendig bilrengøring og bilpleje med nem online booking.",
+      "Book professionel bilvask på Amager hos Eluxus. Udvendig vask, indvendig bilrengøring og bilpleje med nem online booking.",
     h1: "Bilvask Amager",
     eyebrow: "Professionel bilvask på Amager",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask på Amager med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask på Amager med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask på Amager med online booking og tydelige servicevalg.",
+      "Eluxus tilbyder bilvask på Amager med online booking og tydelige servicevalg.",
       "Servicen dækker Amager, Sundby, Kastrup, Dragør og nærliggende bydele.",
       "Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje direkte i bookingflowet.",
     ],
@@ -925,10 +925,10 @@ export const seoPages: SeoPageConfig[] = [
       "København",
     ],
     schemaAreaServed: ["Amager", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask på Amager hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask på Amager hos Eluxus" },
     secondaryCta: { label: "Se bilvask København", href: "/bilvask-koebenhavn" },
     benefits: [
-      { title: "Amager og omegn", text: "CleanWash er relevant for kunder i Amager, Sundby, Kastrup, Dragør og Ørestad." },
+      { title: "Amager og omegn", text: "Eluxus er relevant for kunder i Amager, Sundby, Kastrup, Dragør og Ørestad." },
       { title: "Fleksibel booking", text: "Book bilvask online og vælg den service, der passer til bilens stand og behov." },
       { title: "Komplet bilpleje", text: "Udvendig vask, indvendig rengøring eller komplet bilpleje — vælg i bookingflowet." },
       { title: "Til private og erhverv", text: "Passer til familiebiler, pendlerbiler, firmabiler og biler, der bruges dagligt." },
@@ -936,44 +936,44 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Vælg service på booking-siden og angiv biloplysninger og tidspunkt." },
       { title: "Oplys adresse", text: "Angiv den adresse, hvor bilen holder, og kontaktoplysninger." },
-      { title: "CleanWash planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes grundigt", text: "Du får en renere bil uden ventetid eller transport til vaskehal." },
     ],
     sections: [
       {
         heading: "Bilvask på Amager med professionel service",
         paragraphs: [
-          "Amager er en stor og varieret del af København med mange bilejere fra Sundby, Kastrup, Dragør, Ørestad og Islands Brygge. Bilvask Amager er et relevant søgeord for alle, der bor eller arbejder her og vil have bilen gjort ren uden at bruge unødigt tid på det. CleanWash tilbyder professionel bilvask med online booking og klare servicevalg.",
-          "Bilerne på Amager møder de samme udfordringer som andre biler i storbyen: vejsnavs, bremsestøv, pollen, regn og daglig brug. En regelmæssig bilvask holder bilen pænere og giver en bedre oplevelse. CleanWash kan hjælpe med udvendig vask, indvendig rengøring og komplet bilpleje.",
+          "Amager er en stor og varieret del af København med mange bilejere fra Sundby, Kastrup, Dragør, Ørestad og Islands Brygge. Bilvask Amager er et relevant søgeord for alle, der bor eller arbejder her og vil have bilen gjort ren uden at bruge unødigt tid på det. Eluxus tilbyder professionel bilvask med online booking og klare servicevalg.",
+          "Bilerne på Amager møder de samme udfordringer som andre biler i storbyen: vejsnavs, bremsestøv, pollen, regn og daglig brug. En regelmæssig bilvask holder bilen pænere og giver en bedre oplevelse. Eluxus kan hjælpe med udvendig vask, indvendig rengøring og komplet bilpleje.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash på Amager?",
+        heading: "Hvad tilbyder Eluxus på Amager?",
         paragraphs: [
-          "CleanWash tilbyder bilvask på Amager med fokus på udvendig vask, indvendig rengøring og komplet bilpleje. Udvendig vask fjerner snavs fra lak, ruder, fælge og hjulbuer. Indvendig rengøring fokuserer på kabine, støvsugning, måtter, sæder og instrumentbræt. Komplet bilpleje giver det mest gennemførte resultat.",
-          "Booking foregår online, og du vælger den service, der passer til bilen. Den konkrete mulighed afhænger af adresse, rute og ledige tider, men bookingflowet samler oplysningerne, så CleanWash kan planlægge effektivt.",
+          "Eluxus tilbyder bilvask på Amager med fokus på udvendig vask, indvendig rengøring og komplet bilpleje. Udvendig vask fjerner snavs fra lak, ruder, fælge og hjulbuer. Indvendig rengøring fokuserer på kabine, støvsugning, måtter, sæder og instrumentbræt. Komplet bilpleje giver det mest gennemførte resultat.",
+          "Booking foregår online, og du vælger den service, der passer til bilen. Den konkrete mulighed afhænger af adresse, rute og ledige tider, men bookingflowet samler oplysningerne, så Eluxus kan planlægge effektivt.",
         ],
       },
       {
         heading: "Amager: bydele og serviceområde",
         paragraphs: [
-          "Amager dækker mange forskelligartede bydele: det tætte bykvarter i Sundby, det moderne Ørestad, havneområdet ved Islands Brygge og de rolige villakvarterer i Kastrup og Dragør. CleanWash er relevant for kunder i hele dette område og kan håndtere booking fra bilejere langs hele Amager.",
+          "Amager dækker mange forskelligartede bydele: det tætte bykvarter i Sundby, det moderne Ørestad, havneområdet ved Islands Brygge og de rolige villakvarterer i Kastrup og Dragør. Eluxus er relevant for kunder i hele dette område og kan håndtere booking fra bilejere langs hele Amager.",
           "Hvis du søger efter bilvask nær mig på Amager, er det bedste første skridt at starte booking-processen online. Her kan du se tilgængelighed og vælge den service, der passer til bilens behov.",
         ],
       },
       {
         heading: "Bilejere med specielle behov på Amager",
         paragraphs: [
-          "Mange bilejere på Amager har specifikke behov. Familier med børn har brug for grundig indvendig rengøring. Pendlere ønsker en hurtig og effektiv bilvask. Erhvervsfolk med firmabiler vil have bilen til at fremstå professionel. CleanWash tilbyder løsninger til alle disse grupper.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten og leverer et professionelt resultat.",
+          "Mange bilejere på Amager har specifikke behov. Familier med børn har brug for grundig indvendig rengøring. Pendlere ønsker en hurtig og effektiv bilvask. Erhvervsfolk med firmabiler vil have bilen til at fremstå professionel. Eluxus tilbyder løsninger til alle disse grupper.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten og leverer et professionelt resultat.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask på Amager?", answer: "Ja. CleanWash tilbyder professionel bilvask på Amager og i nærliggende bydele med online booking." },
+      { question: "Tilbyder Eluxus bilvask på Amager?", answer: "Ja. Eluxus tilbyder professionel bilvask på Amager og i nærliggende bydele med online booking." },
       { question: "Dækker I Kastrup og Dragør?", answer: "Kastrup og Dragør kan dækkes afhængigt af rute og ledige tider. Start booking for at afklare muligheder." },
       { question: "Kan jeg få komplet bilpleje på Amager?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
-      { question: "Er CleanWash relevant for Ørestad?", answer: "Ja. Ørestad er en del af Amager og er relevant for CleanWashs serviceområde." },
+      { question: "Er Eluxus relevant for Ørestad?", answer: "Ja. Ørestad er en del af Amager og er relevant for Eluxuss serviceområde." },
       { question: "Hvad koster bilvask på Amager?", answer: "Prisen afhænger af den valgte service. Se priser og book online via /booking." },
       { question: "Hvordan booker jeg bilvask på Amager?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil og ønsket tidspunkt." },
     ],
@@ -985,13 +985,13 @@ export const seoPages: SeoPageConfig[] = [
     slug: "bilvask-osterbro",
     title: "Bilvask Østerbro | Professionel bilvask i København",
     description:
-      "Book professionel bilvask på Østerbro hos CleanWash. Udvendig bilvask, indvendig bilrengøring og bilpleje med nem online booking.",
+      "Book professionel bilvask på Østerbro hos Eluxus. Udvendig bilvask, indvendig bilrengøring og bilpleje med nem online booking.",
     h1: "Bilvask Østerbro",
     eyebrow: "Professionel bilvask på Østerbro",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask på Østerbro med online booking og fleksible servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask på Østerbro med online booking og fleksible servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask på Østerbro med online booking og tydelige servicevalg.",
+      "Eluxus tilbyder bilvask på Østerbro med online booking og tydelige servicevalg.",
       "Servicen er relevant for bilejere i Østerbro, Nordhavn, Hellerup og nærliggende bydele.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje direkte i bookingflowet.",
     ],
@@ -1013,10 +1013,10 @@ export const seoPages: SeoPageConfig[] = [
       "Storkøbenhavn",
     ],
     schemaAreaServed: ["Østerbro", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask på Østerbro hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask på Østerbro hos Eluxus" },
     secondaryCta: { label: "Se mobil bilvask", href: "/mobil-bilvask-koebenhavn" },
     benefits: [
-      { title: "Østerbro og Nordhavn", text: "CleanWash er relevant for bilejere på Østerbro, i Nordhavn og nærliggende bydele." },
+      { title: "Østerbro og Nordhavn", text: "Eluxus er relevant for bilejere på Østerbro, i Nordhavn og nærliggende bydele." },
       { title: "Online booking", text: "Book bilvask direkte online og vælg service, tidspunkt og biloplysninger på én gang." },
       { title: "Alle servicetyper", text: "Udvendig vask, indvendig rengøring og komplet bilpleje — alt kan bookes online." },
       { title: "Til travle bilejere", text: "Perfekt for pendlere, familier og virksomheder med biler i daglig brug." },
@@ -1024,44 +1024,44 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Vælg service", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Angiv bil og tidspunkt", text: "Udfyld nummerplade, adresse og ønsket tidspunkt for bilvasken." },
-      { title: "CleanWash forbereder", text: "Teamet planlægger service og rute ud fra din booking." },
+      { title: "Eluxus forbereder", text: "Teamet planlægger service og rute ud fra din booking." },
       { title: "Ren bil leveret", text: "Bilen bliver vasket professionelt uden kø og uden ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask på Østerbro — nem og professionel",
         paragraphs: [
-          "Østerbro er en af Københavns mest travle bydele med mange bilejere, der dagligt bruger bilen til pendling, familieliv og arbejde. Bilvask Østerbro er et søgeord for alle, der vil have en renere bil uden at bruge en hel dag på det. CleanWash tilbyder professionel bilvask med online booking, klare servicevalg og fokus på kvalitet.",
+          "Østerbro er en af Københavns mest travle bydele med mange bilejere, der dagligt bruger bilen til pendling, familieliv og arbejde. Bilvask Østerbro er et søgeord for alle, der vil have en renere bil uden at bruge en hel dag på det. Eluxus tilbyder professionel bilvask med online booking, klare servicevalg og fokus på kvalitet.",
           "Biler på Østerbro er udsat for typisk storbysnavs: bremsestøv fra bytrafik, pollen fra parkerne, vejsalt om vinteren og dagligt vejsnavs. En professionel bilvask giver et bedre resultat end en hurtig tur i en automatisk vaskehal og er skånsom over for lakken.",
         ],
       },
       {
         heading: "Serviceområde: Østerbro, Nordhavn og omegn",
         paragraphs: [
-          "CleanWash dækker Østerbro og nærliggende bydele som Nordhavn, Hellerup, Gentofte og Nørrebro. Det er en central del af København med mange boligblokke, rækkehuse og erhvervsadresser med tilhørende biler. Den konkrete dækning afhænger af booking og rute, men du kan starte processen online.",
+          "Eluxus dækker Østerbro og nærliggende bydele som Nordhavn, Hellerup, Gentofte og Nørrebro. Det er en central del af København med mange boligblokke, rækkehuse og erhvervsadresser med tilhørende biler. Den konkrete dækning afhænger af booking og rute, men du kan starte processen online.",
           "Nordhavn er vokset markant de seneste år og er hjemsted for mange bilejere, der pendler til kontorer i indre by eller kører dagligt til børnepasning og aktiviteter. Professionel bilvask i Nordhavn er relevant for alle, der vil spare tid og have en bedre hverdagsoplevelse.",
         ],
       },
       {
-        heading: "Hvad CleanWash tilbyder på Østerbro",
+        heading: "Hvad Eluxus tilbyder på Østerbro",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder på Østerbro. Udvendig vask omfatter lak, fælge, ruder og hjulbuer. Indvendig rengøring fokuserer på kabine, støvsugning, måtter og synlige flader. Komplet bilpleje kombinerer begge dele.",
-          "Alle servicetyper kan bookes online. Du vælger service, angiver biloplysninger og ønsket tidspunkt. CleanWash planlægger opgaven ud fra rute og tilgængelighed. Kunder kan booke bilvask direkte via booking-siden.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder på Østerbro. Udvendig vask omfatter lak, fælge, ruder og hjulbuer. Indvendig rengøring fokuserer på kabine, støvsugning, måtter og synlige flader. Komplet bilpleje kombinerer begge dele.",
+          "Alle servicetyper kan bookes online. Du vælger service, angiver biloplysninger og ønsket tidspunkt. Eluxus planlægger opgaven ud fra rute og tilgængelighed. Kunder kan booke bilvask direkte via booking-siden.",
         ],
       },
       {
         heading: "Firmabiler og private bilejere på Østerbro",
         paragraphs: [
-          "Østerbro har mange kontorer, ambassader, konsulater og internationale virksomheder. Firmabiler skal fremstå præsentable, og CleanWash kan hjælpe med regelmæssig bilvask og bilpleje. Private bilejere nyder godt af en professionel bilvask, der sparer tid og giver et godt resultat.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten.",
+          "Østerbro har mange kontorer, ambassader, konsulater og internationale virksomheder. Firmabiler skal fremstå præsentable, og Eluxus kan hjælpe med regelmæssig bilvask og bilpleje. Private bilejere nyder godt af en professionel bilvask, der sparer tid og giver et godt resultat.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask på Østerbro?", answer: "Ja. CleanWash tilbyder professionel bilvask på Østerbro og i nærliggende bydele med online booking." },
-      { question: "Dækker CleanWash Nordhavn?", answer: "Ja. Nordhavn er del af Østerbro-området og er relevant for CleanWashs serviceområde." },
+      { question: "Tilbyder Eluxus bilvask på Østerbro?", answer: "Ja. Eluxus tilbyder professionel bilvask på Østerbro og i nærliggende bydele med online booking." },
+      { question: "Dækker Eluxus Nordhavn?", answer: "Ja. Nordhavn er del af Østerbro-området og er relevant for Eluxuss serviceområde." },
       { question: "Kan jeg booke komplet bilpleje på Østerbro?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
-      { question: "Er servicen relevant for firmabiler på Østerbro?", answer: "Ja. CleanWash tilbyder bilvask til private og erhverv, herunder firmabiler og leasingbiler." },
+      { question: "Er servicen relevant for firmabiler på Østerbro?", answer: "Ja. Eluxus tilbyder bilvask til private og erhverv, herunder firmabiler og leasingbiler." },
       { question: "Hvad koster bilvask på Østerbro?", answer: "Prisen afhænger af den valgte service. Se aktuelle priser og book online via /booking." },
       { question: "Hvordan booker jeg bilvask på Østerbro?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil, adresse og ønsket tidspunkt." },
     ],
@@ -1073,13 +1073,13 @@ export const seoPages: SeoPageConfig[] = [
     slug: "bilvask-roskilde",
     title: "Bilvask Roskilde | Professionel bilrengøring i Roskilde",
     description:
-      "Book professionel bilvask i Roskilde hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking.",
+      "Book professionel bilvask med damp i Roskilde hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking.",
     h1: "Bilvask Roskilde",
     eyebrow: "Professionel bilvask i Roskilde",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask og bilrengøring i Roskilde med online booking og klare servicevalg.",
+      "Eluxus tilbyder professionel bilvask og bilrengøring i Roskilde med online booking og klare servicevalg.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Roskilde og på Sjælland med online booking.",
+      "Eluxus tilbyder bilvask i Roskilde og på Sjælland med online booking.",
       "Servicen er relevant for bilejere i Roskilde og nærliggende byer på Sjælland.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje direkte i bookingflowet.",
     ],
@@ -1101,10 +1101,10 @@ export const seoPages: SeoPageConfig[] = [
       "Storkøbenhavn",
     ],
     schemaAreaServed: ["Roskilde", "Sjælland", "Zealand", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Roskilde hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Roskilde hos Eluxus" },
     secondaryCta: { label: "Se bilvask Sjælland", href: "/bilvask-sjaelland" },
     benefits: [
-      { title: "Roskilde og omegn", text: "CleanWash er relevant for bilejere i Roskilde og nærliggende kommuner på Sjælland." },
+      { title: "Roskilde og omegn", text: "Eluxus er relevant for bilejere i Roskilde og nærliggende kommuner på Sjælland." },
       { title: "Online booking", text: "Book bilvask direkte online uden kø eller telefonopkald." },
       { title: "Alle servicetyper", text: "Vælg udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { title: "Til private og erhverv", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -1112,44 +1112,44 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash forbereder", text: "Teamet klargør service og rute ud fra din booking." },
+      { title: "Eluxus forbereder", text: "Teamet klargør service og rute ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Roskilde — professionel og nem",
         paragraphs: [
-          "Roskilde er en af de største byer på Sjælland og et vigtigt trafikknudepunkt med mange pendlere til og fra København. Bilejere i Roskilde har brug for en nem og professionel bilvaskløsning, der passer ind i en travl hverdag. CleanWash tilbyder bilvask i Roskilde med online booking og klare servicevalg.",
-          "Biler, der bruges til pendling på motorvejen, samler snavs hurtigt. Vejsnavs, vejsalt om vinteren og insekter om sommeren belaster lakken og kræver regelmæssig vask for at beholde et pænt udtryk. CleanWash hjælper med at holde bilen ren og præsentabel.",
+          "Roskilde er en af de største byer på Sjælland og et vigtigt trafikknudepunkt med mange pendlere til og fra København. Bilejere i Roskilde har brug for en nem og professionel bilvaskløsning, der passer ind i en travl hverdag. Eluxus tilbyder bilvask i Roskilde med online booking og klare servicevalg.",
+          "Biler, der bruges til pendling på motorvejen, samler snavs hurtigt. Vejsnavs, vejsalt om vinteren og insekter om sommeren belaster lakken og kræver regelmæssig vask for at beholde et pænt udtryk. Eluxus hjælper med at holde bilen ren og præsentabel.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Roskilde?",
+        heading: "Hvad tilbyder Eluxus i Roskilde?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Roskilde. Udvendig vask fjerner vejsnavs fra lak, ruder, fælge og hjulbuer. Indvendig rengøring fokuserer på kabine, støvsugning, måtter og sæder. Komplet bilpleje giver den mest grundige løsning.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Roskilde. Udvendig vask fjerner vejsnavs fra lak, ruder, fælge og hjulbuer. Indvendig rengøring fokuserer på kabine, støvsugning, måtter og sæder. Komplet bilpleje giver den mest grundige løsning.",
           "Booking foregår online. Du vælger service, angiver biloplysninger og ønsket tidspunkt. Den konkrete mulighed afhænger af adresse, rute og ledige tider, men bookingflowet samler oplysningerne, så opgaven kan planlægges effektivt.",
         ],
       },
       {
         heading: "Roskilde: pendlerbiler og familiebiler",
         paragraphs: [
-          "Mange af Roskildes bilejere bruger bilen dagligt til pendling til København og andre byer på Sjælland. Pendlerbiler bruges hårdt og trænger til jævnlig bilvask, både udvendigt for lakken og indvendigt for kabinens komfort. CleanWash er en relevant løsning for pendlere, der vil have bilen ren uden at bruge tid på det i en travl uge.",
+          "Mange af Roskildes bilejere bruger bilen dagligt til pendling til København og andre byer på Sjælland. Pendlerbiler bruges hårdt og trænger til jævnlig bilvask, både udvendigt for lakken og indvendigt for kabinens komfort. Eluxus er en relevant løsning for pendlere, der vil have bilen ren uden at bruge tid på det i en travl uge.",
           "Familier i Roskilde bruger bilen til børnekørsel, indkøb og weekendture. Indvendig rengøring er særlig relevant for familiebiler, hvor kabinen hurtigt samler støv, sand og rester fra daglig brug. En professionel rengøring giver kabinen en frisk start.",
         ],
       },
       {
         heading: "Roskilde og nærliggende byer på Sjælland",
         paragraphs: [
-          "CleanWash er relevant for kunder i Roskilde og nærliggende kommuner som Lejre, Greve og Køge. Den konkrete dækning afhænger af booking og ruteplanlægning. Kunder fra disse områder kan starte booking-processen online og afklare muligheder direkte.",
-          "Bilvask i Roskilde er en del af CleanWashs bredere fokus på professionel bilpleje på Sjælland. Kunder kan booke bilvask direkte via booking-siden og vælge den service, der passer til bilen.",
+          "Eluxus er relevant for kunder i Roskilde og nærliggende kommuner som Lejre, Greve og Køge. Den konkrete dækning afhænger af booking og ruteplanlægning. Kunder fra disse områder kan starte booking-processen online og afklare muligheder direkte.",
+          "Bilvask i Roskilde er en del af Eluxuss bredere fokus på professionel bilpleje på Sjælland. Kunder kan booke bilvask direkte via booking-siden og vælge den service, der passer til bilen.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Roskilde?", answer: "Ja. CleanWash tilbyder professionel bilvask i Roskilde og på Sjælland med online booking." },
-      { question: "Er CleanWash relevant for pendlere i Roskilde?", answer: "Ja. Pendlerbiler trænger jævnligt til bilvask, og CleanWash gør booking nem og fleksibel." },
+      { question: "Tilbyder Eluxus bilvask i Roskilde?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Roskilde og på Sjælland med online booking." },
+      { question: "Er Eluxus relevant for pendlere i Roskilde?", answer: "Ja. Pendlerbiler trænger jævnligt til bilvask, og Eluxus gør booking nem og fleksibel." },
       { question: "Kan jeg få indvendig rengøring i Roskilde?", answer: "Ja. Du kan vælge indvendig rengøring, udvendig vask eller komplet bilpleje i bookingflowet." },
-      { question: "Dækker CleanWash hele Roskilde?", answer: "CleanWash er relevant for Roskilde og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
+      { question: "Dækker Eluxus hele Roskilde?", answer: "Eluxus er relevant for Roskilde og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
       { question: "Hvad koster bilvask i Roskilde?", answer: "Prisen afhænger af den valgte service. Se aktuelle priser og book online via /booking." },
       { question: "Hvordan booker jeg bilvask i Roskilde?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil og ønsket tidspunkt." },
     ],
@@ -1159,15 +1159,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-koege",
-    title: "Bilvask Køge | Professionel bilvask hos CleanWash",
+    title: "Bilvask Køge | Professionel bilvask med damp hos Eluxus",
     description:
-      "Book professionel bilvask i Køge hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking på Sjælland.",
+      "Book professionel bilvask med damp i Køge hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking på Sjælland.",
     h1: "Bilvask Køge",
     eyebrow: "Professionel bilvask i Køge",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask og bilrengøring i Køge med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask og bilrengøring i Køge med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Køge og på Sydsjælland med online booking.",
+      "Eluxus tilbyder bilvask i Køge og på Sydsjælland med online booking.",
       "Servicen er relevant for bilejere i Køge, Stevns, Greve og nærliggende kommuner.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje direkte i bookingflowet.",
     ],
@@ -1189,10 +1189,10 @@ export const seoPages: SeoPageConfig[] = [
       "Storkøbenhavn",
     ],
     schemaAreaServed: ["Køge", "Sjælland", "Zealand", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Køge hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Køge hos Eluxus" },
     secondaryCta: { label: "Se bilvask Sjælland", href: "/bilvask-sjaelland" },
     benefits: [
-      { title: "Køge og omegn", text: "CleanWash er relevant for bilejere i Køge og nærliggende kommuner på Sjælland." },
+      { title: "Køge og omegn", text: "Eluxus er relevant for bilejere i Køge og nærliggende kommuner på Sjælland." },
       { title: "Fleksibel booking", text: "Book bilvask online og vælg den service, der passer til bilens stand og behov." },
       { title: "Komplet bilpleje", text: "Udvendig vask, indvendig rengøring eller komplet bilpleje kan bookes online." },
       { title: "Til alle biltyper", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -1200,44 +1200,44 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og behov", text: "Angiv nummerplade, adresse og ønsket tidspunkt for bilvasken." },
-      { title: "CleanWash klargør", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus klargør", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Køge — professionel bilpleje på Sjælland",
         paragraphs: [
-          "Køge er en voksende by på Sydsjælland med mange bilejere, der pendler til København og andre byer. Bilvask Køge er et relevant søgeord for alle, der vil have bilen gjort ren uden at køre til en vaskehal i storbyen. CleanWash tilbyder professionel bilvask i Køge med online booking og tydelige servicevalg.",
-          "Med S-tog til København og motorvejsadgang er Køge et centralt punkt på Sjælland. Pendlerbiler og familiebiler i Køge bruges hårdt og trænger til jævnlig bilvask for at bevare et pænt udtryk. CleanWash hjælper med udvendig vask og indvendig rengøring.",
+          "Køge er en voksende by på Sydsjælland med mange bilejere, der pendler til København og andre byer. Bilvask Køge er et relevant søgeord for alle, der vil have bilen gjort ren uden at køre til en vaskehal i storbyen. Eluxus tilbyder professionel bilvask med damp i Køge med online booking og tydelige servicevalg.",
+          "Med S-tog til København og motorvejsadgang er Køge et centralt punkt på Sjælland. Pendlerbiler og familiebiler i Køge bruges hårdt og trænger til jævnlig bilvask for at bevare et pænt udtryk. Eluxus hjælper med udvendig vask og indvendig rengøring.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Køge?",
+        heading: "Hvad tilbyder Eluxus i Køge?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Køge. Udvendig vask fjerner snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele for det bedste resultat.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Køge. Udvendig vask fjerner snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele for det bedste resultat.",
           "Booking foregår online. Du vælger service, angiver biloplysninger og ønsket tidspunkt. Den konkrete mulighed afhænger af rute og ledige tider, men bookingflowet giver alle relevante oplysninger.",
         ],
       },
       {
         heading: "Køge og nærliggende kommuner",
         paragraphs: [
-          "Køge grænser op til Greve, Stevns, Solrød og Ringsted. CleanWash er relevant for kunder i disse kommuner og kan håndtere booking fra hele Sydsjælland. Den konkrete dækning afhænger af adresse og ruteplanlægning.",
+          "Køge grænser op til Greve, Stevns, Solrød og Ringsted. Eluxus er relevant for kunder i disse kommuner og kan håndtere booking fra hele Sydsjælland. Den konkrete dækning afhænger af adresse og ruteplanlægning.",
           "Bilejere fra Køge og omegn kan starte booking-processen online og afklare muligheder direkte. Kunder kan booke bilvask direkte via booking-siden.",
         ],
       },
       {
         heading: "Erhvervskunder og private i Køge",
         paragraphs: [
-          "Køge har et stærkt erhvervsliv med mange virksomheder, lagerhoteller og industri. Firmabiler og erhvervsbiler skal fremstå præsentable, og CleanWash kan hjælpe med regelmæssig bilvask og bilpleje. Private bilejere nyder godt af en professionel service, der sparer tid.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten.",
+          "Køge har et stærkt erhvervsliv med mange virksomheder, lagerhoteller og industri. Firmabiler og erhvervsbiler skal fremstå præsentable, og Eluxus kan hjælpe med regelmæssig bilvask og bilpleje. Private bilejere nyder godt af en professionel service, der sparer tid.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Køge?", answer: "Ja. CleanWash tilbyder professionel bilvask i Køge og på Sjælland med online booking." },
-      { question: "Dækker CleanWash Greve og Stevns?", answer: "CleanWash er relevant for Køge og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
+      { question: "Tilbyder Eluxus bilvask i Køge?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Køge og på Sjælland med online booking." },
+      { question: "Dækker Eluxus Greve og Stevns?", answer: "Eluxus er relevant for Køge og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
       { question: "Kan jeg booke indvendig rengøring i Køge?", answer: "Ja. Du kan vælge indvendig rengøring, udvendig vask eller komplet bilpleje i bookingflowet." },
-      { question: "Er CleanWash relevant for erhvervskunder i Køge?", answer: "Ja. CleanWash tilbyder bilvask til private og erhverv, herunder firmabiler og flådeaftaler." },
+      { question: "Er Eluxus relevant for erhvervskunder i Køge?", answer: "Ja. Eluxus tilbyder bilvask til private og erhverv, herunder firmabiler og flådeaftaler." },
       { question: "Hvad koster bilvask i Køge?", answer: "Prisen afhænger af den valgte service. Se aktuelle priser og book online via /booking." },
       { question: "Hvordan booker jeg bilvask i Køge?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil og ønsket tidspunkt." },
     ],
@@ -1247,15 +1247,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-hellerup",
-    title: "Bilvask Hellerup | Professionel bilpleje hos CleanWash",
+    title: "Bilvask Hellerup | Professionel bilpleje hos Eluxus",
     description:
-      "Book professionel bilvask i Hellerup hos CleanWash. Skånsom udvendig vask, indvendig bilrengøring og premium bilpleje med online booking.",
+      "Book professionel bilvask med damp i Hellerup hos Eluxus. Skånsom udvendig vask, indvendig bilrengøring og premium bilpleje med online booking.",
     h1: "Bilvask Hellerup",
     eyebrow: "Professionel bilvask i Hellerup",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask og premium bilpleje i Hellerup med online booking og klare servicevalg.",
+      "Eluxus tilbyder professionel bilvask og premium bilpleje i Hellerup med online booking og klare servicevalg.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Hellerup og Gentofte-området med online booking.",
+      "Eluxus tilbyder bilvask i Hellerup og Gentofte-området med online booking.",
       "Servicen er relevant for bilejere i Hellerup, Gentofte, Charlottenlund og nærliggende bydele.",
       "Book udvendig vask, indvendig rengøring eller premium bilpleje direkte i bookingflowet.",
     ],
@@ -1277,10 +1277,10 @@ export const seoPages: SeoPageConfig[] = [
       "Storkøbenhavn",
     ],
     schemaAreaServed: ["Hellerup", "Gentofte", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Hellerup hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Hellerup hos Eluxus" },
     secondaryCta: { label: "Se håndvask af bil", href: "/haandvask-bil-koebenhavn" },
     benefits: [
-      { title: "Hellerup og Gentofte", text: "CleanWash er relevant for bilejere i Hellerup, Gentofte, Charlottenlund og nærliggende villakvarterer." },
+      { title: "Hellerup og Gentofte", text: "Eluxus er relevant for bilejere i Hellerup, Gentofte, Charlottenlund og nærliggende villakvarterer." },
       { title: "Premium bilpleje", text: "Skånsom og grundig bilvask med fokus på lak, finish og professionelt resultat." },
       { title: "Nem online booking", text: "Book bilvask direkte online og vælg den service, der passer til bilen." },
       { title: "Til private og erhverv", text: "Passer til velholdte privatbiler, firmabiler, leasingbiler og biler før salg." },
@@ -1288,42 +1288,42 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Professionelt resultat", text: "Bilen vaskes grundigt og afleveres med et pænt og præsentabelt udtryk." },
     ],
     sections: [
       {
         heading: "Bilvask i Hellerup — premium bilpleje nord for København",
         paragraphs: [
-          "Hellerup er et velhavende villakvarter nord for København med mange bilejere, der sætter pris på kvalitet og professionel service. Bilvask Hellerup er et relevant søgeord for bilejere, der vil have bilen gjort ordentlig ren med fokus på skånsom behandling og godt finish. CleanWash tilbyder professionel bilvask med online booking og klare servicevalg.",
-          "Biler i Hellerup og Gentofte-området er ofte velholdte og køres af ejere, der går op i bilens stand. Udvendig vask, indvendig rengøring og komplet bilpleje er alle relevante services. CleanWash arbejder grundigt og skånsomt, så bilen bevarer sit gode udtryk.",
+          "Hellerup er et velhavende villakvarter nord for København med mange bilejere, der sætter pris på kvalitet og professionel service. Bilvask Hellerup er et relevant søgeord for bilejere, der vil have bilen gjort ordentlig ren med fokus på skånsom behandling og godt finish. Eluxus tilbyder professionel bilvask med online booking og klare servicevalg.",
+          "Biler i Hellerup og Gentofte-området er ofte velholdte og køres af ejere, der går op i bilens stand. Udvendig vask, indvendig rengøring og komplet bilpleje er alle relevante services. Eluxus arbejder grundigt og skånsomt, så bilen bevarer sit gode udtryk.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Hellerup?",
+        heading: "Hvad tilbyder Eluxus i Hellerup?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Hellerup. Udvendig vask fjerner snavs fra lak, ruder, fælge og spejle. Indvendig rengøring fokuserer på kabine, støvsugning, sæder og instrumentbræt. Komplet bilpleje giver det mest gennemførte resultat.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Hellerup. Udvendig vask fjerner snavs fra lak, ruder, fælge og spejle. Indvendig rengøring fokuserer på kabine, støvsugning, sæder og instrumentbræt. Komplet bilpleje giver det mest gennemførte resultat.",
           "Booking foregår online. Du vælger service, angiver biloplysninger og ønsket tidspunkt. Den konkrete mulighed afhænger af adresse og rute, men bookingflowet samler alle oplysninger.",
         ],
       },
       {
         heading: "Hellerup, Gentofte og Charlottenlund",
         paragraphs: [
-          "Hellerup grænser op til Gentofte, Charlottenlund, Ordrup og Klampenborg. CleanWash er relevant for kunder i hele dette villakvarter nord for København. Dækningsområdet afhænger af booking og ruteplanlægning, men du kan starte processen online.",
-          "Mange bilejere i dette område søger en professionel bilvask, der tager sig af bilen med omhu. CleanWash tilbyder en service, der er skånsom over for lakken og giver et synligt og pænt resultat.",
+          "Hellerup grænser op til Gentofte, Charlottenlund, Ordrup og Klampenborg. Eluxus er relevant for kunder i hele dette villakvarter nord for København. Dækningsområdet afhænger af booking og ruteplanlægning, men du kan starte processen online.",
+          "Mange bilejere i dette område søger en professionel bilvask, der tager sig af bilen med omhu. Eluxus tilbyder en service, der er skånsom over for lakken og giver et synligt og pænt resultat.",
         ],
       },
       {
         heading: "Bilvask til salg, fremvisning og hverdag",
         paragraphs: [
-          "I Hellerup og Gentofte-området skifter mange bilejere bil hyppigt. En professionel bilvask inden salg eller fremvisning kan gøre bilen mere attraktiv og løfte dens oplevede stand. CleanWash kan hjælpe med en grundig vask, der gør bilen klar til billeder eller fremvisning.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten og leverer et professionelt resultat.",
+          "I Hellerup og Gentofte-området skifter mange bilejere bil hyppigt. En professionel bilvask med damp inden salg eller fremvisning kan gøre bilen mere attraktiv og løfte dens oplevede stand. Eluxus kan hjælpe med en grundig vask, der gør bilen klar til billeder eller fremvisning.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten og leverer et professionelt resultat.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Hellerup?", answer: "Ja. CleanWash tilbyder professionel bilvask i Hellerup og nærliggende bydele som Gentofte og Charlottenlund." },
-      { question: "Er CleanWash relevant for Gentofte og Charlottenlund?", answer: "Ja. Gentofte og Charlottenlund er del af CleanWashs serviceområde nord for København." },
+      { question: "Tilbyder Eluxus bilvask i Hellerup?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Hellerup og nærliggende bydele som Gentofte og Charlottenlund." },
+      { question: "Er Eluxus relevant for Gentofte og Charlottenlund?", answer: "Ja. Gentofte og Charlottenlund er del af Eluxuss serviceområde nord for København." },
       { question: "Tilbyder I premium bilpleje i Hellerup?", answer: "Ja. Du kan vælge premium bilpleje med polering og voksbeskyttelse i bookingflowet." },
       { question: "Er servicen relevant inden bilsalg?", answer: "Ja. En professionel bilvask kan gøre bilen mere præsentabel inden billeder, fremvisning eller salg." },
       { question: "Hvad koster bilvask i Hellerup?", answer: "Prisen afhænger af den valgte service. Se aktuelle priser og book online via /booking." },
@@ -1337,13 +1337,13 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-pris",
-    title: "Bilvask pris København | Hvad koster en bilvask? | CleanWash",
+    title: "Bilvask pris København | Hvad koster en bilvask? | Eluxus",
     description:
-      "Se priser på bilvask i København hos CleanWash. Udvendig bilvask fra 349 kr., komplet bilpleje fra 599 kr. Klar pris — ingen skjulte gebyrer.",
+      "Se priser på bilvask i København hos Eluxus. Udvendig bilvask fra 349 kr., komplet bilpleje fra 599 kr. Klar pris — ingen skjulte gebyrer.",
     h1: "Bilvask pris",
     eyebrow: "Priser og pakker",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask fra 349 kr. med klar pris, ingen skjulte gebyrer og nem online booking i København og på Sjælland.",
+      "Eluxus tilbyder professionel bilvask fra 349 kr. med klar pris, ingen skjulte gebyrer og nem online booking i København og på Sjælland.",
     shortSummary: [
       "Udvendig bilvask fra 349 kr. — skånsom vask med skum og skyl, fælge og ruder.",
       "Komplet bilvask fra 599 kr. — udvendig vask og grundig indvendig rengøring af kabinen.",
@@ -1366,7 +1366,7 @@ export const seoPages: SeoPageConfig[] = [
       "Storkøbenhavn",
     ],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Bilvask pris og pakker hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Bilvask pris og pakker hos Eluxus" },
     secondaryCta: { label: "Book bilvask online", href: "/booking" },
     benefits: [
       { title: "Klar pris fra start", text: "Du ser prisen, inden du booker. Ingen skjulte gebyrer eller tillæg ved levering." },
@@ -1377,15 +1377,15 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Se priser online", text: "Se alle priser og pakker direkte i bookingflowet og vælg den, der passer." },
       { title: "Book og betal", text: "Bekræft booking og se den endelige pris, inden du forpligter dig." },
-      { title: "Bilen vaskes", text: "CleanWash udfører den valgte bilvask med professionelt udstyr." },
+      { title: "Bilen vaskes", text: "Eluxus udfører den valgte bilvask med professionelt udstyr." },
       { title: "Betal ved levering", text: "Du betaler kun, når bilen er vasket og du er tilfreds med resultatet." },
     ],
     sections: [
       {
-        heading: "Hvad koster en bilvask hos CleanWash?",
+        heading: "Hvad koster en bilvask hos Eluxus?",
         paragraphs: [
-          "Bilvask pris er et af de mest søgte spørgsmål, når man overvejer at få bilen vasket professionelt. CleanWash tilbyder tre klare pakker: udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. og premium bilpleje fra 849 kr. Prisen afhænger af biltype og konkret service, men udgangspunktet er altid tydeligt i bookingflowet.",
-          "Det er vigtigt at sammenligne mere end bare prisen. En billig bilvask, der ikke rengør ordentligt, er ingen besparelse. CleanWash tilbyder en klar pris, professionelt udstyr og et synligt resultat. Du betaler kun, når bilvasken er udført.",
+          "Bilvask pris er et af de mest søgte spørgsmål, når man overvejer at få bilen vasket professionelt. Eluxus tilbyder tre klare pakker: udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. og premium bilpleje fra 849 kr. Prisen afhænger af biltype og konkret service, men udgangspunktet er altid tydeligt i bookingflowet.",
+          "Det er vigtigt at sammenligne mere end bare prisen. En billig bilvask, der ikke rengør ordentligt, er ingen besparelse. Eluxus tilbyder en klar pris, professionelt udstyr og et synligt resultat. Du betaler kun, når bilvasken er udført.",
         ],
       },
       {
@@ -1411,10 +1411,10 @@ export const seoPages: SeoPageConfig[] = [
       },
     ],
     faqs: [
-      { question: "Hvad koster en udvendig bilvask hos CleanWash?", answer: "Udvendig bilvask starter fra 349 kr. og inkluderer vask, fælge, ruder og finish." },
+      { question: "Hvad koster en udvendig bilvask hos Eluxus?", answer: "Udvendig bilvask starter fra 349 kr. og inkluderer vask, fælge, ruder og finish." },
       { question: "Hvad koster komplet bilvask?", answer: "Komplet bilvask starter fra 599 kr. og inkluderer udvendig vask og grundig indvendig rengøring." },
       { question: "Hvad koster premium bilpleje?", answer: "Premium bilpleje starter fra 849 kr. og inkluderer alt fra komplet bilvask plus polering og voksbeskyttelse." },
-      { question: "Er der skjulte gebyrer?", answer: "Nej. CleanWash tilbyder klar pris fra start. Du ser prisen, inden du booker, og betaler kun, når vasken er udført." },
+      { question: "Er der skjulte gebyrer?", answer: "Nej. Eluxus tilbyder klar pris fra start. Du ser prisen, inden du booker, og betaler kun, når vasken er udført." },
       { question: "Kan jeg se den præcise pris, inden jeg booker?", answer: "Ja. Den endelige pris vises i bookingflowet, inden du bekræfter din bestilling." },
       { question: "Hvordan booker jeg bilvask til den viste pris?", answer: "Gå til /booking, vælg den pakke, der passer til bilen, og udfyld oplysninger. Den endelige pris vises under booking." },
     ],
@@ -1426,15 +1426,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "car-wash-copenhagen",
-    title: "Car Wash Copenhagen | Professional Mobile Car Wash | CleanWash",
+    title: "Car Wash Copenhagen | Professional Mobile Car Wash | Eluxus",
     description:
-      "Book professional car wash in Copenhagen with CleanWash. Mobile car wash at your address, interior cleaning, exterior wash and business accounts.",
+      "Book professional car wash in Copenhagen with Eluxus. Mobile car wash at your address, interior cleaning, exterior wash and business accounts.",
     h1: "Car Wash Copenhagen",
     eyebrow: "Professional mobile car wash",
     heroIntro:
-      "CleanWash offers professional car wash in Copenhagen and Zealand. Book online, choose your service and get your car cleaned without queuing.",
+      "Eluxus offers professional car wash in Copenhagen and Zealand. Book online, choose your service and get your car cleaned without queuing.",
     shortSummary: [
-      "CleanWash offers professional car wash in Copenhagen with online booking and transparent pricing.",
+      "Eluxus offers professional car wash in Copenhagen with online booking and transparent pricing.",
       "Choose exterior wash, interior cleaning or complete car detailing directly in the booking flow.",
       "The service covers Copenhagen, Frederiksberg, Amager, the bridge districts and Greater Copenhagen.",
     ],
@@ -1457,7 +1457,7 @@ export const seoPages: SeoPageConfig[] = [
       "Gentofte",
     ],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Zealand", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professional car wash in Copenhagen by CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professional car wash in Copenhagen by Eluxus" },
     secondaryCta: { label: "Book car wash", href: "/booking" },
     benefits: [
       { title: "Mobile service", text: "We come to your address in Copenhagen — no queuing, no wasted time driving to a car wash." },
@@ -1468,45 +1468,45 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Go to the booking page and choose the car wash service that fits your needs." },
       { title: "Enter car details", text: "Provide your license plate, address and preferred time for the car wash." },
-      { title: "CleanWash prepares", text: "Our team prepares the service and plans the route based on your booking." },
+      { title: "Eluxus prepares", text: "Our team prepares the service and plans the route based on your booking." },
       { title: "Car washed and delivered", text: "Your car is professionally washed and delivered without queues or delays." },
     ],
     sections: [
       {
         heading: "Professional car wash in Copenhagen",
         paragraphs: [
-          "Finding a professional car wash in Copenhagen can be challenging when you are busy with work, family and daily life. CleanWash makes it easier by offering mobile car wash with online booking, clear service options and transparent pricing. You choose when and where — we take care of the rest.",
+          "Finding a professional car wash in Copenhagen can be challenging when you are busy with work, family and daily life. Eluxus makes it easier by offering mobile car wash with online booking, clear service options and transparent pricing. You choose when and where — we take care of the rest.",
           "Copenhagen cars accumulate city dirt quickly: brake dust from traffic, pollen from the parks, road salt in winter and everyday grime. Regular professional car washing keeps your car looking good and protects the paintwork from long-term damage.",
         ],
       },
       {
-        heading: "What does CleanWash offer in Copenhagen?",
+        heading: "What does Eluxus offer in Copenhagen?",
         paragraphs: [
-          "CleanWash offers three main services: exterior car wash from 349 DKK, complete car wash from 599 DKK and premium car detailing from 849 DKK. Exterior wash covers paintwork, windows, alloy wheels and wheel arches. Complete car wash adds interior cleaning including vacuuming, dashboard, seats and mats. Premium detailing adds polishing, wax protection and preparation for sale or presentation.",
+          "Eluxus offers three main services: exterior car wash from 349 DKK, complete car wash from 599 DKK and premium car detailing from 849 DKK. Exterior wash covers paintwork, windows, alloy wheels and wheel arches. Complete car wash adds interior cleaning including vacuuming, dashboard, seats and mats. Premium detailing adds polishing, wax protection and preparation for sale or presentation.",
           "All services can be booked online. You select the service, provide car details and choose a time that works for you. The booking flow gives you a clear price before you confirm your order.",
         ],
       },
       {
         heading: "Copenhagen neighbourhoods we cover",
         paragraphs: [
-          "CleanWash is relevant for car owners across Copenhagen, including Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby, Hellerup, Gentofte and Greater Copenhagen. We also serve parts of Zealand including Roskilde, Køge, Hillerød and Helsingør. The exact coverage depends on availability and routing — check the booking page for your address.",
-          "Whether you live in a city apartment in Nørrebro, a house in Gentofte, or work in an office near Nordhavn, CleanWash can help you get your car cleaned without disrupting your day.",
+          "Eluxus is relevant for car owners across Copenhagen, including Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby, Hellerup, Gentofte and Greater Copenhagen. We also serve parts of Zealand including Roskilde, Køge, Hillerød and Helsingør. The exact coverage depends on availability and routing — check the booking page for your address.",
+          "Whether you live in a city apartment in Nørrebro, a house in Gentofte, or work in an office near Nordhavn, Eluxus can help you get your car cleaned without disrupting your day.",
         ],
       },
       {
         heading: "Business car wash and fleet accounts",
         paragraphs: [
-          "CleanWash works with businesses in Copenhagen that need regular car washing for their fleet. Company cars, lease vehicles, taxis, transport companies and car dealerships can all benefit from a professional and reliable car wash service. Contact us to discuss a business account tailored to your needs.",
-          "A clean company car makes a better impression on clients and colleagues. CleanWash handles the logistics so your team does not need to coordinate car washing themselves.",
+          "Eluxus works with businesses in Copenhagen that need regular car washing for their fleet. Company cars, lease vehicles, taxis, transport companies and car dealerships can all benefit from a professional and reliable car wash service. Contact us to discuss a business account tailored to your needs.",
+          "A clean company car makes a better impression on clients and colleagues. Eluxus handles the logistics so your team does not need to coordinate car washing themselves.",
         ],
       },
     ],
     faqs: [
-      { question: "Does CleanWash offer car wash in Copenhagen?", answer: "Yes. CleanWash offers professional car wash in Copenhagen and Greater Copenhagen with online booking." },
+      { question: "Does Eluxus offer car wash in Copenhagen?", answer: "Yes. Eluxus offers professional car wash in Copenhagen and Greater Copenhagen with online booking." },
       { question: "How much does a car wash cost in Copenhagen?", answer: "Exterior wash starts from 349 DKK, complete car wash from 599 DKK and premium detailing from 849 DKK." },
       { question: "Can I book a car wash at my home address?", answer: "Yes. You can book car wash at your home, workplace or any other location where the car is legally parked." },
       { question: "Do you offer interior car cleaning?", answer: "Yes. Our complete car wash includes full interior cleaning: vacuuming, dashboard, seats, mats and windows." },
-      { question: "Does CleanWash serve expats and tourists in Copenhagen?", answer: "Yes. CleanWash serves all car owners in Copenhagen regardless of nationality. Booking is available online." },
+      { question: "Does Eluxus serve expats and tourists in Copenhagen?", answer: "Yes. Eluxus serves all car owners in Copenhagen regardless of nationality. Booking is available online." },
       { question: "How do I book a car wash in Copenhagen?", answer: "Go to /booking, select your preferred service and enter your car details, address and preferred time." },
     ],
     relatedLinks: commonRelatedLinks.filter((link) => link.href !== "/car-wash-copenhagen"),
@@ -1517,15 +1517,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-noerrebro",
-    title: "Bilvask Nørrebro | Professionel bilvask hos CleanWash",
+    title: "Bilvask Nørrebro | Professionel bilvask med damp hos Eluxus",
     description:
-      "Book professionel bilvask på Nørrebro hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med online booking.",
+      "Book professionel bilvask på Nørrebro hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med online booking.",
     h1: "Bilvask Nørrebro",
     eyebrow: "Professionel bilvask på Nørrebro",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask på Nørrebro med online booking og klare servicevalg til private og erhverv i en travl bydel.",
+      "Eluxus tilbyder professionel bilvask på Nørrebro med online booking og klare servicevalg til private og erhverv i en travl bydel.",
     shortSummary: [
-      "CleanWash tilbyder bilvask på Nørrebro og i nærliggende bydele med online booking.",
+      "Eluxus tilbyder bilvask på Nørrebro og i nærliggende bydele med online booking.",
       "Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet.",
       "Servicen er relevant for bilejere på Nørrebro, Bispebjerg, Frederiksberg og Ydre Nørrebro.",
     ],
@@ -1539,10 +1539,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask på Nørrebro",
     serviceArea: ["Nørrebro", "Bispebjerg", "Ydre Nørrebro", "Frederiksberg", "Østerbro", "København"],
     schemaAreaServed: ["Nørrebro", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask på Nørrebro hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask på Nørrebro hos Eluxus" },
     secondaryCta: { label: "Se bilvask København", href: "/bilvask-koebenhavn" },
     benefits: [
-      { title: "Lokal service", text: "CleanWash er relevant for bilejere på Nørrebro, Bispebjerg og nærliggende bydele." },
+      { title: "Lokal service", text: "Eluxus er relevant for bilejere på Nørrebro, Bispebjerg og nærliggende bydele." },
       { title: "Online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Alle servicetyper", text: "Udvendig vask, indvendig rengøring eller komplet bilpleje — alt bookes online." },
       { title: "Til private og erhverv", text: "Passer til hverdagsbiler, firmabiler og pendlerbiler i bydelen." },
@@ -1550,43 +1550,43 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash klargør", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus klargør", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Ren bil", text: "Du får en renere bil uden kø og transport til vaskehal." },
     ],
     sections: [
       {
         heading: "Bilvask på Nørrebro — professionel og nem",
         paragraphs: [
-          "Nørrebro er en af Københavns mest levende bydele med mange bilejere, der kæmper med begrænset parkering og en travl hverdag. Bilvask Nørrebro er relevant for alle, der vil have bilen gjort ren uden at bruge ekstra tid på transport og kø. CleanWash tilbyder professionel bilvask med online booking og klare servicevalg.",
+          "Nørrebro er en af Københavns mest levende bydele med mange bilejere, der kæmper med begrænset parkering og en travl hverdag. Bilvask Nørrebro er relevant for alle, der vil have bilen gjort ren uden at bruge ekstra tid på transport og kø. Eluxus tilbyder professionel bilvask med online booking og klare servicevalg.",
           "Biler på Nørrebro samler typisk bysnavs fra tæt trafik, cykelstier og den intensive daglige brug. Vejsnavs, bremsestøv og pollen er hyppige udfordringer. En professionel bilvask holder bilen pænere og giver en bedre hverdagsoplevelse.",
         ],
       },
       {
         heading: "Nørrebro og nærliggende bydele",
         paragraphs: [
-          "Nørrebro grænser op til Bispebjerg, Frederiksberg, Østerbro og det indre København. CleanWash er relevant for bilejere i hele dette område. Den konkrete dækning afhænger af adresse, rute og ledige tider, men booking-siden samler alle oplysninger.",
+          "Nørrebro grænser op til Bispebjerg, Frederiksberg, Østerbro og det indre København. Eluxus er relevant for bilejere i hele dette område. Den konkrete dækning afhænger af adresse, rute og ledige tider, men booking-siden samler alle oplysninger.",
           "Ydre Nørrebro og Bispebjerg har mange parcelhuse og større boligblokke med tilhørende biler. Disse bilejere søger ofte efter en professionel og fleksibel bilvaskløsning, der ikke kræver transport til en vaskehal.",
         ],
       },
       {
-        heading: "Hvad CleanWash tilbyder på Nørrebro",
+        heading: "Hvad Eluxus tilbyder på Nørrebro",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder på Nørrebro. Udvendig vask fjerner snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder på Nørrebro. Udvendig vask fjerner snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten.",
         ],
       },
       {
         heading: "Parkering og bilvask på Nørrebro",
         paragraphs: [
           "Parkering er en daglig udfordring på Nørrebro. Mange bilejere parkerer langt fra hjemmet og har ikke mulighed for at flytte bilen til en vaskehal i åbningstiden. En mobil bilvask løser dette problem, fordi bilen kan vaskes, hvor den allerede holder.",
-          "CleanWash planlægger ruter effektivt og kan bookes til den adresse, hvor bilen holder. Det gør bilvask på Nørrebro mere tilgængeligt og nemmere at passe ind i en travl hverdag.",
+          "Eluxus planlægger ruter effektivt og kan bookes til den adresse, hvor bilen holder. Det gør bilvask på Nørrebro mere tilgængeligt og nemmere at passe ind i en travl hverdag.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask på Nørrebro?", answer: "Ja. CleanWash tilbyder professionel bilvask på Nørrebro og nærliggende bydele med online booking." },
-      { question: "Kan I vaske bilen, selv om jeg har begrænset parkering?", answer: "Ja. CleanWash vasker bilen, hvor den holder. Angiv adressen i bookingflowet for at afklare muligheder." },
-      { question: "Dækker I Bispebjerg og Ydre Nørrebro?", answer: "Ja. Bispebjerg og Ydre Nørrebro er del af CleanWashs serviceområde nord for indre by." },
+      { question: "Tilbyder Eluxus bilvask på Nørrebro?", answer: "Ja. Eluxus tilbyder professionel bilvask på Nørrebro og nærliggende bydele med online booking." },
+      { question: "Kan I vaske bilen, selv om jeg har begrænset parkering?", answer: "Ja. Eluxus vasker bilen, hvor den holder. Angiv adressen i bookingflowet for at afklare muligheder." },
+      { question: "Dækker I Bispebjerg og Ydre Nørrebro?", answer: "Ja. Bispebjerg og Ydre Nørrebro er del af Eluxuss serviceområde nord for indre by." },
       { question: "Kan jeg booke komplet bilpleje på Nørrebro?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask på Nørrebro?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se alle priser via /booking." },
       { question: "Hvordan booker jeg bilvask på Nørrebro?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil, adresse og ønsket tidspunkt." },
@@ -1606,15 +1606,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-vesterbro",
-    title: "Bilvask Vesterbro | Professionel bilvask hos CleanWash",
+    title: "Bilvask Vesterbro | Professionel bilvask med damp hos Eluxus",
     description:
-      "Book professionel bilvask på Vesterbro hos CleanWash. Udvendig bilvask, indvendig bilrengøring og komplet bilpleje med nem online booking.",
+      "Book professionel bilvask på Vesterbro hos Eluxus. Udvendig bilvask, indvendig bilrengøring og komplet bilpleje med nem online booking.",
     h1: "Bilvask Vesterbro",
     eyebrow: "Professionel bilvask på Vesterbro",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask på Vesterbro med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask på Vesterbro med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask på Vesterbro og i nærliggende bydele med online booking.",
+      "Eluxus tilbyder bilvask på Vesterbro og i nærliggende bydele med online booking.",
       "Servicen er relevant for bilejere på Vesterbro, Sydhavn, Carlsberg Byen og Valby.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet.",
     ],
@@ -1628,10 +1628,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask på Vesterbro",
     serviceArea: ["Vesterbro", "Sydhavn", "Carlsberg Byen", "Valby", "Frederiksberg", "København"],
     schemaAreaServed: ["Vesterbro", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask på Vesterbro hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask på Vesterbro hos Eluxus" },
     secondaryCta: { label: "Se bilvask Valby", href: "/bilvask-valby" },
     benefits: [
-      { title: "Vesterbro og Sydhavn", text: "CleanWash er relevant for bilejere på Vesterbro, i Sydhavn, Carlsberg Byen og nærliggende bydele." },
+      { title: "Vesterbro og Sydhavn", text: "Eluxus er relevant for bilejere på Vesterbro, i Sydhavn, Carlsberg Byen og nærliggende bydele." },
       { title: "Online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Komplet bilpleje", text: "Udvendig vask, indvendig rengøring eller komplet bilpleje — vælg efter bilens behov." },
       { title: "Til travle bilejere", text: "Perfekt for pendlere, familier og erhvervskunder, der bruger bilen dagligt." },
@@ -1639,45 +1639,45 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Vælg service på booking-siden og angiv biloplysninger og tidspunkt." },
       { title: "Oplys adresse", text: "Angiv den adresse, hvor bilen holder, og kontaktoplysninger." },
-      { title: "CleanWash planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask på Vesterbro — nem og professionel",
         paragraphs: [
-          "Vesterbro er en af Københavns mest forandrede bydele med mange nye boliger, kontorer og familier. Mange bilejere på Vesterbro kæmper med begrænset parkering og en travl hverdag. Bilvask Vesterbro er for alle, der vil have bilen ren uden unødigt besvær. CleanWash tilbyder professionel bilvask med online booking.",
+          "Vesterbro er en af Københavns mest forandrede bydele med mange nye boliger, kontorer og familier. Mange bilejere på Vesterbro kæmper med begrænset parkering og en travl hverdag. Bilvask Vesterbro er for alle, der vil have bilen ren uden unødigt besvær. Eluxus tilbyder professionel bilvask med online booking.",
           "Vesterbro dækker et stort område fra Kødbyen og Halmtorvet til de roligere kvarterer mod Frederiksberg og Sydhavn. Biler i bydelen samler typisk bysnavs fra tæt bytrafik. En professionel bilvask giver et bedre resultat end en hurtig standardvask og er skånsom over for lakken.",
         ],
       },
       {
         heading: "Sydhavn og Carlsberg Byen",
         paragraphs: [
-          "Sydhavn og Carlsberg Byen er to af Vesterbros hurtigst voksende delområder med mange nye boliger og kontorer. Bilejere her søger fleksible og professionelle løsninger, der passer ind i en moderne hverdag. CleanWash er relevant for kunder i begge områder og kan håndtere booking fra hele Vesterbro.",
+          "Sydhavn og Carlsberg Byen er to af Vesterbros hurtigst voksende delområder med mange nye boliger og kontorer. Bilejere her søger fleksible og professionelle løsninger, der passer ind i en moderne hverdag. Eluxus er relevant for kunder i begge områder og kan håndtere booking fra hele Vesterbro.",
           "Med adgang til Sydhavnsmotorvejen og let adgang til resten af København er Vesterbro et populært sted at bo for pendlere. Pendlerbiler bruges hårdt og trænger til jævnlig bilvask for at se pæne ud.",
         ],
       },
       {
-        heading: "Hvad CleanWash tilbyder på Vesterbro",
+        heading: "Hvad Eluxus tilbyder på Vesterbro",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder på Vesterbro. Udvendig vask fjerner snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele for det bedste resultat.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten og leverer et professionelt resultat.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder på Vesterbro. Udvendig vask fjerner snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele for det bedste resultat.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten og leverer et professionelt resultat.",
         ],
       },
       {
         heading: "Vesterbro: familier og erhvervskunder",
         paragraphs: [
           "Vesterbro har mange familier med børn, der bruger bilen dagligt til børnekørsel, indkøb og weekend­ture. Indvendig rengøring er særlig relevant for familiebiler, hvor kabinen hurtigt samler støv og rester fra daglig brug. Erhvervskunder med firmabiler nyder godt af regelmæssig bilpleje.",
-          "CleanWash gør det nemt at booke bilvask på Vesterbro. Kunder kan booke direkte via booking-siden og vælge den service, der passer til bilen.",
+          "Eluxus gør det nemt at booke bilvask på Vesterbro. Kunder kan booke direkte via booking-siden og vælge den service, der passer til bilen.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask på Vesterbro?", answer: "Ja. CleanWash tilbyder professionel bilvask på Vesterbro og nærliggende bydele med online booking." },
-      { question: "Dækker I Sydhavn og Carlsberg Byen?", answer: "Ja. Sydhavn og Carlsberg Byen er del af CleanWashs serviceområde på Vesterbro." },
+      { question: "Tilbyder Eluxus bilvask på Vesterbro?", answer: "Ja. Eluxus tilbyder professionel bilvask på Vesterbro og nærliggende bydele med online booking." },
+      { question: "Dækker I Sydhavn og Carlsberg Byen?", answer: "Ja. Sydhavn og Carlsberg Byen er del af Eluxuss serviceområde på Vesterbro." },
       { question: "Kan jeg booke indvendig rengøring på Vesterbro?", answer: "Ja. Du kan vælge indvendig rengøring, udvendig vask eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask på Vesterbro?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se alle priser via /booking." },
-      { question: "Er servicen relevant for firmabiler på Vesterbro?", answer: "Ja. CleanWash tilbyder bilvask til private og erhverv, herunder firmabiler og leasingbiler." },
+      { question: "Er servicen relevant for firmabiler på Vesterbro?", answer: "Ja. Eluxus tilbyder bilvask til private og erhverv, herunder firmabiler og leasingbiler." },
       { question: "Hvordan booker jeg bilvask på Vesterbro?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil, adresse og ønsket tidspunkt." },
     ],
     relatedLinks: [
@@ -1695,15 +1695,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-valby",
-    title: "Bilvask Valby | Professionel bilvask hos CleanWash",
+    title: "Bilvask Valby | Professionel bilvask med damp hos Eluxus",
     description:
-      "Book professionel bilvask i Valby hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking.",
+      "Book professionel bilvask med damp i Valby hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking.",
     h1: "Bilvask Valby",
     eyebrow: "Professionel bilvask i Valby",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Valby med online booking og klare servicevalg til familier, pendlere og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Valby med online booking og klare servicevalg til familier, pendlere og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Valby og nærliggende bydele med online booking.",
+      "Eluxus tilbyder bilvask i Valby og nærliggende bydele med online booking.",
       "Servicen er relevant for bilejere i Valby, Brønshøj, Vanløse og Rødovre.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje direkte i bookingflowet.",
     ],
@@ -1717,10 +1717,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Valby",
     serviceArea: ["Valby", "Brønshøj", "Vanløse", "Rødovre", "Hvidovre", "København"],
     schemaAreaServed: ["Valby", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Valby hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Valby hos Eluxus" },
     secondaryCta: { label: "Se bilvask Vesterbro", href: "/bilvask-vesterbro" },
     benefits: [
-      { title: "Valby og omegn", text: "CleanWash er relevant for bilejere i Valby, Brønshøj, Vanløse og Rødovre." },
+      { title: "Valby og omegn", text: "Eluxus er relevant for bilejere i Valby, Brønshøj, Vanløse og Rødovre." },
       { title: "Familievenlig service", text: "Professionel bilvask der passer til familier, som bruger bilen til hverdag, sport og weekendture." },
       { title: "Online booking", text: "Book bilvask direkte online uden kø eller telefonopkald." },
       { title: "Klar pris", text: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. — ingen skjulte gebyrer." },
@@ -1728,14 +1728,14 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes grundigt", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Valby — til familier og pendlere",
         paragraphs: [
-          "Valby er et roligt og familievenligt kvarter syd for København med mange villa- og rækkehusejere, der bruger bilen dagligt. Bilvask Valby er relevant for alle, der vil have en ren bil uden at køre langt til en vaskehal. CleanWash tilbyder professionel bilvask med online booking og klare servicevalg.",
+          "Valby er et roligt og familievenligt kvarter syd for København med mange villa- og rækkehusejere, der bruger bilen dagligt. Bilvask Valby er relevant for alle, der vil have en ren bil uden at køre langt til en vaskehal. Eluxus tilbyder professionel bilvask med online booking og klare servicevalg.",
           "Familiebiler i Valby bruges til børnekørsel, sportsaktiviteter, indkøb og weekendture. Kabinen samler hurtigt snavs, og lakken udsættes for vejrsnavs og pollen. En professionel bilvask hjælper bilen med at se bedre ud og holder kabinen frisk og behagelig.",
         ],
       },
@@ -1743,28 +1743,28 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Valby: et familiekvarter med mange bilejere",
         paragraphs: [
           "Valby er et af de grønnere kvarterer i København med gode butiksforhold, skoler og grønne arealer. Mange familier vælger Valby for bydelens rolige karakter og gode adgangsforhold til resten af København. Bilejere i Valby søger professionelle og fleksible løsninger, der passer til en travl familiekøreplan.",
-          "CleanWash er relevant for kunder i Valby og nærliggende bydele som Brønshøj, Vanløse og Rødovre. Den konkrete dækning afhænger af booking og ruteplanlægning. Start booking-processen online for at se tilgængelighed.",
+          "Eluxus er relevant for kunder i Valby og nærliggende bydele som Brønshøj, Vanløse og Rødovre. Den konkrete dækning afhænger af booking og ruteplanlægning. Start booking-processen online for at se tilgængelighed.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Valby?",
+        heading: "Hvad tilbyder Eluxus i Valby?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje i Valby. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning, måtter og sæder. Komplet bilpleje kombinerer begge dele.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten og leverer et professionelt resultat.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje i Valby. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning, måtter og sæder. Komplet bilpleje kombinerer begge dele.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten og leverer et professionelt resultat.",
         ],
       },
       {
         heading: "Indvendig rengøring til familiebiler i Valby",
         paragraphs: [
-          "Familiebiler samler snavs hurtigt, og indvendig rengøring er særlig relevant for bilejere med børn. Sæder, gulve, måtter, bagagerum og kabinen generelt kræver regelmæssig rengøring for at holde bilen frisk og behagelig. CleanWash tilbyder indvendig bilrengøring, der adresserer alle disse områder.",
+          "Familiebiler samler snavs hurtigt, og indvendig rengøring er særlig relevant for bilejere med børn. Sæder, gulve, måtter, bagagerum og kabinen generelt kræver regelmæssig rengøring for at holde bilen frisk og behagelig. Eluxus tilbyder indvendig bilrengøring, der adresserer alle disse områder.",
           "En professionel indvendig rengøring giver familien en bedre oplevelse i bilen og gør bilen mere attraktiv, hvis den skal sælges eller returneres. Kunder i Valby kan booke bilvask direkte via booking-siden.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Valby?", answer: "Ja. CleanWash tilbyder professionel bilvask i Valby og nærliggende bydele med online booking." },
-      { question: "Er servicen relevant for familiebiler i Valby?", answer: "Ja. Familiebiler trænger ofte til indvendig rengøring, og CleanWash tilbyder grundig kabinerengøring." },
-      { question: "Dækker I Brønshøj og Vanløse?", answer: "CleanWash er relevant for Valby og nærliggende bydele. Konkret dækning afhænger af booking og rute." },
+      { question: "Tilbyder Eluxus bilvask i Valby?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Valby og nærliggende bydele med online booking." },
+      { question: "Er servicen relevant for familiebiler i Valby?", answer: "Ja. Familiebiler trænger ofte til indvendig rengøring, og Eluxus tilbyder grundig kabinerengøring." },
+      { question: "Dækker I Brønshøj og Vanløse?", answer: "Eluxus er relevant for Valby og nærliggende bydele. Konkret dækning afhænger af booking og rute." },
       { question: "Kan jeg booke komplet bilpleje i Valby?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask i Valby?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se alle priser via /booking." },
       { question: "Hvordan booker jeg bilvask i Valby?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil, adresse og ønsket tidspunkt." },
@@ -1784,15 +1784,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-lyngby",
-    title: "Bilvask Lyngby | Professionel bilvask hos CleanWash",
+    title: "Bilvask Lyngby | Professionel bilvask med damp hos Eluxus",
     description:
-      "Book professionel bilvask i Lyngby hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking nord for København.",
+      "Book professionel bilvask med damp i Lyngby hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking nord for København.",
     h1: "Bilvask Lyngby",
     eyebrow: "Professionel bilvask i Lyngby",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Lyngby og Lyngby-Taarbæk med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Lyngby og Lyngby-Taarbæk med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Lyngby og nærliggende kommuner nord for København.",
+      "Eluxus tilbyder bilvask i Lyngby og nærliggende kommuner nord for København.",
       "Servicen er relevant for bilejere i Lyngby, Virum, Sorgenfri og Klampenborg.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje direkte i bookingflowet.",
     ],
@@ -1806,10 +1806,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Lyngby",
     serviceArea: ["Lyngby", "Virum", "Sorgenfri", "Klampenborg", "Gentofte", "Hellerup"],
     schemaAreaServed: ["Lyngby", "Lyngby-Taarbæk", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Lyngby hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Lyngby hos Eluxus" },
     secondaryCta: { label: "Se bilvask Hellerup", href: "/bilvask-hellerup" },
     benefits: [
-      { title: "Lyngby og omegn", text: "CleanWash er relevant for bilejere i Lyngby, Virum, Sorgenfri og nærliggende kommuner." },
+      { title: "Lyngby og omegn", text: "Eluxus er relevant for bilejere i Lyngby, Virum, Sorgenfri og nærliggende kommuner." },
       { title: "Pendlere og familier", text: "Professionel bilvask der passer til pendlere fra Lyngby til København og familier i forstaden." },
       { title: "Online booking", text: "Book bilvask direkte online og vælg den service, der passer til bilens stand." },
       { title: "Premium bilpleje", text: "Udvendig vask, indvendig rengøring og premium bilpleje — alt kan bookes online." },
@@ -1817,43 +1817,43 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Lyngby — professionel service nord for København",
         paragraphs: [
-          "Lyngby er en velhavende og grøn forstad nord for København med mange bilejere, der pendler dagligt til arbejde i storbyen. Bilvask Lyngby er relevant for alle, der vil have bilen gjort ren professionelt uden at bruge unødigt tid på det. CleanWash tilbyder bilvask i Lyngby med online booking og klare servicevalg.",
+          "Lyngby er en velhavende og grøn forstad nord for København med mange bilejere, der pendler dagligt til arbejde i storbyen. Bilvask Lyngby er relevant for alle, der vil have bilen gjort ren professionelt uden at bruge unødigt tid på det. Eluxus tilbyder bilvask i Lyngby med online booking og klare servicevalg.",
           "Pendlerbiler fra Lyngby bruges hårdt på motorveje og indfaldsveje. Vejsnavs, vejsalt om vinteren og insekter om sommeren belaster lakken og kræver regelmæssig vask. En professionel bilvask holder bilen pænere og i bedre stand.",
         ],
       },
       {
         heading: "Lyngby, Virum og Sorgenfri",
         paragraphs: [
-          "Lyngby-Taarbæk Kommune dækker Lyngby, Virum og Sorgenfri — tre velhavende villakvarterer med mange bilejere, der sætter pris på kvalitet og god service. CleanWash er relevant for kunder i hele dette område og kan håndtere booking fra bilejere langs hele den nordlige korridor.",
+          "Lyngby-Taarbæk Kommune dækker Lyngby, Virum og Sorgenfri — tre velhavende villakvarterer med mange bilejere, der sætter pris på kvalitet og god service. Eluxus er relevant for kunder i hele dette område og kan håndtere booking fra bilejere langs hele den nordlige korridor.",
           "Klampenborg og Gentofte grænser op til Lyngby-Taarbæk og er ligeledes relevante. Den konkrete dækning afhænger af booking og ruteplanlægning. Start processen online for at afklare muligheder.",
         ],
       },
       {
-        heading: "Hvad CleanWash tilbyder i Lyngby",
+        heading: "Hvad Eluxus tilbyder i Lyngby",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje i Lyngby. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje giver det mest gennemførte resultat.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, angiv relevante oplysninger, og CleanWash håndterer resten.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje i Lyngby. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje giver det mest gennemførte resultat.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, angiv relevante oplysninger, og Eluxus håndterer resten.",
         ],
       },
       {
         heading: "DTU og Lyngby Storcenter — mange biler",
         paragraphs: [
-          "Lyngby er hjemsted for DTU og Lyngby Storcenter med mange studerende, ansatte og besøgende, der ankommer i bil. Virksomheder i Lyngby-Taarbæk har mange firmabiler, der skal fremstå præsentable. CleanWash kan hjælpe med regelmæssig bilvask og bilpleje til disse kunder.",
+          "Lyngby er hjemsted for DTU og Lyngby Storcenter med mange studerende, ansatte og besøgende, der ankommer i bil. Virksomheder i Lyngby-Taarbæk har mange firmabiler, der skal fremstå præsentable. Eluxus kan hjælpe med regelmæssig bilvask og bilpleje til disse kunder.",
           "Kunder i Lyngby og Lyngby-Taarbæk kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Lyngby?", answer: "Ja. CleanWash tilbyder professionel bilvask i Lyngby og Lyngby-Taarbæk med online booking." },
-      { question: "Dækker I Virum og Sorgenfri?", answer: "Ja. Virum og Sorgenfri er del af Lyngby-Taarbæk Kommune og er relevant for CleanWashs serviceområde." },
-      { question: "Er servicen relevant for pendlere fra Lyngby?", answer: "Ja. Pendlerbiler trænger jævnligt til bilvask, og CleanWash gør booking nem og fleksibel." },
+      { question: "Tilbyder Eluxus bilvask i Lyngby?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Lyngby og Lyngby-Taarbæk med online booking." },
+      { question: "Dækker I Virum og Sorgenfri?", answer: "Ja. Virum og Sorgenfri er del af Lyngby-Taarbæk Kommune og er relevant for Eluxuss serviceområde." },
+      { question: "Er servicen relevant for pendlere fra Lyngby?", answer: "Ja. Pendlerbiler trænger jævnligt til bilvask, og Eluxus gør booking nem og fleksibel." },
       { question: "Kan jeg booke komplet bilpleje i Lyngby?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask i Lyngby?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se alle priser via /booking." },
       { question: "Hvordan booker jeg bilvask i Lyngby?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil og ønsket tidspunkt." },
@@ -1873,15 +1873,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-hvidovre",
-    title: "Bilvask Hvidovre | Professionel bilvask hos CleanWash",
+    title: "Bilvask Hvidovre | Professionel bilvask med damp hos Eluxus",
     description:
-      "Book professionel bilvask i Hvidovre hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking syd for København.",
+      "Book professionel bilvask med damp i Hvidovre hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking syd for København.",
     h1: "Bilvask Hvidovre",
     eyebrow: "Professionel bilvask i Hvidovre",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Hvidovre med online booking og klare servicevalg til familier, pendlere og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Hvidovre med online booking og klare servicevalg til familier, pendlere og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Hvidovre og nærliggende kommuner syd for København.",
+      "Eluxus tilbyder bilvask i Hvidovre og nærliggende kommuner syd for København.",
       "Servicen er relevant for bilejere i Hvidovre, Brøndby, Rødovre og Ishøj.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet.",
     ],
@@ -1895,10 +1895,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Hvidovre",
     serviceArea: ["Hvidovre", "Brøndby", "Rødovre", "Ishøj", "Valby", "Storkøbenhavn"],
     schemaAreaServed: ["Hvidovre", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Hvidovre hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Hvidovre hos Eluxus" },
     secondaryCta: { label: "Se bilvask Valby", href: "/bilvask-valby" },
     benefits: [
-      { title: "Hvidovre og omegn", text: "CleanWash er relevant for bilejere i Hvidovre, Brøndby, Rødovre og nærliggende kommuner." },
+      { title: "Hvidovre og omegn", text: "Eluxus er relevant for bilejere i Hvidovre, Brøndby, Rødovre og nærliggende kommuner." },
       { title: "Nem online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Klar pris", text: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. — ingen skjulte gebyrer." },
       { title: "Til private og erhverv", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -1906,44 +1906,44 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash klargør", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus klargør", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Hvidovre — professionel service syd for København",
         paragraphs: [
-          "Hvidovre er en aktiv forstad syd for København med mange familier og erhvervsvirksomheder. Mange bilejere i Hvidovre pendler til arbejde i storbyen eller bruger bilen dagligt til transport af børn og indkøb. Bilvask Hvidovre er relevant for alle, der vil have bilen ren uden at transportere sig til en vaskehal. CleanWash tilbyder bilvask med online booking.",
+          "Hvidovre er en aktiv forstad syd for København med mange familier og erhvervsvirksomheder. Mange bilejere i Hvidovre pendler til arbejde i storbyen eller bruger bilen dagligt til transport af børn og indkøb. Bilvask Hvidovre er relevant for alle, der vil have bilen ren uden at transportere sig til en vaskehal. Eluxus tilbyder bilvask med online booking.",
           "Bilejere i Hvidovre og nærliggende kommuner som Brøndby, Rødovre og Ishøj bruger bilen hårdt til pendling og familieliv. Vejsnavs, vejsalt og daglig brug belaster lakken og kabinen. En professionel bilvask hjælper bilen med at se bedre ud og forlænger dens stand.",
         ],
       },
       {
         heading: "Hvidovre, Brøndby og Rødovre",
         paragraphs: [
-          "Hvidovre grænser op til Brøndby, Rødovre og Ishøj — tre kommuner med mange bilejere og et stærkt erhvervsliv. CleanWash er relevant for kunder i hele dette sydvestlige Storkøbenhavn. Den konkrete dækning afhænger af adresse og ruteplanlægning, men du kan starte processen online.",
+          "Hvidovre grænser op til Brøndby, Rødovre og Ishøj — tre kommuner med mange bilejere og et stærkt erhvervsliv. Eluxus er relevant for kunder i hele dette sydvestlige Storkøbenhavn. Den konkrete dækning afhænger af adresse og ruteplanlægning, men du kan starte processen online.",
           "Hvidovre Hospital, Avedøre Holme og Hvidovrevej er store trafikknudepunkter, som dagligt trækker tusindvis af biler til og fra området. Professionel bilvask er relevant for både private og erhvervskunder i dette område.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Hvidovre?",
+        heading: "Hvad tilbyder Eluxus i Hvidovre?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje i Hvidovre. Udvendig vask fjerner vejsnavs, vejsalt og snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje i Hvidovre. Udvendig vask fjerner vejsnavs, vejsalt og snavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten.",
         ],
       },
       {
         heading: "Erhverv og flåder i Hvidovre",
         paragraphs: [
-          "Hvidovre og Avedøre Holme har mange industri- og erhvervsvirksomheder med firmabiler og flåder. CleanWash kan hjælpe virksomheder med regelmæssig bilvask og bilpleje. Firmabiler skal fremstå præsentable, og CleanWash gør det nemt at holde flåden ren.",
-          "Virksomheder i Hvidovre kan kontakte CleanWash for at drøfte erhvervsaftaler og flådeservice. Kunder kan booke bilvask direkte via booking-siden.",
+          "Hvidovre og Avedøre Holme har mange industri- og erhvervsvirksomheder med firmabiler og flåder. Eluxus kan hjælpe virksomheder med regelmæssig bilvask og bilpleje. Firmabiler skal fremstå præsentable, og Eluxus gør det nemt at holde flåden ren.",
+          "Virksomheder i Hvidovre kan kontakte Eluxus for at drøfte erhvervsaftaler og flådeservice. Kunder kan booke bilvask direkte via booking-siden.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Hvidovre?", answer: "Ja. CleanWash tilbyder professionel bilvask i Hvidovre og nærliggende kommuner med online booking." },
-      { question: "Dækker I Brøndby og Rødovre?", answer: "CleanWash er relevant for Hvidovre og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
+      { question: "Tilbyder Eluxus bilvask i Hvidovre?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Hvidovre og nærliggende kommuner med online booking." },
+      { question: "Dækker I Brøndby og Rødovre?", answer: "Eluxus er relevant for Hvidovre og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
       { question: "Kan jeg booke indvendig rengøring i Hvidovre?", answer: "Ja. Du kan vælge indvendig rengøring, udvendig vask eller komplet bilpleje i bookingflowet." },
-      { question: "Er CleanWash relevant for virksomheder i Hvidovre?", answer: "Ja. CleanWash tilbyder bilvask til private og erhverv, herunder firmabiler og flådeaftaler." },
+      { question: "Er Eluxus relevant for virksomheder i Hvidovre?", answer: "Ja. Eluxus tilbyder bilvask til private og erhverv, herunder firmabiler og flådeaftaler." },
       { question: "Hvad koster bilvask i Hvidovre?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se alle priser via /booking." },
       { question: "Hvordan booker jeg bilvask i Hvidovre?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil, adresse og ønsket tidspunkt." },
     ],
@@ -1964,17 +1964,17 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "erhvervs-bilvask",
-    title: "Erhvervs bilvask | Bilvask til firmabiler og flåder | CleanWash",
+    title: "Erhvervs bilvask | Bilvask til firmabiler og flåder | Eluxus",
     description:
-      "Professionel erhvervs bilvask til firmabiler, leasingbiler og flåder. Faste aftaler, nem koordinering og klar pris. Book eller kontakt CleanWash i dag.",
+      "Professionel erhvervs bilvask til firmabiler, leasingbiler og flåder. Faste aftaler, nem koordinering og klar pris. Book eller kontakt Eluxus i dag.",
     h1: "Erhvervs bilvask",
     eyebrow: "Bilvask til virksomheder og flåder",
     heroIntro:
-      "CleanWash tilbyder erhvervs bilvask til virksomheder i København og på Sjælland. Fast aftale, fleksibel planlægning og professionel bilpleje til hele flåden.",
+      "Eluxus tilbyder erhvervs bilvask til virksomheder i København og på Sjælland. Fast aftale, fleksibel planlægning og professionel bilpleje til hele flåden.",
     shortSummary: [
-      "CleanWash tilbyder erhvervs bilvask til firmabiler, leasingbiler og flåder med faste aftaler.",
+      "Eluxus tilbyder erhvervs bilvask til firmabiler, leasingbiler og flåder med faste aftaler.",
       "Servicen er relevant for virksomheder, der vil have en præsentabel bilflåde uden intern koordinering.",
-      "Book online eller kontakt CleanWash for at drøfte en erhvervsaftale til din virksomhed.",
+      "Book online eller kontakt Eluxus for at drøfte en erhvervsaftale til din virksomhed.",
     ],
     keywords: [
       "erhvervs bilvask",
@@ -1986,26 +1986,26 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Erhvervs bilvask til firmabiler og flåder",
     serviceArea: ["København", "Storkøbenhavn", "Sjælland", "Frederiksberg", "Amager", "Hvidovre"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Erhvervs bilvask til firmabiler og flåder hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Erhvervs bilvask til firmabiler og flåder hos Eluxus" },
     secondaryCta: { label: "Bilvask leasingbil", href: "/bilvask-leasingbil" },
     benefits: [
       { title: "Fast erhvervsaftale", text: "Få en aftale, der passer til virksomhedens størrelse, bilflåde og ønskede frekvens." },
-      { title: "Nem koordinering", text: "CleanWash håndterer planlægning og ruter, så I ikke skal koordinere internt." },
+      { title: "Nem koordinering", text: "Eluxus håndterer planlægning og ruter, så I ikke skal koordinere internt." },
       { title: "Præsentable firmabiler", text: "En ren firmabil sender et bedre signal til kunder og samarbejdspartnere." },
       { title: "Til alle biltyper", text: "Passer til firmabiler, leasingbiler, taxa, transport, servicebiler og bilforhandlere." },
     ],
     process: [
-      { title: "Kontakt eller book", text: "Book online eller kontakt CleanWash for at drøfte en erhvervsaftale." },
+      { title: "Kontakt eller book", text: "Book online eller kontakt Eluxus for at drøfte en erhvervsaftale." },
       { title: "Aftal frekvens", text: "Beslut sammen, hvor ofte bilerne skal vaskes og hvilken service der ønskes." },
-      { title: "CleanWash planlægger", text: "Teamet koordinerer ruter og tidsplaner, så virksomheden ikke skal tænke på det." },
+      { title: "Eluxus planlægger", text: "Teamet koordinerer ruter og tidsplaner, så virksomheden ikke skal tænke på det." },
       { title: "Ren flåde løbende", text: "Bilerne vaskes regelmæssigt og præsentabelt uden unødigt ophold." },
     ],
     sections: [
       {
         heading: "Erhvervs bilvask — ren flåde uden intern koordinering",
         paragraphs: [
-          "Erhvervs bilvask er relevant for virksomheder, der vil have en præsentabel bilflåde uden at bruge intern tid og ressourcer på koordinering. En ren firmabil sender et professionelt signal til kunder, leverandører og samarbejdspartnere. CleanWash tilbyder erhvervs bilvask med faste aftaler, fleksibel planlægning og professionel bilpleje.",
-          "Mange virksomheder har firmabiler, der bruges dagligt af sælgere, serviceteknikere, direktører eller ansatte. Disse biler repræsenterer virksomheden og bør fremstå velholdte. CleanWash gør det nemt at holde flåden ren uden at belaste den administrative koordinering.",
+          "Erhvervs bilvask er relevant for virksomheder, der vil have en præsentabel bilflåde uden at bruge intern tid og ressourcer på koordinering. En ren firmabil sender et professionelt signal til kunder, leverandører og samarbejdspartnere. Eluxus tilbyder erhvervs bilvask med faste aftaler, fleksibel planlægning og professionel bilpleje.",
+          "Mange virksomheder har firmabiler, der bruges dagligt af sælgere, serviceteknikere, direktører eller ansatte. Disse biler repræsenterer virksomheden og bør fremstå velholdte. Eluxus gør det nemt at holde flåden ren uden at belaste den administrative koordinering.",
         ],
       },
       {
@@ -2018,25 +2018,25 @@ export const seoPages: SeoPageConfig[] = [
       {
         heading: "Erhvervsaftale og flådeservice",
         paragraphs: [
-          "CleanWash kan indgå en erhvervsaftale, der passer til virksomhedens behov. Det kan være en ugentlig vask af alle firmabiler, en månedlig dybderengøring eller en ad hoc-service, der bookes efter behov. Den konkrete aftale afhænger af antal biler, frekvens, servicetyper og virksomhedens lokation.",
-          "En erhvervsaftale giver virksomheden en forudsigelig bilplejeplan og fri virksomheden fra koordinering. Kontakt CleanWash for at drøfte mulighederne, eller brug booking-siden til at starte med en enkelt bilvask.",
+          "Eluxus kan indgå en erhvervsaftale, der passer til virksomhedens behov. Det kan være en ugentlig vask af alle firmabiler, en månedlig dybderengøring eller en ad hoc-service, der bookes efter behov. Den konkrete aftale afhænger af antal biler, frekvens, servicetyper og virksomhedens lokation.",
+          "En erhvervsaftale giver virksomheden en forudsigelig bilplejeplan og fri virksomheden fra koordinering. Kontakt Eluxus for at drøfte mulighederne, eller brug booking-siden til at starte med en enkelt bilvask.",
         ],
       },
       {
         heading: "Erhvervs bilvask i København og på Sjælland",
         paragraphs: [
-          "CleanWash tilbyder erhvervs bilvask i hele København, Storkøbenhavn og på Sjælland. Virksomheder med adresser i indre by, Frederiksberg, Amager, Østerbro, Vesterbro, Hvidovre og andre bydele kan alle booke eller drøfte en erhvervsaftale.",
-          "Den konkrete dækning afhænger af bilantal, adresser og ruteplanlægning. Kontakt CleanWash for at afklare, hvad der er muligt for din virksomhed.",
+          "Eluxus tilbyder erhvervs bilvask i hele København, Storkøbenhavn og på Sjælland. Virksomheder med adresser i indre by, Frederiksberg, Amager, Østerbro, Vesterbro, Hvidovre og andre bydele kan alle booke eller drøfte en erhvervsaftale.",
+          "Den konkrete dækning afhænger af bilantal, adresser og ruteplanlægning. Kontakt Eluxus for at afklare, hvad der er muligt for din virksomhed.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash erhvervs bilvask?", answer: "Ja. CleanWash tilbyder erhvervs bilvask til firmabiler, leasingbiler og flåder med faste aftaler." },
-      { question: "Kan vi få en fast aftale for vores flåde?", answer: "Ja. CleanWash kan indgå erhvervsaftaler tilpasset virksomhedens størrelse, frekvens og behov." },
+      { question: "Tilbyder Eluxus erhvervs bilvask?", answer: "Ja. Eluxus tilbyder erhvervs bilvask til firmabiler, leasingbiler og flåder med faste aftaler." },
+      { question: "Kan vi få en fast aftale for vores flåde?", answer: "Ja. Eluxus kan indgå erhvervsaftaler tilpasset virksomhedens størrelse, frekvens og behov." },
       { question: "Hvilke virksomheder er erhvervs bilvask relevant for?", answer: "Bilforhandlere, leasingselskaber, transportvirksomheder, kontorer med firmabiler, taxa og alle med præsentable biler." },
-      { question: "Dækker I hele København til erhverv?", answer: "Ja. CleanWash er relevant for virksomheder i hele København, Storkøbenhavn og på Sjælland." },
+      { question: "Dækker I hele København til erhverv?", answer: "Ja. Eluxus er relevant for virksomheder i hele København, Storkøbenhavn og på Sjælland." },
       { question: "Hvad koster erhvervs bilvask?", answer: "Prisen afhænger af antal biler, frekvens og servicetyper. Kontakt os eller book via /booking for et tilbud." },
-      { question: "Hvordan indgår vi en erhvervsaftale?", answer: "Kontakt CleanWash direkte, eller start med en enkelt booking via /booking for at afprøve servicen." },
+      { question: "Hvordan indgår vi en erhvervsaftale?", answer: "Kontakt Eluxus direkte, eller start med en enkelt booking via /booking for at afprøve servicen." },
     ],
     relatedLinks: [
       { label: "Book bilvask", href: "/booking" },
@@ -2053,16 +2053,16 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "klargoering-bil-salg",
-    title: "Klargøring af bil til salg | Professionel bilklargøring | CleanWash",
+    title: "Klargøring af bil til salg | Professionel bilklargøring | Eluxus",
     description:
-      "Få bilen klar til salg med professionel bilklargøring hos CleanWash. Udvendig polering, indvendig rengøring og komplet klargøring for den bedste salgspris.",
+      "Få bilen klar til salg med professionel bilklargøring hos Eluxus. Udvendig polering, indvendig rengøring og komplet klargøring for den bedste salgspris.",
     h1: "Klargøring af bil til salg",
     eyebrow: "Professionel bilklargøring",
     heroIntro:
-      "CleanWash hjælper dig med at gøre bilen klar til salg med professionel vask, rengøring og klargøring, der kan øge den oplevede stand og salgsprisen.",
+      "Eluxus hjælper dig med at gøre bilen klar til salg med professionel vask, rengøring og klargøring, der kan øge den oplevede stand og salgsprisen.",
     shortSummary: [
       "En professionel bilklargøring kan gøre bilen mere attraktiv for køber og løfte salgsprisen.",
-      "CleanWash tilbyder komplet klargøring: udvendig vask, polering, indvendig rengøring og finish.",
+      "Eluxus tilbyder komplet klargøring: udvendig vask, polering, indvendig rengøring og finish.",
       "Book bilklargøring online og få bilen præsentabel inden billeder og fremvisning.",
     ],
     keywords: [
@@ -2075,7 +2075,7 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Klargøring af bil til salg",
     serviceArea: ["København", "Frederiksberg", "Amager", "Storkøbenhavn", "Sjælland"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Klargøring af bil til salg hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Klargøring af bil til salg hos Eluxus" },
     secondaryCta: { label: "Se polering af bil", href: "/polering-bil-koebenhavn" },
     benefits: [
       { title: "Højere salgspris", text: "En velrengjort og præsentabel bil kan opnå en højere pris og sælges hurtigere." },
@@ -2085,8 +2085,8 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book klargøring", text: "Gå til booking-siden og vælg premium bilpleje eller komplet bilklargøring." },
-      { title: "Beskriv bilens stand", text: "Angiv relevante detaljer om bilens stand, så CleanWash kan forberede den rigtige service." },
-      { title: "Bilen klargøres", text: "CleanWash udfører udvendig vask, polering og indvendig rengøring." },
+      { title: "Beskriv bilens stand", text: "Angiv relevante detaljer om bilens stand, så Eluxus kan forberede den rigtige service." },
+      { title: "Bilen klargøres", text: "Eluxus udfører udvendig vask, polering og indvendig rengøring." },
       { title: "Klar til salg", text: "Bilen afleveres præsentabel og klar til billeder, fremvisning eller overlevering." },
     ],
     sections: [
@@ -2094,14 +2094,14 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Klargøring af bil til salg — den rigtige start",
         paragraphs: [
           "Når du skal sælge din bil, er det første indtryk afgørende. En køber danner sig en holdning allerede i salgsannoncen — og det billede er alt afgørende for, om de kontakter dig. En professionel bilklargøring kan gøre bilen mere attraktiv, fremstå bedre vedligeholdt og potentielt løfte salgsprisen.",
-          "Klargøring af bil til salg handler om at præsentere bilen i sin bedste stand. Det inkluderer en grundig udvendig vask og polering, indvendig rengøring af kabine, sæder, måtter og bagagerum samt finish, der giver bilen et pænt og velholdt udtryk. CleanWash tilbyder bilklargøring med online booking.",
+          "Klargøring af bil til salg handler om at præsentere bilen i sin bedste stand. Det inkluderer en grundig udvendig vask og polering, indvendig rengøring af kabine, sæder, måtter og bagagerum samt finish, der giver bilen et pænt og velholdt udtryk. Eluxus tilbyder bilklargøring med online booking.",
         ],
       },
       {
         heading: "Hvad indeholder en professionel bilklargøring?",
         paragraphs: [
           "En professionel bilklargøring kan inkludere udvendig skånsom vask og skyl, polering af lak for at fjerne fine ridser og matte pletter, voksbeskyttelse for glans og beskyttelse, indvendig støvsugning og rengøring af kabine, rengøring af sæder, måtter, instrumentbræt og paneler samt aftørring og finish af alle flader.",
-          "Det er vigtigt at tilpasse klargøringen til bilens stand. En bil med matte pletter og ridser i lakken drager størst nytte af polering. En bil med en beskidt kabine prioriterer indvendig rengøring. CleanWash hjælper dig med at vælge den rigtige service i bookingflowet.",
+          "Det er vigtigt at tilpasse klargøringen til bilens stand. En bil med matte pletter og ridser i lakken drager størst nytte af polering. En bil med en beskidt kabine prioriterer indvendig rengøring. Eluxus hjælper dig med at vælge den rigtige service i bookingflowet.",
         ],
       },
       {
@@ -2115,14 +2115,14 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Klargøring inden leasingretur",
         paragraphs: [
           "Klargøring af bil er også relevant inden leasingretur. Leasingselskaber foretager en tilstandsrapport ved aflevering, og slid ud over normal brug kan udløse ekstraomkostninger. En professionel vask og rengøring kan reducere risikoen for sådanne tillæg.",
-          "CleanWash tilbyder klargøring til leasingretur med fokus på de flader og elementer, leasingselskaberne typisk kontrollerer. Kunder kan booke bilklargøring direkte via booking-siden.",
+          "Eluxus tilbyder klargøring til leasingretur med fokus på de flader og elementer, leasingselskaberne typisk kontrollerer. Kunder kan booke bilklargøring direkte via booking-siden.",
         ],
       },
     ],
     faqs: [
       { question: "Hvad er bilklargøring til salg?", answer: "Det er en professionel vask, polering og indvendig rengøring, der gør bilen præsentabel inden salg." },
       { question: "Kan bilklargøring øge salgsprisen?", answer: "Ja. En velrengjort bil fremstår bedre vedligeholdt, tiltrækker flere interesserede og kan opnå en højere pris." },
-      { question: "Tilbyder CleanWash bilklargøring i København?", answer: "Ja. CleanWash tilbyder professionel bilklargøring i København og på Sjælland med online booking." },
+      { question: "Tilbyder Eluxus bilklargøring i København?", answer: "Ja. Eluxus tilbyder professionel bilklargøring i København og på Sjælland med online booking." },
       { question: "Er klargøring relevant inden leasingretur?", answer: "Ja. En grundig rengøring kan reducere risikoen for ekstraomkostninger ved aflevering af leasingbil." },
       { question: "Hvad koster bilklargøring til salg?", answer: "Premium bilpleje starter fra 849 kr. og inkluderer polering, voksbeskyttelse og komplet indvendig rengøring." },
       { question: "Hvordan booker jeg bilklargøring?", answer: "Gå til /booking, vælg premium bilpleje eller komplet bilvask og udfyld oplysninger om bilen." },
@@ -2142,16 +2142,16 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-leasingbil",
-    title: "Bilvask leasingbil | Aflevering og retur | CleanWash",
+    title: "Bilvask leasingbil | Aflevering og retur | Eluxus",
     description:
-      "Book professionel bilvask af leasingbil hos CleanWash. Grundig vask og rengøring inden aflevering af leasingbil for at undgå ekstraomkostninger.",
+      "Book professionel bilvask af leasingbil hos Eluxus. Grundig vask og rengøring inden aflevering af leasingbil for at undgå ekstraomkostninger.",
     h1: "Bilvask leasingbil",
     eyebrow: "Bilvask inden leasingretur",
     heroIntro:
-      "CleanWash hjælper dig med at gøre leasingbilen klar til aflevering med professionel vask og rengøring, der kan reducere risikoen for ekstraomkostninger.",
+      "Eluxus hjælper dig med at gøre leasingbilen klar til aflevering med professionel vask og rengøring, der kan reducere risikoen for ekstraomkostninger.",
     shortSummary: [
       "En grundig bilvask inden leasingretur kan reducere risikoen for ekstraomkostninger ved aflevering.",
-      "CleanWash tilbyder professionel vask og rengøring af leasingbiler i København og på Sjælland.",
+      "Eluxus tilbyder professionel vask og rengøring af leasingbiler i København og på Sjælland.",
       "Book online og få leasingbilen klar til tilstandsrapport og aflevering.",
     ],
     keywords: [
@@ -2164,26 +2164,26 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask af leasingbil",
     serviceArea: ["København", "Frederiksberg", "Amager", "Storkøbenhavn", "Sjælland"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Bilvask af leasingbil inden aflevering hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Bilvask af leasingbil inden aflevering hos Eluxus" },
     secondaryCta: { label: "Klargøring til salg", href: "/klargoering-bil-salg" },
     benefits: [
       { title: "Undgå ekstraomkostninger", text: "En grundig vask kan reducere risikoen for ekstrakrav fra leasingselskabet ved aflevering." },
-      { title: "Udvendig og indvendig", text: "CleanWash rengør både lakken, ruder, fælge og kabinen — de flader, der kontrolleres." },
+      { title: "Udvendig og indvendig", text: "Eluxus rengør både lakken, ruder, fælge og kabinen — de flader, der kontrolleres." },
       { title: "Hurtig levering", text: "Book online og få leasingbilen klar til aflevering inden din aftalte dato." },
       { title: "Til alle leasingtyper", text: "Passer til private leasingbiler, firmabiler og flåder med leasingaftaler." },
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg komplet bilvask eller premium bilpleje til leasingbilen." },
       { title: "Oplys leasingbilens stand", text: "Beskriv bilens stand og eventuelle særlige behov i bookingflowet." },
-      { title: "Leasingbilen rengøres", text: "CleanWash udfører grundig udvendig og indvendig rengøring med fokus på afleveringskritier." },
+      { title: "Leasingbilen rengøres", text: "Eluxus udfører grundig udvendig og indvendig rengøring med fokus på afleveringskritier." },
       { title: "Klar til aflevering", text: "Bilen afleveres ren og præsentabel og klar til tilstandsrapport." },
     ],
     sections: [
       {
         heading: "Bilvask af leasingbil — undgå ekstraomkostninger ved aflevering",
         paragraphs: [
-          "Mange leasingtagere oplever uventede ekstraomkostninger ved aflevering af leasingbilen, fordi tilstanden bedømmes som dårligere end forventet. Snavs, pletter, cigaretlugt, ridser i interiøret og manglende rengøring kan alle give anledning til tillæg. En professionel bilvask inden aflevering kan reducere risikoen for sådanne udgifter.",
-          "CleanWash tilbyder bilvask af leasingbiler med fokus på de elementer, leasingselskaber typisk kontrollerer: udvendig lak, ruder og fælge, indvendig kabine, sæder, måtter og bagagerum. En grundig vask inden aflevering er en lille investering sammenlignet med de tillæg, man kan undgå.",
+          "Mange leasingtagere oplever uventede ekstraomkostninger ved aflevering af leasingbilen, fordi tilstanden bedømmes som dårligere end forventet. Snavs, pletter, cigaretlugt, ridser i interiøret og manglende rengøring kan alle give anledning til tillæg. En professionel bilvask med damp inden aflevering kan reducere risikoen for sådanne udgifter.",
+          "Eluxus tilbyder bilvask af leasingbiler med fokus på de elementer, leasingselskaber typisk kontrollerer: udvendig lak, ruder og fælge, indvendig kabine, sæder, måtter og bagagerum. En grundig vask inden aflevering er en lille investering sammenlignet med de tillæg, man kan undgå.",
         ],
       },
       {
@@ -2197,20 +2197,20 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Hvornår skal leasingbilen vaskes?",
         paragraphs: [
           "Det anbefales at bestille bilvask af leasingbilen senest et par dage inden aflevering, så der er tid til at udbedre eventuelle fund. Book bilvask online, og vælg en tid, der giver plads til aflevering i god ro.",
-          "CleanWash kan bookes med kort varsel og leverer bilen ren og klar til aflevering. Det er nemt at booke online og vælge det tidspunkt, der passer i perioden op til afleveringsdatoen.",
+          "Eluxus kan bookes med kort varsel og leverer bilen ren og klar til aflevering. Det er nemt at booke online og vælge det tidspunkt, der passer i perioden op til afleveringsdatoen.",
         ],
       },
       {
         heading: "Leasingbil til erhverv og privat",
         paragraphs: [
           "Bilvask af leasingbil er relevant for både private leasingtagere og virksomheder med firmabiler på leasing. Private leasingtagere ønsker at undgå personlige ekstraomkostninger ved aflevering. Virksomheder ønsker at holde flåden i god stand og minimere afleveringstillæg, der belaster firmaets økonomi.",
-          "CleanWash tilbyder bilvask til leasingbiler i København og på Sjælland. Kunder kan booke bilvask direkte via booking-siden.",
+          "Eluxus tilbyder bilvask til leasingbiler i København og på Sjælland. Kunder kan booke bilvask direkte via booking-siden.",
         ],
       },
     ],
     faqs: [
       { question: "Kan bilvask reducere ekstraomkostninger ved leasingretur?", answer: "Ja. En grundig vask og rengøring inden aflevering kan forbedre bilens tilstand og reducere risikoen for tillæg." },
-      { question: "Hvad tilbyder CleanWash til leasingbiler?", answer: "CleanWash tilbyder udvendig vask, indvendig rengøring og komplet bilpleje, der klargør leasingbilen til aflevering." },
+      { question: "Hvad tilbyder Eluxus til leasingbiler?", answer: "Eluxus tilbyder udvendig vask, indvendig rengøring og komplet bilpleje, der klargør leasingbilen til aflevering." },
       { question: "Hvornår skal jeg booke bilvask inden leasingretur?", answer: "Book senest 2-3 dage inden aflevering, så der er tid til at se resultatet, inden bilen afleveres." },
       { question: "Er servicen relevant for firmabiler på leasing?", answer: "Ja. Virksomheder med firmabiler på leasing kan spare afleveringstillæg med regelmæssig bilpleje." },
       { question: "Hvad koster bilvask af leasingbil?", answer: "Komplet bilvask fra 599 kr., premium bilpleje fra 849 kr. Se priser og book via /booking." },
@@ -2231,16 +2231,16 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "polering-bil-koebenhavn",
-    title: "Polering af bil København | Professionel polering hos CleanWash",
+    title: "Polering af bil København | Professionel polering hos Eluxus",
     description:
-      "Book professionel polering af bil i København hos CleanWash. Fjern ridser, matte pletter og vejsnavs og giv bilen en glansfuld og beskyttet finish.",
+      "Book professionel polering af bil i København hos Eluxus. Fjern ridser, matte pletter og vejsnavs og giv bilen en glansfuld og beskyttet finish.",
     h1: "Polering af bil København",
     eyebrow: "Professionel lakpolering",
     heroIntro:
-      "CleanWash tilbyder professionel polering af bil i København. Fjern fine ridser og matte pletter og giv lakken en beskyttet og glansfuld finish.",
+      "Eluxus tilbyder professionel polering af bil i København. Fjern fine ridser og matte pletter og giv lakken en beskyttet og glansfuld finish.",
     shortSummary: [
       "Polering af bil fjerner fine ridser, swirls og matte pletter i lakken og giver en glansfuld finish.",
-      "CleanWash tilbyder professionel lakpolering i København med online booking.",
+      "Eluxus tilbyder professionel lakpolering i København med online booking.",
       "Poleringen kombineres typisk med voksbeskyttelse for at bevare det gode resultat.",
     ],
     keywords: [
@@ -2253,7 +2253,7 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel polering af bil i København",
     serviceArea: ["København", "Frederiksberg", "Amager", "Østerbro", "Hellerup", "Storkøbenhavn"],
     schemaAreaServed: ["København", "Copenhagen", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel polering af bil i København hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel polering af bil i København hos Eluxus" },
     secondaryCta: { label: "Klargøring til salg", href: "/klargoering-bil-salg" },
     benefits: [
       { title: "Fjern ridser og swirls", text: "Polering fjerner fine ridser, ridsemærker og matte pletter, der giver lakken et dæmpet udtryk." },
@@ -2264,7 +2264,7 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book polering", text: "Gå til booking-siden og vælg premium bilpleje, der inkluderer polering og voks." },
       { title: "Oplys biltype", text: "Angiv bilens farve, stand og eventuelle særlige ønsker til behandlingen." },
-      { title: "Lakken poleres", text: "CleanWash udfører skånsom polering af lak og behandler efterfølgende med voks." },
+      { title: "Lakken poleres", text: "Eluxus udfører skånsom polering af lak og behandler efterfølgende med voks." },
       { title: "Glansfuld levering", text: "Bilen afleveres med en klar, glansfuld og beskyttet lak." },
     ],
     sections: [
@@ -2279,7 +2279,7 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Polering og voksbeskyttelse — den komplette behandling",
         paragraphs: [
           "Polering alene fjerner materialet fra lakken, men åbner også porerne i overfladen. Voksbeskyttelse efter polering er derfor vigtig for at forsegle lakken og beskytte den mod ny tilsmudning. Voks giver en ekstra glans og gør det nemmere at holde bilen ren i hverdagen.",
-          "CleanWash anbefaler kombinationen af polering og voks, fordi det giver det bedste og mest holdbare resultat. Premium bilpleje hos CleanWash inkluderer begge behandlinger samt en grundig udvendig vask inden poleringen.",
+          "Eluxus anbefaler kombinationen af polering og voks, fordi det giver det bedste og mest holdbare resultat. Premium bilpleje hos Eluxus inkluderer begge behandlinger samt en grundig udvendig vask inden poleringen.",
         ],
       },
       {
@@ -2292,14 +2292,14 @@ export const seoPages: SeoPageConfig[] = [
       {
         heading: "Polering af bil i København",
         paragraphs: [
-          "CleanWash tilbyder polering af bil i København, Frederiksberg, Amager, Østerbro, Hellerup og Storkøbenhavn. Poleringen er inkluderet i premium bilpleje-pakken, der også indeholder indvendig rengøring og voksbeskyttelse.",
-          "Kunder kan booke polering af bil direkte via booking-siden. Vælg premium bilpleje og angiv relevante oplysninger om bilen. CleanWash håndterer resten.",
+          "Eluxus tilbyder polering af bil i København, Frederiksberg, Amager, Østerbro, Hellerup og Storkøbenhavn. Poleringen er inkluderet i premium bilpleje-pakken, der også indeholder indvendig rengøring og voksbeskyttelse.",
+          "Kunder kan booke polering af bil direkte via booking-siden. Vælg premium bilpleje og angiv relevante oplysninger om bilen. Eluxus håndterer resten.",
         ],
       },
     ],
     faqs: [
       { question: "Hvad er polering af bil?", answer: "Polering fjerner det øverste slidte lag af lakken og fjerner fine ridser, swirls og matte pletter for en glansfuld finish." },
-      { question: "Tilbyder CleanWash polering af bil i København?", answer: "Ja. Polering er inkluderet i premium bilpleje-pakken hos CleanWash." },
+      { question: "Tilbyder Eluxus polering af bil i København?", answer: "Ja. Polering er inkluderet i premium bilpleje-pakken hos Eluxus." },
       { question: "Fjerner polering ridser?", answer: "Polering fjerner fine ridser og swirls. Dybere ridser ned i grundlakken kan ikke fjernes med polering alene." },
       { question: "Hvad koster polering af bil?", answer: "Premium bilpleje inkl. polering og voks starter fra 849 kr. Se priser og book via /booking." },
       { question: "Bør man vokse bilen efter polering?", answer: "Ja. Voksbeskyttelse efter polering er anbefalet for at forsegle lakken og forlænge resultatet." },
@@ -2322,16 +2322,16 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-efter-vinter",
-    title: "Bilvask efter vinter | Fjern vejsalt og vintersmudset | CleanWash",
+    title: "Bilvask efter vinter | Fjern vejsalt og vintersmudset | Eluxus",
     description:
-      "Book bilvask efter vinter hos CleanWash. Fjern vejsalt, sand og vintergrus fra lak, fælge og bund — og giv bilen en frisk start på foråret.",
+      "Book bilvask efter vinter hos Eluxus. Fjern vejsalt, sand og vintergrus fra lak, fælge og bund — og giv bilen en frisk start på foråret.",
     h1: "Bilvask efter vinter",
     eyebrow: "Forårsrengøring af bilen",
     heroIntro:
-      "CleanWash hjælper dig med at fjerne vinternes vejsalt, grus og snavs fra bilen. En grundig bilvask efter vinter beskytter lakken og giver bilen en frisk start.",
+      "Eluxus hjælper dig med at fjerne vinternes vejsalt, grus og snavs fra bilen. En grundig bilvask efter vinter beskytter lakken og giver bilen en frisk start.",
     shortSummary: [
       "Vejsalt fra vintermånederne er skadeligt for lak, fælge og bundramme og bør fjernes hurtigst muligt.",
-      "CleanWash tilbyder grundig bilvask efter vinter med fokus på salt, grus og vintergrus.",
+      "Eluxus tilbyder grundig bilvask efter vinter med fokus på salt, grus og vintergrus.",
       "Book din bilvask efter vinter online og giv bilen den forårsrengøring den trænger til.",
     ],
     keywords: [
@@ -2344,7 +2344,7 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Bilvask og forårsrengøring efter vinter",
     serviceArea: ["København", "Storkøbenhavn", "Sjælland", "Frederiksberg", "Amager"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Bilvask efter vinter og fjernelse af vejsalt hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Bilvask efter vinter og fjernelse af vejsalt hos Eluxus" },
     secondaryCta: { label: "Se polering af bil", href: "/polering-bil-koebenhavn" },
     benefits: [
       { title: "Fjern vejsalt", text: "Vejsalt fra vintervejene er korrosivt og kan over tid skade lak, fælge og metal på bilen." },
@@ -2355,7 +2355,7 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book bilvask", text: "Book en komplet bilvask eller premium bilpleje til bilvask efter vinter." },
       { title: "Oplys bilens stand", text: "Angiv eventuelle særlige fokusområder som fælge, bundramme eller kabine." },
-      { title: "Grundig vintevrengøring", text: "CleanWash fjerner salt, grus og vintergrus fra lak, fælge, hjulbuer og kabine." },
+      { title: "Grundig vintevrengøring", text: "Eluxus fjerner salt, grus og vintergrus fra lak, fælge, hjulbuer og kabine." },
       { title: "Frisk bil til foråret", text: "Bilen afleveres ren og klar til en ny sæson — eventuelt med voks for ekstra beskyttelse." },
     ],
     sections: [
@@ -2370,28 +2370,28 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Hvad indeholder bilvask efter vinter?",
         paragraphs: [
           "En god bilvask efter vinter fokuserer særligt på de udsatte områder: fælge og hjulbuer, hvor salt og grus samler sig; bundrammen, hvor salt fra vejene kan starte rustdannelse; lakken, som kan miste glans fra vejsalt og sandfygning; og kabinen, som samler sand, snavs og fugt fra vintermånedernes brug.",
-          "CleanWash anbefaler en komplet bilvask, der dækker alle disse områder. Premium bilpleje med polering og voks er ideelt efter en hård vinter, fordi det giver lakken den ekstra beskyttelse, den trænger til. En voksbehandling beskytter mod fremtidig tilsmudning og giver en glansfuld finish.",
+          "Eluxus anbefaler en komplet bilvask, der dækker alle disse områder. Premium bilpleje med polering og voks er ideelt efter en hård vinter, fordi det giver lakken den ekstra beskyttelse, den trænger til. En voksbehandling beskytter mod fremtidig tilsmudning og giver en glansfuld finish.",
         ],
       },
       {
         heading: "Salt og rust — risikoen ved at vente",
         paragraphs: [
           "Vejsalt fungerer ved at sænke frysepunktet for vand, men det er kemisk aggressivt over for metaller. Rust starter typisk i mikroskopiske revner i lakken, under tætningslister og i hjulbuer og bundramme, hvor salt og fugt samler sig. Rustdannelse kan som regel ikke ses, inden det er for sent at afhjælpe billigt.",
-          "En professionel bilvask med fokus på disse udsatte områder er den bedste forebyggelse. Jo tidligere efter vinterens afslutning, jo bedre. CleanWash tilbyder bilvask efter vinter med online booking i hele København og på Sjælland.",
+          "En professionel bilvask med fokus på disse udsatte områder er den bedste forebyggelse. Jo tidligere efter vinterens afslutning, jo bedre. Eluxus tilbyder bilvask efter vinter med online booking i hele København og på Sjælland.",
         ],
       },
       {
         heading: "Forårsrengøring — den komplette bilfornyelse",
         paragraphs: [
           "Mange bilejere bruger forårsrengøringen som anledning til en komplet bilfornyelse: udvendig vask og polering, indvendig rengøring af kabine og bagagerum, voksbehandling for beskyttelse, og et kig på fælge og gummi. Det giver bilen et friskt udtryk og en god start på den lyse halvdel af året.",
-          "CleanWash tilbyder alle disse services i ét bookingflow. Kunder kan booke bilvask efter vinter direkte via booking-siden og vælge den service, der passer til bilens behov.",
+          "Eluxus tilbyder alle disse services i ét bookingflow. Kunder kan booke bilvask efter vinter direkte via booking-siden og vælge den service, der passer til bilens behov.",
         ],
       },
     ],
     faqs: [
       { question: "Hvorfor er bilvask efter vinter vigtigt?", answer: "Vejsalt fra vintervejene er korrosivt og kan fremkalde rust i lak, fælge og bundramme, hvis det ikke fjernes." },
       { question: "Hvornår bør jeg vaske bilen efter vinter?", answer: "Så snart vejene er saltfri — typisk i marts eller april. Jo tidligere desto bedre for lakken." },
-      { question: "Tilbyder CleanWash bilvask efter vinter?", answer: "Ja. CleanWash tilbyder grundig bilvask og forårsrengøring med online booking i København og på Sjælland." },
+      { question: "Tilbyder Eluxus bilvask efter vinter?", answer: "Ja. Eluxus tilbyder grundig bilvask og forårsrengøring med online booking i København og på Sjælland." },
       { question: "Bør jeg vokse bilen efter vintervask?", answer: "Ja. Voks beskytter lakken mod fremtidigt snavs og korrosion og forlænger resultatet af vasken." },
       { question: "Hvad koster bilvask efter vinter?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr., premium med polering og voks fra 849 kr." },
       { question: "Hvordan booker jeg bilvask efter vinter?", answer: "Gå til /booking, vælg komplet bilvask eller premium bilpleje og udfyld oplysninger om bilen." },
@@ -2411,9 +2411,9 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilpleje-guide",
-    title: "Bilpleje guide | Hvor tit skal bilen vaskes? | CleanWash",
+    title: "Bilpleje guide | Hvor tit skal bilen vaskes? | Eluxus",
     description:
-      "Komplet bilpleje guide fra CleanWash. Lær hvornår og hvor tit du bør vaske bilen, hvad der sker ved for sjælden vask, og hvad forskellen er på udvendig og komplet bilvask.",
+      "Komplet bilpleje guide fra Eluxus. Lær hvornår og hvor tit du bør vaske bilen, hvad der sker ved for sjælden vask, og hvad forskellen er på udvendig og komplet bilvask.",
     h1: "Bilpleje guide",
     eyebrow: "Guide til bilpleje og bilvask",
     heroIntro:
@@ -2433,7 +2433,7 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilpleje og bilvask",
     serviceArea: ["København", "Storkøbenhavn", "Sjælland", "Frederiksberg", "Amager"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Bilpleje guide fra CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Bilpleje guide fra Eluxus" },
     secondaryCta: { label: "Se bilvask pris", href: "/bilvask-pris" },
     benefits: [
       { title: "Bevar lakkens stand", text: "Regelmæssig vask fjerner snavs, salt og syrer, der over tid kan skade lakkens overflade." },
@@ -2490,7 +2490,7 @@ export const seoPages: SeoPageConfig[] = [
       { question: "Hvornår bør man polere bilen?", answer: "Når lakken ser mat ud, der er ridser eller swirls, inden salg, eller som del af forårsrengøringen. 1-2 gange om året." },
       { question: "Er vejsalt skadeligt for bilen?", answer: "Ja. Vejsalt er korrosivt og kan starte rustdannelse i lak, fælge og metal, hvis det ikke fjernes regelmæssigt." },
       { question: "Hvad sker der, hvis man aldrig vasker bilen?", answer: "Snavs og salt angriber lakken, korrosion starter i metaldele, og kabinen samler støv, allergener og bakterier." },
-      { question: "Kan CleanWash hjælpe med løbende bilpleje?", answer: "Ja. Book regelmæssige bilvask online via /booking, eller kontakt CleanWash for at drøfte en fast aftale." },
+      { question: "Kan Eluxus hjælpe med løbende bilpleje?", answer: "Ja. Book regelmæssige bilvask online via /booking, eller kontakt Eluxus for at drøfte en fast aftale." },
     ],
     relatedLinks: [
       { label: "Book bilvask", href: "/booking" },
@@ -2512,13 +2512,13 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "billig-bilvask-koebenhavn",
-    title: "Billig bilvask København | Overkommelig bilvask fra 349 kr. | CleanWash",
+    title: "Billig bilvask København | Overkommelig bilvask fra 349 kr. | Eluxus",
     description:
-      "Billig bilvask i København fra 349 kr. Professionel udvendig vask, komplet bilpleje og klar pris uden skjulte gebyrer. Book online hos CleanWash.",
+      "Billig bilvask i København fra 349 kr. Professionel udvendig vask, komplet bilpleje og klar pris uden skjulte gebyrer. Book online hos Eluxus.",
     h1: "Billig bilvask København",
     eyebrow: "Overkommelig bilpleje med professionel kvalitet",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i København fra 349 kr. Klar pris fra start, ingen skjulte gebyrer og nem online booking.",
+      "Eluxus tilbyder professionel bilvask med damp i København fra 349 kr. Klar pris fra start, ingen skjulte gebyrer og nem online booking.",
     shortSummary: [
       "Udvendig bilvask starter fra 349 kr. — komplet vask af lak, fælge, ruder og finish.",
       "Komplet bilvask fra 599 kr. inkluderer udvendig vask og grundig indvendig rengøring af kabinen.",
@@ -2534,7 +2534,7 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i København til klar pris",
     serviceArea: ["København", "Frederiksberg", "Amager", "Østerbro", "Nørrebro", "Vesterbro", "Storkøbenhavn"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Billig bilvask i København fra 349 kr. hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Billig bilvask i København fra 349 kr. hos Eluxus" },
     secondaryCta: { label: "Se alle priser", href: "/bilvask-pris" },
     benefits: [
       { title: "Fra 349 kr.", text: "Udvendig bilvask fra 349 kr. — skånsom vask, fælge, ruder og finish uden skjulte tillæg." },
@@ -2545,21 +2545,21 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Vælg pakke", text: "Se priserne og vælg den pakke, der passer til din bil og dit budget." },
       { title: "Book online", text: "Book på 2 minutter uden opkald — vælg bil, adresse og tidspunkt." },
-      { title: "Bilen vaskes", text: "CleanWash møder op og udfører den valgte bilvask professionelt." },
+      { title: "Bilen vaskes", text: "Eluxus møder op og udfører den valgte bilvask professionelt." },
       { title: "Betal ved levering", text: "Du betaler til den pris, du så, da du bookede. Ingen tillæg." },
     ],
     sections: [
       {
-        heading: "Hvad koster professionel bilvask i København?",
+        heading: "Hvad koster professionel bilvask med damp i København?",
         paragraphs: [
-          "Mange søger efter billig bilvask i København uden at gå på kompromis med kvaliteten. CleanWash tilbyder en klar prisstruktur: udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. og premium bilpleje fra 849 kr. Prisen afhænger af valgt service og biltype, men udgangspunktet er altid tydeligt inden booking.",
-          "Det er vigtigt at forstå, hvad en bilvask inkluderer, når man sammenligner priser. Hos CleanWash er prisen for udvendig vask dækkende for skånsom vask med skum og skyl, rengøring af fælge og hjulbuer, aftørring af ruder og spejle samt tøring og finish. Der er ingen skjulte gebyrer eller tillæg.",
+          "Mange søger efter billig bilvask i København uden at gå på kompromis med kvaliteten. Eluxus tilbyder en klar prisstruktur: udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. og premium bilpleje fra 849 kr. Prisen afhænger af valgt service og biltype, men udgangspunktet er altid tydeligt inden booking.",
+          "Det er vigtigt at forstå, hvad en bilvask inkluderer, når man sammenligner priser. Hos Eluxus er prisen for udvendig vask dækkende for skånsom vask med skum og skyl, rengøring af fælge og hjulbuer, aftørring af ruder og spejle samt tøring og finish. Der er ingen skjulte gebyrer eller tillæg.",
         ],
       },
       {
         heading: "Billig bilvask er ikke det samme som dårlig bilvask",
         paragraphs: [
-          "Billig bilvask handler om gennemsigtighed, ikke om at spare på kvaliteten. En bilvasker, der lover meget lav pris men lægger tillæg til ved levering, er ikke billig — den er bare uigennemsigtig. CleanWash tilbyder klar pris fra start, fordi vi tror på, at tillid bygges på ærlighed.",
+          "Billig bilvask handler om gennemsigtighed, ikke om at spare på kvaliteten. En bilvasker, der lover meget lav pris men lægger tillæg til ved levering, er ikke billig — den er bare uigennemsigtig. Eluxus tilbyder klar pris fra start, fordi vi tror på, at tillid bygges på ærlighed.",
           "Professionel bilvask behøver ikke at koste en formue. For 349 kr. kan du få en grundig udvendig vask, der fjerner bysnavs, vejsalt, pollen og bremsestøv. For 599 kr. kan du tilføje en grundig indvendig kabinerengøring. Det er overkommelig bilpleje med et professionelt resultat.",
         ],
       },
@@ -2574,13 +2574,13 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Spar penge med regelmæssig booking",
         paragraphs: [
           "En god måde at holde udgifterne nede på er at vaske bilen regelmæssigt frem for sjældent. Biler, der vaskes månedligt, kræver typisk kun en hurtig udvendig vask, fordi snavslaget aldrig når at opbygge sig. Biler, der sjældent vaskes, kræver mere intensiv rengøring og kan have saltskader, der er dyrere at udbedre.",
-          "CleanWash gør det nemt at booke regelmæssig bilvask i København. Kunder kan booke via booking-siden og vælge den pakke, der passer bedst til budget og behov.",
+          "Eluxus gør det nemt at booke regelmæssig bilvask i København. Kunder kan booke via booking-siden og vælge den pakke, der passer bedst til budget og behov.",
         ],
       },
     ],
     faqs: [
       { question: "Hvad koster billig bilvask i København?", answer: "Udvendig bilvask starter fra 349 kr. Komplet bilvask fra 599 kr. Premium bilpleje fra 849 kr. Ingen skjulte gebyrer." },
-      { question: "Er billig bilvask af dårlig kvalitet?", answer: "Nej. CleanWash tilbyder professionel kvalitet til klar pris. Billig bilvask handler om gennemsigtighed, ikke dårligt arbejde." },
+      { question: "Er billig bilvask af dårlig kvalitet?", answer: "Nej. Eluxus tilbyder professionel kvalitet til klar pris. Billig bilvask handler om gennemsigtighed, ikke dårligt arbejde." },
       { question: "Hvad inkluderer udvendig bilvask til 349 kr.?", answer: "Skånsom vask, rengøring af fælge og hjulbuer, aftørring af ruder og spejle, finish og tøring af bilen." },
       { question: "Er der skjulte gebyrer?", answer: "Nej. Du ser den samlede pris, inden du bekræfter booking. Du betaler kun, når bilen er vasket." },
       { question: "Kan jeg spare ved at booke regelmæssigt?", answer: "Regelmæssig vask forhindrer opbygning af snavs og saltskader, som kan være dyre at udbedre." },
@@ -2603,16 +2603,16 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "express-bilvask",
-    title: "Express bilvask | Hurtig bilvask samme dag | CleanWash",
+    title: "Express bilvask | Hurtig bilvask samme dag | Eluxus",
     description:
-      "Hurtig express bilvask hos CleanWash. Book bilvask samme dag i København og på Sjælland. Nem online booking, klar pris og professionelt resultat.",
+      "Hurtig express bilvask hos Eluxus. Book bilvask samme dag i København og på Sjælland. Nem online booking, klar pris og professionelt resultat.",
     h1: "Express bilvask",
     eyebrow: "Hurtig bilvask uden ventetid",
     heroIntro:
-      "Har bilen brug for en hurtig vask? CleanWash tilbyder express bilvask med nem online booking og professionelt resultat — samme dag eller til dit næste ledige tidspunkt.",
+      "Har bilen brug for en hurtig vask? Eluxus tilbyder express bilvask med nem online booking og professionelt resultat — samme dag eller til dit næste ledige tidspunkt.",
     shortSummary: [
       "Book express bilvask online og vælg det tidspunkt, der passer dig bedst.",
-      "CleanWash udfører bilvask uden kø og ventetid — direkte til din adresse.",
+      "Eluxus udfører bilvask uden kø og ventetid — direkte til din adresse.",
       "Hurtig udvendig vask, komplet bilpleje eller express kabinerengøring — vælg i bookingflowet.",
     ],
     keywords: [
@@ -2625,33 +2625,33 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Express bilvask og hurtig bilpleje",
     serviceArea: ["København", "Frederiksberg", "Amager", "Østerbro", "Nørrebro", "Vesterbro", "Storkøbenhavn"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Express bilvask og hurtig bilpleje hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Express bilvask og hurtig bilpleje hos Eluxus" },
     secondaryCta: { label: "Se bilvask pris", href: "/bilvask-pris" },
     benefits: [
       { title: "Ingen kø", text: "Slipper for kø i vaskehallen. Book online og vælg et tidspunkt, der passer ind i din kalender." },
       { title: "Hurtig booking", text: "Book express bilvask online på under 2 minutter uden telefonopkald." },
-      { title: "Til din adresse", text: "CleanWash møder op, hvor bilen holder — hjemme, på arbejde eller et andet passende sted." },
+      { title: "Til din adresse", text: "Eluxus møder op, hvor bilen holder — hjemme, på arbejde eller et andet passende sted." },
       { title: "Klar pris", text: "Du ser den samlede pris, inden du bekræfter. Ingen overraskelser." },
     ],
     process: [
       { title: "Book online nu", text: "Gå til booking-siden og vælg service, bil og tidspunkt — det tager under 2 minutter." },
       { title: "Angiv adresse", text: "Oplys den adresse, hvor bilen holder, og kontaktoplysninger." },
-      { title: "CleanWash møder op", text: "Teamet ankommer til det aftalte tidspunkt og udfører bilvasken." },
+      { title: "Eluxus møder op", text: "Teamet ankommer til det aftalte tidspunkt og udfører bilvasken." },
       { title: "Ren bil — hurtigt", text: "Du får en renere bil uden at bruge tid på transport eller kø." },
     ],
     sections: [
       {
         heading: "Hurtig bilvask uden kø og ventetid",
         paragraphs: [
-          "Express bilvask er for dig, der har brug for en ren bil hurtigt. Måske er der et vigtigt møde, en begivenhed eller du har simpelthen opdaget, at bilen trænger til vask. CleanWash gør det muligt at booke bilvask online og få det udført hurtigt uden kø i en vaskehal.",
-          "Online booking er kernen i express bilvask. Du vælger service, angiver biloplysninger og adresse, og vælger det tidspunkt, der passer dig bedst. CleanWash håndterer resten. Ingen opkald, ingen ventetid i butik — blot en professionel bilvask leveret til din dør.",
+          "Express bilvask er for dig, der har brug for en ren bil hurtigt. Måske er der et vigtigt møde, en begivenhed eller du har simpelthen opdaget, at bilen trænger til vask. Eluxus gør det muligt at booke bilvask online og få det udført hurtigt uden kø i en vaskehal.",
+          "Online booking er kernen i express bilvask. Du vælger service, angiver biloplysninger og adresse, og vælger det tidspunkt, der passer dig bedst. Eluxus håndterer resten. Ingen opkald, ingen ventetid i butik — blot en professionel bilvask leveret til din dør.",
         ],
       },
       {
         heading: "Bilvask samme dag — er det muligt?",
         paragraphs: [
-          "Det afhænger af tilgængelighed og rute, men CleanWash tilbyder booking med kort varsel. Via booking-siden kan du se ledige tider og vælge det nærmeste tilgængelige tidspunkt. Mange kunder kan få bilen vasket samme dag eller inden for 24 timer.",
-          "Hurtig bilvask handler ikke bare om hastighed. Det handler om at gøre det nemt at passe bilvask ind i en travl hverdag. CleanWash er designet til kunder, der vil have en ren bil uden at det tager en hel dag.",
+          "Det afhænger af tilgængelighed og rute, men Eluxus tilbyder booking med kort varsel. Via booking-siden kan du se ledige tider og vælge det nærmeste tilgængelige tidspunkt. Mange kunder kan få bilen vasket samme dag eller inden for 24 timer.",
+          "Hurtig bilvask handler ikke bare om hastighed. Det handler om at gøre det nemt at passe bilvask ind i en travl hverdag. Eluxus er designet til kunder, der vil have en ren bil uden at det tager en hel dag.",
         ],
       },
       {
@@ -2664,8 +2664,8 @@ export const seoPages: SeoPageConfig[] = [
       {
         heading: "Express bilvask i København og nærliggende bydele",
         paragraphs: [
-          "CleanWash tilbyder express bilvask i hele København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro og Storkøbenhavn. Den konkrete tilgængelighed afhænger af rute og ledige tider, men booking-siden viser de nærmeste ledige tider i realtid.",
-          "Kunder kan booke express bilvask direkte via booking-siden. Vælg service, bil og tidspunkt, og CleanWash håndterer resten.",
+          "Eluxus tilbyder express bilvask i hele København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro og Storkøbenhavn. Den konkrete tilgængelighed afhænger af rute og ledige tider, men booking-siden viser de nærmeste ledige tider i realtid.",
+          "Kunder kan booke express bilvask direkte via booking-siden. Vælg service, bil og tidspunkt, og Eluxus håndterer resten.",
         ],
       },
     ],
@@ -2674,7 +2674,7 @@ export const seoPages: SeoPageConfig[] = [
       { question: "Hvad er forskellen på express og normal bilvask?", answer: "Express bilvask har fokus på hurtig levering. Bookingprocessen er den samme — det handler om at vælge et tidspunkt tæt på nu." },
       { question: "Er express bilvask dyrere?", answer: "Nej. Prisen er den samme uanset, om du booker til i dag eller næste uge. Udvendig fra 349 kr." },
       { question: "Kan jeg booke express bilvask uden opkald?", answer: "Ja. Booking foregår helt online via /booking. Ingen telefonopkald nødvendigt." },
-      { question: "Dækker express bilvask hele København?", answer: "Ja. CleanWash dækker hele København og Storkøbenhavn. Konkret tilgængelighed vises i bookingflowet." },
+      { question: "Dækker express bilvask hele København?", answer: "Ja. Eluxus dækker hele København og Storkøbenhavn. Konkret tilgængelighed vises i bookingflowet." },
       { question: "Hvor lang tid tager en express bilvask?", answer: "Udvendig vask tager typisk 30-60 min. Komplet bilvask 60-90 min. afhængigt af biltype og stand." },
     ],
     relatedLinks: [
@@ -2692,16 +2692,16 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-abonnement",
-    title: "Bilvask abonnement | Fast bilvask aftale | CleanWash",
+    title: "Bilvask abonnement | Fast bilvask aftale | Eluxus",
     description:
-      "Spar tid og penge med et bilvask abonnement hos CleanWash. Fast aftale, regelmæssig bilvask og professionel bilpleje i København og på Sjælland.",
+      "Spar tid og penge med et bilvask abonnement hos Eluxus. Fast aftale, regelmæssig bilvask og professionel bilpleje i København og på Sjælland.",
     h1: "Bilvask abonnement",
     eyebrow: "Regelmæssig bilpleje med fast aftale",
     heroIntro:
-      "Et bilvask abonnement hos CleanWash giver dig en ren bil måned efter måned uden at tænke over det. Fast aftale, fleksibel planlægning og professionel bilpleje.",
+      "Et bilvask abonnement hos Eluxus giver dig en ren bil måned efter måned uden at tænke over det. Fast aftale, fleksibel planlægning og professionel bilpleje.",
     shortSummary: [
       "Et bilvask abonnement giver regelmæssig bilpleje til fast pris og uden intern koordinering.",
-      "CleanWash tilbyder faste aftaler til private bilejere og virksomheder med firmabiler.",
+      "Eluxus tilbyder faste aftaler til private bilejere og virksomheder med firmabiler.",
       "Regelmæssig bilvask beskytter lakken og bevarer bilens stand og salgsværdi.",
     ],
     keywords: [
@@ -2714,7 +2714,7 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Bilvask abonnement og fast bilplejeaftale",
     serviceArea: ["København", "Frederiksberg", "Amager", "Østerbro", "Storkøbenhavn", "Sjælland"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Bilvask abonnement og fast bilvask aftale hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Bilvask abonnement og fast bilvask aftale hos Eluxus" },
     secondaryCta: { label: "Erhvervs bilvask", href: "/erhvervs-bilvask" },
     benefits: [
       { title: "Altid ren bil", text: "Med et abonnement er bilen altid præsentabel — du behøver ikke huske at booke." },
@@ -2724,8 +2724,8 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Vælg service og frekvens", text: "Beslut hvilken bilvask du ønsker og hvor ofte — ugentligt, to gange om måneden eller månedligt." },
-      { title: "Aftal med CleanWash", text: "Kontakt CleanWash eller start med en enkelt booking for at afprøve servicen." },
-      { title: "Planlæg faste tider", text: "CleanWash planlægger faste tider, der passer ind i din hverdag eller virksomhedens kalender." },
+      { title: "Aftal med Eluxus", text: "Kontakt Eluxus eller start med en enkelt booking for at afprøve servicen." },
+      { title: "Planlæg faste tider", text: "Eluxus planlægger faste tider, der passer ind i din hverdag eller virksomhedens kalender." },
       { title: "Altid ren bil", text: "Bilen vaskes regelmæssigt uden at du behøver tænke over det." },
     ],
     sections: [
@@ -2746,7 +2746,7 @@ export const seoPages: SeoPageConfig[] = [
       {
         heading: "Bilvask abonnement til private bilejere",
         paragraphs: [
-          "For den private bilejere er et abonnement en nem måde at slippe for at huske bilvask. Du aftaler frekvens og service med CleanWash, og resten kører automatisk. Bilen er altid præsentabel, og du bruger ikke tid på at koordinere.",
+          "For den private bilejere er et abonnement en nem måde at slippe for at huske bilvask. Du aftaler frekvens og service med Eluxus, og resten kører automatisk. Bilen er altid præsentabel, og du bruger ikke tid på at koordinere.",
           "Det passer særlig godt til pendlere, familier med to biler og bilejere, der bruger bilen dagligt i arbejdssammenhæng. For disse grupper er en ren bil en naturlig del af hverdagen, og et abonnement gør det ubesværet.",
         ],
       },
@@ -2754,17 +2754,17 @@ export const seoPages: SeoPageConfig[] = [
         heading: "Bilvask abonnement til virksomheder",
         paragraphs: [
           "Virksomheder med firmabiler, leasingbiler eller flåder bruger intern tid og ressourcer på at koordinere bilvask, medmindre de har en fast aftale. Et erhvervs bilvask abonnement frigiver denne tid og sikrer, at alle biler er præsentable over for kunder og samarbejdspartnere.",
-          "CleanWash tilbyder faste aftaler til virksomheder med tilpasset frekvens og servicevalg. Kontakt os for at drøfte et abonnement, der passer til jeres flåde og behov.",
+          "Eluxus tilbyder faste aftaler til virksomheder med tilpasset frekvens og servicevalg. Kontakt os for at drøfte et abonnement, der passer til jeres flåde og behov.",
         ],
       },
     ],
     faqs: [
       { question: "Hvad er et bilvask abonnement?", answer: "En fast aftale om regelmæssig bilvask til forudsigelig pris. Bilen vaskes automatisk på det aftalte tidspunkt." },
-      { question: "Tilbyder CleanWash bilvask abonnement?", answer: "Ja. CleanWash tilbyder faste aftaler til private bilejere og virksomheder. Kontakt os for at drøfte en aftale." },
+      { question: "Tilbyder Eluxus bilvask abonnement?", answer: "Ja. Eluxus tilbyder faste aftaler til private bilejere og virksomheder. Kontakt os for at drøfte en aftale." },
       { question: "Hvad koster et bilvask abonnement?", answer: "Prisen afhænger af frekvens og servicevalg. Start med en enkelt booking, eller kontakt os for et abonnementstilbud." },
-      { question: "Kan virksomheder få bilvask abonnement?", answer: "Ja. CleanWash tilbyder erhvervs bilvask abonnement til virksomheder med firmabiler og flåder." },
+      { question: "Kan virksomheder få bilvask abonnement?", answer: "Ja. Eluxus tilbyder erhvervs bilvask abonnement til virksomheder med firmabiler og flåder." },
       { question: "Hvor tit skal bilen vaskes med abonnement?", answer: "De fleste bilejere vælger månedlig vask. Pendlere og firmabiler vælger typisk to gange om måneden." },
-      { question: "Hvordan starter jeg et bilvask abonnement?", answer: "Kontakt CleanWash eller start med en enkelt booking via /booking for at afprøve servicen." },
+      { question: "Hvordan starter jeg et bilvask abonnement?", answer: "Kontakt Eluxus eller start med en enkelt booking via /booking for at afprøve servicen." },
     ],
     relatedLinks: [
       { label: "Book bilvask", href: "/booking" },
@@ -2781,15 +2781,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "miljoevenlig-bilvask",
-    title: "Miljøvenlig bilvask | Bæredygtig bilpleje | CleanWash",
+    title: "Miljøvenlig bilvask | Bæredygtig bilpleje | Eluxus",
     description:
-      "Book miljøvenlig bilvask hos CleanWash. Professionel bilvask med omtanke for miljøet — vandsparende metoder, skånsomme produkter og effektiv ruteplanlægning.",
+      "Book miljøvenlig bilvask hos Eluxus. Professionel bilvask med omtanke for miljøet — vandsparende metoder, skånsomme produkter og effektiv ruteplanlægning.",
     h1: "Miljøvenlig bilvask",
     eyebrow: "Bilvask med omtanke for miljøet",
     heroIntro:
-      "CleanWash arbejder med professionel bilvask og miljøbevidst tankegang. Effektiv ruteplanlægning, skånsomme produkter og metoder der passer til den moderne bilejers værdier.",
+      "Eluxus arbejder med professionel bilvask og miljøbevidst tankegang. Effektiv ruteplanlægning, skånsomme produkter og metoder der passer til den moderne bilejers værdier.",
     shortSummary: [
-      "CleanWash planlægger ruter effektivt for at minimere transport og reducere CO₂-udledning.",
+      "Eluxus planlægger ruter effektivt for at minimere transport og reducere CO₂-udledning.",
       "Vi bruger skånsomme produkter, der er effektive over for snavs og hensynsfulde over for miljøet.",
       "Mobil bilvask kan i mange tilfælde bruge mindre vand end en traditionel vaskehal.",
     ],
@@ -2803,32 +2803,32 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Miljøvenlig bilvask og bæredygtig bilpleje",
     serviceArea: ["København", "Frederiksberg", "Amager", "Storkøbenhavn", "Sjælland"],
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Miljøvenlig bilvask hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Miljøvenlig bilvask hos Eluxus" },
     secondaryCta: { label: "Se bilpleje guide", href: "/bilpleje-guide" },
     benefits: [
-      { title: "Effektiv ruteplanlægning", text: "CleanWash planlægger ruter, der minimerer kørsel og reducerer CO₂-udledning fra service." },
+      { title: "Effektiv ruteplanlægning", text: "Eluxus planlægger ruter, der minimerer kørsel og reducerer CO₂-udledning fra service." },
       { title: "Skånsomme produkter", text: "Vi bruger produkter, der er effektive over for snavs og hensynsfulde over for miljøet." },
       { title: "Ingen unødigt spild", text: "Professionelt udstyr giver et godt resultat med korrekte mængder vand og rensemiddel." },
       { title: "Mobil service", text: "Mobil bilvask eliminerer kundens transport til vaskehal og den medfølgende CO₂-udledning." },
     ],
     process: [
       { title: "Book online", text: "Book bilvask online og bidrag til effektiv ruteplanlægning i din bydel." },
-      { title: "Skånsom vask", text: "CleanWash vasker bilen med skånsomme metoder og miljøbevidste produkter." },
-      { title: "Ingen unødig transport", text: "Mobil service betyder, at du ikke kører til en vaskehal — CleanWash kommer til dig." },
+      { title: "Skånsom vask", text: "Eluxus vasker bilen med skånsomme metoder og miljøbevidste produkter." },
+      { title: "Ingen unødig transport", text: "Mobil service betyder, at du ikke kører til en vaskehal — Eluxus kommer til dig." },
       { title: "Rent resultat", text: "Du får en ren bil og kan føle dig godt tilpas med, at vasken er udført med omtanke." },
     ],
     sections: [
       {
         heading: "Miljøvenlig bilvask — hvad betyder det i praksis?",
         paragraphs: [
-          "Miljøvenlig bilvask handler om at minimere unødigt ressourceforbrug og vælge metoder og produkter, der er skånsomme over for naturen. For CleanWash betyder det effektiv ruteplanlægning, der reducerer unødig kørsel, brug af professionelt udstyr, der giver godt resultat med korrekte mængder, og valg af produkter, der er effektive og hensynsfulde over for miljøet.",
-          "Mobil bilvask har et særligt potentiale for miljøvenlighed, fordi det eliminerer kundens tur til en vaskehal. Mange bilejere kører kilometervis for at finde en vaskehal — det transport er unødigt, når bilvask kan komme til dem. CleanWash tilbyder netop denne løsning.",
+          "Miljøvenlig bilvask handler om at minimere unødigt ressourceforbrug og vælge metoder og produkter, der er skånsomme over for naturen. For Eluxus betyder det effektiv ruteplanlægning, der reducerer unødig kørsel, brug af professionelt udstyr, der giver godt resultat med korrekte mængder, og valg af produkter, der er effektive og hensynsfulde over for miljøet.",
+          "Mobil bilvask har et særligt potentiale for miljøvenlighed, fordi det eliminerer kundens tur til en vaskehal. Mange bilejere kører kilometervis for at finde en vaskehal — det transport er unødigt, når bilvask kan komme til dem. Eluxus tilbyder netop denne løsning.",
         ],
       },
       {
         heading: "Produkter og metoder med omtanke",
         paragraphs: [
-          "Valget af renseprodukter er vigtigt for en miljøvenlig bilvask. CleanWash bruger produkter, der er effektive over for vejsnavs, vejsalt og bysnavs, men som ikke indeholder unødigt aggressive kemikalier. Skum, shampoo og rensemidler er valgt med tanke på både effektivitet og miljøpåvirkning.",
+          "Valget af renseprodukter er vigtigt for en miljøvenlig bilvask. Eluxus bruger produkter, der er effektive over for vejsnavs, vejsalt og bysnavs, men som ikke indeholder unødigt aggressive kemikalier. Skum, shampoo og rensemidler er valgt med tanke på både effektivitet og miljøpåvirkning.",
           "Professionelt udstyr giver et bedre resultat med præcise mængder vand og produkt sammenlignet med en standard havepose og spand. Det reducer spild og giver et mere konsistent og skånsomt resultat for lakken.",
         ],
       },
@@ -2842,17 +2842,17 @@ export const seoPages: SeoPageConfig[] = [
       {
         heading: "Miljøbevidst bilvask i København",
         paragraphs: [
-          "I København er der et voksende fokus på bæredygtighed og miljøbevidste valg. Mange bilejere leder bevidst efter tjenester, der passer til deres værdier. CleanWash tilbyder professionel bilvask i København med en tilgang, der tager miljøet alvorligt uden at gå på kompromis med kvaliteten.",
+          "I København er der et voksende fokus på bæredygtighed og miljøbevidste valg. Mange bilejere leder bevidst efter tjenester, der passer til deres værdier. Eluxus tilbyder professionel bilvask med damp i København med en tilgang, der tager miljøet alvorligt uden at gå på kompromis med kvaliteten.",
           "Kunder kan booke miljøvenlig bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og bidrag til en mere effektiv og bæredygtig bilvaskkultur i København.",
         ],
       },
     ],
     faqs: [
-      { question: "Er CleanWash miljøvenlig?", answer: "CleanWash arbejder med effektiv ruteplanlægning, skånsomme produkter og metoder der minimerer unødigt ressourceforbrug." },
+      { question: "Er Eluxus miljøvenlig?", answer: "Eluxus arbejder med effektiv ruteplanlægning, skånsomme produkter og metoder der minimerer unødigt ressourceforbrug." },
       { question: "Bruger mobil bilvask mere eller mindre vand end en vaskehal?", answer: "Professionelt udstyr bruger præcise mængder vand. Hertil sparer kunden transport til vaskehal, som reducerer CO₂." },
-      { question: "Hvilke produkter bruger CleanWash?", answer: "Vi bruger produkter, der er effektive over for vejsnavs og skånsomme over for miljøet. Ingen unødigt aggressive kemikalier." },
+      { question: "Hvilke produkter bruger Eluxus?", answer: "Vi bruger produkter, der er effektive over for vejsnavs og skånsomme over for miljøet. Ingen unødigt aggressive kemikalier." },
       { question: "Er regelmæssig bilvask mere miljøvenlig?", answer: "Ja. Månedlig vask kræver kortere tid og færre ressourcer end sjælden vask af et opbygget snavslag." },
-      { question: "Tilbyder CleanWash miljøvenlig bilvask i København?", answer: "Ja. CleanWash tilbyder professionel og miljøbevidst bilvask i hele København og på Sjælland." },
+      { question: "Tilbyder Eluxus miljøvenlig bilvask i København?", answer: "Ja. Eluxus tilbyder professionel og miljøbevidst bilvask i hele København og på Sjælland." },
       { question: "Hvordan booker jeg miljøvenlig bilvask?", answer: "Gå til /booking, vælg den service der passer, og bidrag til mere effektiv og bæredygtig bilvask." },
     ],
     relatedLinks: [
@@ -2870,15 +2870,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-taastrup",
-    title: "Bilvask Taastrup | Professionel bilvask i Høje-Taastrup | CleanWash",
+    title: "Bilvask Taastrup | Professionel bilvask i Høje-Taastrup | Eluxus",
     description:
-      "Book professionel bilvask i Taastrup og Høje-Taastrup hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking vest for København.",
+      "Book professionel bilvask med damp i Taastrup og Høje-Taastrup hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking vest for København.",
     h1: "Bilvask Taastrup",
     eyebrow: "Professionel bilvask i Taastrup",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Taastrup og Høje-Taastrup med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Taastrup og Høje-Taastrup med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Taastrup og Høje-Taastrup med online booking.",
+      "Eluxus tilbyder bilvask i Taastrup og Høje-Taastrup med online booking.",
       "Servicen er relevant for bilejere i Taastrup, Hedehusene, Roskilde og nærliggende kommuner.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet.",
     ],
@@ -2892,10 +2892,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Taastrup",
     serviceArea: ["Taastrup", "Høje-Taastrup", "Hedehusene", "Albertslund", "Glostrup", "Roskilde"],
     schemaAreaServed: ["Taastrup", "Høje-Taastrup", "København", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Taastrup og Høje-Taastrup hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Taastrup og Høje-Taastrup hos Eluxus" },
     secondaryCta: { label: "Se bilvask Roskilde", href: "/bilvask-roskilde" },
     benefits: [
-      { title: "Taastrup og omegn", text: "CleanWash er relevant for bilejere i Taastrup, Hedehusene, Albertslund og nærliggende kommuner vest for København." },
+      { title: "Taastrup og omegn", text: "Eluxus er relevant for bilejere i Taastrup, Hedehusene, Albertslund og nærliggende kommuner vest for København." },
       { title: "Pendlerbiler", text: "Mange pendlere fra Taastrup kører dagligt til København — professionel bilvask er en naturlig del af den hverdag." },
       { title: "Online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Erhverv og private", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -2903,43 +2903,43 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash klargør", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus klargør", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Taastrup — professionel service vest for København",
         paragraphs: [
-          "Høje-Taastrup er et af de største erhvervs- og boligområder vest for København med mange pendlere, familier og virksomheder. Bilejere i Taastrup søger professionel og fleksibel bilvask, der passer ind i en travl hverdag. CleanWash tilbyder bilvask i Taastrup med online booking og klare servicevalg.",
+          "Høje-Taastrup er et af de største erhvervs- og boligområder vest for København med mange pendlere, familier og virksomheder. Bilejere i Taastrup søger professionel og fleksibel bilvask, der passer ind i en travl hverdag. Eluxus tilbyder bilvask i Taastrup med online booking og klare servicevalg.",
           "Med motorvejsadgang til E20 og Ring 4 er Taastrup et centralt trafikknudepunkt. Pendlerbiler og firmabiler fra Taastrup bruges hårdt og trænger til regelmæssig bilvask. En professionel bilvask holder bilen præsentabel og i bedre stand.",
         ],
       },
       {
         heading: "Høje-Taastrup: erhverv og beboelse",
         paragraphs: [
-          "Høje-Taastrup Kommune er et af Sjællands vigtigste erhvervscentre med mange kontorer, lagerhaller og industrivirksomheder. Firmabiler og erhvervsbiler fra disse virksomheder skal fremstå præsentable. CleanWash kan hjælpe med regelmæssig bilvask og bilpleje til erhvervskunder.",
+          "Høje-Taastrup Kommune er et af Sjællands vigtigste erhvervscentre med mange kontorer, lagerhaller og industrivirksomheder. Firmabiler og erhvervsbiler fra disse virksomheder skal fremstå præsentable. Eluxus kan hjælpe med regelmæssig bilvask og bilpleje til erhvervskunder.",
           "Taastrup, Hedehusene og Albertslund har mange familier og private bilejere, der bruger bilen til pendling, børnekørsel og hverdagstransport. For disse kunder er en fleksibel og professionel bilvaskløsning en stor fordel.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Taastrup?",
+        heading: "Hvad tilbyder Eluxus i Taastrup?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Taastrup. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge.",
-          "Kunder kan booke bilvask direkte via booking-siden. Den konkrete dækning afhænger af adresse og rute, men bookingflowet samler alle oplysninger, så CleanWash kan planlægge effektivt.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Taastrup. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge.",
+          "Kunder kan booke bilvask direkte via booking-siden. Den konkrete dækning afhænger af adresse og rute, men bookingflowet samler alle oplysninger, så Eluxus kan planlægge effektivt.",
         ],
       },
       {
         heading: "Taastrup og nærliggende kommuner",
         paragraphs: [
-          "Høje-Taastrup grænser op til Roskilde, Albertslund, Glostrup og Hvidovre. CleanWash er relevant for kunder i hele dette vestlige Storkøbenhavn. Start booking-processen online for at se tilgængelighed og vælge den service, der passer til bilen.",
+          "Høje-Taastrup grænser op til Roskilde, Albertslund, Glostrup og Hvidovre. Eluxus er relevant for kunder i hele dette vestlige Storkøbenhavn. Start booking-processen online for at se tilgængelighed og vælge den service, der passer til bilen.",
           "Kunder fra Taastrup og nærliggende kommuner kan booke bilvask direkte via booking-siden og afklare muligheder for deres specifikke adresse.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Taastrup?", answer: "Ja. CleanWash tilbyder professionel bilvask i Taastrup og Høje-Taastrup med online booking." },
-      { question: "Dækker I Hedehusene og Albertslund?", answer: "CleanWash er relevant for Taastrup og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
-      { question: "Er CleanWash relevant for erhvervskunder i Taastrup?", answer: "Ja. Høje-Taastrup har mange erhvervsvirksomheder, og CleanWash tilbyder bilvask til firmabiler og flåder." },
+      { question: "Tilbyder Eluxus bilvask i Taastrup?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Taastrup og Høje-Taastrup med online booking." },
+      { question: "Dækker I Hedehusene og Albertslund?", answer: "Eluxus er relevant for Taastrup og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
+      { question: "Er Eluxus relevant for erhvervskunder i Taastrup?", answer: "Ja. Høje-Taastrup har mange erhvervsvirksomheder, og Eluxus tilbyder bilvask til firmabiler og flåder." },
       { question: "Kan jeg booke komplet bilpleje i Taastrup?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask i Taastrup?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se priser og book via /booking." },
       { question: "Hvordan booker jeg bilvask i Taastrup?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil og ønsket tidspunkt." },
@@ -2959,15 +2959,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-hilleroed",
-    title: "Bilvask Hillerød | Professionel bilvask i Nordsjælland | CleanWash",
+    title: "Bilvask Hillerød | Professionel bilvask i Nordsjælland | Eluxus",
     description:
-      "Book professionel bilvask i Hillerød hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking i Nordsjælland.",
+      "Book professionel bilvask med damp i Hillerød hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking i Nordsjælland.",
     h1: "Bilvask Hillerød",
     eyebrow: "Professionel bilvask i Hillerød",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Hillerød og Nordsjælland med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Hillerød og Nordsjælland med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Hillerød og Nordsjælland med online booking.",
+      "Eluxus tilbyder bilvask i Hillerød og Nordsjælland med online booking.",
       "Servicen er relevant for bilejere i Hillerød, Allerød, Fredensborg og nærliggende kommuner.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet.",
     ],
@@ -2981,10 +2981,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Hillerød og Nordsjælland",
     serviceArea: ["Hillerød", "Allerød", "Fredensborg", "Frederikssund", "Birkerød", "Nordsjælland"],
     schemaAreaServed: ["Hillerød", "Nordsjælland", "Sjælland", "Zealand", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Hillerød og Nordsjælland hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Hillerød og Nordsjælland hos Eluxus" },
     secondaryCta: { label: "Se bilvask Sjælland", href: "/bilvask-sjaelland" },
     benefits: [
-      { title: "Hillerød og Nordsjælland", text: "CleanWash er relevant for bilejere i Hillerød, Allerød, Fredensborg og nærliggende nordsjællandske kommuner." },
+      { title: "Hillerød og Nordsjælland", text: "Eluxus er relevant for bilejere i Hillerød, Allerød, Fredensborg og nærliggende nordsjællandske kommuner." },
       { title: "Pendlere fra Hillerød", text: "Mange pendler dagligt fra Hillerød til København — professionel bilvask passer til denne travle hverdag." },
       { title: "Online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Til alle biltyper", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -2992,43 +2992,43 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Hillerød — professionel service i Nordsjælland",
         paragraphs: [
-          "Hillerød er Nordsjællands administrative centrum og en af regionens største byer med mange bilejere, der pendler til København og Storkøbenhavn. Bilvask Hillerød er relevant for alle, der vil have bilen gjort ren professionelt uden at køre langt til en vaskehal. CleanWash tilbyder bilvask i Hillerød med online booking.",
+          "Hillerød er Nordsjællands administrative centrum og en af regionens største byer med mange bilejere, der pendler til København og Storkøbenhavn. Bilvask Hillerød er relevant for alle, der vil have bilen gjort ren professionelt uden at køre langt til en vaskehal. Eluxus tilbyder bilvask i Hillerød med online booking.",
           "Med togforbindelse til København og adgang til Helsingørmotorvejen er Hillerød et centralt punkt i Nordsjælland. Pendlerbiler fra Hillerød bruges hårdt og trænger til regelmæssig bilvask for at bevare et præsentabelt udtryk.",
         ],
       },
       {
         heading: "Hillerød og nærliggende kommuner",
         paragraphs: [
-          "Hillerød grænser op til Allerød, Fredensborg, Frederikssund og Birkerød. CleanWash er relevant for kunder i hele dette nordsjællandske område. Den konkrete dækning afhænger af booking og ruteplanlægning. Start processen online for at afklare muligheder.",
-          "Nordsjælland er et område med mange velhavende kommuner og bilejere, der sætter pris på professionel og kvalitetsbevidst service. CleanWash tilbyder netop dette med online booking og klare servicevalg.",
+          "Hillerød grænser op til Allerød, Fredensborg, Frederikssund og Birkerød. Eluxus er relevant for kunder i hele dette nordsjællandske område. Den konkrete dækning afhænger af booking og ruteplanlægning. Start processen online for at afklare muligheder.",
+          "Nordsjælland er et område med mange velhavende kommuner og bilejere, der sætter pris på professionel og kvalitetsbevidst service. Eluxus tilbyder netop dette med online booking og klare servicevalg.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Hillerød?",
+        heading: "Hvad tilbyder Eluxus i Hillerød?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Hillerød. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele for det bedste resultat.",
-          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. CleanWash håndterer resten.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Hillerød. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder. Komplet bilpleje kombinerer begge dele for det bedste resultat.",
+          "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen, og angiv relevante oplysninger. Eluxus håndterer resten.",
         ],
       },
       {
         heading: "Erhvervskunder og private i Hillerød",
         paragraphs: [
-          "Hillerød er hjemsted for mange offentlige institutioner, hospitaler og private virksomheder med firmabiler. CleanWash kan hjælpe med regelmæssig bilvask og bilpleje til erhvervskunder. Private bilejere i Hillerød nyder godt af en professionel service, der sparer tid og giver et godt resultat.",
+          "Hillerød er hjemsted for mange offentlige institutioner, hospitaler og private virksomheder med firmabiler. Eluxus kan hjælpe med regelmæssig bilvask og bilpleje til erhvervskunder. Private bilejere i Hillerød nyder godt af en professionel service, der sparer tid og giver et godt resultat.",
           "Kunder kan booke bilvask direkte via booking-siden. Vælg den service, der passer til bilen.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Hillerød?", answer: "Ja. CleanWash tilbyder professionel bilvask i Hillerød og Nordsjælland med online booking." },
-      { question: "Dækker I Allerød og Fredensborg?", answer: "CleanWash er relevant for Hillerød og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
-      { question: "Er CleanWash relevant for pendlere fra Hillerød?", answer: "Ja. Pendlerbiler bruges hårdt, og CleanWash gør det nemt at booke regelmæssig bilvask." },
+      { question: "Tilbyder Eluxus bilvask i Hillerød?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Hillerød og Nordsjælland med online booking." },
+      { question: "Dækker I Allerød og Fredensborg?", answer: "Eluxus er relevant for Hillerød og nærliggende kommuner. Konkret dækning afhænger af booking og rute." },
+      { question: "Er Eluxus relevant for pendlere fra Hillerød?", answer: "Ja. Pendlerbiler bruges hårdt, og Eluxus gør det nemt at booke regelmæssig bilvask." },
       { question: "Kan jeg booke komplet bilpleje i Hillerød?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask i Hillerød?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se priser og book via /booking." },
       { question: "Hvordan booker jeg bilvask i Hillerød?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil og ønsket tidspunkt." },
@@ -3048,15 +3048,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-horsholm",
-    title: "Bilvask Hørsholm | Professionel bilvask i Nordsjælland | CleanWash",
+    title: "Bilvask Hørsholm | Professionel bilvask i Nordsjælland | Eluxus",
     description:
-      "Book professionel bilvask i Hørsholm hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking i Nordsjælland.",
+      "Book professionel bilvask med damp i Hørsholm hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med nem online booking i Nordsjælland.",
     h1: "Bilvask Hørsholm",
     eyebrow: "Professionel bilvask i Hørsholm",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Hørsholm og det nordsjællandske kystområde med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Hørsholm og det nordsjællandske kystområde med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Hørsholm og omegn med online booking.",
+      "Eluxus tilbyder bilvask i Hørsholm og omegn med online booking.",
       "Servicen er relevant for bilejere i Hørsholm, Rungsted, Vedbæk og nærliggende kystbyer.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet.",
     ],
@@ -3070,10 +3070,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Hørsholm og Nordsjælland",
     serviceArea: ["Hørsholm", "Rungsted", "Vedbæk", "Kokkedal", "Nordsjælland"],
     schemaAreaServed: ["Hørsholm", "Nordsjælland", "Sjælland", "Zealand", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Hørsholm hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Hørsholm hos Eluxus" },
     secondaryCta: { label: "Se bilvask Sjælland", href: "/bilvask-sjaelland" },
     benefits: [
-      { title: "Hørsholm og kystområdet", text: "CleanWash er relevant for bilejere i Hørsholm, Rungsted, Vedbæk og de øvrige kystnære byer i Nordsjælland." },
+      { title: "Hørsholm og kystområdet", text: "Eluxus er relevant for bilejere i Hørsholm, Rungsted, Vedbæk og de øvrige kystnære byer i Nordsjælland." },
       { title: "Skån lakken mod saltvand", text: "Biler, der holder tæt på kysten, udsættes for salt og fugt fra havluften, hvilket gør regelmæssig bilvask ekstra relevant." },
       { title: "Online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Til alle biltyper", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -3081,42 +3081,42 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Hørsholm — professionel service ved kysten",
         paragraphs: [
-          "Hørsholm er en af Nordsjællands mest velhavende kommuner med kystnære villakvarterer i Rungsted og Vedbæk. Mange biler i området holder tæt på Øresundskysten, hvor salt og fugt fra havluften kan påvirke lak og fælge over tid. CleanWash tilbyder professionel bilvask i Hørsholm med online booking.",
+          "Hørsholm er en af Nordsjællands mest velhavende kommuner med kystnære villakvarterer i Rungsted og Vedbæk. Mange biler i området holder tæt på Øresundskysten, hvor salt og fugt fra havluften kan påvirke lak og fælge over tid. Eluxus tilbyder professionel bilvask med damp i Hørsholm med online booking.",
           "Med kort afstand til Helsingørmotorvejen og gode togforbindelser er Hørsholm attraktivt for pendlere til København. Det gør en bekvem, regelmæssig bilvask til en naturlig del af hverdagen.",
         ],
       },
       {
         heading: "Hørsholm og nærliggende byer",
         paragraphs: [
-          "Hørsholm grænser op til Rungsted, Vedbæk og Kokkedal. CleanWash er relevant for kunder i hele dette nordsjællandske kystområde. Den konkrete dækning afhænger af booking og ruteplanlægning.",
-          "Området er kendt for store villaer, flere biler pr. husstand og en generel forventning om høj kvalitet i service — noget CleanWash er bygget til at levere.",
+          "Hørsholm grænser op til Rungsted, Vedbæk og Kokkedal. Eluxus er relevant for kunder i hele dette nordsjællandske kystområde. Den konkrete dækning afhænger af booking og ruteplanlægning.",
+          "Området er kendt for store villaer, flere biler pr. husstand og en generel forventning om høj kvalitet i service — noget Eluxus er bygget til at levere.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Hørsholm?",
+        heading: "Hvad tilbyder Eluxus i Hørsholm?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Hørsholm. Udvendig vask fjerner vejsnavs og saltrester fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Hørsholm. Udvendig vask fjerner vejsnavs og saltrester fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder.",
           "Kunder kan booke bilvask direkte via booking-siden og vælge den service, der passer til bilen.",
         ],
       },
       {
         heading: "Erhverv og private i Hørsholm",
         paragraphs: [
-          "Hørsholm har mange virksomheder og selvstændige med firmabiler, der har brug for en professionel og præsentabel fremtoning. CleanWash kan hjælpe med regelmæssig bilvask til både erhverv og private.",
+          "Hørsholm har mange virksomheder og selvstændige med firmabiler, der har brug for en professionel og præsentabel fremtoning. Eluxus kan hjælpe med regelmæssig bilvask til både erhverv og private.",
           "Book bilvask direkte via booking-siden og angiv adresse og ønsket tidspunkt.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Hørsholm?", answer: "Ja. CleanWash tilbyder professionel bilvask i Hørsholm og det nordsjællandske kystområde med online booking." },
-      { question: "Dækker I Rungsted og Vedbæk?", answer: "CleanWash er relevant for Hørsholm og nærliggende kystbyer. Konkret dækning afhænger af booking og rute." },
+      { question: "Tilbyder Eluxus bilvask i Hørsholm?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Hørsholm og det nordsjællandske kystområde med online booking." },
+      { question: "Dækker I Rungsted og Vedbæk?", answer: "Eluxus er relevant for Hørsholm og nærliggende kystbyer. Konkret dækning afhænger af booking og rute." },
       { question: "Er saltvand fra kysten skadeligt for bilen?", answer: "Ja, salt og fugt fra havluften kan påvirke lak og fælge. Regelmæssig udvendig vask hjælper med at beskytte bilen." },
       { question: "Kan jeg booke komplet bilpleje i Hørsholm?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask i Hørsholm?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se priser og book via /booking." },
@@ -3135,15 +3135,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-helsingoer",
-    title: "Bilvask Helsingør | Professionel bilvask i Nordsjælland | CleanWash",
+    title: "Bilvask Helsingør | Professionel bilvask i Nordsjælland | Eluxus",
     description:
-      "Book professionel bilvask i Helsingør hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med online booking i Nordsjælland.",
+      "Book professionel bilvask med damp i Helsingør hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med online booking i Nordsjælland.",
     h1: "Bilvask Helsingør",
     eyebrow: "Professionel bilvask i Helsingør",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Helsingør og det nordligste Nordsjælland med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Helsingør og det nordligste Nordsjælland med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Helsingør og omegn med online booking.",
+      "Eluxus tilbyder bilvask i Helsingør og omegn med online booking.",
       "Servicen er relevant for bilejere i Helsingør, Espergærde, Snekkersten og Hornbæk.",
       "Book udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet.",
     ],
@@ -3157,10 +3157,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Helsingør og Nordsjælland",
     serviceArea: ["Helsingør", "Espergærde", "Snekkersten", "Hornbæk", "Nordsjælland"],
     schemaAreaServed: ["Helsingør", "Nordsjælland", "Sjælland", "Zealand", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Helsingør hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Professionel bilvask i Helsingør hos Eluxus" },
     secondaryCta: { label: "Se bilvask Hillerød", href: "/bilvask-hilleroed" },
     benefits: [
-      { title: "Helsingør og nordkysten", text: "CleanWash er relevant for bilejere i Helsingør, Espergærde, Snekkersten og Hornbæk." },
+      { title: "Helsingør og nordkysten", text: "Eluxus er relevant for bilejere i Helsingør, Espergærde, Snekkersten og Hornbæk." },
       { title: "Pendlere med Kystbanen", text: "Mange pendler dagligt fra Helsingør til København — professionel bilvask passer til denne travle hverdag." },
       { title: "Online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Til alle biltyper", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -3168,43 +3168,43 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Helsingør — professionel service i den nordligste del af Sjælland",
         paragraphs: [
-          "Helsingør er kendt for Kronborg Slot og færgeforbindelsen til Helsingborg, og er samtidig hjemsted for mange bilejere, der pendler til København via Kystbanen eller Helsingørmotorvejen. CleanWash tilbyder professionel bilvask i Helsingør med online booking, så bilen kan holdes ren uden en ekstra tur til en vaskehal.",
+          "Helsingør er kendt for Kronborg Slot og færgeforbindelsen til Helsingborg, og er samtidig hjemsted for mange bilejere, der pendler til København via Kystbanen eller Helsingørmotorvejen. Eluxus tilbyder professionel bilvask med damp i Helsingør med online booking, så bilen kan holdes ren uden en ekstra tur til en vaskehal.",
           "Den nordsjællandske kystlinje betyder, at mange biler udsættes for salt og fugt fra havet, hvilket gør regelmæssig udvendig vask relevant for at beskytte lak og fælge.",
         ],
       },
       {
         heading: "Helsingør og nærliggende byer",
         paragraphs: [
-          "Helsingør grænser op til Espergærde, Snekkersten og Hornbæk. CleanWash er relevant for kunder i disse områder, men den konkrete dækning afhænger af booking, adresse og ruteplanlægning.",
+          "Helsingør grænser op til Espergærde, Snekkersten og Hornbæk. Eluxus er relevant for kunder i disse områder, men den konkrete dækning afhænger af booking, adresse og ruteplanlægning.",
           "Området har mange familiebiler og pendlerbiler, der bruges dagligt til transport til og fra København.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Helsingør?",
+        heading: "Hvad tilbyder Eluxus i Helsingør?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Helsingør. Udvendig vask fjerner vejsnavs og saltrester fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Helsingør. Udvendig vask fjerner vejsnavs og saltrester fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder.",
           "Kunder kan booke bilvask direkte via booking-siden og vælge den service, der passer til bilen.",
         ],
       },
       {
         heading: "Erhverv og private i Helsingør",
         paragraphs: [
-          "Helsingør har både turisme, havnedrift og lokale virksomheder med firmabiler, der har brug for en præsentabel fremtoning. CleanWash kan hjælpe med regelmæssig bilvask til erhverv og private i området.",
+          "Helsingør har både turisme, havnedrift og lokale virksomheder med firmabiler, der har brug for en præsentabel fremtoning. Eluxus kan hjælpe med regelmæssig bilvask til erhverv og private i området.",
           "Book bilvask direkte via booking-siden og angiv adresse og ønsket tidspunkt.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Helsingør?", answer: "Ja. CleanWash tilbyder professionel bilvask i Helsingør og Nordsjælland med online booking." },
-      { question: "Dækker I Espergærde og Hornbæk?", answer: "CleanWash er relevant for Helsingør og nærliggende byer. Konkret dækning afhænger af booking og rute." },
-      { question: "Er CleanWash relevant for pendlere fra Helsingør?", answer: "Ja. Pendlerbiler bruges hårdt, og CleanWash gør det nemt at booke regelmæssig bilvask." },
+      { question: "Tilbyder Eluxus bilvask i Helsingør?", answer: "Ja. Eluxus tilbyder professionel bilvask med damp i Helsingør og Nordsjælland med online booking." },
+      { question: "Dækker I Espergærde og Hornbæk?", answer: "Eluxus er relevant for Helsingør og nærliggende byer. Konkret dækning afhænger af booking og rute." },
+      { question: "Er Eluxus relevant for pendlere fra Helsingør?", answer: "Ja. Pendlerbiler bruges hårdt, og Eluxus gør det nemt at booke regelmæssig bilvask." },
       { question: "Kan jeg booke komplet bilpleje i Helsingør?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask i Helsingør?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se priser og book via /booking." },
       { question: "Hvordan booker jeg bilvask i Helsingør?", answer: "Gå til /booking, vælg service og udfyld oplysninger om bil og ønsket tidspunkt." },
@@ -3222,15 +3222,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-naestved",
-    title: "Bilvask Næstved | Professionel bilvask på Sydsjælland | CleanWash",
+    title: "Bilvask Næstved | Professionel bilvask på Sydsjælland | Eluxus",
     description:
-      "Book professionel bilvask i Næstved hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med online booking på Sydsjælland.",
+      "Book professionel bilvask med damp i Næstved hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med online booking på Sydsjælland.",
     h1: "Bilvask Næstved",
     eyebrow: "Professionel bilvask på Sydsjælland",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Næstved og på Sydsjælland med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Næstved og på Sydsjælland med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Næstved og på Sydsjælland med online booking.",
+      "Eluxus tilbyder bilvask i Næstved og på Sydsjælland med online booking.",
       "Servicen er relevant for bilejere i Næstved, Herlufmagle, Fuglebjerg og nærliggende byer.",
       "Den konkrete dækning i Næstved afhænger altid af booking, adresse og ruteplanlægning.",
     ],
@@ -3244,10 +3244,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Næstved og på Sydsjælland",
     serviceArea: ["Næstved", "Herlufmagle", "Fuglebjerg", "Sydsjælland", "Sjælland"],
     schemaAreaServed: ["Næstved", "Sydsjælland", "Sjælland", "Zealand", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Næstved hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Professionel bilvask i Næstved hos Eluxus" },
     secondaryCta: { label: "Se bilvask Sjælland", href: "/bilvask-sjaelland" },
     benefits: [
-      { title: "Næstved og Sydsjælland", text: "CleanWash er relevant for bilejere i Næstved og de omkringliggende byer på Sydsjælland." },
+      { title: "Næstved og Sydsjælland", text: "Eluxus er relevant for bilejere i Næstved og de omkringliggende byer på Sydsjælland." },
       { title: "Fleksibel ruteplanlægning", text: "Da Næstved ligger længere fra hovedstadsområdet, planlægges bookinger her efter rute og ledig kapacitet." },
       { title: "Online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Til alle biltyper", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -3255,42 +3255,42 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash planlægger", text: "Teamet vurderer rute og ledig kapacitet ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet vurderer rute og ledig kapacitet ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Næstved — professionel service på Sydsjælland",
         paragraphs: [
-          "Næstved er en af Sjællands største byer og et vigtigt handels- og transportknudepunkt på Sydsjælland. Mange bilejere i og omkring Næstved efterspørger en professionel bilvaskløsning, der kan bookes online uden besvær. CleanWash tilbyder bilvask i Næstved som en del af det sjællandske dækningsområde.",
-          "Fordi Næstved ligger længere fra CleanWash's kerneområde omkring København og Storkøbenhavn, planlægges bookinger her efter rute, adresse og ledig kapacitet. Book online for at se, hvornår det er muligt at få bilen vasket.",
+          "Næstved er en af Sjællands største byer og et vigtigt handels- og transportknudepunkt på Sydsjælland. Mange bilejere i og omkring Næstved efterspørger en professionel bilvaskløsning, der kan bookes online uden besvær. Eluxus tilbyder bilvask i Næstved som en del af det sjællandske dækningsområde.",
+          "Fordi Næstved ligger længere fra Eluxus' kerneområde omkring København og Storkøbenhavn, planlægges bookinger her efter rute, adresse og ledig kapacitet. Book online for at se, hvornår det er muligt at få bilen vasket.",
         ],
       },
       {
         heading: "Næstved og nærliggende byer",
         paragraphs: [
-          "Næstved ligger centralt på Sydsjælland med gode forbindelser til Herlufmagle, Fuglebjerg og det øvrige sydsjællandske opland. CleanWash er relevant for kunder i disse områder, men dækningen afhænger altid af den konkrete booking.",
-          "Book online for at afklare, om CleanWash kan planlægge en bilvask på din adresse i Næstved-området.",
+          "Næstved ligger centralt på Sydsjælland med gode forbindelser til Herlufmagle, Fuglebjerg og det øvrige sydsjællandske opland. Eluxus er relevant for kunder i disse områder, men dækningen afhænger altid af den konkrete booking.",
+          "Book online for at afklare, om Eluxus kan planlægge en bilvask på din adresse i Næstved-området.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Næstved?",
+        heading: "Hvad tilbyder Eluxus i Næstved?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Næstved-området. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder.",
-          "Kunder kan booke bilvask direkte via booking-siden og angive adresse i Næstved, så CleanWash kan vurdere ruten.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Næstved-området. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder.",
+          "Kunder kan booke bilvask direkte via booking-siden og angive adresse i Næstved, så Eluxus kan vurdere ruten.",
         ],
       },
       {
         heading: "Erhverv og private i Næstved",
         paragraphs: [
-          "Næstved har mange lokale virksomheder, håndværkere og firmabiler, der har brug for regelmæssig bilvask. CleanWash kan hjælpe med at planlægge en løsning, der passer til virksomhedens behov.",
+          "Næstved har mange lokale virksomheder, håndværkere og firmabiler, der har brug for regelmæssig bilvask. Eluxus kan hjælpe med at planlægge en løsning, der passer til virksomhedens behov.",
           "Private bilejere i Næstved kan booke bilvask direkte via booking-siden og få bilen planlagt ind efter rute og ledig kapacitet.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Næstved?", answer: "Ja, som en del af det sjællandske dækningsområde. Den konkrete mulighed afhænger af booking, adresse og ruteplanlægning." },
-      { question: "Dækker I hele Sydsjælland?", answer: "CleanWash er relevant for Næstved og nærliggende byer. Konkret dækning vurderes ud fra hver enkelt booking." },
+      { question: "Tilbyder Eluxus bilvask i Næstved?", answer: "Ja, som en del af det sjællandske dækningsområde. Den konkrete mulighed afhænger af booking, adresse og ruteplanlægning." },
+      { question: "Dækker I hele Sydsjælland?", answer: "Eluxus er relevant for Næstved og nærliggende byer. Konkret dækning vurderes ud fra hver enkelt booking." },
       { question: "Hvorfor afhænger dækningen af booking i Næstved?", answer: "Fordi Næstved ligger længere fra kerneområdet omkring København, planlægges opgaver her efter rute og ledig kapacitet." },
       { question: "Kan jeg booke komplet bilpleje i Næstved?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask i Næstved?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se priser og book via /booking." },
@@ -3309,15 +3309,15 @@ export const seoPages: SeoPageConfig[] = [
 
   {
     slug: "bilvask-slagelse",
-    title: "Bilvask Slagelse | Professionel bilvask på Vestsjælland | CleanWash",
+    title: "Bilvask Slagelse | Professionel bilvask på Vestsjælland | Eluxus",
     description:
-      "Book professionel bilvask i Slagelse hos CleanWash. Udvendig vask, indvendig bilrengøring og komplet bilpleje med online booking på Vestsjælland.",
+      "Book professionel bilvask med damp i Slagelse hos Eluxus. Udvendig vask, indvendig bilrengøring og komplet bilpleje med online booking på Vestsjælland.",
     h1: "Bilvask Slagelse",
     eyebrow: "Professionel bilvask på Vestsjælland",
     heroIntro:
-      "CleanWash tilbyder professionel bilvask i Slagelse og på Vestsjælland med online booking og klare servicevalg til private og erhverv.",
+      "Eluxus tilbyder professionel bilvask med damp i Slagelse og på Vestsjælland med online booking og klare servicevalg til private og erhverv.",
     shortSummary: [
-      "CleanWash tilbyder bilvask i Slagelse og på Vestsjælland med online booking.",
+      "Eluxus tilbyder bilvask i Slagelse og på Vestsjælland med online booking.",
       "Servicen er relevant for bilejere i Slagelse, Korsør, Skælskør og nærliggende byer.",
       "Den konkrete dækning i Slagelse afhænger altid af booking, adresse og ruteplanlægning.",
     ],
@@ -3331,10 +3331,10 @@ export const seoPages: SeoPageConfig[] = [
     serviceType: "Professionel bilvask i Slagelse og på Vestsjælland",
     serviceArea: ["Slagelse", "Korsør", "Skælskør", "Vestsjælland", "Sjælland"],
     schemaAreaServed: ["Slagelse", "Vestsjælland", "Sjælland", "Zealand", "Denmark"],
-    image: { src: "/service/inside.jpg", alt: "Professionel bilvask i Slagelse hos CleanWash" },
+    image: { src: "/service/inside.jpg", alt: "Professionel bilvask i Slagelse hos Eluxus" },
     secondaryCta: { label: "Se bilvask Sjælland", href: "/bilvask-sjaelland" },
     benefits: [
-      { title: "Slagelse og Vestsjælland", text: "CleanWash er relevant for bilejere i Slagelse og de omkringliggende byer på Vestsjælland." },
+      { title: "Slagelse og Vestsjælland", text: "Eluxus er relevant for bilejere i Slagelse og de omkringliggende byer på Vestsjælland." },
       { title: "Fleksibel ruteplanlægning", text: "Da Slagelse ligger længere fra hovedstadsområdet, planlægges bookinger her efter rute og ledig kapacitet." },
       { title: "Online booking", text: "Book bilvask online og vælg service, tidspunkt og biloplysninger i ét flow." },
       { title: "Til alle biltyper", text: "Passer til familiebiler, pendlerbiler, firmabiler og leasingbiler." },
@@ -3342,42 +3342,42 @@ export const seoPages: SeoPageConfig[] = [
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
       { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
-      { title: "CleanWash planlægger", text: "Teamet vurderer rute og ledig kapacitet ud fra din booking." },
+      { title: "Eluxus planlægger", text: "Teamet vurderer rute og ledig kapacitet ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
     sections: [
       {
         heading: "Bilvask i Slagelse — professionel service på Vestsjælland",
         paragraphs: [
-          "Slagelse er en af Vestsjællands største byer og et centralt trafikknudepunkt tæt på Storebæltsbroen. Mange bilejere i og omkring Slagelse efterspørger en professionel bilvaskløsning, der kan bookes online uden besvær. CleanWash tilbyder bilvask i Slagelse som en del af det sjællandske dækningsområde.",
-          "Fordi Slagelse ligger længere fra CleanWash's kerneområde omkring København og Storkøbenhavn, planlægges bookinger her efter rute, adresse og ledig kapacitet. Book online for at se, hvornår det er muligt at få bilen vasket.",
+          "Slagelse er en af Vestsjællands største byer og et centralt trafikknudepunkt tæt på Storebæltsbroen. Mange bilejere i og omkring Slagelse efterspørger en professionel bilvaskløsning, der kan bookes online uden besvær. Eluxus tilbyder bilvask i Slagelse som en del af det sjællandske dækningsområde.",
+          "Fordi Slagelse ligger længere fra Eluxus' kerneområde omkring København og Storkøbenhavn, planlægges bookinger her efter rute, adresse og ledig kapacitet. Book online for at se, hvornår det er muligt at få bilen vasket.",
         ],
       },
       {
         heading: "Slagelse og nærliggende byer",
         paragraphs: [
-          "Slagelse ligger centralt på Vestsjælland med gode forbindelser til Korsør og Skælskør. CleanWash er relevant for kunder i disse områder, men dækningen afhænger altid af den konkrete booking.",
-          "Book online for at afklare, om CleanWash kan planlægge en bilvask på din adresse i Slagelse-området.",
+          "Slagelse ligger centralt på Vestsjælland med gode forbindelser til Korsør og Skælskør. Eluxus er relevant for kunder i disse områder, men dækningen afhænger altid af den konkrete booking.",
+          "Book online for at afklare, om Eluxus kan planlægge en bilvask på din adresse i Slagelse-området.",
         ],
       },
       {
-        heading: "Hvad tilbyder CleanWash i Slagelse?",
+        heading: "Hvad tilbyder Eluxus i Slagelse?",
         paragraphs: [
-          "CleanWash tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Slagelse-området. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder.",
-          "Kunder kan booke bilvask direkte via booking-siden og angive adresse i Slagelse, så CleanWash kan vurdere ruten.",
+          "Eluxus tilbyder udvendig bilvask, indvendig bilrengøring og komplet bilpleje til kunder i Slagelse-området. Udvendig vask fjerner vejsnavs fra lak, ruder og fælge. Indvendig rengøring fokuserer på kabine, støvsugning og sæder.",
+          "Kunder kan booke bilvask direkte via booking-siden og angive adresse i Slagelse, så Eluxus kan vurdere ruten.",
         ],
       },
       {
         heading: "Erhverv og private i Slagelse",
         paragraphs: [
-          "Slagelse har mange lokale virksomheder, transportfirmaer og firmabiler, der har brug for regelmæssig bilvask. CleanWash kan hjælpe med at planlægge en løsning, der passer til virksomhedens behov.",
+          "Slagelse har mange lokale virksomheder, transportfirmaer og firmabiler, der har brug for regelmæssig bilvask. Eluxus kan hjælpe med at planlægge en løsning, der passer til virksomhedens behov.",
           "Private bilejere i Slagelse kan booke bilvask direkte via booking-siden og få bilen planlagt ind efter rute og ledig kapacitet.",
         ],
       },
     ],
     faqs: [
-      { question: "Tilbyder CleanWash bilvask i Slagelse?", answer: "Ja, som en del af det sjællandske dækningsområde. Den konkrete mulighed afhænger af booking, adresse og ruteplanlægning." },
-      { question: "Dækker I Korsør og Skælskør?", answer: "CleanWash er relevant for Slagelse og nærliggende byer. Konkret dækning vurderes ud fra hver enkelt booking." },
+      { question: "Tilbyder Eluxus bilvask i Slagelse?", answer: "Ja, som en del af det sjællandske dækningsområde. Den konkrete mulighed afhænger af booking, adresse og ruteplanlægning." },
+      { question: "Dækker I Korsør og Skælskør?", answer: "Eluxus er relevant for Slagelse og nærliggende byer. Konkret dækning vurderes ud fra hver enkelt booking." },
       { question: "Hvorfor afhænger dækningen af booking i Slagelse?", answer: "Fordi Slagelse ligger længere fra kerneområdet omkring København, planlægges opgaver her efter rute og ledig kapacitet." },
       { question: "Kan jeg booke komplet bilpleje i Slagelse?", answer: "Ja. Du kan vælge udvendig vask, indvendig rengøring eller komplet bilpleje i bookingflowet." },
       { question: "Hvad koster bilvask i Slagelse?", answer: "Udvendig bilvask fra 349 kr., komplet bilvask fra 599 kr. Se priser og book via /booking." },
@@ -3484,11 +3484,11 @@ const serviceSeoPages: SeoPageConfig[] = [
     slug: "udvendig-bilvask-koebenhavn",
     title: "Udvendig bilvask København | Skånsom vask på adressen",
     description:
-      "Book udvendig bilvask i København hos CleanWash. Skånsom vask af lak, fælge, ruder og spejle med mobil service og nem online booking.",
+      "Book udvendig bilvask i København hos Eluxus. Skånsom vask af lak, fælge, ruder og spejle med mobil service og nem online booking.",
     h1: "Udvendig bilvask København",
     eyebrow: "Lak, fælge og ruder",
     heroIntro:
-      "CleanWash tilbyder udvendig bilvask i København for bilejere, der vil have en renere bil uden kø, ventetid og ekstra tur i vaskehallen.",
+      "Eluxus tilbyder udvendig bilvask i København for bilejere, der vil have en renere bil uden kø, ventetid og ekstra tur i vaskehallen.",
     shortSummary: [
       "Målrettet side til søgninger som udvendig bilvask København, håndvask bil og bilvask på adressen.",
       "Servicen passer til bystøv, regn, pollen, bremsestøv, vejsalt og almindelig trafikfilm.",
@@ -3533,7 +3533,7 @@ const serviceSeoPages: SeoPageConfig[] = [
     process: [
       { title: "Vælg udvendig vask", text: "Start i bookingflowet og vælg den service, bilen har brug for." },
       { title: "Angiv adresse", text: "Oplys hvor bilen holder, så rute og mulighed kan afklares." },
-      { title: "Få bilen vasket", text: "CleanWash arbejder med udvendige flader, fælge, ruder og finish." },
+      { title: "Få bilen vasket", text: "Eluxus arbejder med udvendige flader, fælge, ruder og finish." },
       { title: "Kør videre renere", text: "Bilen står mere præsentabel uden en separat tur i vaskehal." },
     ],
     sections: [
@@ -3541,7 +3541,7 @@ const serviceSeoPages: SeoPageConfig[] = [
         heading: "Udvendig bilvask til københavnsk hverdag",
         paragraphs: [
           "Udvendig bilvask København er en af de mest konkrete søgninger for bilejere, der allerede ved, hvad bilen mangler. Det handler om lak, ruder, spejle, fælge og den synlige finish, der hurtigt bliver påvirket af bytrafik, regn, støv og vejsalt.",
-          "CleanWash gør søgningen bookbar. Du kan vælge den relevante service online og give oplysninger om bil, adresse og tidspunkt, så opgaven kan planlægges realistisk.",
+          "Eluxus gør søgningen bookbar. Du kan vælge den relevante service online og give oplysninger om bil, adresse og tidspunkt, så opgaven kan planlægges realistisk.",
         ],
       },
       {
@@ -3566,7 +3566,7 @@ const serviceSeoPages: SeoPageConfig[] = [
       {
         question: "Dækker I Frederiksberg, Amager og Østerbro?",
         answer:
-          "CleanWash er relevant for København, Frederiksberg, Amager, Østerbro og nærliggende områder. Endelig dækning afklares ved booking.",
+          "Eluxus er relevant for København, Frederiksberg, Amager, Østerbro og nærliggende områder. Endelig dækning afklares ved booking.",
       },
       {
         question: "Kan udvendig vask kombineres med indvendig rengøring?",
@@ -3585,11 +3585,11 @@ const serviceSeoPages: SeoPageConfig[] = [
     slug: "bilvask-priser",
     title: "Bilvask priser | Pris på mobil bilvask i København",
     description:
-      "Se prisniveau for mobil bilvask, indvendig bilrengøring og komplet bilpleje hos CleanWash. Book bilvask i København og på Sjælland online.",
+      "Se prisniveau for mobil bilvask, indvendig bilrengøring og komplet bilpleje hos Eluxus. Book bilvask i København og på Sjælland online.",
     h1: "Bilvask priser",
     eyebrow: "Pris og pakker",
     heroIntro:
-      "Find den rigtige bilvask-pakke hos CleanWash, fra udvendig vask til komplet bilpleje med indvendig rengøring.",
+      "Find den rigtige bilvask-pakke hos Eluxus, fra udvendig vask til komplet bilpleje med indvendig rengøring.",
     shortSummary: [
       "Målrettet til søgninger som bilvask pris København, mobil bilvask pris og komplet bilvask pris.",
       "Prisen afhænger af biltype, valgt pakke, bilens stand og eventuelle tilvalg.",
@@ -3607,7 +3607,7 @@ const serviceSeoPages: SeoPageConfig[] = [
     schemaAreaServed: ["København", "Copenhagen", "Sjælland", "Denmark"],
     image: {
       src: "/service/helebil.jpg",
-      alt: "Bilvask priser og pakker hos CleanWash",
+      alt: "Bilvask priser og pakker hos Eluxus",
     },
     secondaryCta: {
       label: "Book og se pris",
@@ -3630,7 +3630,7 @@ const serviceSeoPages: SeoPageConfig[] = [
         heading: "Hvad koster bilvask i København?",
         paragraphs: [
           "Søgningen bilvask pris København bliver ofte brugt af kunder, der sammenligner vaskehal, håndvask, mobil bilvask og komplet bilpleje. Den bedste pris afhænger af, om bilen kun skal vaskes udvendigt, rengøres indvendigt eller have en samlet behandling.",
-          "CleanWash viser pris og valg i bookingflowet, så du kan vælge ud fra bilens behov. Det gør prisen mere relevant end en løs gennemsnitspris, fordi biltype, snavsniveau og tilvalg kan ændre opgaven.",
+          "Eluxus viser pris og valg i bookingflowet, så du kan vælge ud fra bilens behov. Det gør prisen mere relevant end en løs gennemsnitspris, fordi biltype, snavsniveau og tilvalg kan ændre opgaven.",
         ],
       },
       {
@@ -3643,7 +3643,7 @@ const serviceSeoPages: SeoPageConfig[] = [
     ],
     faqs: [
       {
-        question: "Hvad koster bilvask hos CleanWash?",
+        question: "Hvad koster bilvask hos Eluxus?",
         answer:
           "Prisen afhænger af biltype, service, bilens stand og tilvalg. Den mest præcise pris vises i bookingflowet.",
       },
@@ -3655,7 +3655,7 @@ const serviceSeoPages: SeoPageConfig[] = [
       {
         question: "Kan virksomheder få fast pris?",
         answer:
-          "Erhvervskunder med flere biler kan kontakte CleanWash for aftale om fast eller tilbagevendende bilvask.",
+          "Erhvervskunder med flere biler kan kontakte Eluxus for aftale om fast eller tilbagevendende bilvask.",
       },
       {
         question: "Betaler jeg før eller efter bilvask?",
@@ -3674,15 +3674,15 @@ const serviceSeoPages: SeoPageConfig[] = [
     slug: "erhverv-bilvask-koebenhavn",
     title: "Erhverv bilvask København | Firmabiler og flådeaftaler",
     description:
-      "CleanWash tilbyder erhverv bilvask i København til firmabiler, leasingbiler, taxa, transport, bilforhandlere og flåder.",
+      "Eluxus tilbyder erhverv bilvask i København til firmabiler, leasingbiler, taxa, transport, bilforhandlere og flåder.",
     h1: "Erhverv bilvask København",
     eyebrow: "Firmabiler og faste aftaler",
     heroIntro:
-      "CleanWash hjælper virksomheder med professionel bilvask, bilrengøring og bilpleje til firmabiler og bilflåder i København.",
+      "Eluxus hjælper virksomheder med professionel bilvask, bilrengøring og bilpleje til firmabiler og bilflåder i København.",
     shortSummary: [
       "Målrettet erhvervssøgninger som firmabil vask, flåde bilvask og erhverv bilvask København.",
       "Relevant for leasingbiler, servicebiler, taxa, transport, bilforhandlere og virksomheder med flere biler.",
-      "Kontakt CleanWash for faste aftaler, ruteplanlægning og gentagne bookinger.",
+      "Kontakt Eluxus for faste aftaler, ruteplanlægning og gentagne bookinger.",
     ],
     keywords: [
       "erhverv bilvask København",
@@ -3709,7 +3709,7 @@ const serviceSeoPages: SeoPageConfig[] = [
       { title: "Fleksible ydelser", text: "Vælg udvendig vask, indvendig rengøring eller komplet bilpleje." },
     ],
     process: [
-      { title: "Kontakt CleanWash", text: "Fortæl hvor mange biler, område og hvor ofte de skal vaskes." },
+      { title: "Kontakt Eluxus", text: "Fortæl hvor mange biler, område og hvor ofte de skal vaskes." },
       { title: "Afklar service", text: "Vælg udvendig, indvendig eller komplet bilpleje." },
       { title: "Planlæg rute", text: "Adresse, adgang og tidsrum aftales, så opgaven passer ind i driften." },
       { title: "Hold bilerne rene", text: "Firmabiler, leasingbiler og servicebiler kan fremstå mere professionelle." },
@@ -3718,7 +3718,7 @@ const serviceSeoPages: SeoPageConfig[] = [
       {
         heading: "Bilvask til virksomheder i København",
         paragraphs: [
-          "Erhverv bilvask København er for virksomheder, der ikke vil bruge intern tid på at koordinere vaskehal, nøgler, ventetid og enkeltbookinger. CleanWash kan hjælpe med professionel bilvask og bilrengøring til firmabiler, leasingbiler og flåder.",
+          "Erhverv bilvask København er for virksomheder, der ikke vil bruge intern tid på at koordinere vaskehal, nøgler, ventetid og enkeltbookinger. Eluxus kan hjælpe med professionel bilvask og bilrengøring til firmabiler, leasingbiler og flåder.",
           "Behovet er ofte praktisk: bilen skal se pæn ud over for kunder, være rar at køre i for medarbejdere og kunne holdes ren med mindre administration.",
         ],
       },
@@ -3726,20 +3726,20 @@ const serviceSeoPages: SeoPageConfig[] = [
         heading: "Firmabiler, leasingbiler og bilforhandlere",
         paragraphs: [
           "Servicen er relevant for sælgere, servicebiler, taxa, transport, ejendomsselskaber, bilforhandlere og virksomheder med flere biler. Nogle har brug for udvendig vask ofte, mens andre har brug for komplet indvendig og udvendig klargøring.",
-          "CleanWash kan tilpasse dialogen efter antal biler, område, ønsket frekvens og adgangsforhold. Det giver bedre forventninger fra starten.",
+          "Eluxus kan tilpasse dialogen efter antal biler, område, ønsket frekvens og adgangsforhold. Det giver bedre forventninger fra starten.",
         ],
       },
     ],
     faqs: [
       {
-        question: "Tilbyder CleanWash bilvask til virksomheder?",
+        question: "Tilbyder Eluxus bilvask til virksomheder?",
         answer:
-          "Ja. CleanWash tilbyder erhvervsrettet bilvask til firmabiler, leasingbiler, servicebiler og flåder.",
+          "Ja. Eluxus tilbyder erhvervsrettet bilvask til firmabiler, leasingbiler, servicebiler og flåder.",
       },
       {
         question: "Kan vi lave en fast aftale?",
         answer:
-          "Ja, virksomheder kan kontakte CleanWash for at afklare fast aftale, rute, frekvens og serviceindhold.",
+          "Ja, virksomheder kan kontakte Eluxus for at afklare fast aftale, rute, frekvens og serviceindhold.",
       },
       {
         question: "Kan flere biler vaskes på samme adresse?",
@@ -3749,7 +3749,7 @@ const serviceSeoPages: SeoPageConfig[] = [
       {
         question: "Dækker I Storkøbenhavn?",
         answer:
-          "CleanWash er relevant for København, Storkøbenhavn og dele af Sjælland. Endelig dækning aftales konkret.",
+          "Eluxus er relevant for København, Storkøbenhavn og dele af Sjælland. Endelig dækning aftales konkret.",
       },
     ],
     keywordGroups: [
@@ -3763,11 +3763,11 @@ const serviceSeoPages: SeoPageConfig[] = [
     slug: "bilpleje-koebenhavn",
     title: "Bilpleje København | Indvendig og udvendig klargøring",
     description:
-      "Book bilpleje i København hos CleanWash. Få indvendig bilrengøring, udvendig bilvask, sæderens og klargøring til hverdag, salg eller leasing.",
+      "Book bilpleje i København hos Eluxus. Få indvendig bilrengøring, udvendig bilvask, sæderens og klargøring til hverdag, salg eller leasing.",
     h1: "Bilpleje København",
     eyebrow: "Mere end en hurtig vask",
     heroIntro:
-      "CleanWash tilbyder bilpleje i København til biler, der skal føles renere, se bedre ud og være klar til hverdag, salg, leasing eller arbejde.",
+      "Eluxus tilbyder bilpleje i København til biler, der skal føles renere, se bedre ud og være klar til hverdag, salg, leasing eller arbejde.",
     shortSummary: [
       "Bilpleje samler søgninger som bilrengøring, klargøring, sæderens, håndvask og komplet bilvask.",
       "Relevant når bilen kræver mere end en hurtig udvendig vask.",
@@ -3801,14 +3801,14 @@ const serviceSeoPages: SeoPageConfig[] = [
       { title: "Vurder bilen", text: "Tænk over om bilen primært trænger indvendigt, udvendigt eller begge dele." },
       { title: "Vælg service", text: "Book bilpleje, indvendig rengøring eller komplet bilvask." },
       { title: "Tilføj detaljer", text: "Beskriv pletter, lugt, snavs eller særlige behov i bookingen." },
-      { title: "Få bilen frisket op", text: "CleanWash udfører opgaven med fokus på synligt og brugbart resultat." },
+      { title: "Få bilen frisket op", text: "Eluxus udfører opgaven med fokus på synligt og brugbart resultat." },
     ],
     sections: [
       {
         heading: "Bilpleje når bilen skal mere end bare vaskes",
         paragraphs: [
           "Bilpleje København dækker de kunder, der søger efter en mere grundig løsning end en standardvask. Det kan være indvendig bilrengøring, udvendig bilvask, sæderens, klargøring eller komplet bilpleje.",
-          "CleanWash gør det nemt at vælge den rigtige retning gennem online booking, så bilen kan få en service, der passer til stand, brug og ønsket resultat.",
+          "Eluxus gør det nemt at vælge den rigtige retning gennem online booking, så bilen kan få en service, der passer til stand, brug og ønsket resultat.",
         ],
       },
       {
@@ -3826,9 +3826,9 @@ const serviceSeoPages: SeoPageConfig[] = [
           "Bilvask fokuserer typisk på rengøring, mens bilpleje kan være en mere komplet opfriskning med indvendig og udvendig fokus.",
       },
       {
-        question: "Tilbyder CleanWash klargøring før salg?",
+        question: "Tilbyder Eluxus klargøring før salg?",
         answer:
-          "CleanWash tilbyder bilpleje og rengøring, der kan være relevant før salg, fremvisning eller leasingaflevering.",
+          "Eluxus tilbyder bilpleje og rengøring, der kan være relevant før salg, fremvisning eller leasingaflevering.",
       },
       {
         question: "Kan jeg få sæderens?",
@@ -3838,7 +3838,7 @@ const serviceSeoPages: SeoPageConfig[] = [
       {
         question: "Dækker I København og omegn?",
         answer:
-          "Ja, CleanWash er relevant for København, Storkøbenhavn og nærliggende områder afhængigt af booking og rute.",
+          "Ja, Eluxus er relevant for København, Storkøbenhavn og nærliggende områder afhængigt af booking og rute.",
       },
     ],
     keywordGroups: [
@@ -3852,11 +3852,11 @@ const serviceSeoPages: SeoPageConfig[] = [
     slug: "miljoevenlig-bilvask-koebenhavn",
     title: "Miljøvenlig bilvask København | Mobil bilvask med omtanke",
     description:
-      "Book miljøvenlig bilvask i København hos CleanWash. Professionel mobil bilvask med ruteplanlægning, skånsomme metoder og nem online booking.",
+      "Book miljøvenlig bilvask i København hos Eluxus. Professionel mobil bilvask med ruteplanlægning, skånsomme metoder og nem online booking.",
     h1: "Miljøvenlig bilvask København",
     eyebrow: "Ren bil med omtanke",
     heroIntro:
-      "CleanWash tilbyder mobil bilvask i København med fokus på effektiv planlægning, professionelt udstyr og skånsom behandling af bilen.",
+      "Eluxus tilbyder mobil bilvask i København med fokus på effektiv planlægning, professionelt udstyr og skånsom behandling af bilen.",
     shortSummary: [
       "Målrettet søgninger som miljøvenlig bilvask København, mobil bilvask og bilvask på adressen.",
       "Ruteplanlægning og mobil service kan spare kundens tid og reducere unødig kørsel til vaskehal.",
@@ -3874,7 +3874,7 @@ const serviceSeoPages: SeoPageConfig[] = [
     schemaAreaServed: ["København", "Copenhagen", "Storkøbenhavn", "Sjælland", "Denmark"],
     image: {
       src: "/service/udenfor.jpg",
-      alt: "Miljøvenlig mobil bilvask i København hos CleanWash",
+      alt: "Miljøvenlig mobil bilvask i København hos Eluxus",
     },
     secondaryCta: {
       label: "Se mobil bilvask",
@@ -3888,7 +3888,7 @@ const serviceSeoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Vælg service og angiv hvor bilen holder." },
-      { title: "Afklar område", text: "CleanWash planlægger efter område, rute og ledige tider." },
+      { title: "Afklar område", text: "Eluxus planlægger efter område, rute og ledige tider." },
       { title: "Få bilen vasket", text: "Opgaven udføres med professionelt udstyr og skånsom behandling." },
       { title: "Spar tid", text: "Du undgår ekstra tur og ventetid i vaskehal." },
     ],
@@ -3896,7 +3896,7 @@ const serviceSeoPages: SeoPageConfig[] = [
       {
         heading: "Miljøvenlig bilvask handler også om planlægning",
         paragraphs: [
-          "Når kunder søger miljøvenlig bilvask København, leder de ofte efter en løsning, der både passer bedre til bilen, hverdagen og omgivelserne. CleanWash fokuserer på mobil planlægning, professionelt udstyr og skånsom bilpleje.",
+          "Når kunder søger miljøvenlig bilvask København, leder de ofte efter en løsning, der både passer bedre til bilen, hverdagen og omgivelserne. Eluxus fokuserer på mobil planlægning, professionelt udstyr og skånsom bilpleje.",
           "Det vigtigste er at vælge en service, der passer til bilens behov. En relevant vask bruger tid og metode der, hvor bilen faktisk er beskidt.",
         ],
       },
@@ -3910,14 +3910,14 @@ const serviceSeoPages: SeoPageConfig[] = [
     ],
     faqs: [
       {
-        question: "Er CleanWash en miljøvenlig bilvask?",
+        question: "Er Eluxus en miljøvenlig bilvask?",
         answer:
-          "CleanWash arbejder med mobil planlægning, professionelt udstyr og skånsomme metoder. Den konkrete service afhænger af valgt pakke.",
+          "Eluxus arbejder med mobil planlægning, professionelt udstyr og skånsomme metoder. Den konkrete service afhænger af valgt pakke.",
       },
       {
         question: "Tilbyder I vandfri bilvask?",
         answer:
-          "Hvis du ønsker en bestemt metode, bør du beskrive det ved booking eller kontakte CleanWash, så mulighederne kan bekræftes.",
+          "Hvis du ønsker en bestemt metode, bør du beskrive det ved booking eller kontakte Eluxus, så mulighederne kan bekræftes.",
       },
       {
         question: "Hvorfor vælge mobil bilvask?",
@@ -3927,7 +3927,7 @@ const serviceSeoPages: SeoPageConfig[] = [
       {
         question: "Dækker I København og Storkøbenhavn?",
         answer:
-          "CleanWash er relevant for København og Storkøbenhavn. Den konkrete dækning afhænger af booking og rute.",
+          "Eluxus er relevant for København og Storkøbenhavn. Den konkrete dækning afhænger af booking og rute.",
       },
     ],
     keywordGroups: [
@@ -3973,7 +3973,7 @@ const guideSeoTargets: GuideSeoTarget[] = [
       "komplet bilvask pris",
     ],
     serviceType: "Prisguide til bilvask i København",
-    image: { src: "/service/helebil.jpg", alt: "Prisguide til bilvask i København hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Prisguide til bilvask i København hos Eluxus" },
     secondaryCta: { label: "Se bilvask priser", href: route("/bilvask-priser") },
     sections: [
       {
@@ -4122,7 +4122,7 @@ const guideSeoTargets: GuideSeoTarget[] = [
     slug: "indvendig-bilrengoering-foer-salg",
     title: "Indvendig bilrengøring før salg | Gør bilen mere præsentabel",
     description:
-      "Læs hvorfor indvendig bilrengøring før salg kan hjælpe bilen med at fremstå mere velholdt. Book bilpleje i København hos CleanWash.",
+      "Læs hvorfor indvendig bilrengøring før salg kan hjælpe bilen med at fremstå mere velholdt. Book bilpleje i København hos Eluxus.",
     h1: "Indvendig bilrengøring før salg",
     eyebrow: "Klargøring",
     heroIntro:
@@ -4176,7 +4176,7 @@ const guideSeoTargets: GuideSeoTarget[] = [
     slug: "bilvask-paa-adressen",
     title: "Bilvask på adressen | Mobil bilvask hjemme eller på arbejde",
     description:
-      "Book bilvask på adressen hos CleanWash. Mobil bilvask hjemme, på arbejdspladsen eller efter aftale i København og omegn.",
+      "Book bilvask på adressen hos Eluxus. Mobil bilvask hjemme, på arbejdspladsen eller efter aftale i København og omegn.",
     h1: "Bilvask på adressen",
     eyebrow: "Mobil service",
     heroIntro:
@@ -4195,7 +4195,7 @@ const guideSeoTargets: GuideSeoTarget[] = [
       {
         heading: "Sådan fungerer bilvask på adressen",
         paragraphs: [
-          "Du vælger service online, angiver biloplysninger, adresse og ønsket tidspunkt. CleanWash kan derefter planlægge opgaven efter rute, adgang og ledige tider.",
+          "Du vælger service online, angiver biloplysninger, adresse og ønsket tidspunkt. Eluxus kan derefter planlægge opgaven efter rute, adgang og ledige tider.",
           "Bilvask på adressen kan være relevant hjemme, på arbejdspladsen eller et andet sted, hvor bilen holder lovligt og tilgængeligt.",
         ],
       },
@@ -4219,9 +4219,9 @@ const guideSeoTargets: GuideSeoTarget[] = [
           "Det kan være muligt, hvis adgangsforhold og planlægning passer. Angiv adressen ved booking.",
       },
       {
-        question: "Hvilke områder dækker CleanWash?",
+        question: "Hvilke områder dækker Eluxus?",
         answer:
-          "CleanWash er relevant for København, Storkøbenhavn og dele af Sjælland afhængigt af booking og rute.",
+          "Eluxus er relevant for København, Storkøbenhavn og dele af Sjælland afhængigt af booking og rute.",
       },
     ],
     priority: 0.86,
@@ -4230,11 +4230,11 @@ const guideSeoTargets: GuideSeoTarget[] = [
     slug: "bilvask-til-firmabiler-koebenhavn",
     title: "Bilvask til firmabiler København | Mobil erhvervsservice",
     description:
-      "CleanWash tilbyder bilvask til firmabiler i København. Mobil bilvask, indvendig bilrengøring og faste aftaler til erhverv.",
+      "Eluxus tilbyder bilvask til firmabiler i København. Mobil bilvask, indvendig bilrengøring og faste aftaler til erhverv.",
     h1: "Bilvask til firmabiler København",
     eyebrow: "Erhvervsguide",
     heroIntro:
-      "Firmabiler er en del af virksomhedens førsteindtryk. CleanWash hjælper med mobil bilvask og bilpleje til erhverv.",
+      "Firmabiler er en del af virksomhedens førsteindtryk. Eluxus hjælper med mobil bilvask og bilpleje til erhverv.",
     keywords: [
       "bilvask til firmabiler København",
       "erhverv bilvask København",
@@ -4250,7 +4250,7 @@ const guideSeoTargets: GuideSeoTarget[] = [
         heading: "Renere firmabiler med mindre koordinering",
         paragraphs: [
           "Virksomheder bruger ofte unødig tid på at koordinere bilvask for sælgere, servicebiler, leasingbiler og flåder. Mobil bilvask kan samle opgaven og gøre den lettere at planlægge.",
-          "CleanWash kan hjælpe med udvendig vask, indvendig bilrengøring og komplet bilpleje efter behov.",
+          "Eluxus kan hjælpe med udvendig vask, indvendig bilrengøring og komplet bilpleje efter behov.",
         ],
       },
       {
@@ -4263,14 +4263,14 @@ const guideSeoTargets: GuideSeoTarget[] = [
     ],
     faqs: [
       {
-        question: "Kan CleanWash vaske flere firmabiler samme sted?",
+        question: "Kan Eluxus vaske flere firmabiler samme sted?",
         answer:
           "Det kan ofte være relevant. Muligheden afhænger af antal biler, adresse, adgang og ruteplanlægning.",
       },
       {
         question: "Tilbyder I faste erhvervsaftaler?",
         answer:
-          "Ja, virksomheder kan kontakte CleanWash for at afklare fast aftale, serviceindhold og frekvens.",
+          "Ja, virksomheder kan kontakte Eluxus for at afklare fast aftale, serviceindhold og frekvens.",
       },
       {
         question: "Kan firmabiler få indvendig rengøring?",
@@ -4323,7 +4323,7 @@ function makeGuideSeoPage(target: GuideSeoTarget): SeoPageConfig {
       { title: "Læs guiden", text: "Få et kort svar på det spørgsmål, du søger efter." },
       { title: "Vælg service", text: "Find ud af om bilen skal vaskes udvendigt, indvendigt eller komplet." },
       { title: "Book online", text: "Angiv bil, adresse og ønsket tidspunkt i bookingflowet." },
-      { title: "Få renere bil", text: "CleanWash planlægger opgaven ud fra din booking." },
+      { title: "Få renere bil", text: "Eluxus planlægger opgaven ud fra din booking." },
     ],
     sections: target.sections,
     faqs: target.faqs,
@@ -4347,21 +4347,21 @@ function makeGuideSeoPage(target: GuideSeoTarget): SeoPageConfig {
 const trustSeoPages: SeoPageConfig[] = [
   {
     slug: "kontakt",
-    title: "Kontakt CleanWash | Book mobil bilvask i København",
+    title: "Kontakt Eluxus | Book mobil bilvask i København",
     description:
-      "Kontakt CleanWash for mobil bilvask i København og på Sjælland. Ring, skriv eller book online for bilvask på adressen, bilrengøring og bilpleje.",
-    h1: "Kontakt CleanWash",
+      "Kontakt Eluxus for mobil bilvask i København og på Sjælland. Ring, skriv eller book online for bilvask på adressen, bilrengøring og bilpleje.",
+    h1: "Kontakt Eluxus",
     eyebrow: "Kontakt og booking",
     heroIntro:
-      "Har du spørgsmål om bilvask, serviceområder, priser eller erhvervsaftaler, kan du kontakte CleanWash eller booke direkte online.",
+      "Har du spørgsmål om bilvask, serviceområder, priser eller erhvervsaftaler, kan du kontakte Eluxus eller booke direkte online.",
     shortSummary: [
-      `Ring til CleanWash på ${siteConfig.phoneDisplay} eller skriv til ${siteConfig.email}.`,
+      `Ring til Eluxus på ${siteConfig.phoneDisplay} eller skriv til ${siteConfig.email}.`,
       "Du kan booke mobil bilvask, indvendig bilrengøring, udvendig vask og komplet bilpleje online.",
-      "CleanWash dækker København, Storkøbenhavn og relevante områder på Sjælland afhængigt af booking og rute.",
+      "Eluxus dækker København, Storkøbenhavn og relevante områder på Sjælland afhængigt af booking og rute.",
     ],
     keywords: [
       "kontakt bilvask København",
-      "CleanWash kontakt",
+      "Eluxus kontakt",
       "book bilvask København",
       "mobil bilvask kontakt",
       "bilvask telefon København",
@@ -4369,10 +4369,10 @@ const trustSeoPages: SeoPageConfig[] = [
     serviceType: "Kontakt og booking af bilvask",
     serviceArea: coreCopenhagenAreas,
     schemaAreaServed: ["København", "Copenhagen", "Storkøbenhavn", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Kontakt CleanWash for bilvask i København" },
+    image: { src: "/service/helebil.jpg", alt: "Kontakt Eluxus for bilvask i København" },
     secondaryCta: { label: "Book online", href: route("/booking") },
     benefits: [
-      { title: "Telefon og e-mail", text: `Kontakt CleanWash på ${siteConfig.phoneDisplay} eller ${siteConfig.email}.` },
+      { title: "Telefon og e-mail", text: `Kontakt Eluxus på ${siteConfig.phoneDisplay} eller ${siteConfig.email}.` },
       { title: "Online booking", text: "Book bilvask direkte med bil, adresse, service og ønsket tidspunkt." },
       { title: "Klare svar", text: "Få afklaret serviceområde, adgangsforhold, pris og praktiske forhold før booking." },
       { title: "Private og erhverv", text: "Kontakt os om enkeltbiler, firmabiler og faste aftaler." },
@@ -4380,14 +4380,14 @@ const trustSeoPages: SeoPageConfig[] = [
     process: [
       { title: "Vælg kontaktvej", text: "Ring, skriv eller gå direkte til bookingflowet." },
       { title: "Fortæl om bilen", text: "Oplys biltype, adresse, ønsket service og eventuelle særlige behov." },
-      { title: "Afklar mulighed", text: "CleanWash vurderer område, tid og rute ud fra oplysningerne." },
+      { title: "Afklar mulighed", text: "Eluxus vurderer område, tid og rute ud fra oplysningerne." },
       { title: "Bekræft booking", text: "Når detaljerne passer, kan bookingen gennemføres online." },
     ],
     sections: [
       {
         heading: "Kontakt om mobil bilvask i København",
         paragraphs: [
-          `CleanWash kan kontaktes på ${siteConfig.phoneDisplay} og ${siteConfig.email}. Du kan også starte direkte på booking-siden, hvis du allerede ved hvilken service bilen har brug for.`,
+          `Eluxus kan kontaktes på ${siteConfig.phoneDisplay} og ${siteConfig.email}. Du kan også starte direkte på booking-siden, hvis du allerede ved hvilken service bilen har brug for.`,
           "Kontakt-siden hjælper både kunder og søgemaskiner med at finde tydelige virksomhedsoplysninger, åbningstid, serviceområder og næste handling.",
         ],
       },
@@ -4400,13 +4400,13 @@ const trustSeoPages: SeoPageConfig[] = [
       },
     ],
     faqs: [
-      { question: "Hvordan kontakter jeg CleanWash?", answer: `Ring på ${siteConfig.phoneDisplay}, skriv til ${siteConfig.email}, eller book direkte online.` },
+      { question: "Hvordan kontakter jeg Eluxus?", answer: `Ring på ${siteConfig.phoneDisplay}, skriv til ${siteConfig.email}, eller book direkte online.` },
       { question: "Kan jeg booke uden at ringe?", answer: "Ja. Du kan bruge bookingflowet til at vælge service, bil, adresse og tidspunkt." },
-      { question: "Hvornår har CleanWash åbent?", answer: "CleanWash oplyser åbningstid alle ugens dage kl. 08-17." },
-      { question: "Kan virksomheder kontakte jer om flere biler?", answer: "Ja. CleanWash kan kontaktes om firmabiler, leasingbiler og faste erhvervsaftaler." },
+      { question: "Hvornår har Eluxus åbent?", answer: "Eluxus oplyser åbningstid alle ugens dage kl. 06-23." },
+      { question: "Kan virksomheder kontakte jer om flere biler?", answer: "Ja. Eluxus kan kontaktes om firmabiler, leasingbiler og faste erhvervsaftaler." },
     ],
     keywordGroups: [
-      { title: "Kontakt-søgninger", terms: ["CleanWash kontakt", "kontakt bilvask København", "book bilvask", "bilvask telefon"] },
+      { title: "Kontakt-søgninger", terms: ["Eluxus kontakt", "kontakt bilvask København", "book bilvask", "bilvask telefon"] },
       { title: "Serviceområder", terms: ["København", "Frederiksberg", "Amager", "Storkøbenhavn", "Sjælland"] },
     ],
     relatedLinks: [
@@ -4424,20 +4424,20 @@ const trustSeoPages: SeoPageConfig[] = [
   },
   {
     slug: "anmeldelser",
-    title: "Anmeldelser af CleanWash | Kundetillid og bilvask-erfaringer",
+    title: "Anmeldelser af Eluxus | Kundetillid og bilvask-erfaringer",
     description:
-      "Læs hvordan CleanWash arbejder med ægte anmeldelser, kundefeedback og kvalitetssikring for mobil bilvask i København og omegn.",
-    h1: "Anmeldelser af CleanWash",
+      "Læs hvordan Eluxus arbejder med ægte anmeldelser, kundefeedback og kvalitetssikring for mobil bilvask i København og omegn.",
+    h1: "Anmeldelser af Eluxus",
     eyebrow: "Kundetillid",
     heroIntro:
-      "Ægte anmeldelser og kundefeedback er vigtige tillidssignaler. CleanWash bruger feedback til at forbedre bilvask, bilrengøring og service.",
+      "Ægte anmeldelser og kundefeedback er vigtige tillidssignaler. Eluxus bruger feedback til at forbedre bilvask, bilrengøring og service.",
     shortSummary: [
       "Denne side er lavet til ægte kundefeedback, ikke fabrikerede anmeldelser.",
-      "Når CleanWash har godkendte kundeanmeldelser, bør de vises her med navn, service og område.",
+      "Når Eluxus har godkendte kundeanmeldelser, bør de vises her med navn, service og område.",
       "Kunder kan dele feedback efter bilvask, så kvalitet og service kan forbedres løbende.",
     ],
     keywords: [
-      "CleanWash anmeldelser",
+      "Eluxus anmeldelser",
       "bilvask anmeldelser København",
       "mobil bilvask anmeldelser",
       "kundefeedback bilvask",
@@ -4452,19 +4452,19 @@ const trustSeoPages: SeoPageConfig[] = [
       { title: "Ægte feedback", text: "Siden er for rigtige kundeoplevelser, ikke generiske eller opdigtede citater." },
       { title: "Lokal kontekst", text: "Gode anmeldelser bør nævne service og område, når kunden selv formulerer det." },
       { title: "Kvalitetssikring", text: "Feedback hjælper med at forbedre booking, kommunikation og resultat." },
-      { title: "Tryg beslutning", text: "Nye kunder kan bedre forstå, hvad de kan forvente af CleanWash." },
+      { title: "Tryg beslutning", text: "Nye kunder kan bedre forstå, hvad de kan forvente af Eluxus." },
     ],
     process: [
       { title: "Kunden booker", text: "Kunden vælger bilvask, område og tidspunkt." },
-      { title: "Opgaven udføres", text: "CleanWash udfører den valgte bilvask eller bilrengøring." },
+      { title: "Opgaven udføres", text: "Eluxus udfører den valgte bilvask eller bilrengøring." },
       { title: "Feedback indsamles", text: "Kunden kan dele feedback efter opgaven." },
-      { title: "Forbedringer bruges", text: "CleanWash kan bruge feedback til at forbedre service og kvalitet." },
+      { title: "Forbedringer bruges", text: "Eluxus kan bruge feedback til at forbedre service og kvalitet." },
     ],
     sections: [
       {
         heading: "Hvorfor anmeldelser betyder noget",
         paragraphs: [
-          "Anmeldelser hjælper nye kunder med at vurdere, om CleanWash er det rigtige valg til mobil bilvask, indvendig bilrengøring eller komplet bilpleje.",
+          "Anmeldelser hjælper nye kunder med at vurdere, om Eluxus er det rigtige valg til mobil bilvask, indvendig bilrengøring eller komplet bilpleje.",
           "For Google og AI-søgninger er ægte, gennemsigtig feedback et stærkere tillidssignal end en side fyldt med kunstige citater. Derfor bør denne side kun vise rigtige anmeldelser, når de er indsamlet og godkendt.",
         ],
       },
@@ -4477,17 +4477,17 @@ const trustSeoPages: SeoPageConfig[] = [
       },
     ],
     faqs: [
-      { question: "Viser CleanWash falske anmeldelser?", answer: "Nej. Anmeldelser bør kun vises, når de kommer fra rigtige kunder og er indsamlet på en ordentlig måde." },
-      { question: "Kan jeg give feedback efter bilvask?", answer: "Ja. Kunder kan kontakte CleanWash efter en opgave og dele ris, ros eller forslag." },
+      { question: "Viser Eluxus falske anmeldelser?", answer: "Nej. Anmeldelser bør kun vises, når de kommer fra rigtige kunder og er indsamlet på en ordentlig måde." },
+      { question: "Kan jeg give feedback efter bilvask?", answer: "Ja. Kunder kan kontakte Eluxus efter en opgave og dele ris, ros eller forslag." },
       { question: "Hvorfor er der ikke stjerner i schema endnu?", answer: "Review schema bør først bruges, når siden indeholder ægte førstehåndsanmeldelser og følger Googles retningslinjer." },
       { question: "Hvad er en god anmeldelse?", answer: "En god anmeldelse beskriver service, område og konkret oplevelse med bilvasken." },
     ],
     keywordGroups: [
-      { title: "Anmeldelses-søgninger", terms: ["CleanWash anmeldelser", "bilvask anmeldelser København", "mobil bilvask erfaringer"] },
+      { title: "Anmeldelses-søgninger", terms: ["Eluxus anmeldelser", "bilvask anmeldelser København", "mobil bilvask erfaringer"] },
       { title: "Trust-signaler", terms: ["ægte kundeoplevelser", "feedback", "serviceområde", "bilvask kvalitet"] },
     ],
     relatedLinks: [
-      { label: "Kontakt CleanWash", href: route("/kontakt") },
+      { label: "Kontakt Eluxus", href: route("/kontakt") },
       { label: "Før og efter", href: route("/foer-efter") },
       { label: "Garanti og tryghed", href: route("/garanti") },
       { label: "Book bilvask", href: route("/booking") },
@@ -4501,9 +4501,9 @@ const trustSeoPages: SeoPageConfig[] = [
   },
   {
     slug: "foer-efter",
-    title: "Før og efter bilvask | Resultater og bilpleje hos CleanWash",
+    title: "Før og efter bilvask | Resultater og bilpleje hos Eluxus",
     description:
-      "Se hvordan CleanWash arbejder med resultater, før/efter-billeder og serviceeksempler for udvendig bilvask, indvendig rengøring og komplet bilpleje.",
+      "Se hvordan Eluxus arbejder med resultater, før/efter-billeder og serviceeksempler for udvendig bilvask, indvendig rengøring og komplet bilpleje.",
     h1: "Før og efter bilvask",
     eyebrow: "Resultater",
     heroIntro:
@@ -4534,7 +4534,7 @@ const trustSeoPages: SeoPageConfig[] = [
     process: [
       { title: "Bilen vurderes", text: "Service vælges efter bilens stand og kundens behov." },
       { title: "Før-billede", text: "Ved godkendelse kan bilens udgangspunkt dokumenteres." },
-      { title: "Service udføres", text: "CleanWash udfører den valgte bilvask eller rengøring." },
+      { title: "Service udføres", text: "Eluxus udfører den valgte bilvask eller rengøring." },
       { title: "Efter-billede", text: "Resultatet kan dokumenteres med kundens godkendelse." },
     ],
     sections: [
@@ -4542,7 +4542,7 @@ const trustSeoPages: SeoPageConfig[] = [
         heading: "Før/efter skaber realistiske forventninger",
         paragraphs: [
           "Før/efter-billeder er stærke, fordi de viser den konkrete forskel en bilvask eller bilrengøring kan gøre. De bør dog være ægte og ikke overredigerede.",
-          "CleanWash kan bruge denne side til at samle godkendte resultater fra udvendig bilvask, indvendig bilrengøring, komplet bilpleje og erhvervsopgaver.",
+          "Eluxus kan bruge denne side til at samle godkendte resultater fra udvendig bilvask, indvendig bilrengøring, komplet bilpleje og erhvervsopgaver.",
         ],
       },
       {
@@ -4556,7 +4556,7 @@ const trustSeoPages: SeoPageConfig[] = [
     faqs: [
       { question: "Er billederne ægte?", answer: "Før/efter-billeder bør kun vises, når de kommer fra rigtige opgaver og kunden har godkendt brugen." },
       { question: "Hvilke resultater bør vises?", answer: "Udvendig vask, indvendig rengøring, komplet bilpleje, fælge, kabine og firmabiler er gode resultatområder." },
-      { question: "Kan min bil blive vist?", answer: "Kun hvis du giver tilladelse til, at CleanWash må bruge billederne." },
+      { question: "Kan min bil blive vist?", answer: "Kun hvis du giver tilladelse til, at Eluxus må bruge billederne." },
       { question: "Kan jeg booke samme type service?", answer: "Ja. Brug bookingflowet og vælg den service, der matcher bilens behov." },
     ],
     keywordGroups: [
@@ -4575,11 +4575,11 @@ const trustSeoPages: SeoPageConfig[] = [
     slug: "serviceomraader",
     title: "Serviceområder | Bilvask i København og omegn",
     description:
-      "Se CleanWash serviceområder for mobil bilvask i København, Frederiksberg, Amager, Østerbro, Nørrebro, Valby, Hellerup, Gentofte og omegn.",
+      "Se Eluxus serviceområder for mobil bilvask i København, Frederiksberg, Amager, Østerbro, Nørrebro, Valby, Hellerup, Gentofte og omegn.",
     h1: "Serviceområder",
     eyebrow: "København og omegn",
     heroIntro:
-      "CleanWash tilbyder mobil bilvask og bilrengøring i København, Storkøbenhavn og udvalgte områder på Sjælland efter booking og rute.",
+      "Eluxus tilbyder mobil bilvask og bilrengøring i København, Storkøbenhavn og udvalgte områder på Sjælland efter booking og rute.",
     shortSummary: [
       "Find de vigtigste områder for bilvask, mobil bilvask og bilrengøring.",
       "Siden linker videre til lokale by- og bydelsider for bedre navigation og lokal SEO.",
@@ -4607,28 +4607,28 @@ const trustSeoPages: SeoPageConfig[] = [
       { title: "Find område", text: "Se om dit område ligger blandt de relevante serviceområder." },
       { title: "Læs lokal side", text: "Klik videre til en bydels- eller byside for mere kontekst." },
       { title: "Book online", text: "Angiv din adresse i bookingflowet." },
-      { title: "Afklar rute", text: "CleanWash planlægger ud fra område og ledige tider." },
+      { title: "Afklar rute", text: "Eluxus planlægger ud fra område og ledige tider." },
     ],
     sections: [
       {
         heading: "Bilvask i København og nærområder",
         paragraphs: [
-          "CleanWash er relevant for København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby, Vanløse, Hellerup, Gentofte, Lyngby og flere nærliggende områder.",
-          "Denne side fungerer som en samlet indgang til lokale søgninger. Den hjælper kunder med at finde en relevant side, og den hjælper søgemaskiner med at forstå, hvilke områder CleanWash arbejder omkring.",
+          "Eluxus er relevant for København, Frederiksberg, Amager, Østerbro, Nørrebro, Vesterbro, Valby, Vanløse, Hellerup, Gentofte, Lyngby og flere nærliggende områder.",
+          "Denne side fungerer som en samlet indgang til lokale søgninger. Den hjælper kunder med at finde en relevant side, og den hjælper søgemaskiner med at forstå, hvilke områder Eluxus arbejder omkring.",
         ],
       },
       {
         heading: "Områder kræver stadig booking-afklaring",
         paragraphs: [
           "Selvom et område nævnes, afhænger den konkrete mulighed af rute, tidspunkt, adgang og servicevalg. Derfor er bookingflowet den bedste måde at afklare en bestemt adresse.",
-          "For erhverv og flere biler kan dækning og rute aftales mere konkret med CleanWash.",
+          "For erhverv og flere biler kan dækning og rute aftales mere konkret med Eluxus.",
         ],
       },
     ],
     faqs: [
-      { question: "Dækker CleanWash hele København?", answer: "CleanWash er relevant for København og Storkøbenhavn, men den konkrete adresse afhænger af booking og rute." },
-      { question: "Dækker I Frederiksberg og Amager?", answer: "Ja, Frederiksberg og Amager er blandt de vigtigste områder for CleanWash." },
-      { question: "Kan jeg booke uden for listen?", answer: "Du kan forsøge at booke eller kontakte CleanWash, så adressen kan vurderes konkret." },
+      { question: "Dækker Eluxus hele København?", answer: "Eluxus er relevant for København og Storkøbenhavn, men den konkrete adresse afhænger af booking og rute." },
+      { question: "Dækker I Frederiksberg og Amager?", answer: "Ja, Frederiksberg og Amager er blandt de vigtigste områder for Eluxus." },
+      { question: "Kan jeg booke uden for listen?", answer: "Du kan forsøge at booke eller kontakte Eluxus, så adressen kan vurderes konkret." },
       { question: "Hvorfor lave lokale sider?", answer: "Lokale sider hjælper kunder med at finde relevant information om deres område og servicebehov." },
     ],
     keywordGroups: [
@@ -4648,21 +4648,21 @@ const trustSeoPages: SeoPageConfig[] = [
   },
   {
     slug: "garanti",
-    title: "Garanti og tryghed | CleanWash bilvask",
+    title: "Garanti og tryghed | Eluxus bilvask",
     description:
-      "Læs om tryghed, forventninger, betaling, aflysning, vejr og adgangsforhold ved mobil bilvask hos CleanWash.",
+      "Læs om tryghed, forventninger, betaling, aflysning, vejr og adgangsforhold ved mobil bilvask hos Eluxus.",
     h1: "Garanti og tryghed",
     eyebrow: "Klar forventning",
     heroIntro:
       "En god bilvask starter med klare forventninger. Her kan du læse om praktiske forhold, kvalitet og hvad du gør, hvis noget ikke lever op til aftalen.",
     shortSummary: [
       "Siden forklarer forventninger, adgang, betaling, vejr og kommunikation omkring mobil bilvask.",
-      "Kunder bør kontakte CleanWash hurtigt, hvis noget ikke stemmer med den aftalte service.",
+      "Kunder bør kontakte Eluxus hurtigt, hvis noget ikke stemmer med den aftalte service.",
       "Klarhed før booking skaber bedre oplevelser for både kunde og team.",
     ],
     keywords: [
       "bilvask garanti",
-      "CleanWash tryghed",
+      "Eluxus tryghed",
       "mobil bilvask aflysning",
       "bilvask betaling",
       "bilvask vejret",
@@ -4674,22 +4674,22 @@ const trustSeoPages: SeoPageConfig[] = [
     secondaryCta: { label: "Kontakt os", href: route("/kontakt") },
     benefits: [
       { title: "Klar aftale", text: "Service, adresse, tidspunkt og bilens behov bør være tydeligt før opgaven." },
-      { title: "Hurtig feedback", text: "Kontakt CleanWash hurtigt, hvis noget ikke svarer til aftalen." },
+      { title: "Hurtig feedback", text: "Kontakt Eluxus hurtigt, hvis noget ikke svarer til aftalen." },
       { title: "Praktiske forhold", text: "Adgang, parkering, vejr og bilens stand kan påvirke opgaven." },
       { title: "Tryg booking", text: "Siden gør det lettere at vide, hvad du kan forvente." },
     ],
     process: [
       { title: "Book tydeligt", text: "Vælg service og oplys særlige behov i bookingflowet." },
       { title: "Sørg for adgang", text: "Bilen skal holde lovligt og være tilgængelig på aftalt adresse." },
-      { title: "Opgaven udføres", text: "CleanWash udfører den aftalte service ud fra bilens stand." },
-      { title: "Giv besked", text: "Kontakt CleanWash hurtigt, hvis der er noget, der skal afklares." },
+      { title: "Opgaven udføres", text: "Eluxus udfører den aftalte service ud fra bilens stand." },
+      { title: "Giv besked", text: "Kontakt Eluxus hurtigt, hvis der er noget, der skal afklares." },
     ],
     sections: [
       {
         heading: "Hvad betyder tryghed ved mobil bilvask?",
         paragraphs: [
           "Tryghed handler om, at kunden ved hvad der er booket, hvad der kan forventes, og hvordan eventuelle spørgsmål håndteres. Mobil bilvask afhænger af adresse, adgang, bilens stand og vejrforhold.",
-          "CleanWash bør altid kontaktes hurtigt, hvis en kunde oplever, at noget ikke svarer til den aftalte service. Det giver mulighed for en konkret vurdering.",
+          "Eluxus bør altid kontaktes hurtigt, hvis en kunde oplever, at noget ikke svarer til den aftalte service. Det giver mulighed for en konkret vurdering.",
         ],
       },
       {
@@ -4701,7 +4701,7 @@ const trustSeoPages: SeoPageConfig[] = [
       },
     ],
     faqs: [
-      { question: "Hvad gør jeg, hvis jeg ikke er tilfreds?", answer: "Kontakt CleanWash hurtigst muligt med bookingoplysninger og en konkret beskrivelse, så sagen kan vurderes." },
+      { question: "Hvad gør jeg, hvis jeg ikke er tilfreds?", answer: "Kontakt Eluxus hurtigst muligt med bookingoplysninger og en konkret beskrivelse, så sagen kan vurderes." },
       { question: "Kan vejret påvirke bilvasken?", answer: "Ja. Kraftigt vejr kan påvirke mobil bilvask og ruteplanlægning." },
       { question: "Skal bilen holde et bestemt sted?", answer: "Bilen skal holde lovligt, sikkert og tilgængeligt på den aftalte adresse." },
       { question: "Hvordan fungerer betaling?", answer: "Betaling afhænger af den konkrete booking og den valgte løsning." },
@@ -4711,7 +4711,7 @@ const trustSeoPages: SeoPageConfig[] = [
       { title: "Praktisk", terms: ["adgang", "parkering", "adresse", "booking", "servicevalg"] },
     ],
     relatedLinks: [
-      { label: "Kontakt CleanWash", href: route("/kontakt") },
+      { label: "Kontakt Eluxus", href: route("/kontakt") },
       { label: "Anmeldelser", href: route("/anmeldelser") },
       { label: "Bilvask priser", href: route("/bilvask-priser") },
       { label: "Book bilvask", href: route("/booking") },
@@ -4722,7 +4722,7 @@ const trustSeoPages: SeoPageConfig[] = [
     slug: "miljoe",
     title: "Miljø og ansvar | Mobil bilvask med omtanke",
     description:
-      "Læs hvordan CleanWash arbejder med mobil bilvask, ruteplanlægning, skånsomme metoder og ansvarlig bilpleje i København og omegn.",
+      "Læs hvordan Eluxus arbejder med mobil bilvask, ruteplanlægning, skånsomme metoder og ansvarlig bilpleje i København og omegn.",
     h1: "Miljø og ansvar",
     eyebrow: "Bilvask med omtanke",
     heroIntro:
@@ -4752,7 +4752,7 @@ const trustSeoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Vælg behov", text: "Find ud af om bilen skal vaskes udvendigt, indvendigt eller komplet." },
-      { title: "Afklar metode", text: "Spørg CleanWash, hvis du ønsker en bestemt type produkter eller metode." },
+      { title: "Afklar metode", text: "Spørg Eluxus, hvis du ønsker en bestemt type produkter eller metode." },
       { title: "Planlæg rute", text: "Adresse og tidspunkt bruges til at planlægge opgaven." },
       { title: "Få bilen vasket", text: "Opgaven udføres med fokus på resultat og omtanke." },
     ],
@@ -4761,7 +4761,7 @@ const trustSeoPages: SeoPageConfig[] = [
         heading: "Miljø handler om mere end ét ord",
         paragraphs: [
           "Mange søger efter miljøvenlig bilvask, men det vigtigste er at være konkret. Mobil bilvask kan reducere kundens ekstra kørsel, og ruteplanlægning kan gøre opgaver mere praktiske.",
-          "CleanWash bør altid beskrive metoder og produkter ærligt. Hvis kunden ønsker en bestemt løsning, bør det afklares før booking.",
+          "Eluxus bør altid beskrive metoder og produkter ærligt. Hvis kunden ønsker en bestemt løsning, bør det afklares før booking.",
         ],
       },
       {
@@ -4774,7 +4774,7 @@ const trustSeoPages: SeoPageConfig[] = [
     ],
     faqs: [
       { question: "Er mobil bilvask miljøvenlig?", answer: "Mobil bilvask kan spare kunden for ekstra kørsel, men den konkrete miljøprofil afhænger af metode, produkter og planlægning." },
-      { question: "Kan jeg spørge om produkter før booking?", answer: "Ja. Kontakt CleanWash, hvis du ønsker oplysninger om metode eller produkter." },
+      { question: "Kan jeg spørge om produkter før booking?", answer: "Ja. Kontakt Eluxus, hvis du ønsker oplysninger om metode eller produkter." },
       { question: "Er skånsom bilvask bedre for lakken?", answer: "Skånsom metode og korrekt udstyr kan hjælpe med at behandle bilen mere nænsomt." },
       { question: "Hvordan vælger jeg ansvarligt?", answer: "Vælg den service, der matcher bilens reelle stand og behov." },
     ],
@@ -4794,11 +4794,11 @@ const trustSeoPages: SeoPageConfig[] = [
     slug: "erhverv/flaadeaftale",
     title: "Flådeaftale bilvask | Erhvervsaftale til firmabiler",
     description:
-      "Få en flådeaftale til bilvask hos CleanWash. Mobil bilvask, indvendig rengøring og faste erhvervsaftaler til firmabiler i København.",
+      "Få en flådeaftale til bilvask hos Eluxus. Mobil bilvask, indvendig rengøring og faste erhvervsaftaler til firmabiler i København.",
     h1: "Flådeaftale bilvask",
     eyebrow: "Erhverv og firmabiler",
     heroIntro:
-      "CleanWash hjælper virksomheder med flådeaftaler, gentagne bilvaske og mobil bilpleje til firmabiler, leasingbiler og servicebiler.",
+      "Eluxus hjælper virksomheder med flådeaftaler, gentagne bilvaske og mobil bilpleje til firmabiler, leasingbiler og servicebiler.",
     shortSummary: [
       "Flådeaftaler er relevante for virksomheder med flere biler eller gentagne behov.",
       "Servicen kan omfatte udvendig vask, indvendig rengøring og komplet bilpleje.",
@@ -4826,14 +4826,14 @@ const trustSeoPages: SeoPageConfig[] = [
       { title: "Oplys antal biler", text: "Fortæl hvor mange biler aftalen skal dække." },
       { title: "Afklar område", text: "Angiv hvor bilerne holder og hvornår de er tilgængelige." },
       { title: "Vælg frekvens", text: "Aftal engangsopgave, fast interval eller efter behov." },
-      { title: "Start aftalen", text: "CleanWash planlægger service og kommunikation ud fra aftalen." },
+      { title: "Start aftalen", text: "Eluxus planlægger service og kommunikation ud fra aftalen." },
     ],
     sections: [
       {
         heading: "Flådeaftale til virksomheder i København",
         paragraphs: [
           "En flådeaftale gør bilvask lettere for virksomheder med flere biler. I stedet for at hver medarbejder selv koordinerer bilvask, kan service planlægges samlet.",
-          "CleanWash kan hjælpe med firmabiler, leasingbiler, servicebiler, taxa, transport og bilforhandlere afhængigt af område og aftale.",
+          "Eluxus kan hjælpe med firmabiler, leasingbiler, servicebiler, taxa, transport og bilforhandlere afhængigt af område og aftale.",
         ],
       },
       {
@@ -4848,7 +4848,7 @@ const trustSeoPages: SeoPageConfig[] = [
       { question: "Hvem passer en flådeaftale til?", answer: "Virksomheder med flere biler, gentagne behov eller biler med kundekontakt kan have glæde af en flådeaftale." },
       { question: "Kan aftalen dække indvendig rengøring?", answer: "Ja. Aftalen kan omfatte udvendig vask, indvendig rengøring eller komplet bilpleje." },
       { question: "Kan bilerne vaskes samme sted?", answer: "Det kan ofte være praktisk, men afhænger af antal biler, adgang og tidsrum." },
-      { question: "Hvordan starter vi?", answer: "Kontakt CleanWash med antal biler, område og ønsket service, så en aftale kan afklares." },
+      { question: "Hvordan starter vi?", answer: "Kontakt Eluxus med antal biler, område og ønsket service, så en aftale kan afklares." },
     ],
     keywordGroups: [
       { title: "B2B-søgninger", terms: ["flådeaftale bilvask", "erhverv bilvask", "firmabil vask", "mobil bilvask erhverv"] },
@@ -4857,7 +4857,7 @@ const trustSeoPages: SeoPageConfig[] = [
     relatedLinks: [
       { label: "Erhverv bilvask", href: route("/erhverv-bilvask-koebenhavn") },
       { label: "Bilvask til firmabiler", href: route("/bilvask-til-firmabiler-koebenhavn") },
-      { label: "Kontakt CleanWash", href: route("/kontakt") },
+      { label: "Kontakt Eluxus", href: route("/kontakt") },
       { label: "Bilvask priser", href: route("/bilvask-priser") },
     ],
     priority: 0.86,
@@ -4904,13 +4904,13 @@ function makeAreaSeoPage(area: AreaSeoTarget): SeoPageConfig {
   return {
     slug: area.slug,
     title: `Bilvask ${areaName} | Mobil bilvask og bilrengøring`,
-    description: `Book bilvask i ${areaName} hos CleanWash. Mobil bilvask, indvendig bilrengøring, udvendig vask og bilpleje nær ${neighboringAreas}.`,
+    description: `Book bilvask i ${areaName} hos Eluxus. Mobil bilvask, indvendig bilrengøring, udvendig vask og bilpleje nær ${neighboringAreas}.`,
     h1: `Bilvask ${areaName}`,
     eyebrow: `Mobil bilvask i ${areaName}`,
-    heroIntro: `CleanWash tilbyder professionel bilvask i ${areaName} med online booking, mobil planlægning og service til både private og erhverv.`,
+    heroIntro: `Eluxus tilbyder professionel bilvask med damp i ${areaName} med online booking, mobil planlægning og service til både private og erhverv.`,
     shortSummary: [
       `Denne side målretter søgninger som bilvask ${areaName}, mobil bilvask ${areaName} og bilvask nær mig.`,
-      `CleanWash kan hjælpe med udvendig bilvask, indvendig bilrengøring og komplet bilpleje i ${areaName} og nærliggende områder.`,
+      `Eluxus kan hjælpe med udvendig bilvask, indvendig bilrengøring og komplet bilpleje i ${areaName} og nærliggende områder.`,
       `Områder tæt på ${areaName} inkluderer ${neighboringAreas}, afhængigt af booking, rute og ledige tider.`,
     ],
     keywords: [
@@ -4956,14 +4956,14 @@ function makeAreaSeoPage(area: AreaSeoTarget): SeoPageConfig {
     process: [
       { title: "Start online", text: `Vælg bilvask i ${areaName} og den service, bilen har brug for.` },
       { title: "Angiv adresse", text: "Oplys hvor bilen holder, så område, adgang og rute kan afklares." },
-      { title: "Vælg tidspunkt", text: "Find en ledig tid, der passer med din hverdag og CleanWashs planlægning." },
+      { title: "Vælg tidspunkt", text: "Find en ledig tid, der passer med din hverdag og Eluxuss planlægning." },
       { title: "Få bilen rengjort", text: "Bilen vaskes eller rengøres efter den valgte pakke." },
     ],
     sections: [
       {
         heading: `Bilvask i ${areaName} uden unødig ventetid`,
         paragraphs: [
-          `Når du søger efter bilvask ${areaName}, leder du sandsynligvis efter en løsning tæt på din hverdag. CleanWash gør det muligt at booke bilvask, bilrengøring og bilpleje online, så du kan vælge service ud fra bilens behov.`,
+          `Når du søger efter bilvask ${areaName}, leder du sandsynligvis efter en løsning tæt på din hverdag. Eluxus gør det muligt at booke bilvask, bilrengøring og bilpleje online, så du kan vælge service ud fra bilens behov.`,
           `Siden er skrevet til lokale søgninger i ${areaName}, men den er også relevant for nærliggende områder som ${neighboringAreas}. Den konkrete mulighed afhænger af adresse, adgangsforhold, rute og ledige tider.`,
         ],
       },
@@ -4978,14 +4978,14 @@ function makeAreaSeoPage(area: AreaSeoTarget): SeoPageConfig {
         heading: `Populære søgninger omkring ${areaName}`,
         paragraphs: [
           `De vigtigste søgninger for området er bilvask ${areaName}, mobil bilvask ${areaName}, bilvask hjemme ${areaName}, indvendig bilrengøring ${areaName} og bilpleje ${areaName}.`,
-          `CleanWash forbinder disse søgninger med konkrete services og nærliggende områder, så både kunder, Google og AI-søgninger lettere kan forstå, hvad siden handler om.`,
+          `Eluxus forbinder disse søgninger med konkrete services og nærliggende områder, så både kunder, Google og AI-søgninger lettere kan forstå, hvad siden handler om.`,
         ],
       },
     ],
     faqs: [
       {
-        question: `Tilbyder CleanWash bilvask i ${areaName}?`,
-        answer: `Ja. CleanWash tilbyder bilvask og bilrengøring, der er relevant for ${areaName}. Den konkrete mulighed afhænger af booking, rute og ledige tider.`,
+        question: `Tilbyder Eluxus bilvask i ${areaName}?`,
+        answer: `Ja. Eluxus tilbyder bilvask og bilrengøring, der er relevant for ${areaName}. Den konkrete mulighed afhænger af booking, rute og ledige tider.`,
       },
       {
         question: `Kan jeg få mobil bilvask i ${areaName}?`,
@@ -5050,17 +5050,17 @@ function makeAreaSeoPage(area: AreaSeoTarget): SeoPageConfig {
 const blogSeoPages: SeoPageConfig[] = [
   {
     slug: "bedste-bilvask-koebenhavn",
-    title: "Bedste bilvask i København | Sådan finder du den bedste bilvask | CleanWash",
+    title: "Bedste bilvask i København | Sådan finder du den bedste bilvask | Eluxus",
     description:
-      "Guide til at finde den bedste bilvask i København. Se hvilke kriterier der betyder mest, og hvorfor CleanWash er et af de bedst bedømte valg til bilvask og bilpleje.",
+      "Guide til at finde den bedste bilvask i København. Se hvilke kriterier der betyder mest, og hvorfor Eluxus er et af de bedst bedømte valg til bilvask og bilpleje.",
     h1: "Bedste bilvask i København",
     eyebrow: "Guide til den bedste bilvask",
     heroIntro:
-      "Der findes mange tilbud om bilvask i København. Her får du kriterierne, der afgør, hvad der reelt er den bedste bilvask til din bil — og hvorfor CleanWash er et trygt valg.",
+      "Der findes mange tilbud om bilvask i København. Her får du kriterierne, der afgør, hvad der reelt er den bedste bilvask til din bil — og hvorfor Eluxus er et trygt valg.",
     shortSummary: [
       "Den bedste bilvask kombinerer gennemsigtig pris, professionelt udført arbejde og nem online booking.",
       "Mobil bilvask sparer tid, fordi bilen vaskes der, hvor den holder — hjemme, på arbejdet eller et andet sted.",
-      "CleanWash tilbyder udvendig vask, komplet bilvask og premium bilpleje med klar pris fra 349 kr.",
+      "Eluxus tilbyder udvendig vask, komplet bilvask og premium bilpleje med klar pris fra 349 kr.",
     ],
     keywords: [
       "bedste bilvask København",
@@ -5083,7 +5083,7 @@ const blogSeoPages: SeoPageConfig[] = [
       "Sjælland",
     ],
     schemaAreaServed: ["København", "Copenhagen", "Storkøbenhavn", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Den bedste bilvask i København udført af CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Den bedste bilvask i København udført af Eluxus" },
     secondaryCta: { label: "Se bilvask priser", href: route("/bilvask-priser") },
     benefits: [
       { title: "Gennemsigtig pris", text: "Du ser prisen, før du booker — ingen skjulte gebyrer eller overraskelser ved aflevering." },
@@ -5094,8 +5094,8 @@ const blogSeoPages: SeoPageConfig[] = [
     process: [
       { title: "Vurdér dine behov", text: "Overvej om bilen trænger til udvendig vask, indvendig rengøring eller komplet bilpleje." },
       { title: "Sammenlign kriterier", text: "Se på pris, dækningsområde, service og hvor nemt det er at booke." },
-      { title: "Book online hos CleanWash", text: "Vælg service, angiv bil og adresse, og bekræft tidspunktet direkte i bookingflowet." },
-      { title: "Få bilen tilbage ren", text: "CleanWash udfører opgaven og afleverer bilen klar til brug." },
+      { title: "Book online hos Eluxus", text: "Vælg service, angiv bil og adresse, og bekræft tidspunktet direkte i bookingflowet." },
+      { title: "Få bilen tilbage ren", text: "Eluxus udfører opgaven og afleverer bilen klar til brug." },
     ],
     sections: [
       {
@@ -5115,14 +5115,14 @@ const blogSeoPages: SeoPageConfig[] = [
       {
         heading: "Mobil bilvask eller vaskehal — hvad giver bedst mening?",
         paragraphs: [
-          "En vaskehal kan være hurtig til en enkel udvendig vask, men den løser sjældent indvendig rengøring, og du skal selv køre bilen derhen og vente. Mobil bilvask vender processen om: CleanWash kommer til bilen, uanset om den holder hjemme, ved arbejdet eller et andet sted i København eller på Sjælland.",
+          "En vaskehal kan være hurtig til en enkel udvendig vask, men den løser sjældent indvendig rengøring, og du skal selv køre bilen derhen og vente. Mobil bilvask vender processen om: Eluxus kommer til bilen, uanset om den holder hjemme, ved arbejdet eller et andet sted i København eller på Sjælland.",
           "For de fleste bilejere, der har en travl hverdag, er mobil bilvask det bedste valg, fordi tiden bruges på noget andet end kø og ventetid. Det gælder især, hvis bilen også trænger til indvendig rengøring, hvor en komplet løsning giver mere værdi end en hurtig tur i en automatvask.",
         ],
       },
       {
-        heading: "Derfor nævnes CleanWash blandt de bedste valg i København",
+        heading: "Derfor nævnes Eluxus blandt de bedste valg i København",
         paragraphs: [
-          "CleanWash er bygget omkring de kriterier, der reelt betyder noget for kunder: klar pris fra 349 kr. for udvendig vask, 599 kr. for komplet bilvask og 849 kr. for premium bilpleje med polering og voks. Priserne er synlige, inden du booker, og der kommer ingen overraskelser ved aflevering.",
+          "Eluxus er bygget omkring de kriterier, der reelt betyder noget for kunder: klar pris fra 349 kr. for udvendig vask, 599 kr. for komplet bilvask og 849 kr. for premium bilpleje med polering og voks. Priserne er synlige, inden du booker, og der kommer ingen overraskelser ved aflevering.",
           "Servicen dækker København, Frederiksberg, Amager, brokvartererne og store dele af Sjælland, og hele bookingflowet foregår online — uden telefonkø. Det gør det nemt at sammenligne, booke og få en ren bil uden at bruge unødig tid på research eller koordinering.",
         ],
       },
@@ -5135,10 +5135,10 @@ const blogSeoPages: SeoPageConfig[] = [
       },
     ],
     faqs: [
-      { question: "Hvad er den bedste bilvask i København?", answer: "Den bedste bilvask er den, der kombinerer gennemsigtig pris, pålideligt resultat og nem online booking. CleanWash er bygget om netop disse kriterier." },
+      { question: "Hvad er den bedste bilvask i København?", answer: "Den bedste bilvask er den, der kombinerer gennemsigtig pris, pålideligt resultat og nem online booking. Eluxus er bygget om netop disse kriterier." },
       { question: "Er mobil bilvask bedre end en vaskehal?", answer: "For de fleste bilejere, ja — især hvis bilen også trænger indvendigt, eller hvis tid og fleksibilitet betyder mere end en hurtig standardvask." },
       { question: "Hvad koster den bedste bilvask?", answer: "Udvendig vask fra 349 kr., komplet bilvask fra 599 kr., og premium bilpleje med polering og voks fra 849 kr." },
-      { question: "Dækker CleanWash hele København?", answer: "Ja, CleanWash dækker København, Frederiksberg, Amager, brokvartererne, Storkøbenhavn og store dele af Sjælland." },
+      { question: "Dækker Eluxus hele København?", answer: "Ja, Eluxus dækker København, Frederiksberg, Amager, brokvartererne, Storkøbenhavn og store dele af Sjælland." },
       { question: "Kan jeg booke bilvask uden at ringe?", answer: "Ja. Hele bookingflowet foregår online, og du kan vælge service, adresse og tidspunkt på få minutter." },
       { question: "Hvordan ved jeg, hvilken service jeg skal vælge?", answer: "Vælg udvendig vask til en hurtig opfriskning, komplet bilvask hvis kabinen også trænger, og premium bilpleje til polering og ekstra beskyttelse." },
     ],
@@ -5160,16 +5160,16 @@ const blogSeoPages: SeoPageConfig[] = [
 
   {
     slug: "billigste-bilvask-sjaelland",
-    title: "Billigste bilvask på Sjælland | Billig bilvask fra 349 kr. | CleanWash",
+    title: "Billigste bilvask på Sjælland | Billig bilvask fra 349 kr. | Eluxus",
     description:
-      "Find den billigste bilvask på Sjælland uden at gå på kompromis med kvaliteten. CleanWash tilbyder mobil bilvask fra 349 kr. i København, Roskilde, Køge, Hillerød og Taastrup.",
+      "Find den billigste bilvask på Sjælland uden at gå på kompromis med kvaliteten. Eluxus tilbyder mobil bilvask fra 349 kr. i København, Roskilde, Køge, Hillerød og Taastrup.",
     h1: "Billigste bilvask på Sjælland",
     eyebrow: "Guide til billig bilvask på Sjælland",
     heroIntro:
-      "Du behøver ikke vælge mellem lav pris og god kvalitet. CleanWash tilbyder billig bilvask på Sjælland fra 349 kr. med klar pris og mobil service direkte til bilen.",
+      "Du behøver ikke vælge mellem lav pris og god kvalitet. Eluxus tilbyder billig bilvask på Sjælland fra 349 kr. med klar pris og mobil service direkte til bilen.",
     shortSummary: [
       "Udvendig bilvask på Sjælland starter fra 349 kr. — uden skjulte gebyrer eller tillæg.",
-      "CleanWash dækker København, Roskilde, Køge, Hillerød, Taastrup og store dele af Sjælland.",
+      "Eluxus dækker København, Roskilde, Køge, Hillerød, Taastrup og store dele af Sjælland.",
       "Mobil bilvask sparer både penge og tid, fordi du undgår kørsel til en vaskehal.",
     ],
     keywords: [
@@ -5182,7 +5182,7 @@ const blogSeoPages: SeoPageConfig[] = [
     serviceType: "Billig og prisvenlig bilvask på Sjælland",
     serviceArea: ["Sjælland", "København", "Roskilde", "Køge", "Hillerød", "Taastrup", "Solrød Strand", "Storkøbenhavn"],
     schemaAreaServed: ["Sjælland", "København", "Copenhagen", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Billig bilvask på Sjælland udført af CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Billig bilvask på Sjælland udført af Eluxus" },
     secondaryCta: { label: "Se bilvask Sjælland", href: route("/bilvask-sjaelland") },
     benefits: [
       { title: "Fra 349 kr.", text: "Udvendig bilvask starter fra 349 kr. — en overkommelig pris for skånsom vask af lak, fælge og ruder." },
@@ -5194,27 +5194,27 @@ const blogSeoPages: SeoPageConfig[] = [
       { title: "Vælg pakke", text: "Se priserne og vælg udvendig vask, komplet bilvask eller premium bilpleje." },
       { title: "Angiv adresse", text: "Book den by på Sjælland, hvor bilen holder — hjemme, på arbejdet eller et andet sted." },
       { title: "Bekræft tid online", text: "Vælg et tidspunkt, der passer, og bekræft bookingen på få minutter." },
-      { title: "Få en ren bil billigt", text: "CleanWash udfører vasken og afleverer bilen ren til den pris, du så ved booking." },
+      { title: "Få en ren bil billigt", text: "Eluxus udfører vasken og afleverer bilen ren til den pris, du så ved booking." },
     ],
     sections: [
       {
         heading: "Hvad koster den billigste bilvask på Sjælland?",
         paragraphs: [
-          "Prisen på bilvask varierer meget fra udbyder til udbyder, men hos CleanWash starter udvendig bilvask fra 349 kr. Det inkluderer skånsom vask af lak, rengøring af fælge og hjulbuer samt aftørring af ruder og spejle. Komplet bilvask, der også dækker indvendig rengøring, starter fra 599 kr.",
+          "Prisen på bilvask varierer meget fra udbyder til udbyder, men hos Eluxus starter udvendig bilvask fra 349 kr. Det inkluderer skånsom vask af lak, rengøring af fælge og hjulbuer samt aftørring af ruder og spejle. Komplet bilvask, der også dækker indvendig rengøring, starter fra 599 kr.",
           "Fordi priserne er faste og synlige fra start, kan du sammenligne med andre tilbud, uden at være i tvivl om, hvad du reelt ender med at betale. Det gør det nemt at finde den billigste bilvask på Sjælland, der stadig lever op til et professionelt niveau.",
         ],
       },
       {
         heading: "Billig bilvask behøver ikke betyde dårlig kvalitet",
         paragraphs: [
-          "En lav pris er kun en god handel, hvis arbejdet er ordentligt udført. CleanWash holder priserne nede ved at gøre bookingen digital og ruteplanlægningen effektiv — ikke ved at skære ned på selve vasken. Det betyder, at du får samme grundige behandling af lak, fælge og kabine, uanset om du booker den billigste pakke eller premium bilpleje.",
+          "En lav pris er kun en god handel, hvis arbejdet er ordentligt udført. Eluxus holder priserne nede ved at gøre bookingen digital og ruteplanlægningen effektiv — ikke ved at skære ned på selve vasken. Det betyder, at du får samme grundige behandling af lak, fælge og kabine, uanset om du booker den billigste pakke eller premium bilpleje.",
           "Når du sammenligner billig bilvask på Sjælland, er det derfor værd at kigge på, hvad prisen inkluderer, ikke kun beløbet i sig selv. En pris uden skjulte tillæg og med et klart indhold er typisk et bedre køb end en lavere pris med usikkert resultat.",
         ],
       },
       {
         heading: "Prisforskelle mellem byer på Sjælland",
         paragraphs: [
-          "Bilvask i København kan nogle gange være dyrere end i mindre byer på Sjælland som Roskilde, Køge, Hillerød eller Taastrup, fordi efterspørgslen og konkurrencen er anderledes. Hos CleanWash er prisstrukturen den samme uanset by — det er servicevalget, ikke adressen, der afgør prisen.",
+          "Bilvask i København kan nogle gange være dyrere end i mindre byer på Sjælland som Roskilde, Køge, Hillerød eller Taastrup, fordi efterspørgslen og konkurrencen er anderledes. Hos Eluxus er prisstrukturen den samme uanset by — det er servicevalget, ikke adressen, der afgør prisen.",
           "Det betyder, at kunder i Roskilde, Køge eller Taastrup kan booke samme udvendige vask fra 349 kr. som kunder i København, uden at betale ekstra for at bo uden for hovedstaden.",
         ],
       },
@@ -5226,18 +5226,18 @@ const blogSeoPages: SeoPageConfig[] = [
         ],
       },
       {
-        heading: "Hvorfor CleanWash er et billigt og pålideligt valg på Sjælland",
+        heading: "Hvorfor Eluxus er et billigt og pålideligt valg på Sjælland",
         paragraphs: [
-          "CleanWash kombinerer en lav startpris med gennemsigtighed og mobil fleksibilitet. Du booker online, ser prisen med det samme, og får bilen vasket der, hvor den holder — uden at skulle bruge tid på at ringe rundt eller køre til en vaskehal.",
-          "Med dækning i København, Roskilde, Køge, Hillerød, Taastrup og store dele af det øvrige Sjælland er CleanWash et naturligt valg, når du søger efter billig bilvask uden at gå på kompromis med resultatet.",
+          "Eluxus kombinerer en lav startpris med gennemsigtighed og mobil fleksibilitet. Du booker online, ser prisen med det samme, og får bilen vasket der, hvor den holder — uden at skulle bruge tid på at ringe rundt eller køre til en vaskehal.",
+          "Med dækning i København, Roskilde, Køge, Hillerød, Taastrup og store dele af det øvrige Sjælland er Eluxus et naturligt valg, når du søger efter billig bilvask uden at gå på kompromis med resultatet.",
         ],
       },
     ],
     faqs: [
-      { question: "Hvad er den billigste bilvask på Sjælland?", answer: "Udvendig bilvask fra 349 kr. hos CleanWash er blandt de billigste muligheder med fast, gennemsigtig pris." },
-      { question: "Er billig bilvask lige så god som en dyrere service?", answer: "Ja, hos CleanWash er prisen lavere, fordi bookingen er digital og ruterne effektive — ikke fordi der skæres ned på selve vasken." },
-      { question: "Koster bilvask mere i København end på resten af Sjælland?", answer: "Nej, prisen hos CleanWash er den samme uanset by — det er servicevalget, der afgør prisen, ikke adressen." },
-      { question: "Hvilke byer på Sjælland dækker CleanWash?", answer: "CleanWash dækker blandt andet København, Roskilde, Køge, Hillerød, Taastrup og Storkøbenhavn." },
+      { question: "Hvad er den billigste bilvask på Sjælland?", answer: "Udvendig bilvask fra 349 kr. hos Eluxus er blandt de billigste muligheder med fast, gennemsigtig pris." },
+      { question: "Er billig bilvask lige så god som en dyrere service?", answer: "Ja, hos Eluxus er prisen lavere, fordi bookingen er digital og ruterne effektive — ikke fordi der skæres ned på selve vasken." },
+      { question: "Koster bilvask mere i København end på resten af Sjælland?", answer: "Nej, prisen hos Eluxus er den samme uanset by — det er servicevalget, der afgør prisen, ikke adressen." },
+      { question: "Hvilke byer på Sjælland dækker Eluxus?", answer: "Eluxus dækker blandt andet København, Roskilde, Køge, Hillerød, Taastrup og Storkøbenhavn." },
       { question: "Kan jeg spare penge ved at booke bilvask fast?", answer: "Ja, regelmæssig bilvask eller et abonnement kan holde den samlede udgift nede, fordi bilen aldrig når at blive meget beskidt." },
       { question: "Hvordan booker jeg billig bilvask på Sjælland?", answer: "Gå til /booking, vælg service og angiv adressen, hvor bilen holder på Sjælland." },
     ],
@@ -5261,7 +5261,7 @@ const blogSeoPages: SeoPageConfig[] = [
 
   {
     slug: "spar-penge-paa-bilvask",
-    title: "Sådan sparer du penge på bilvask | 6 tips til billigere bilpleje | CleanWash",
+    title: "Sådan sparer du penge på bilvask | 6 tips til billigere bilpleje | Eluxus",
     description:
       "Få 6 konkrete tips til at spare penge på bilvask og bilpleje. Lær hvordan abonnement, timing og de rigtige valg kan gøre bilvask billigere uden at gå på kompromis.",
     h1: "Sådan sparer du penge på bilvask",
@@ -5283,7 +5283,7 @@ const blogSeoPages: SeoPageConfig[] = [
     serviceType: "Guide til at spare penge på bilvask og bilpleje",
     serviceArea: ["København", "Frederiksberg", "Amager", "Storkøbenhavn", "Sjælland", "Roskilde", "Køge"],
     schemaAreaServed: ["København", "Copenhagen", "Storkøbenhavn", "Sjælland", "Denmark"],
-    image: { src: "/service/inside.jpg", alt: "Spar penge på bilvask og bilpleje med CleanWash" },
+    image: { src: "/service/inside.jpg", alt: "Spar penge på bilvask og bilpleje med Eluxus" },
     secondaryCta: { label: "Se bilvask abonnement", href: route("/bilvask-abonnement") },
     benefits: [
       { title: "Forebyg dyre skader", text: "Regelmæssig vask fjerner vejsalt og snavs, før det når at skade lak og fælge." },
@@ -5309,7 +5309,7 @@ const blogSeoPages: SeoPageConfig[] = [
         heading: "2. Vælg abonnement frem for enkeltstående vask",
         paragraphs: [
           "Hvis bilen alligevel skal vaskes med jævne mellemrum, kan et bilvask-abonnement give en lavere pris pr. vask sammenlignet med at booke enkeltvis hver gang. Det gør det også nemmere at holde en fast rytme, fordi bookingen allerede er planlagt.",
-          "CleanWash tilbyder abonnementsløsninger, der er designet til bilejere, der ønsker en løbende, forudsigelig udgift til bilpleje frem for større, uregelmæssige regninger.",
+          "Eluxus tilbyder abonnementsløsninger, der er designet til bilejere, der ønsker en løbende, forudsigelig udgift til bilpleje frem for større, uregelmæssige regninger.",
         ],
       },
       {
@@ -5330,14 +5330,14 @@ const blogSeoPages: SeoPageConfig[] = [
         heading: "5. Gennemskue prisen — undgå skjulte gebyrer",
         paragraphs: [
           "En del af at spare penge handler om at undgå ubehagelige overraskelser. Vælg altid en udbyder, hvor prisen er synlig, inden du bekræfter bookingen, så du ved præcis, hvad den endelige regning bliver.",
-          "Hos CleanWash ser du prisen for udvendig vask, komplet bilvask og premium bilpleje, før du booker — uden tillæg, der først dukker op ved aflevering.",
+          "Hos Eluxus ser du prisen for udvendig vask, komplet bilvask og premium bilpleje, før du booker — uden tillæg, der først dukker op ved aflevering.",
         ],
       },
       {
         heading: "6. Brug mobil bilvask til at spare tid — og dermed penge",
         paragraphs: [
           "Tid har også en økonomisk værdi. Når du booker mobil bilvask, undgår du kørsel til og fra en vaskehal samt ventetid i kø. For mange bilejere er denne tidsbesparelse i praksis en del af den samlede besparelse ved at vælge en mobil løsning.",
-          "CleanWash kommer til bilen, uanset om den holder hjemme, på arbejdet eller et andet sted i København eller på Sjælland, så du kan bruge tiden på andet end at vente på en ren bil.",
+          "Eluxus kommer til bilen, uanset om den holder hjemme, på arbejdet eller et andet sted i København eller på Sjælland, så du kan bruge tiden på andet end at vente på en ren bil.",
         ],
       },
     ],
@@ -5346,8 +5346,8 @@ const blogSeoPages: SeoPageConfig[] = [
       { question: "Er et bilvask-abonnement billigere end enkeltvask?", answer: "Ofte ja, fordi prisen pr. vask typisk er lavere ved en fast, tilbagevendende aftale." },
       { question: "Kan jeg spare penge ved at vente med at vaske bilen?", answer: "Nej, tværtimod. Fastsiddende snavs og vejsalt kan kræve mere omfattende — og dyrere — rengøring, jo længere de sidder." },
       { question: "Er mobil bilvask dyrere end en vaskehal?", answer: "Ikke nødvendigvis. Du sparer tid og transport, hvilket for mange opvejer en eventuel prisforskel." },
-      { question: "Hvad er den billigste bilvask hos CleanWash?", answer: "Udvendig bilvask fra 349 kr. er den mest overkommelige løsning til en hurtig opfriskning." },
-      { question: "Hvordan undgår jeg skjulte gebyrer?", answer: "Vælg en udbyder, der viser prisen tydeligt, før du booker, som CleanWash gør i hele bookingflowet." },
+      { question: "Hvad er den billigste bilvask hos Eluxus?", answer: "Udvendig bilvask fra 349 kr. er den mest overkommelige løsning til en hurtig opfriskning." },
+      { question: "Hvordan undgår jeg skjulte gebyrer?", answer: "Vælg en udbyder, der viser prisen tydeligt, før du booker, som Eluxus gør i hele bookingflowet." },
     ],
     keywordGroups: [
       { title: "Spar penge søgninger", terms: ["spar penge på bilvask", "billig bilpleje", "billigere bilvask", "bilvask abonnement pris", "spare på bilvask"] },
@@ -5367,7 +5367,7 @@ const blogSeoPages: SeoPageConfig[] = [
 
   {
     slug: "vaelg-den-rigtige-bilvask",
-    title: "Sådan vælger du den rigtige bilvask | Guide til København og Sjælland | CleanWash",
+    title: "Sådan vælger du den rigtige bilvask | Guide til København og Sjælland | Eluxus",
     description:
       "Ved du, hvad du skal kigge efter, når du vælger bilvask? Få en guide til at vælge den rigtige service, pris og udbyder i København og på Sjælland.",
     h1: "Sådan vælger du den rigtige bilvask",
@@ -5389,7 +5389,7 @@ const blogSeoPages: SeoPageConfig[] = [
     serviceType: "Guide til valg af bilvask og bilpleje",
     serviceArea: ["København", "Frederiksberg", "Amager", "Storkøbenhavn", "Sjælland", "Roskilde"],
     schemaAreaServed: ["København", "Copenhagen", "Storkøbenhavn", "Sjælland", "Denmark"],
-    image: { src: "/service/helebil.jpg", alt: "Guide til at vælge den rigtige bilvask hos CleanWash" },
+    image: { src: "/service/helebil.jpg", alt: "Guide til at vælge den rigtige bilvask hos Eluxus" },
     secondaryCta: { label: "Se bilvask København", href: route("/bilvask-koebenhavn") },
     benefits: [
       { title: "Klart overblik", text: "Guiden hjælper dig med at forstå forskellen på udvendig, indvendig og komplet bilvask." },
@@ -5436,7 +5436,7 @@ const blogSeoPages: SeoPageConfig[] = [
         heading: "Sådan booker du trygt online",
         paragraphs: [
           "Når du har afklaret, hvilken service bilen har brug for, er næste skridt at booke. Se efter en udbyder, hvor du kan angive nummerplade, adresse og ønsket tidspunkt online, og hvor du får en klar bekræftelse med det samme.",
-          "CleanWash samler alle disse trin i ét bookingflow: vælg service, angiv bilens oplysninger og adresse, se prisen, og bekræft tidspunktet — uden at skulle ringe rundt for at få svar.",
+          "Eluxus samler alle disse trin i ét bookingflow: vælg service, angiv bilens oplysninger og adresse, se prisen, og bekræft tidspunktet — uden at skulle ringe rundt for at få svar.",
         ],
       },
     ],
@@ -5445,8 +5445,8 @@ const blogSeoPages: SeoPageConfig[] = [
       { question: "Hvad er forskellen på udvendig, komplet og premium bilvask?", answer: "Udvendig vask dækker lak og fælge, komplet bilvask tilføjer indvendig rengøring, og premium bilpleje inkluderer polering og voks." },
       { question: "Er mobil bilvask bedre end en vaskehal?", answer: "For de fleste bilejere med travl hverdag eller behov for indvendig rengøring, ja. En vaskehal kan stadig være fint til en hurtig udvendig vask." },
       { question: "Hvorfor er miljøhensyn relevant ved bilvask?", answer: "Bilvask involverer vand, sæbe og afløb, og en ansvarlig håndtering af dette er et vigtigt kvalitetstegn hos en udbyder." },
-      { question: "Kan jeg booke bilvask uden at ringe?", answer: "Ja, hos CleanWash foregår hele bookingen online, fra valg af service til bekræftelse af tidspunkt." },
-      { question: "Hvilke områder dækker CleanWash?", answer: "CleanWash dækker København, Frederiksberg, Amager, Storkøbenhavn og store dele af Sjælland." },
+      { question: "Kan jeg booke bilvask uden at ringe?", answer: "Ja, hos Eluxus foregår hele bookingen online, fra valg af service til bekræftelse af tidspunkt." },
+      { question: "Hvilke områder dækker Eluxus?", answer: "Eluxus dækker København, Frederiksberg, Amager, Storkøbenhavn og store dele af Sjælland." },
     ],
     keywordGroups: [
       { title: "Købsguide søgninger", terms: ["vælg den rigtige bilvask", "hvordan vælger man bilvask", "guide til bilvask", "bedste valg bilvask", "bilvask København guide"] },
@@ -5466,7 +5466,7 @@ const blogSeoPages: SeoPageConfig[] = [
 
   {
     slug: "bedste-tidspunkt-at-booke-bilvask",
-    title: "Hvornår er det bedste tidspunkt at booke bilvask? | Sæson- og ugedagsguide | CleanWash",
+    title: "Hvornår er det bedste tidspunkt at booke bilvask? | Sæson- og ugedagsguide | Eluxus",
     description:
       "Få svar på hvornår du bedst booker bilvask. Læs om årstidens betydning, den bedste ugedag, og hvordan vejr påvirker resultatet af din bilvask.",
     h1: "Hvornår er det bedste tidspunkt at booke bilvask?",
@@ -5488,7 +5488,7 @@ const blogSeoPages: SeoPageConfig[] = [
     serviceType: "Guide til timing af bilvask og bilpleje",
     serviceArea: ["København", "Frederiksberg", "Amager", "Storkøbenhavn", "Sjælland", "Roskilde"],
     schemaAreaServed: ["København", "Copenhagen", "Storkøbenhavn", "Sjælland", "Denmark"],
-    image: { src: "/service/udenfor.jpg", alt: "Guide til det bedste tidspunkt at booke bilvask hos CleanWash" },
+    image: { src: "/service/udenfor.jpg", alt: "Guide til det bedste tidspunkt at booke bilvask hos Eluxus" },
     secondaryCta: { label: "Se bilvask efter vinter", href: route("/bilvask-efter-vinter") },
     benefits: [
       { title: "Bedre resultat", text: "Det rigtige tidspunkt kan gøre snavs og salt lettere at fjerne." },
@@ -5535,7 +5535,7 @@ const blogSeoPages: SeoPageConfig[] = [
         heading: "Sådan planlægger du den perfekte bilvask-timing",
         paragraphs: [
           "Den nemmeste måde at ramme det rigtige tidspunkt er at booke løbende frem for at vente, til bilen ser tydeligt beskidt ud. Et fast interval — for eksempel månedligt, eller oftere om vinteren — gør, at du sjældent rammer helt forkert.",
-          "Med online booking hos CleanWash kan du se ledige tider med det samme og planlægge bilvasken, så den passer både til vejret, årstiden og din egen kalender.",
+          "Med online booking hos Eluxus kan du se ledige tider med det samme og planlægge bilvasken, så den passer både til vejret, årstiden og din egen kalender.",
         ],
       },
     ],
@@ -5545,7 +5545,7 @@ const blogSeoPages: SeoPageConfig[] = [
       { question: "Bør jeg vaske bilen lige efter regnvejr?", answer: "Det kan være et godt tidspunkt, fordi regn løsner snavs. Undgå dog vask, hvis der er varslet frost kort efter." },
       { question: "Hvor tit bør bilen vaskes om sommeren?", answer: "En månedlig udvendig vask er ofte tilstrækkeligt, men insekter og bremsestøv bør fjernes hurtigt for at undgå skader på lakken." },
       { question: "Skal jeg vente med at vaske bilen, til den ser meget beskidt ud?", answer: "Nej. Et fast interval, hvor bilen vaskes løbende, giver typisk et bedre og billigere resultat end sjælden, men meget grundig rengøring." },
-      { question: "Kan jeg se ledige tider online, før jeg booker?", answer: "Ja, CleanWash viser ledige tider direkte i bookingflowet, så du kan planlægge bilvasken efter din egen kalender." },
+      { question: "Kan jeg se ledige tider online, før jeg booker?", answer: "Ja, Eluxus viser ledige tider direkte i bookingflowet, så du kan planlægge bilvasken efter din egen kalender." },
     ],
     keywordGroups: [
       { title: "Timing søgninger", terms: ["hvornår skal man vaske bilen", "bedste tidspunkt bilvask", "bilvask sæson", "booke bilvask hverdag", "bilvask efter regn"] },
@@ -5605,7 +5605,7 @@ export function createSeoMetadata(page: SeoPageConfig): Metadata {
           url: siteConfig.ogImage,
           width: 1200,
           height: 630,
-          alt: `${page.title} hos CleanWash`,
+          alt: `${page.title} hos Eluxus`,
         },
       ],
     },

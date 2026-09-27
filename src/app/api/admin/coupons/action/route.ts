@@ -7,7 +7,7 @@ import { ensureSchema, getSql, isDatabaseConfigured } from "@/lib/server/db";
 
 function redirect(view: string) {
   return NextResponse.redirect(
-    new URL(`/admin?view=${view}&saved=coupon`, process.env.NEXT_PUBLIC_APP_URL || "https://cleanwash.dk"),
+    new URL(`/admin?view=${view}&saved=coupon`, process.env.NEXT_PUBLIC_APP_URL || "https://eluxus.dk"),
     { status: 303 }
   );
 }

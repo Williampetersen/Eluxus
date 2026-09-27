@@ -3,9 +3,9 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Handelsbetingelser | CleanWash",
+  title: "Handelsbetingelser | Eluxus",
   description:
-    "Læs CleanWash's handelsbetingelser for bilvask, bilrengøring og bilpleje. Gælder alle bookinger og aftaler med CleanWash.",
+    "Læs Eluxus' handelsbetingelser for bilvask, bilrengøring og bilpleje. Gælder alle bookinger og aftaler med Eluxus.",
   alternates: {
     canonical: "/handelsbetingelser",
   },
@@ -49,7 +49,7 @@ export default function HandelsbetingelserPage() {
             Handelsbetingelser
           </h1>
           <p className="mt-4 text-base leading-7 text-[var(--muted)]">
-            Sidst opdateret: juni 2025 &middot; Gælder for alle bookinger og aftaler med CleanWash
+            Sidst opdateret: juni 2025 &middot; Gælder for alle bookinger og aftaler med Eluxus
           </p>
         </header>
 
@@ -57,7 +57,7 @@ export default function HandelsbetingelserPage() {
           {/* §1 */}
           <Section title="§ 1 — Virksomhedsoplysninger">
             <p>
-              <strong className="font-semibold text-[var(--ink)]">CleanWash</strong>
+              <strong className="font-semibold text-[var(--ink)]">Eluxus</strong>
               <br />
               Tlf.: {siteConfig.phoneDisplay}
               <br />
@@ -74,11 +74,11 @@ export default function HandelsbetingelserPage() {
                 href={siteConfig.url}
                 className="font-medium text-[var(--brand)] underline-offset-2 hover:underline"
               >
-                cleanwash.dk
+                eluxus.dk
               </a>
             </p>
             <p>
-              CleanWash udfører professionel mobil bilvask, indvendig bilrengøring og bilpleje til
+              Eluxus udfører professionel mobil bilvask, indvendig bilrengøring og bilpleje til
               private og erhvervskunder i København og på Sjælland.
             </p>
           </Section>
@@ -86,23 +86,23 @@ export default function HandelsbetingelserPage() {
           {/* §2 */}
           <Section title="§ 2 — Anvendelse af handelsbetingelserne">
             <p>
-              Disse handelsbetingelser gælder for alle aftaler indgået mellem CleanWash og kunden
+              Disse handelsbetingelser gælder for alle aftaler indgået mellem Eluxus og kunden
               vedrørende køb af bilvask, bilrengøring, bilpleje og tilknyttede ydelser.
             </p>
             <p>
               En aftale anses for indgået, når kunden gennemfører en booking via vores
               hjemmeside og modtager en bookingbekræftelse pr. e-mail, eller når der på anden
-              vis aftales en ydelse direkte med CleanWash.
+              vis aftales en ydelse direkte med Eluxus.
             </p>
             <p>
-              Enhver fravigelse af disse betingelser kræver skriftlig aftale med CleanWash og er
-              kun gyldig, hvis den er bekræftet af CleanWash.
+              Enhver fravigelse af disse betingelser kræver skriftlig aftale med Eluxus og er
+              kun gyldig, hvis den er bekræftet af Eluxus.
             </p>
           </Section>
 
           {/* §3 */}
           <Section title="§ 3 — Ydelser og serviceomfang">
-            <p>CleanWash tilbyder følgende ydelser:</p>
+            <p>Eluxus tilbyder følgende ydelser:</p>
             <ul className="ml-5 list-disc space-y-1.5">
               <li>
                 <strong className="font-semibold text-[var(--ink)]">Udvendig bilvask:</strong>{" "}
@@ -129,7 +129,7 @@ export default function HandelsbetingelserPage() {
               variere afhængigt af bilens størrelse og stand ved ankomst.
             </p>
             <p>
-              CleanWash forbeholder sig retten til at ændre eller opdatere sine ydelser. Ændringer
+              Eluxus forbeholder sig retten til at ændre eller opdatere sine ydelser. Ændringer
               gælder fra det tidspunkt, de offentliggøres på hjemmesiden, og har ikke tilbagevirkende
               kraft for allerede bekræftede bookinger.
             </p>
@@ -143,19 +143,19 @@ export default function HandelsbetingelserPage() {
                 href="/booking"
                 className="font-medium text-[var(--brand)] underline-offset-2 hover:underline"
               >
-                cleanwash.dk/booking
+                eluxus.dk/booking
               </Link>{" "}
-              eller ved direkte kontakt til CleanWash pr. telefon eller e-mail.
+              eller ved direkte kontakt til Eluxus pr. telefon eller e-mail.
             </p>
             <p>
               Online-bookingen er bindende for kunden, når bookingformularen er udfyldt og
               indsendt. Kunden modtager en bekræftelse pr. e-mail. Bookingen er dog ikke
-              endelig bekræftet fra CleanWash's side, medmindre kunden modtager en
-              godkendelsesmail fra CleanWash (ved status "Afventer") eller bookingen straks
+              endelig bekræftet fra Eluxus' side, medmindre kunden modtager en
+              godkendelsesmail fra Eluxus (ved status "Afventer") eller bookingen straks
               bekræftes automatisk (ved status "Godkendt").
             </p>
             <p>
-              CleanWash har ret til at afvise en booking, hvis tidspunktet ikke er tilgængeligt,
+              Eluxus har ret til at afvise en booking, hvis tidspunktet ikke er tilgængeligt,
               adressen ikke kan nås inden for det gældende serviceområde, eller bookingen af
               andre grunde ikke kan gennemføres. I så fald orienteres kunden hurtigst muligt.
             </p>
@@ -174,7 +174,7 @@ export default function HandelsbetingelserPage() {
             </p>
             <p>
               Den gældende pris er den pris, der fremgår af bookingsiden på det tidspunkt,
-              kunden gennemfører bookingen. CleanWash forbeholder sig retten til at ændre
+              kunden gennemfører bookingen. Eluxus forbeholder sig retten til at ændre
               priser med fremtidig virkning.
             </p>
             <p>
@@ -188,7 +188,7 @@ export default function HandelsbetingelserPage() {
             </ul>
             <p>
               Betaling forfalder til betaling senest ved ydelsens afslutning, medmindre andet er
-              aftalt skriftligt. Ved forsinket betaling forbeholder CleanWash sig ret til at
+              aftalt skriftligt. Ved forsinket betaling forbeholder Eluxus sig ret til at
               opkræve renter og rykkergebyrer i overensstemmelse med renteloven.
             </p>
             <p>
@@ -206,14 +206,14 @@ export default function HandelsbetingelserPage() {
               aftalte tidspunkt.
             </p>
             <p>
-              Aflyses en booking med kortere varsel end 24 timer, forbeholder CleanWash sig
+              Aflyses en booking med kortere varsel end 24 timer, forbeholder Eluxus sig
               retten til at opkræve et aflysningsgebyr svarende til{" "}
               <strong className="font-semibold text-[var(--ink)]">50 % af den aftalte pris</strong>{" "}
               for at dække tabt tid og transportomkostninger. Ved udeblivelse (no-show) uden
               varsel kan den fulde pris opkræves.
             </p>
             <p>
-              CleanWash forbeholder sig ligeledes retten til at aflyse eller flytte en booking
+              Eluxus forbeholder sig ligeledes retten til at aflyse eller flytte en booking
               ved force majeure, ekstreme vejrforhold, sygdom eller andre uforudsete
               omstændigheder. I sådanne tilfælde tilbydes kunden et nyt tidspunkt hurtigst
               muligt, og kunden er ikke berettiget til erstatning for aflysningen.
@@ -244,7 +244,7 @@ export default function HandelsbetingelserPage() {
                 ved bookingen.
               </li>
               <li>
-                Informere CleanWash om særlige forhold vedrørende bilen, f.eks. lakskader,
+                Informere Eluxus om særlige forhold vedrørende bilen, f.eks. lakskader,
                 løse dele, ridser, dyb snavs eller særlige overflader, der kræver særlig
                 behandling — herunder læder-, alcantara- eller andre specialmaterialer.
               </li>
@@ -258,25 +258,25 @@ export default function HandelsbetingelserPage() {
               </li>
             </ul>
             <p>
-              CleanWash er ikke ansvarlig for skader forårsaget af, at kunden har undladt at
+              Eluxus er ikke ansvarlig for skader forårsaget af, at kunden har undladt at
               oplyse om særlige forhold ved bilen eller den valgte placering.
             </p>
           </Section>
 
           {/* §8 */}
-          <Section title="§ 8 — CleanWash's ansvar og ansvarsbegrænsning">
+          <Section title="§ 8 — Eluxus' ansvar og ansvarsbegrænsning">
             <p>
-              CleanWash udfører alle ydelser professionelt og med omhu. Såfremt der opstår
-              skader på køretøjet som en direkte følge af CleanWash's ydelser, behandles
+              Eluxus udfører alle ydelser professionelt og med omhu. Såfremt der opstår
+              skader på køretøjet som en direkte følge af Eluxus' ydelser, behandles
               henvendelsen individuelt og i god tro.
             </p>
             <p>
-              CleanWash er ikke ansvarlig for:
+              Eluxus er ikke ansvarlig for:
             </p>
             <ul className="ml-5 list-disc space-y-1.5">
               <li>
                 Pre-eksisterende skader, ridser, misfarvninger, buler eller revner, der ikke
-                skyldes CleanWash's handlinger.
+                skyldes Eluxus' handlinger.
               </li>
               <li>
                 Skader på interiør eller eksteriør, der skyldes manglende oplysning fra
@@ -290,16 +290,16 @@ export default function HandelsbetingelserPage() {
                 udførelse.
               </li>
               <li>
-                Vejrforhold eller omstændigheder uden for CleanWash's kontrol, der påvirker
+                Vejrforhold eller omstændigheder uden for Eluxus' kontrol, der påvirker
                 kvaliteten af det udvendige resultat umiddelbart efter udførelsen.
               </li>
             </ul>
             <p>
-              CleanWash's samlede erstatningsansvar kan aldrig overstige den betalte pris for
+              Eluxus' samlede erstatningsansvar kan aldrig overstige den betalte pris for
               den konkrete ydelse, der har forårsaget skaden.
             </p>
             <p>
-              Skader og reklamationer skal meddeles CleanWash{" "}
+              Skader og reklamationer skal meddeles Eluxus{" "}
               <strong className="font-semibold text-[var(--ink)]">senest 24 timer</strong> efter
               ydelsens udførelse, ellers bortfalder retten til reklamation vedrørende det
               pågældende besøg.
@@ -309,7 +309,7 @@ export default function HandelsbetingelserPage() {
           {/* §9 */}
           <Section title="§ 9 — Reklamation og klageret">
             <p>
-              Opdager kunden en fejl eller mangel ved den leverede ydelse, skal CleanWash
+              Opdager kunden en fejl eller mangel ved den leverede ydelse, skal Eluxus
               kontaktes hurtigst muligt og senest{" "}
               <strong className="font-semibold text-[var(--ink)]">24 timer</strong> efter
               ydelsens udførelse via:
@@ -328,7 +328,7 @@ export default function HandelsbetingelserPage() {
             </ul>
             <p>
               Reklamationen skal indeholde en beskrivelse af den påståede mangel og gerne
-              fotodokumentation. CleanWash vurderer reklamationen og fremsender svar inden for
+              fotodokumentation. Eluxus vurderer reklamationen og fremsender svar inden for
               rimelig tid.
             </p>
             <p>
@@ -374,21 +374,21 @@ export default function HandelsbetingelserPage() {
             </p>
             <p>
               Fast aftale om erhvervsbilvask tegnes ved særskilt skriftlig aftale med
-              CleanWash.
+              Eluxus.
             </p>
           </Section>
 
           {/* §11 */}
           <Section title="§ 11 — Force majeure">
             <p>
-              CleanWash er ikke ansvarlig for manglende opfyldelse af sine forpligtelser, såfremt
-              dette skyldes omstændigheder uden for CleanWash's rimelige kontrol, herunder men
+              Eluxus er ikke ansvarlig for manglende opfyldelse af sine forpligtelser, såfremt
+              dette skyldes omstændigheder uden for Eluxus' rimelige kontrol, herunder men
               ikke begrænset til: ekstreme vejrforhold (is, storm, oversvømmelse), strejke,
               lockout, brand, naturkatastrofer, krig, terrorisme, pandemi, myndighedspåbud eller
               svigt i forsyninger.
             </p>
             <p>
-              CleanWash underretter kunden hurtigst muligt og tilbyder alternativt tidspunkt, så
+              Eluxus underretter kunden hurtigst muligt og tilbyder alternativt tidspunkt, så
               snart forholdene tillader det.
             </p>
           </Section>
@@ -396,7 +396,7 @@ export default function HandelsbetingelserPage() {
           {/* §12 */}
           <Section title="§ 12 — Personoplysninger">
             <p>
-              CleanWash behandler personoplysninger i overensstemmelse med gældende
+              Eluxus behandler personoplysninger i overensstemmelse med gældende
               databeskyttelseslovgivning (GDPR). Læs vores{" "}
               <a
                 href="/persondatapolitik"
@@ -423,8 +423,8 @@ export default function HandelsbetingelserPage() {
           {/* §14 */}
           <Section title="§ 14 — Ændringer i handelsbetingelserne">
             <p>
-              CleanWash forbeholder sig retten til at ændre disse handelsbetingelser. Ændringer
-              offentliggøres på cleanwash.dk og træder i kraft fra det angivne opdateringsdato.
+              Eluxus forbeholder sig retten til at ændre disse handelsbetingelser. Ændringer
+              offentliggøres på eluxus.dk og træder i kraft fra det angivne opdateringsdato.
               For allerede bekræftede bookinger gælder de handelsbetingelser, der var gældende
               på bookingstidspunktet.
             </p>
@@ -435,7 +435,7 @@ export default function HandelsbetingelserPage() {
             <h2 className="font-display text-xl font-semibold text-[var(--ink)]">Spørgsmål?</h2>
             <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
               Har du spørgsmål til handelsbetingelserne eller en konkret booking, er du velkommen
-              til at kontakte CleanWash.
+              til at kontakte Eluxus.
             </p>
             <div className="mt-4 flex flex-col gap-2 text-sm font-semibold text-[var(--ink)] sm:flex-row sm:gap-6">
               <a

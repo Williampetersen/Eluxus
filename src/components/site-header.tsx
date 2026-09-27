@@ -13,7 +13,7 @@ export function SiteHeader() {
             <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/logo.png"
-                alt="CleanWash professionel bilvask"
+                alt="Eluxus professionel bilvask"
                 width={208}
                 height={48}
                 className="h-11 w-auto max-w-[13rem] object-contain sm:h-12"

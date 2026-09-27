@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Lexend } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -24,9 +23,9 @@ export const metadata: Metadata = {
     "bilvask", "bilvask København", "mobil bilvask", "indvendig bilrengøring",
     "bilpleje", "bilvask Sjælland", "håndvask bil", "erhvervs bilvask",
   ],
-  authors: [{ name: "CleanWash", url: siteConfig.url }],
-  creator: "CleanWash",
-  publisher: "CleanWash",
+  authors: [{ name: "Eluxus", url: siteConfig.url }],
+  creator: "Eluxus",
+  publisher: "Eluxus",
   category: "Automotive",
   icons: {
     icon: "/logo.png",
@@ -45,14 +44,12 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "CleanWash bilvask i København og på Sjælland",
+        alt: "Eluxus bilvask i København og på Sjælland",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@washmaxdk",
-    creator: "@washmaxdk",
     title: `${siteConfig.name} | Bilvask København og Sjælland`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
@@ -80,17 +77,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="da" className={lexend.variable}>
-      <head>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-W67LMJHPML" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-W67LMJHPML');
-          `}
-        </Script>
-      </head>
       <body>
         {children}
         <Analytics />

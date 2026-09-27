@@ -173,7 +173,7 @@ function RelatedLinks({ post }: { post: BlogPost }) {
     <section>
       <div className="mb-6 max-w-2xl">
         <span className="eyebrow">Gå videre</span>
-        <h2 className="mt-5 section-title text-3xl sm:text-4xl">Relevante sider hos CleanWash</h2>
+        <h2 className="mt-5 section-title text-3xl sm:text-4xl">Relevante sider hos Eluxus</h2>
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
         {post.relatedLinks.map((link) => (
@@ -240,7 +240,7 @@ function BottomCta() {
           Klar til en renere bil?
         </h2>
         <p className="mt-4 max-w-2xl text-white/76">
-          Book professionel bilvask og bilpleje hos CleanWash. Du kan også kontakte os på{" "}
+          Book professionel bilvask og bilpleje hos Eluxus. Du kan også kontakte os på{" "}
           {siteConfig.phoneDisplay} eller {siteConfig.email}.
         </p>
       </div>

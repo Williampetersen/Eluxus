@@ -1,6 +1,6 @@
 // ============================================================
 // assignmentService.ts
-// Auto-assignment engine for CleanWash agents.
+// Auto-assignment engine for Eluxus agents.
 //
 // Assumptions about existing schema:
 //   - bookings.appointment_date  → DATE column

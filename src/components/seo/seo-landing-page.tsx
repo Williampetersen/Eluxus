@@ -125,7 +125,7 @@ function ContentSections({ page }: { page: SeoPageConfig }) {
           <span className="eyebrow">Service</span>
           <h2 className="mt-5 section-title">{page.serviceType}</h2>
           <p className="mt-5 support-copy">
-            Clean Wash hjælper med {page.serviceType.toLowerCase()} og gør det nemt at booke
+            Eluxus hjælper med {page.serviceType.toLowerCase()} og gør det nemt at booke
             bilvask, bilrengøring og bilpleje online.
           </p>
           <div className="mt-6">
@@ -168,13 +168,13 @@ function LocalServiceArea({ page }: { page: SeoPageConfig }) {
           <span className="eyebrow">Lokalt område</span>
           <h2 className="mt-5 section-title">Serviceområde</h2>
           <p className="mt-5 support-copy">
-            Clean Wash er relevant for kunder i {page.serviceArea.slice(0, 4).join(", ")} og
+            Eluxus er relevant for kunder i {page.serviceArea.slice(0, 4).join(", ")} og
             nærliggende områder. Den konkrete mulighed afhænger af booking, rute og den valgte
             service.
           </p>
           <p className="mt-4 support-copy">
             Hvis du søger efter professionel bilvask nær mig, kan du starte med online booking.
-            Her samles oplysninger om bil, tidspunkt og behov, så Clean Wash kan planlægge
+            Her samles oplysninger om bil, tidspunkt og behov, så Eluxus kan planlægge
             opgaven korrekt.
           </p>
         </div>
@@ -325,7 +325,7 @@ export function ServiceBenefits({
     <section>
       <div className="mb-8 max-w-2xl">
         <span className="eyebrow">Fordele</span>
-        <h2 className="mt-5 section-title">Derfor vælger kunder Clean Wash</h2>
+        <h2 className="mt-5 section-title">Derfor vælger kunder Eluxus</h2>
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {benefits.map((benefit) => (
@@ -433,7 +433,7 @@ function BottomCta({ page }: { page: SeoPageConfig }) {
           Klar til en renere bil?
         </h2>
         <p className="mt-4 max-w-2xl text-white/76">
-          Book {page.serviceType.toLowerCase()} hos Clean Wash. Du kan også kontakte os på{" "}
+          Book {page.serviceType.toLowerCase()} hos Eluxus. Du kan også kontakte os på{" "}
           {siteConfig.phoneDisplay} eller {siteConfig.email}.
         </p>
       </div>

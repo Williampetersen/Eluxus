@@ -42,8 +42,8 @@ import {
 } from "@/lib/server/customer-session";
 
 export const metadata: Metadata = {
-  title: "Min konto · CleanWash",
-  description: "Se dine CleanWash bookinger, kontaktoplysninger og kommende aftaler.",
+  title: "Min konto · Eluxus",
+  description: "Se dine Eluxus bookinger, kontaktoplysninger og kommende aftaler.",
   robots: { index: false, follow: false },
 };
 
@@ -148,9 +148,9 @@ export default async function CustomerPortalPage({
                 <div className="relative">
                   <div className="mb-4 flex items-center gap-2">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/logo.png" alt="CleanWash" className="h-7 w-7 rounded-lg object-contain" />
+                    <img src="/logo.png" alt="Eluxus" className="h-7 w-7 rounded-lg object-contain" />
                     <span className="text-[12px] font-bold uppercase tracking-[0.2em] text-[#00A7B8]">
-                      CleanWash
+                      Eluxus
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
@@ -489,8 +489,8 @@ export default async function CustomerPortalPage({
                         <ContactLink
                           icon={Phone}
                           label="Telefon"
-                          href="tel:+4542504551"
-                          text="42 50 45 51"
+                          href="tel:+4593968596"
+                          text="93 96 85 96"
                         />
                       </div>
                     </section>

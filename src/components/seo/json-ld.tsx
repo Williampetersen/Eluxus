@@ -49,13 +49,13 @@ export function buildSeoJsonLd(page: SeoPageConfig) {
   const localBusiness = {
     "@type": ["AutoWash", "LocalBusiness"],
     "@id": businessId,
-    name: "CleanWash",
+    name: "Eluxus Autoclean",
     alternateName: siteConfig.name,
     url: siteConfig.url,
     image: absoluteUrl(siteConfig.ogImage),
     telephone: siteConfig.phoneDisplay,
     email: siteConfig.email,
-    openingHours: "Mo-Su 08:00-17:00",
+    openingHours: "Mo-Su 06:00-23:00",
     areaServed: page.schemaAreaServed.map((area) => ({
       "@type": "Place",
       name: area,
@@ -68,8 +68,8 @@ export function buildSeoJsonLd(page: SeoPageConfig) {
     },
     priceRange: "349-849 DKK",
     sameAs: [
-      "https://www.facebook.com/carwashadk/",
-      "https://www.instagram.com/washmaxdk/",
+      "https://www.facebook.com/share/1KKvtE6dcm/?mibextid=wwXIfr",
+      "https://www.instagram.com/eluxus.autoclean/",
     ],
     contactPoint: {
       "@type": "ContactPoint",
@@ -80,35 +80,35 @@ export function buildSeoJsonLd(page: SeoPageConfig) {
       hoursAvailable: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        opens: "08:00",
-        closes: "17:00",
+        opens: "06:00",
+        closes: "23:00",
       },
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "CleanWash bilvask services",
+      name: "Eluxus bilvask services",
       itemListElement: [
         {
           "@type": "Offer",
-          name: "Udvendig bilvask",
-          description: "Skånsom udvendig vask: lak, fælge, hjulbuer, ruder og finish.",
+          name: "Udvendig vask",
+          description: "Skånsom udvendig dampvask: lak, fælge, hjulbuer, ruder og finish.",
           price: "349",
           priceCurrency: "DKK",
           priceValidUntil: "2026-12-31",
           availability: "https://schema.org/InStock",
           url: absoluteUrl("/booking"),
-          seller: { "@type": "Organization", name: "CleanWash" },
+          seller: { "@type": "Organization", name: "Eluxus" },
         },
         {
           "@type": "Offer",
           name: "Komplet bilvask",
-          description: "Udvendig vask plus grundig indvendig rengøring af kabine, sæder og bagagerum.",
+          description: "Udvendig dampvask plus grundig indvendig rengøring af kabine, sæder og bagagerum.",
           price: "599",
           priceCurrency: "DKK",
           priceValidUntil: "2026-12-31",
           availability: "https://schema.org/InStock",
           url: absoluteUrl("/booking"),
-          seller: { "@type": "Organization", name: "CleanWash" },
+          seller: { "@type": "Organization", name: "Eluxus" },
         },
         {
           "@type": "Offer",
@@ -119,17 +119,18 @@ export function buildSeoJsonLd(page: SeoPageConfig) {
           priceValidUntil: "2026-12-31",
           availability: "https://schema.org/InStock",
           url: absoluteUrl("/booking"),
-          seller: { "@type": "Organization", name: "CleanWash" },
+          seller: { "@type": "Organization", name: "Eluxus" },
         },
       ],
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Birkeholmen 24",
-      addressLocality: "Solrød Strand",
+      streetAddress: "Galgebakken Neder 304",
+      addressLocality: "Albertslund",
+      postalCode: "2620",
       addressCountry: "DK",
     },
-    vatID: "44605074",
+    vatID: "46049594",
   };
 
   const service = {
@@ -158,7 +159,7 @@ export function buildSeoJsonLd(page: SeoPageConfig) {
     potentialAction: {
       "@type": "ReserveAction",
       target: absoluteUrl("/booking"),
-      name: "Book bilvask hos CleanWash",
+      name: "Book bilvask hos Eluxus",
     },
   };
 
@@ -208,10 +209,10 @@ export function buildArticleJsonLd(page: SeoPageConfig) {
     description: page.description,
     url: pageUrl,
     image: absoluteUrl(page.image.src),
-    author: { "@type": "Organization", name: "CleanWash", url: siteConfig.url },
+    author: { "@type": "Organization", name: "Eluxus", url: siteConfig.url },
     publisher: {
       "@type": "Organization",
-      name: "CleanWash",
+      name: "Eluxus",
       url: siteConfig.url,
       logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
     },
@@ -240,10 +241,10 @@ export function buildBlogPostingJsonLd(post: BlogPost) {
       (total, section) => total + section.paragraphs.join(" ").split(/\s+/).length,
       0
     ),
-    author: { "@type": "Organization", name: "CleanWash", url: siteConfig.url },
+    author: { "@type": "Organization", name: "Eluxus", url: siteConfig.url },
     publisher: {
       "@type": "Organization",
-      name: "CleanWash",
+      name: "Eluxus",
       url: siteConfig.url,
       logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
     },

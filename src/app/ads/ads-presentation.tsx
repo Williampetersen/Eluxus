@@ -102,7 +102,7 @@ const roadmap = [
     number: "۰۳",
     period: "هفته ۳–۵",
     title: "راه‌اندازی سایت جدید",
-    text: "انتقال صفحات کلیدی و تکمیل زیرساخت جدید CleanWash",
+    text: "انتقال صفحات کلیدی و تکمیل زیرساخت جدید Eluxus",
     icon: Layers3,
   },
   {
@@ -185,8 +185,8 @@ export function AdsPresentation() {
       <section className={styles.hero} id="top">
         <nav className={styles.nav}>
           <a className={styles.brand} href="#top" dir="ltr">
-            <span>W</span>
-            <strong>WASHMAX</strong>
+            <span>E</span>
+            <strong>ELUXUS</strong>
           </a>
           <div className={styles.navLabel}>
             <span className={styles.liveDot} />
@@ -203,7 +203,7 @@ export function AdsPresentation() {
             <h1>
               <span dir="ltr">SURVIVE</span>
               <span className={styles.outlineTitle} dir="ltr">
-                THE WASHMAX
+                THE ELUXUS
               </span>
             </h1>
             <p className={styles.heroLead}>
@@ -494,7 +494,7 @@ export function AdsPresentation() {
               <span />
               <span />
               <span />
-              <div>cleanwash.dk</div>
+              <div>eluxus.dk</div>
             </div>
             <div className={styles.browserBody}>
               <div className={styles.oldSite}>
@@ -513,7 +513,7 @@ export function AdsPresentation() {
               </div>
               <div className={styles.newSite}>
                 <small>NEXT</small>
-                <strong>CLEANWASH</strong>
+                <strong>ELUXUS</strong>
                 <div className={styles.newDashboard}>
                   <i />
                   <i />
@@ -525,10 +525,10 @@ export function AdsPresentation() {
           </div>
 
           <div className={styles.migrationPlan} data-ads-reveal data-ads-tilt>
-            <div className={styles.cleanwashBadge}>
+            <div className={styles.eluxusBadge}>
               <Sparkles size={22} />
               <div>
-                <strong>CleanWash آماده است</strong>
+                <strong>Eluxus آماده است</strong>
                 <span>ساخته‌شده حدود یک ماه پیش + جزئیات اضافه</span>
               </div>
             </div>
@@ -656,7 +656,7 @@ export function AdsPresentation() {
 
         <div className={styles.paymentCard} data-ads-reveal data-ads-tilt>
           <HeartHandshake size={42} />
-          <p>هزینه CleanWash و جزئیات اضافه‌شده</p>
+          <p>هزینه Eluxus و جزئیات اضافه‌شده</p>
           <h3>وقتی امکانش بود پرداخت کن.</h3>
           <span>پرداخت ماهانه ۱۰۰۰ DKK · بدون عجله</span>
           <div className={styles.paymentNote}>
@@ -675,7 +675,7 @@ export function AdsPresentation() {
           </h2>
           <div className={styles.finalBadge}>
             <Rocket size={22} />
-            <span dir="ltr">SURVIVE THE WASHMAX</span>
+            <span dir="ltr">SURVIVE THE ELUXUS</span>
           </div>
         </div>
       </footer>

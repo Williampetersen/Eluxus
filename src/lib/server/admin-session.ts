@@ -1,7 +1,7 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { authenticateAdminAccount } from "@/lib/server/admins";
 
-export const ADMIN_COOKIE_NAME = "CleanWash_admin_session";
+export const ADMIN_COOKIE_NAME = "eluxus_admin_session";
 const SESSION_DURATION_MS = 1000 * 60 * 60 * 12;
 
 const getSecret = () => process.env.ADMIN_SESSION_SECRET || "";

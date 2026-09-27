@@ -1,6 +1,6 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 
-export const CUSTOMER_COOKIE_NAME = "CleanWash_customer_session";
+export const CUSTOMER_COOKIE_NAME = "eluxus_customer_session";
 const SESSION_DURATION_MS = 1000 * 60 * 60 * 24; // 24 hours
 
 const getSecret = () =>

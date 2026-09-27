@@ -9,12 +9,12 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Vælg bilstørrelse – Pris på bilvask",
   description:
-    "Kender du ikke nummerpladen? Vælg din bilstørrelse og se pris på bilvask med det samme. Lille bil, mellem bil, stor bil og varevogn – book online hos CleanWash.",
+    "Kender du ikke nummerpladen? Vælg din bilstørrelse og se pris på bilvask med det samme. Lille bil, mellem bil, stor bil og varevogn – book online hos Eluxus.",
   keywords: ["vælg bilstørrelse", "bilvask pris", "lille bil bilvask", "stor bil bilvask", "varevogn bilvask"],
   alternates: { canonical: "/velg-storrelse" },
   openGraph: {
-    title: "Vælg bilstørrelse | CleanWash",
-    description: "Vælg din bilstørrelse og book bilvask hos CleanWash. Pris, tid og service for alle biltyper.",
+    title: "Vælg bilstørrelse | Eluxus",
+    description: "Vælg din bilstørrelse og book bilvask hos Eluxus. Pris, tid og service for alle biltyper.",
     type: "website",
     locale: "da_DK",
   },
@@ -96,7 +96,7 @@ export default async function VelgStorrelse() {
         "@type": "WebPage",
         "@id": `${pageUrl}#webpage`,
         url: pageUrl,
-        name: "Vælg bilstørrelse – Bilvask pris hos CleanWash",
+        name: "Vælg bilstørrelse – Bilvask pris hos Eluxus",
         description: "Vælg bilstørrelse og se pris på bilvask. Lille bil, mellem bil, stor bil og varevogn med online booking.",
         inLanguage: "da-DK",
         isPartOf: { "@id": `${siteConfig.url}#website` },
@@ -113,7 +113,7 @@ export default async function VelgStorrelse() {
       {
         "@type": "ItemList",
         name: "Bilstørrelser og priser",
-        description: "Oversigt over bilstørrelser og startpriser for bilvask hos CleanWash",
+        description: "Oversigt over bilstørrelser og startpriser for bilvask hos Eluxus",
         itemListElement: sortedCategories.map((cat, i) => ({
           "@type": "ListItem",
           position: i + 1,

@@ -7,7 +7,7 @@ import { sanitizePlate } from "@/lib/shared/booking";
 export const metadata: Metadata = {
   title: "Book bilvask",
   description:
-    "Book mobil bilvask hos CleanWash. Vælg indvendig bilvask, udvendig bilvask eller komplet bilpleje i København og på Sjælland.",
+    "Book mobil bilvask hos Eluxus. Vælg indvendig bilvask, udvendig bilvask eller komplet bilpleje i København og på Sjælland.",
   alternates: {
     canonical: "/booking",
   },

@@ -24,13 +24,13 @@ const emailWrap = (content: string) =>
 
 const emailHeader =
   `<div style="background:#0B1F3A;padding:26px 32px 22px;">` +
-  `<p style="margin:0;color:#FFFFFF;font-size:20px;font-weight:700;font-family:Arial,Helvetica,sans-serif;">CleanWash</p>` +
+  `<p style="margin:0;color:#FFFFFF;font-size:20px;font-weight:700;font-family:Arial,Helvetica,sans-serif;">Eluxus</p>` +
   `<p style="margin:5px 0 0;color:#00A7B8;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-family:Arial,Helvetica,sans-serif;">Professionel bilvask</p>` +
   `</div>`;
 
 const emailFooter = (supportEmail: string) =>
   `<div style="background:#F6FBFC;border-top:1px solid #DCEEF2;padding:22px 32px;text-align:center;">` +
-  `<p style="margin:0;font-size:13px;font-weight:600;color:#374151;font-family:Arial,Helvetica,sans-serif;">CleanWash</p>` +
+  `<p style="margin:0;font-size:13px;font-weight:600;color:#374151;font-family:Arial,Helvetica,sans-serif;">Eluxus</p>` +
   `<p style="margin:3px 0 0;font-size:12px;color:#6B7280;font-family:Arial,Helvetica,sans-serif;">Professionel bilvask</p>` +
   `<p style="margin:10px 0 0;font-size:12px;color:#6B7280;font-family:Arial,Helvetica,sans-serif;">` +
   `Kontakt: <a href="mailto:${esc(supportEmail)}" style="color:#00A7B8;text-decoration:none;font-weight:600;">${esc(supportEmail)}</a>` +
@@ -73,7 +73,7 @@ function buildAdminEmail(fields: {
     `<div style="padding:32px 32px 8px;">` +
     emailBadge("Ny henvendelse") +
     `<h1 style="margin:16px 0 10px;font-size:24px;font-weight:700;color:#111827;line-height:1.25;font-family:Arial,Helvetica,sans-serif;">Ny kontakthenvendelse</h1>` +
-    `<p style="margin:0 0 20px;font-size:15px;color:#6B7280;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">Der er modtaget en ny henvendelse via kontaktformularen på cleanwash.dk.</p>` +
+    `<p style="margin:0 0 20px;font-size:15px;color:#6B7280;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">Der er modtaget en ny henvendelse via kontaktformularen på eluxus.dk.</p>` +
     `</div>` +
     `<div style="padding:8px 32px 32px;">` +
     emailCard("Afsender", [
@@ -105,7 +105,7 @@ function buildUserEmail(fields: {
     (fields.reason ? emailCard("Din henvendelse", [["Årsag", fields.reason]]) : "") +
     emailMessageBox("Din besked", safeMsg) +
     `<div style="background:#F0FAFB;border-left:4px solid #00A7B8;border-radius:0 8px 8px 0;padding:14px 18px;margin-bottom:24px;">` +
-    `<p style="margin:0;font-size:14px;color:#0B1F3A;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">Har du brug for hurtig hjælp? Ring til os på <strong>42 50 45 51</strong> — alle ugens dage kl. 08–17.</p>` +
+    `<p style="margin:0;font-size:14px;color:#0B1F3A;line-height:1.65;font-family:Arial,Helvetica,sans-serif;">Har du brug for hurtig hjælp? Ring til os på <strong>93 96 85 96</strong> — alle ugens dage kl. 06–23.</p>` +
     `</div>` +
     `<div style="text-align:center;margin-bottom:16px;">${emailCta(`${siteUrl}/booking`, "Book bilvask")}</div>` +
     `</div>` +
@@ -142,10 +142,10 @@ export async function POST(request: Request) {
   const pass = process.env.SMTP_PASSWORD ?? "";
   const from =
     process.env.MAIL_FROM ||
-    `${process.env.MAIL_FROM_NAME || "CleanWash"} <${user}>`;
+    `${process.env.MAIL_FROM_NAME || "Eluxus"} <${user}>`;
   const adminEmail = process.env.BOOKING_ADMIN_EMAIL || user;
-  const siteUrl = process.env.APP_URL || "https://cleanwash.dk";
-  const supportEmail = "info@cleanwash.dk";
+  const siteUrl = process.env.APP_URL || "https://eluxus.dk";
+  const supportEmail = "info@eluxus.dk";
 
   if (!host || !user || !pass) {
     console.warn("[contact] SMTP not configured — submission not emailed:", { name, email, reason });
@@ -164,7 +164,7 @@ export async function POST(request: Request) {
           from,
           to: adminEmail,
           replyTo: email,
-          subject: `CleanWash: ny kontakthenvendelse fra ${name}`,
+          subject: `Eluxus: ny kontakthenvendelse fra ${name}`,
           html: buildAdminEmail({ name, email, phone, reason, message }, supportEmail),
           text: `Ny kontakthenvendelse\n\nNavn: ${name}\nEmail: ${email}\nTelefon: ${phone || "–"}\nÅrsag: ${reason || "–"}\n\nBesked:\n${message}`,
         })
@@ -176,9 +176,9 @@ export async function POST(request: Request) {
         transporter.sendMail({
           from,
           to: email,
-          subject: "Vi har modtaget din henvendelse — CleanWash",
+          subject: "Vi har modtaget din henvendelse — Eluxus",
           html: buildUserEmail({ name, reason, message }, supportEmail, siteUrl),
-          text: `Hej ${name},\n\nTak for din henvendelse til CleanWash. Vi vender tilbage inden for 24 timer.\n\nDin besked:\n${message}\n\nMed venlig hilsen\nCleanWash\n${supportEmail}\nTlf: 42 50 45 51`,
+          text: `Hej ${name},\n\nTak for din henvendelse til Eluxus. Vi vender tilbage inden for 24 timer.\n\nDin besked:\n${message}\n\nMed venlig hilsen\nEluxus\n${supportEmail}\nTlf: 93 96 85 96`,
         })
       );
     }
