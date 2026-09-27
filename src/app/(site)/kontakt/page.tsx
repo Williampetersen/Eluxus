@@ -8,10 +8,14 @@ export const metadata: Metadata = {
   title: "Kontakt os | Eluxus — Professionel bilvask",
   description:
     "Kontakt Eluxus med spørgsmål om bilvask, booking, erhvervsaftaler eller andet. Udfyld formularen eller ring til os på 93 96 85 96 — vi svarer inden for 24 timer.",
+  alternates: {
+    canonical: "/kontakt",
+  },
   openGraph: {
     title: "Kontakt os | Eluxus",
     description:
       "Kontakt Eluxus med spørgsmål om bilvask, booking eller erhvervsaftaler. Vi svarer inden for 24 timer.",
+    url: "/kontakt",
   },
 };
 

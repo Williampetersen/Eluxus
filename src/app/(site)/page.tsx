@@ -238,6 +238,7 @@ const homeLocalBusinessSchema = {
     "https://www.facebook.com/share/1KKvtE6dcm/?mibextid=wwXIfr",
     "https://www.instagram.com/eluxus.autoclean/",
   ],
+  vatID: siteConfig.cvr,
 };
 
 export default function HomePage() {
@@ -259,8 +260,8 @@ export default function HomePage() {
           >
             <source src="/videos/frontvideo.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(246,251,252,0.96)_0%,rgba(246,251,252,0.82)_50%,rgba(246,251,252,0.32)_100%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(180deg,transparent,rgba(246,251,252,0.94))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(250,247,240,0.96)_0%,rgba(250,247,240,0.82)_50%,rgba(250,247,240,0.32)_100%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(180deg,transparent,rgba(250,247,240,0.94))]" />
 
           <div className="relative mx-auto flex min-h-[calc(100vh-4rem)] max-w-5xl flex-col justify-center px-4 py-16 sm:px-6 lg:px-10">
             <div className="text-[var(--ink)]">
