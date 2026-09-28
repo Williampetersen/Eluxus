@@ -45,8 +45,10 @@ import {
   type BookingStatus,
   type VehicleLookupResult,
 } from "@/lib/shared/booking";
+import { bookingHrefForSize, createSizeVehicle } from "@/lib/shared/vehicle-sizes";
 import { AddExtraCarModal } from "@/components/booking/add-extra-car-modal";
 import { VehicleConfirmModal } from "@/components/booking/vehicle-confirm-modal";
+import { VehicleSizePicker } from "@/components/vehicle-size-picker";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -61,6 +63,10 @@ const bookingFormSchema = bookingCustomerSchema.extend({
 type BookingFlowProps = {
   initialPlate: string;
   initialCategory?: string;
+  // Service, day and time already chosen in the homepage quick booking.
+  initialPackage?: string;
+  initialDate?: string;
+  initialTime?: string;
   manualMode?: boolean;
   // True when the vehicle was already looked up and confirmed on the
   // homepage's plate form - skips the plate-entry step and the
@@ -122,28 +128,6 @@ const plateLookupTimeoutMs = 30 * 1000;
 const plateLookupRetryDelayMs = 3 * 1000;
 type PlateLookupOverlayState = { phase: "checking" | "notfound"; progress: number };
 
-// Maps a category id to a fake VehicleLookupResult so getVehicleCategory() resolves correctly.
-const categoryWeights: Record<string, { type: string | null; weight: number }> = {
-  van:    { type: "varebil", weight: 3000 },
-  large:  { type: null,      weight: 2200 },
-  medium: { type: null,      weight: 1500 },
-  small:  { type: null,      weight: 1000 },
-};
-const createCategoryVehicle = (categoryId: string): VehicleLookupResult => {
-  const spec = categoryWeights[categoryId] ?? categoryWeights.small!;
-  return {
-    registration_number: "",
-    make: null,
-    model: null,
-    model_year: null,
-    color: null,
-    type: spec.type,
-    total_weight: spec.weight,
-    chassis_type: null,
-    lookupUnavailable: true,
-  };
-};
-
 const createIdempotencyKey = (input: {
   plate: string;
   email: string;
@@ -173,28 +157,44 @@ const findFirstBookableDate = (
 };
 
 
-export function BookingFlow({ initialPlate, initialCategory, manualMode = false, autoConfirmVehicle = false, minDate, settings, availabilityBlocks }: BookingFlowProps) {
+export function BookingFlow({ initialPlate, initialCategory, initialPackage = "", initialDate = "", initialTime = "", manualMode = false, autoConfirmVehicle = false, minDate, settings, availabilityBlocks }: BookingFlowProps) {
   const initialBookableDate = useMemo(
     () => findFirstBookableDate(minDate, settings, availabilityBlocks),
     [availabilityBlocks, minDate, settings]
   );
+  const quickBooking = useMemo(() => {
+    const packageId = settings.catalog.packages.some((item) => item.id === initialPackage) ? initialPackage : "";
+    const lastDate = toCalendarDate(minDate);
+    lastDate.setDate(lastDate.getDate() + Number(settings.maximumDaysAhead || 90));
+    const date =
+      /^\d{4}-\d{2}-\d{2}$/.test(initialDate) && initialDate >= minDate && initialDate <= format(lastDate, "yyyy-MM-dd")
+        ? initialDate
+        : "";
+    const time = date && /^\d{2}:\d{2}$/.test(initialTime) ? initialTime : "";
+    return { packageId, date, time };
+  }, [initialDate, initialPackage, initialTime, minDate, settings.catalog.packages, settings.maximumDaysAhead]);
 
   const [plate, setPlate] = useState(initialPlate);
   const [lookupStatus, setLookupStatus] = useState<LookupStatus | null>(null);
   const [vehicle, setVehicle] = useState<VehicleLookupResult | null>(() =>
-    manualMode && initialCategory ? createCategoryVehicle(initialCategory) : null
+    manualMode && initialCategory && settings.catalog.vehicleCategories.some((item) => item.id === initialCategory)
+      ? createSizeVehicle(initialCategory)
+      : null
   );
   const [isVehicleConfirmed, setIsVehicleConfirmed] = useState(false);
   const [manualVehicleName, setManualVehicleName] = useState("");
-  const [activePackage, setActivePackage] = useState(settings.catalog.packages[0]?.id || "");
+  const [secondManualVehicleName, setSecondManualVehicleName] = useState("");
+  const [activePackage, setActivePackage] = useState(quickBooking.packageId || settings.catalog.packages[0]?.id || "");
   const [selectedAddonIds, setSelectedAddonIds] = useState<string[]>([]);
   const [secondVehicle, setSecondVehicle] = useState<VehicleLookupResult | null>(null);
   const [secondPackage, setSecondPackage] = useState("");
   const [secondAddonIds, setSecondAddonIds] = useState<string[]>([]);
   const [activeVehicleIndex, setActiveVehicleIndex] = useState<ActiveVehicleIndex>(0);
   const [isAddCarModalOpen, setIsAddCarModalOpen] = useState(false);
-  const [appointmentDate, setAppointmentDate] = useState<Date | undefined>(initialBookableDate);
-  const [selectedAppointmentTime, setSelectedAppointmentTime] = useState("");
+  const [appointmentDate, setAppointmentDate] = useState<Date | undefined>(
+    quickBooking.date ? toCalendarDate(quickBooking.date) : initialBookableDate
+  );
+  const [selectedAppointmentTime, setSelectedAppointmentTime] = useState(quickBooking.time);
   const [liveAvailableTimeSlots, setLiveAvailableTimeSlots] = useState<string[]>([]);
   const [isAvailabilityLoading, setIsAvailabilityLoading] = useState(false);
   const [availabilityError, setAvailabilityError] = useState("");
@@ -203,7 +203,10 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [idempotencyKey, setIdempotencyKey] = useState("");
   const [isMobileSummaryOpen, setIsMobileSummaryOpen] = useState(false);
-  const [openStep, setOpenStep] = useState<1 | 2 | 3 | 4>(1);
+  // Arriving from the quick booking with everything chosen jumps straight to "Dine oplysninger".
+  const [openStep, setOpenStep] = useState<1 | 2 | 3 | 4>(() =>
+    vehicle && quickBooking.packageId && quickBooking.time ? 4 : 1
+  );
   const [confirmation, setConfirmation] = useState<BookingConfirmation | null>(null);
   const [submitOverlay, setSubmitOverlay] = useState<{ phase: "loading" | "success"; progress: number } | null>(null);
   const submitProgressTimerRef = useRef<number | null>(null);
@@ -299,8 +302,13 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
     () => (secondPackage ? getCatalogPackage(settings.catalog, secondPackage) : undefined),
     [secondPackage, settings.catalog]
   );
-  const vehicleName = useMemo(() => buildVehicleName(vehicle), [vehicle]);
-  const vehicleTypeLabel = vehicle?.type ? `Biltype: ${vehicle.type}` : "Biltype: -";
+  // Size-picked cars have no registry data: show the typed make/model, else the size.
+  const vehicleName = manualMode
+    ? manualVehicleName.trim() || category?.label || "Din bil"
+    : buildVehicleName(vehicle);
+  const vehicleTypeLabel = manualMode
+    ? `Størrelse: ${category?.label ?? "-"}`
+    : vehicle?.type ? `Biltype: ${vehicle.type}` : "Biltype: -";
   const activeCatId = category?.id;
   const activeCatSpecificPrice =
     activeCatId && activePackageData?.categoryPrices
@@ -312,7 +320,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
       : Number(activePackageData?.price || 0);
   const basePrice = activePackagePrice > 0 ? activePackagePrice : category?.price ?? 0;
   const hasSecondCar = Boolean(secondVehicle);
-  const secondVehicleName = useMemo(() => buildVehicleName(secondVehicle), [secondVehicle]);
+  const secondVehicleName = secondManualVehicleName.trim() || buildVehicleName(secondVehicle);
   const secondCatId = secondCategory?.id;
   const secondCatSpecificPrice =
     secondCatId && secondPackageData?.categoryPrices
@@ -371,7 +379,9 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
         plate: sanitizePlate(secondVehicle.registration_number),
         vehicle: secondVehicle,
         vehicleName: secondVehicleName,
-        vehicleTypeLabel: secondVehicle.type ? `Biltype: ${secondVehicle.type}` : "Biltype: -",
+        vehicleTypeLabel: !secondVehicle.registration_number
+          ? `Størrelse: ${secondCategory.label}`
+          : secondVehicle.type ? `Biltype: ${secondVehicle.type}` : "Biltype: -",
         category: secondCategory,
         packageId: secondPackageData.id,
         packageLabel: secondPackageData.title,
@@ -571,6 +581,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
     setPlateLookupOverlay(null);
     setLookupStatus(null);
     setSecondVehicle(null);
+    setSecondManualVehicleName("");
     setSecondPackage("");
     setSecondAddonIds([]);
     setActiveVehicleIndex(0);
@@ -581,6 +592,13 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
     setConfirmation(null);
     window.history.replaceState({}, "", "/booking");
   }, [clearPlateLookupTimers]);
+
+  const handleSelectSize = useCallback((categoryId: string) => {
+    const nextVehicle = createSizeVehicle(categoryId);
+    if (!nextVehicle) return;
+    setVehicle(nextVehicle);
+    window.history.replaceState({}, "", bookingHrefForSize(categoryId));
+  }, []);
 
   // Eases the progress bar toward 94% over the 30s retry budget so it never
   // visually "completes" until we actually have (or give up on) a vehicle.
@@ -807,8 +825,9 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
     clearSelectedAppointmentTime();
   };
 
-  const handleConfirmSecondCar = (nextVehicle: VehicleLookupResult) => {
+  const handleConfirmSecondCar = (nextVehicle: VehicleLookupResult, nextVehicleName = "") => {
     setSecondVehicle(nextVehicle);
+    setSecondManualVehicleName(nextVehicleName);
     setSecondPackage("");
     setSecondAddonIds([]);
     setActiveVehicleIndex(1);
@@ -820,6 +839,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
 
   const handleRemoveSecondCar = () => {
     setSecondVehicle(null);
+    setSecondManualVehicleName("");
     setSecondPackage("");
     setSecondAddonIds([]);
     setActiveVehicleIndex(0);
@@ -1022,7 +1042,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
 
             {/* Summary */}
             <div className="space-y-4 px-8 py-8">
-              <div className="grid gap-3 rounded-2xl bg-[#faf7f0] p-5 text-sm">
+              <div className="grid gap-3 rounded-2xl bg-[#f2f6fa] p-5 text-sm">
                 <ConfirmRow icon="🚗" label="Biler" value={confirmation.vehicleCount > 1 ? "2 biler i samme besøg" : confirmation.vehicleName} />
                 <ConfirmRow icon="✨" label="Pakke" value={confirmation.packageLabel} />
                 <ConfirmRow icon="📅" label="Tidspunkt" value={confirmation.appointmentLabel} />
@@ -1053,7 +1073,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
               <div className="flex flex-col gap-3 pt-2 sm:flex-row">
                 <a
                   href={(() => { try { const u = new URL(confirmation.portalUrl, window.location.origin); u.searchParams.set("booking", "confirmed"); return u.toString(); } catch { return confirmation.portalUrl; } })()}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[var(--brand)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#8a6c14]"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-[var(--brand)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#00487a]"
                 >
                   <CalendarDays className="h-4 w-4" />
                   Se mine bookinger
@@ -1061,7 +1081,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                 <button
                   type="button"
                   onClick={handleChangeVehicle}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-[var(--line)] bg-white px-5 py-3 text-sm font-semibold text-[var(--ink)] transition hover:bg-[#faf7f0]"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-[var(--line)] bg-white px-5 py-3 text-sm font-semibold text-[var(--ink)] transition hover:bg-[#f2f6fa]"
                 >
                   <RotateCcw className="h-4 w-4" />
                   Ny booking
@@ -1078,24 +1098,11 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
   const lookupCard = manualMode ? (
     <Card className="p-5 sm:p-7">
       <p className="text-sm font-semibold uppercase text-[#6b7780]">Booking</p>
-      <h1 className="mt-3 font-display text-3xl font-semibold text-[var(--ink)] sm:text-4xl">
-        {category?.label ?? "Din bil"}
-      </h1>
+      <h1 className="mt-3 font-display text-3xl font-semibold text-[var(--ink)] sm:text-4xl">Vælg din bilstørrelse</h1>
       <p className="mt-3 max-w-xl text-sm leading-6 text-[var(--muted)]">
-        Du har valgt bilstørrelse manuelt. Vælg pakke og tilvalg herunder, og angiv bilmærke og model under &ldquo;Dine oplysninger&rdquo;.
+        Vælg størrelsen på din bil og se prisen. Derefter vælger du pakke, tilvalg, tidspunkt og kontaktoplysninger.
       </p>
-      <div className="mt-5 flex flex-wrap items-center gap-3">
-        <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--line)] bg-[#faf7f0] px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
-          <Car className="h-4 w-4 text-[var(--brand)]" />
-          {category?.label ?? "Bilstørrelse"}
-        </span>
-        <Link
-          href="/velg-storrelse"
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--muted)] transition hover:text-[var(--brand)]"
-        >
-          ← Skift bilstørrelse
-        </Link>
-      </div>
+      <VehicleSizePicker catalog={settings.catalog} onSelect={handleSelectSize} className="mt-6" />
     </Card>
   ) : (
     <Card className="p-5 sm:p-7">
@@ -1107,7 +1114,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
       <form onSubmit={(event) => { event.preventDefault(); submitPlateLookup(); }} className="mt-6 grid max-w-xl gap-3">
         <label className="block">
           <span className="sr-only">Dansk nummerplade</span>
-          <div className="flex w-full max-w-full overflow-hidden rounded-md border border-[var(--line)] bg-white focus-within:border-[var(--brand)] focus-within:ring-4 focus-within:ring-[#b8860b]/15">
+          <div className="flex w-full max-w-full overflow-hidden rounded-md border border-[var(--line)] bg-white focus-within:border-[var(--brand)] focus-within:ring-4 focus-within:ring-[#0071c2]/15">
             <Image src="/DKEU.svg" alt="DK" width={48} height={54} className="h-[4.35rem] w-14 shrink-0 object-cover" />
             <input
               name="plate"
@@ -1129,7 +1136,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
         </Button>
       </form>
       {lookupStatus ? (
-        <div className={cn("mt-4 rounded-md border px-4 py-3 text-sm", lookupStatus.type === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-[#b8860b]/30 bg-[#f3ead4] text-[var(--accent)]")}>
+        <div className={cn("mt-4 rounded-md border px-4 py-3 text-sm", lookupStatus.type === "error" ? "border-red-200 bg-red-50 text-red-700" : "border-[#0071c2]/30 bg-[#e6f0fb] text-[var(--accent)]")}>
           {lookupStatus.message}
         </div>
       ) : null}
@@ -1172,7 +1179,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
             {/* Vehicle bar */}
             <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[var(--line)] bg-white px-4 py-3">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#f3ead4] text-[var(--brand)]">🚗</span>
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#e6f0fb] text-[var(--brand)]">🚗</span>
                 <div>
                   <p className="text-base font-bold text-[var(--ink)] sm:text-lg">
                     {manualMode ? (activeSelectionCategory?.label ?? "Din bil") : activeSelectionVehicleName}
@@ -1186,7 +1193,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
               </div>
               <div className="flex items-center gap-2">
                 {hasSecondCar ? (
-                  <div className="flex rounded-xl bg-[#f3ead4] p-1">
+                  <div className="flex rounded-xl bg-[#e6f0fb] p-1">
                     {(["Bil 1", "Bil 2"] as const).map((label, index) => (
                       <button
                         key={label}
@@ -1210,12 +1217,9 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                   </span>
                 ) : null}
                 {manualMode ? (
-                  <Link
-                    href="/velg-storrelse"
-                    className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-[var(--muted)] transition hover:bg-[#f2f7f9] hover:text-[var(--ink)]"
-                  >
+                  <button type="button" onClick={handleChangeVehicle} className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-[var(--muted)] transition hover:bg-[#f2f7f9] hover:text-[var(--ink)]">
                     <RotateCcw className="h-4 w-4" /> Skift størrelse
-                  </Link>
+                  </button>
                 ) : (
                   <button type="button" onClick={handleChangeVehicle} className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-[var(--muted)] transition hover:bg-[#f2f7f9] hover:text-[var(--ink)]">
                     <RotateCcw className="h-4 w-4" /> Skift bil
@@ -1298,7 +1302,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                   <button
                     type="button"
                     onClick={handleContinueAfterAddons}
-                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)]"
+                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(0,113,194,0.22)] transition hover:bg-[var(--cta-hover)]"
                   >
                     {hasSecondCar && !secondPackageData ? "Vælg bilvask til bil 2" : "Videre til dato og tid"} <ArrowRight className="h-4 w-4" />
                   </button>
@@ -1308,7 +1312,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
 
             {/* ── Second car optional flow ────────────────────────── */}
             {openStep >= 2 ? (
-              <div className="overflow-hidden rounded-2xl border border-[var(--line)] bg-white shadow-[0_16px_40px_rgba(27,23,18,0.06)]">
+              <div className="overflow-hidden rounded-2xl border border-[var(--line)] bg-white shadow-[0_16px_40px_rgba(0,35,80,0.06)]">
                 <button
                   ref={addCarButtonRef}
                   type="button"
@@ -1319,11 +1323,11 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     }
                     setIsAddCarModalOpen(true);
                   }}
-                  className="flex w-full items-center gap-3 px-4 py-3.5 text-left transition hover:bg-[#faf7f0]"
+                  className="flex w-full items-center gap-3 px-4 py-3.5 text-left transition hover:bg-[#f2f6fa]"
                 >
                   <span className={cn(
                     "flex h-8 w-8 shrink-0 items-center justify-center rounded-xl transition",
-                    hasSecondCar ? "bg-[var(--brand)] text-white" : "bg-[#f3ead4] text-[var(--brand)]"
+                    hasSecondCar ? "bg-[var(--brand)] text-white" : "bg-[#e6f0fb] text-[var(--brand)]"
                   )}>
                     <Car className="h-4 w-4" />
                   </span>
@@ -1351,7 +1355,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     <button
                       type="button"
                       onClick={handleEditSecondCar}
-                      className="inline-flex h-10 items-center justify-center rounded-xl bg-[#f3ead4] px-4 text-sm font-semibold text-[var(--brand)] transition hover:bg-[#f5edd8]"
+                      className="inline-flex h-10 items-center justify-center rounded-xl bg-[#e6f0fb] px-4 text-sm font-semibold text-[var(--brand)] transition hover:bg-[#f5edd8]"
                     >
                       Rediger bil 2
                     </button>
@@ -1452,7 +1456,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                       </>
                     ) : (
                       <div className="flex h-full flex-col items-center justify-center py-10 text-center text-[var(--muted)]">
-                        <CalendarDays className="mb-3 h-8 w-8 text-[#e8c468]" />
+                        <CalendarDays className="mb-3 h-8 w-8 text-[#feba02]" />
                         <p className="text-sm font-semibold">Vælg en dag i kalenderen</p>
                         <p className="mt-1 text-xs">Derefter vises ledige tider her.</p>
                       </div>
@@ -1464,7 +1468,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     type="button"
                     onClick={() => goToStep(4)}
                     disabled={!appointmentTime}
-                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)] disabled:cursor-not-allowed disabled:opacity-50"
+                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(0,113,194,0.22)] transition hover:bg-[var(--cta-hover)] disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     Videre til dine oplysninger <ArrowRight className="h-4 w-4" />
                   </button>
@@ -1483,15 +1487,15 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
               >
                 <form id="booking-details" onSubmit={onSubmit} className="space-y-6">
                   <div className="grid gap-3 sm:grid-cols-2">
-                    <button type="button" onClick={() => form.setValue("customerType", "private")} className={cn("rounded-2xl border px-4 py-4 text-sm font-semibold transition", customerType === "private" ? "border-[var(--brand)] bg-[#f3ead4] text-[var(--brand)]" : "border-[var(--line)] bg-white text-[var(--ink)]")}>
+                    <button type="button" onClick={() => form.setValue("customerType", "private")} className={cn("rounded-2xl border px-4 py-4 text-sm font-semibold transition", customerType === "private" ? "border-[var(--brand)] bg-[#e6f0fb] text-[var(--brand)]" : "border-[var(--line)] bg-white text-[var(--ink)]")}>
                       Privat
                     </button>
-                    <button type="button" onClick={() => form.setValue("customerType", "business")} className={cn("rounded-2xl border px-4 py-4 text-sm font-semibold transition", customerType === "business" ? "border-[var(--brand)] bg-[#f3ead4] text-[var(--brand)]" : "border-[var(--line)] bg-white text-[var(--ink)]")}>
+                    <button type="button" onClick={() => form.setValue("customerType", "business")} className={cn("rounded-2xl border px-4 py-4 text-sm font-semibold transition", customerType === "business" ? "border-[var(--brand)] bg-[#e6f0fb] text-[var(--brand)]" : "border-[var(--line)] bg-white text-[var(--ink)]")}>
                       Erhverv
                     </button>
                   </div>
                   {manualMode && (
-                    <div className="rounded-2xl border border-[#b8860b]/25 bg-[#f3ead4] px-4 py-4">
+                    <div className="rounded-2xl border border-[#0071c2]/25 bg-[#e6f0fb] px-4 py-4">
                       <p className="flex items-center gap-2 text-sm font-bold text-[var(--ink)]">
                         <Car className="h-4 w-4 text-[var(--brand)]" />
                         Bilmærke og model
@@ -1576,7 +1580,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                       <span>Ja tak, jeg vil gerne modtage tilbud og nyheder</span>
                     </label>
                   </div>
-                  <div className="rounded-2xl border border-[var(--line)] bg-[#faf7f0] px-4 py-4">
+                  <div className="rounded-2xl border border-[var(--line)] bg-[#f2f6fa] px-4 py-4">
                     <p className="flex items-center gap-2 text-sm font-semibold text-[var(--ink)]">
                       <Tag className="h-4 w-4 text-[var(--brand)]" /> Rabatkode
                     </p>
@@ -1599,7 +1603,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                           value={couponCode}
                           onChange={(e) => { setCouponCode(e.target.value.toUpperCase()); setCouponError(""); }}
                           onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); void validateCoupon(); } }}
-                          className="min-w-0 flex-1 rounded-xl border border-[var(--line)] bg-white px-3 py-2 text-sm font-semibold uppercase tracking-wider outline-none focus:border-[var(--brand)] focus:ring-2 focus:ring-[#b8860b]/15"
+                          className="min-w-0 flex-1 rounded-xl border border-[var(--line)] bg-white px-3 py-2 text-sm font-semibold uppercase tracking-wider outline-none focus:border-[var(--brand)] focus:ring-2 focus:ring-[#0071c2]/15"
                         />
                         <button
                           type="button"
@@ -1630,14 +1634,14 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
           <aside className="hidden xl:sticky xl:top-28 xl:block">
             <Card className="rounded-[1.5rem] border-[var(--line)] p-6 shadow-none">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#f3ead4] text-[var(--brand)]">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#e6f0fb] text-[var(--brand)]">
                   <CalendarDays className="h-5 w-5" />
                 </span>
                 <h3 className="font-display text-2xl font-semibold text-[var(--ink)]">Din booking</h3>
               </div>
               <div className="mt-6 space-y-3">
                 {bookingVehicles.length > 1 ? (
-                  <div className="rounded-xl bg-[#f3ead4] px-4 py-3 text-sm font-semibold text-[var(--accent)]">
+                  <div className="rounded-xl bg-[#e6f0fb] px-4 py-3 text-sm font-semibold text-[var(--accent)]">
                     Din booking indeholder 2 biler
                   </div>
                 ) : null}
@@ -1649,11 +1653,11 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     onRemove={item.id === "car-2" ? handleRemoveSecondCar : undefined}
                   />
                 ))}
-                <div className="rounded-xl bg-[#faf7f0] px-4 py-4">
+                <div className="rounded-xl bg-[#f2f6fa] px-4 py-4">
                   <SummaryRow label="Dato og tid" value={appointmentLabel} />
                 </div>
                 {travelSurcharge > 0 ? (
-                  <div className="rounded-xl bg-[#faf7f0] px-4 py-4">
+                  <div className="rounded-xl bg-[#f2f6fa] px-4 py-4">
                     <SummaryRow label="Kørselstillæg" value={formatPrice(travelSurcharge)} />
                   </div>
                 ) : null}
@@ -1673,7 +1677,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                     ) : null}
                   </div>
                 ) : null}
-                <div className="rounded-xl bg-[#f3ead4] px-4 py-4">
+                <div className="rounded-xl bg-[#e6f0fb] px-4 py-4">
                   <div className="flex items-center justify-between gap-4">
                     <span className="text-sm font-semibold text-[var(--ink)]">Total</span>
                     <span className="text-2xl font-semibold text-[var(--brand)]">{formatShortPrice(finalTotal)}</span>
@@ -1687,6 +1691,8 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
           <AddExtraCarModal
             open={isAddCarModalOpen}
             firstPlate={plate}
+            sizeMode={manualMode}
+            catalog={settings.catalog}
             onClose={() => {
               setIsAddCarModalOpen(false);
               window.setTimeout(() => addCarButtonRef.current?.focus(), 0);
@@ -1700,7 +1706,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
               <div role="dialog" aria-modal="true" aria-labelledby="mobile-booking-summary-title" className="mx-auto flex max-h-[calc(100dvh-3rem)] max-w-xl flex-col overflow-hidden rounded-t-2xl bg-white shadow-[0_-20px_60px_rgba(0,0,0,0.22)]">
                 <div className="flex items-start justify-between gap-4 border-b border-[var(--line)] px-5 py-4">
                   <div className="flex items-center gap-2">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#f3ead4] text-[var(--brand)]"><CalendarDays className="h-4 w-4" /></span>
+                    <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[#e6f0fb] text-[var(--brand)]"><CalendarDays className="h-4 w-4" /></span>
                     <h3 id="mobile-booking-summary-title" className="font-display text-xl font-semibold text-[var(--ink)]">Din booking</h3>
                   </div>
                   <button type="button" onClick={() => setIsMobileSummaryOpen(false)} aria-label="Luk" className="rounded-md p-2 text-[var(--muted)] transition hover:bg-[#f2f7f9]">
@@ -1709,7 +1715,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                 </div>
                 <div className="space-y-4 overflow-y-auto px-5 py-4">
                   {bookingVehicles.length > 1 ? (
-                    <div className="rounded-xl bg-[#f3ead4] px-4 py-3 text-sm font-semibold text-[var(--accent)]">
+                    <div className="rounded-xl bg-[#e6f0fb] px-4 py-3 text-sm font-semibold text-[var(--accent)]">
                       Din booking indeholder 2 biler
                     </div>
                   ) : null}
@@ -1722,7 +1728,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                       onRemove={item.id === "car-2" ? handleRemoveSecondCar : undefined}
                     />
                   ))}
-                  <div className="rounded-xl bg-[#faf7f0] px-4 py-4 text-sm">
+                  <div className="rounded-xl bg-[#f2f6fa] px-4 py-4 text-sm">
                     <p className="font-semibold text-[var(--ink)]">Tidspunkt</p>
                     <p className="mt-2 text-[var(--muted)]">{appointmentLabel}</p>
                   </div>
@@ -1734,7 +1740,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                       </div>
                     </div>
                   ) : null}
-                  <div className="rounded-xl bg-[#f3ead4] px-4 py-4">
+                  <div className="rounded-xl bg-[#e6f0fb] px-4 py-4">
                     <div className="flex items-center justify-between gap-4">
                       <span className="text-lg font-semibold text-[var(--ink)]">Total</span>
                       <span className="text-2xl font-semibold text-[var(--brand)]">{formatShortPrice(finalTotal)}</span>
@@ -1743,7 +1749,7 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
                   </div>
                 </div>
                 <div className="border-t border-[var(--line)] bg-white px-5 py-4">
-                  <button type="button" onClick={() => { setIsMobileSummaryOpen(false); document.getElementById("booking-details")?.scrollIntoView({ behavior: "smooth", block: "start" }); }} className="flex h-12 w-full items-center justify-center rounded-xl bg-[var(--cta)] px-4 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.24)]">
+                  <button type="button" onClick={() => { setIsMobileSummaryOpen(false); document.getElementById("booking-details")?.scrollIntoView({ behavior: "smooth", block: "start" }); }} className="flex h-12 w-full items-center justify-center rounded-xl bg-[var(--cta)] px-4 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(0,113,194,0.24)]">
                     Fortsæt booking · {formatShortPrice(finalTotal)}
                   </button>
                 </div>
@@ -1754,14 +1760,14 @@ export function BookingFlow({ initialPlate, initialCategory, manualMode = false,
           {/* ── Mobile bottom bar ────────────────────────────────── */}
           <div className={cn("fixed inset-x-0 bottom-0 z-50 border-t border-[var(--line)] bg-white/95 px-4 py-3 shadow-[0_-16px_40px_rgba(8,27,21,0.12)] backdrop-blur xl:hidden", isMobileSummaryOpen && "hidden")}>
             <div className="mx-auto flex max-w-xl items-center gap-2 overflow-hidden">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[var(--brand)]"><CalendarDays className="h-5 w-5" /></span>
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#e6f0fb] text-[var(--brand)]"><CalendarDays className="h-5 w-5" /></span>
               <div className="min-w-0 flex-1">
                 <p className="text-xl font-semibold leading-none text-[var(--brand)]">{formatShortPrice(finalTotal)}</p>
                 <p className="mt-1 truncate text-xs font-medium text-[var(--muted)]">
                   {bookingVehicles.length > 1 ? "2 biler" : activePackageData?.title || "Bilvask"} · Trin {openStep} af 4
                 </p>
               </div>
-              <button type="button" onClick={() => setIsMobileSummaryOpen(true)} className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl bg-[var(--cta)] px-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(202,160,54,0.22)]">
+              <button type="button" onClick={() => setIsMobileSummaryOpen(true)} className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl bg-[var(--cta)] px-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(0,113,194,0.22)]">
                 Se oversigt
               </button>
             </div>
@@ -1811,12 +1817,12 @@ function BookingVehicleSummaryCard({
   onRemove?: () => void;
 }) {
   return (
-    <div className="rounded-xl bg-[#faf7f0] px-4 py-4 text-sm">
+    <div className="rounded-xl bg-[#f2f6fa] px-4 py-4 text-sm">
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="font-semibold text-[var(--ink)]">{item.label}</p>
           <p className="mt-1 font-medium text-[var(--muted)]">
-            {item.vehicleName} · {item.plate}
+            {[item.vehicleName, item.plate].filter(Boolean).join(" · ")}
           </p>
           {!compact ? (
             <p className="mt-1 text-xs text-[var(--muted)]">{item.vehicleTypeLabel}</p>
@@ -1928,16 +1934,25 @@ function PackageCard({
 
   return (
     <div className={cn("pkg-wrap", isActive && "pkg-wrap--active")}
-      style={isActive ? { background: "linear-gradient(135deg,#b8860b,#e8c468,#b8860b)" } : undefined}
+      style={isActive ? { background: "linear-gradient(135deg,#0071c2,#feba02,#0071c2)" } : undefined}
     >
       {/* Spinning border ring */}
       <div className="pkg-ring" />
 
-      <button
-        type="button"
+      {/* A div rather than a <button>: the card holds the "Læs mere" button, and
+          nested buttons are invalid HTML that breaks hydration. */}
+      <div
+        role="button"
+        tabIndex={0}
+        aria-pressed={isActive}
         onClick={onClick}
-        className="relative z-10 flex w-full flex-col overflow-hidden rounded-[14px] bg-white text-left transition hover:shadow-md"
-        style={isActive ? { boxShadow: "0 8px 32px rgba(184,134,11,0.18)" } : undefined}
+        onKeyDown={(e) => {
+          if (e.target !== e.currentTarget || (e.key !== "Enter" && e.key !== " ")) return;
+          e.preventDefault();
+          onClick();
+        }}
+        className="relative z-10 flex w-full cursor-pointer flex-col overflow-hidden rounded-[14px] bg-white text-left transition hover:shadow-md"
+        style={isActive ? { boxShadow: "0 8px 32px rgba(0,113,194,0.18)" } : undefined}
       >
         {/* Image */}
         {item.imageUrl ? (
@@ -1950,8 +1965,8 @@ function PackageCard({
             ) : null}
           </div>
         ) : (
-          <div className="flex h-32 items-center justify-center rounded-t-[14px] bg-[#f3ead4]">
-            <Sparkles className={cn("h-10 w-10", isActive ? "text-[var(--brand)]" : "text-[#e8c468]")} />
+          <div className="flex h-32 items-center justify-center rounded-t-[14px] bg-[#e6f0fb]">
+            <Sparkles className={cn("h-10 w-10", isActive ? "text-[var(--brand)]" : "text-[#feba02]")} />
           </div>
         )}
 
@@ -2001,7 +2016,7 @@ function PackageCard({
             <p className="mt-3 text-sm leading-5 text-[var(--muted)]">{item.description}</p>
           )}
         </div>
-      </button>
+      </div>
     </div>
   );
 }
@@ -2053,7 +2068,7 @@ function AddonCard({
       className={cn(
         "relative flex flex-col overflow-hidden rounded-2xl border text-left transition",
         isSelected
-          ? "border-[var(--brand)] shadow-[0_4px_16px_rgba(184,134,11,0.18)]"
+          ? "border-[var(--brand)] shadow-[0_4px_16px_rgba(0,113,194,0.18)]"
           : "border-[var(--line)] bg-white hover:border-[var(--brand)] hover:shadow-sm"
       )}
     >
@@ -2071,7 +2086,7 @@ function AddonCard({
         {addon.imageUrl ? (
           <Image src={addon.imageUrl} alt="" fill sizes="(max-width:640px) 50vw,25vw" className="object-cover" />
         ) : (
-          <div className={cn("h-full w-full", isSelected ? "bg-[var(--accent)]" : "bg-[#f3ead4]")} />
+          <div className={cn("h-full w-full", isSelected ? "bg-[var(--accent)]" : "bg-[#e6f0fb]")} />
         )}
         {/* Price badge */}
         {addon.price ? (
@@ -2134,7 +2149,7 @@ function BookingSubmitOverlay({ phase, progress }: { phase: "loading" | "success
         <div
           className={cn(
             "mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full transition-colors duration-300 sm:h-20 sm:w-20",
-            phase === "success" ? "bg-[var(--color-success)]/10 ring-4 ring-[var(--color-success)]/20" : "bg-[#f3ead4]"
+            phase === "success" ? "bg-[var(--color-success)]/10 ring-4 ring-[var(--color-success)]/20" : "bg-[#e6f0fb]"
           )}
         >
           {phase === "success" ? (
@@ -2194,7 +2209,7 @@ function PlateLookupOverlay({ phase, progress }: { phase: "checking" | "notfound
         <div
           className={cn(
             "mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full sm:h-20 sm:w-20",
-            phase === "notfound" ? "bg-red-50" : "bg-[#f3ead4]"
+            phase === "notfound" ? "bg-red-50" : "bg-[#e6f0fb]"
           )}
         >
           {phase === "notfound" ? (
@@ -2217,7 +2232,7 @@ function PlateLookupOverlay({ phase, progress }: { phase: "checking" | "notfound
           <div className="mt-6">
             <div className="h-2.5 w-full overflow-hidden rounded-full bg-[#e7f3ef]">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-[#b8860b] to-[#4ade80] transition-[width] duration-150 ease-out"
+                className="h-full rounded-full bg-gradient-to-r from-[#0071c2] to-[#4ade80] transition-[width] duration-150 ease-out"
                 style={{ width: `${pct}%` }}
               />
             </div>
@@ -2287,10 +2302,10 @@ function BookingAccordion({
       className={cn(
         "overflow-hidden rounded-2xl border transition-all",
         isOpen
-          ? "border-[var(--brand)] bg-white shadow-[0_8px_32px_rgba(184,134,11,0.12)]"
+          ? "border-[var(--brand)] bg-white shadow-[0_8px_32px_rgba(0,113,194,0.12)]"
           : isCompleted
           ? "border-[var(--line)] bg-white"
-          : "border-[var(--line)] bg-[#faf7f0]"
+          : "border-[var(--line)] bg-[#f2f6fa]"
       )}
     >
       <div
@@ -2309,7 +2324,7 @@ function BookingAccordion({
         }
         className={cn(
           "flex items-center justify-between gap-3 px-5 py-4",
-          isCompleted && !isOpen && "cursor-pointer select-none hover:bg-[#faf7f0]"
+          isCompleted && !isOpen && "cursor-pointer select-none hover:bg-[#f2f6fa]"
         )}
       >
         <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2.5">
@@ -2320,7 +2335,7 @@ function BookingAccordion({
                 ? "bg-[var(--brand)] text-white"
                 : isCompleted
                 ? "bg-[var(--color-success)] text-white"
-                : "bg-[#f3ead4] text-[var(--muted)]"
+                : "bg-[#e6f0fb] text-[var(--muted)]"
             )}
           >
             {isCompleted && !isOpen ? <Check className="h-3.5 w-3.5" /> : step}
@@ -2334,14 +2349,14 @@ function BookingAccordion({
             {title}
           </span>
           {summary && !isOpen ? (
-            <span className="rounded-full bg-[#f3ead4] px-3 py-1 text-xs font-semibold text-[var(--brand)]">
+            <span className="rounded-full bg-[#e6f0fb] px-3 py-1 text-xs font-semibold text-[var(--brand)]">
               {summary}
             </span>
           ) : null}
         </div>
         <div className="flex shrink-0 items-center gap-2">
           {!isOpen && !isLocked && icon ? (
-            <span className="text-[#e8c468]">{icon}</span>
+            <span className="text-[#feba02]">{icon}</span>
           ) : null}
           {isCompleted && !isOpen && onEdit ? (
             <span className="text-xs font-semibold text-[var(--brand)]">Rediger</span>

@@ -626,7 +626,7 @@ const normalizeBookingVehicles = (row: RawBooking): BookingVehicle[] => {
           totalPrice: Number(item.totalPrice || 0),
           estimatedMinutes: Number(item.estimatedMinutes || row.estimated_duration_minutes || 0),
         }))
-        .filter((item) => item.registrationNumber || item.plate)
+        .filter((item) => item.registrationNumber || item.plate || item.category)
     : [];
 
   if (fromJson.length > 0) {

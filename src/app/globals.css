@@ -9,16 +9,16 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-display:
     var(--font-lexend), Lexend, ui-sans-serif, system-ui, sans-serif;
-  --color-primary: #1b1712;
-  --color-primary-soft: #2e2519;
-  --color-secondary: #b8860b;
-  --color-cta: #caa036;
-  --color-cta-hover: #96721a;
-  --color-background: #faf7f0;
+  --color-primary: #003580;
+  --color-primary-soft: #1a4d8f;
+  --color-secondary: #0071c2;
+  --color-cta: #0071c2;
+  --color-cta-hover: #00487a;
+  --color-background: #f2f6fa;
   --color-surface: #ffffff;
-  --color-text: #201a12;
-  --color-muted: #7a6f5d;
-  --color-border: #ece1c8;
+  --color-text: #1a1a1a;
+  --color-muted: #666666;
+  --color-border: #d9e3ee;
   --color-success: #10b981;
 }
 
@@ -35,8 +35,8 @@
     --cta: var(--color-cta);
     --cta-hover: var(--color-cta-hover);
     --line: var(--color-border);
-    --grid-line: rgba(184, 134, 11, 0.08);
-    --shadow-soft: 0 24px 80px rgba(27, 23, 18, 0.14);
+    --grid-line: rgba(0, 113, 194, 0.08);
+    --shadow-soft: 0 24px 80px rgba(0, 35, 80, 0.14);
     --calendar-accent: var(--color-secondary);
     --calendar-accent-dark: var(--color-primary);
   }
@@ -53,9 +53,9 @@
     min-height: 100vh;
     font-family: var(--font-sans);
     background:
-      radial-gradient(circle at top left, rgba(184, 134, 11, 0.13), transparent 28rem),
-      radial-gradient(circle at 85% 8%, rgba(202, 160, 54, 0.1), transparent 22rem),
-      linear-gradient(180deg, #faf7f0 0%, #f5efe0 42%, #faf7f0 100%);
+      radial-gradient(circle at top left, rgba(0, 113, 194, 0.13), transparent 28rem),
+      radial-gradient(circle at 85% 8%, rgba(0, 113, 194, 0.1), transparent 22rem),
+      linear-gradient(180deg, #f2f6fa 0%, #e9f0f7 42%, #f2f6fa 100%);
     color: var(--ink);
   }
 
@@ -69,7 +69,7 @@
   }
 
   ::selection {
-    background: rgba(184, 134, 11, 0.22);
+    background: rgba(0, 113, 194, 0.22);
     color: var(--ink);
   }
 
@@ -115,7 +115,7 @@
   overflow: hidden;
   border-radius: 1rem;
   padding: 2px;
-  background: #ece1c8;
+  background: #d9e3ee;
 }
 
 .pkg-ring {
@@ -128,10 +128,10 @@
     from 0deg,
     transparent 0%,
     transparent 60%,
-    #b8860b 74%,
-    #e8c468 82%,
+    #0071c2 74%,
+    #feba02 82%,
     #ffffff 86%,
-    #e8c468 90%,
+    #feba02 90%,
     transparent 96%
   );
   opacity: 0;
@@ -201,8 +201,8 @@
     height: 0.55rem;
     width: 0.55rem;
     border-radius: 999px;
-    background: linear-gradient(135deg, var(--brand), #e8c468);
-    box-shadow: 0 0 0 0.28rem rgba(184, 134, 11, 0.14);
+    background: linear-gradient(135deg, var(--brand), #feba02);
+    box-shadow: 0 0 0 0.28rem rgba(0, 113, 194, 0.14);
   }
 
   .section-title {
@@ -222,7 +222,7 @@
     border: 1px solid var(--line);
     background: rgba(255, 255, 255, 0.84);
     padding: 1rem 1.125rem;
-    box-shadow: 0 20px 40px rgba(27, 23, 18, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 35, 80, 0.1);
   }
 
   .glass-card {
@@ -234,7 +234,7 @@
 
 .rdp-root {
   --rdp-accent-color: var(--calendar-accent);
-  --rdp-accent-background-color: rgba(184, 134, 11, 0.16);
+  --rdp-accent-background-color: rgba(0, 113, 194, 0.16);
   --rdp-day_button-border-radius: 1rem;
   --rdp-day-width: 2.8rem;
   --rdp-day-height: 2.8rem;
@@ -261,9 +261,9 @@
 }
 
 .rdp-day_button:hover:not([disabled]) {
-  background: rgba(184, 134, 11, 0.12);
+  background: rgba(0, 113, 194, 0.12);
 }
 
 .rdp-selected .rdp-day_button {
-  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 113, 194, 0.3);
 }

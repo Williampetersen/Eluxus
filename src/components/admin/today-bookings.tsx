@@ -43,7 +43,7 @@ export function TodayBookings({
             </button>
           ))
         ) : (
-          <div className="rounded-2xl border border-dashed border-[#ece1c8] bg-white/45 px-4 py-5 text-center">
+          <div className="rounded-2xl border border-dashed border-[#d9e3ee] bg-white/45 px-4 py-5 text-center">
             <p className="text-[13px] font-semibold text-[#111827]">No bookings today</p>
             <p className="mt-1 text-[12px] font-medium text-[#6B7280]">Today&apos;s schedule is clear.</p>
           </div>

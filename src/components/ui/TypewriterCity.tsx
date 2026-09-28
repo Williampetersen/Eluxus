@@ -72,12 +72,12 @@ export function TypewriterCity({
     <span
       aria-hidden="true"
       className={cn(
-        "inline-flex min-w-[12.5ch] items-baseline whitespace-nowrap rounded-xl bg-[#b8860b]/25 px-[0.18em] py-[0.03em] align-baseline text-[var(--accent)] shadow-[0_14px_32px_rgba(184,134,11,0.14)] ring-1 ring-[#b8860b]/20",
+        "inline-flex min-w-[12.5ch] items-baseline whitespace-nowrap rounded-xl bg-[#0071c2]/25 px-[0.18em] py-[0.03em] align-baseline text-[var(--accent)] shadow-[0_14px_32px_rgba(0,113,194,0.14)] ring-1 ring-[#0071c2]/20",
         className
       )}
     >
       <span>{typedCity}</span>
-      <span className="ml-[0.08em] inline-block h-[0.82em] w-[0.055em] translate-y-[0.08em] rounded-full bg-[var(--cta)] motion-safe:animate-pulse motion-reduce:hidden" />
+      <span className="ml-[0.08em] inline-block h-[0.82em] w-[0.055em] translate-y-[0.08em] rounded-full bg-current motion-safe:animate-pulse motion-reduce:hidden" />
     </span>
   );
 }

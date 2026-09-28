@@ -126,11 +126,11 @@ export default function VerifyForm({
   return (
     <section className="mx-auto max-w-md">
       {/* Card */}
-      <div className="overflow-hidden rounded-xl border border-[var(--line)] bg-white shadow-[0_16px_42px_rgba(27,23,18,0.08)]">
+      <div className="overflow-hidden rounded-xl border border-[var(--line)] bg-white shadow-[0_16px_42px_rgba(0,35,80,0.08)]">
         {/* Header */}
-        <div className="bg-[#1b1712] px-6 py-5">
+        <div className="bg-[#003580] px-6 py-5">
           <p className="text-lg font-bold text-white">Eluxus</p>
-          <p className="mt-0.5 text-xs font-semibold uppercase tracking-widest text-[#b8860b]">
+          <p className="mt-0.5 text-xs font-semibold uppercase tracking-widest text-[#0071c2]">
             Professionel bilvask
           </p>
         </div>
@@ -138,7 +138,7 @@ export default function VerifyForm({
         <div className="px-6 py-7">
           {/* Icon + title */}
           <div className="mb-5 flex items-start gap-4">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[var(--brand)]">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#e6f0fb] text-[var(--brand)]">
               <ShieldCheck className="h-6 w-6" />
             </span>
             <div>
@@ -153,7 +153,7 @@ export default function VerifyForm({
           </div>
 
           {/* Masked email display */}
-          <div className="mb-5 flex items-center gap-3 rounded-lg border border-[var(--line)] bg-[#faf7f0] px-4 py-3">
+          <div className="mb-5 flex items-center gap-3 rounded-lg border border-[var(--line)] bg-[#f2f6fa] px-4 py-3">
             <Mail className="h-4 w-4 shrink-0 text-[var(--brand)]" />
             <div className="min-w-0">
               <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
@@ -165,7 +165,7 @@ export default function VerifyForm({
 
           {/* Success banner */}
           {successMsg ? (
-            <div className="mb-4 rounded-lg border border-[var(--line)] bg-[#f3ead4] px-4 py-3 text-sm font-medium text-[var(--accent)]">
+            <div className="mb-4 rounded-lg border border-[var(--line)] bg-[#e6f0fb] px-4 py-3 text-sm font-medium text-[var(--accent)]">
               {successMsg}
             </div>
           ) : null}
@@ -182,7 +182,7 @@ export default function VerifyForm({
             <Button
               onClick={handleSendCode}
               disabled={isLoading}
-              className="h-11 w-full bg-[#caa036] font-semibold text-white hover:bg-[#96721a]"
+              className="h-11 w-full bg-[#0071c2] font-semibold text-white hover:bg-[#00487a]"
             >
               {isLoading ? "Sender…" : "Send kode"}
             </Button>
@@ -216,7 +216,7 @@ export default function VerifyForm({
               <Button
                 onClick={handleVerifyCode}
                 disabled={isLoading || code.length !== 6 || Boolean(successMsg)}
-                className="h-11 w-full bg-[#caa036] font-semibold text-white hover:bg-[#96721a]"
+                className="h-11 w-full bg-[#0071c2] font-semibold text-white hover:bg-[#00487a]"
               >
                 {isLoading ? "Bekræfter…" : "Bekræft og se min booking"}
               </Button>
@@ -247,7 +247,7 @@ export default function VerifyForm({
         </div>
 
         {/* Footer */}
-        <div className="border-t border-[var(--line)] bg-[#faf7f0] px-6 py-4 text-center">
+        <div className="border-t border-[var(--line)] bg-[#f2f6fa] px-6 py-4 text-center">
           <p className="text-xs text-[var(--muted)]">Eluxus · Professionel bilvask</p>
         </div>
       </div>

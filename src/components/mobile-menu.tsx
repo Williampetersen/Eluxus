@@ -27,21 +27,21 @@ export function MobileMenu() {
         aria-expanded={open}
         aria-haspopup="true"
         aria-label="Åbn menu"
-        className="flex cursor-pointer items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/85 transition hover:border-[var(--color-cta)] hover:text-white"
+        className="flex cursor-pointer items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/85 transition hover:border-[#feba02] hover:text-white"
       >
         <Menu className="h-4 w-4" />
         Menu
       </button>
 
       {open && (
-        <div className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-[min(20rem,calc(100vw-2rem))] rounded-[1.5rem] border border-[var(--line)] bg-white p-4 shadow-[0_20px_60px_rgba(27,23,18,0.14)]">
+        <div className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-[min(20rem,calc(100vw-2rem))] rounded-[1.5rem] border border-[var(--line)] bg-white p-4 shadow-[0_20px_60px_rgba(0,35,80,0.14)]">
           <div className="flex flex-col gap-2">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={close}
-                className="rounded-2xl px-4 py-3 text-sm text-[var(--ink)] transition hover:bg-[#f3ead4]"
+                className="rounded-2xl px-4 py-3 text-sm text-[var(--ink)] transition hover:bg-[#e6f0fb]"
               >
                 {item.label}
               </Link>
@@ -59,7 +59,7 @@ export function MobileMenu() {
             <Link
               href="/booking"
               onClick={close}
-              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[var(--color-cta)] to-[#8a6c14] px-5 text-sm font-semibold text-[#171310] shadow-[0_14px_34px_rgba(184,134,11,0.35)] transition hover:brightness-110"
+              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#feba02] to-[#f5a800] px-5 text-sm font-semibold text-[#003580] shadow-[0_14px_34px_rgba(254,186,2,0.35)] transition hover:brightness-110"
             >
               Book bilvask
             </Link>

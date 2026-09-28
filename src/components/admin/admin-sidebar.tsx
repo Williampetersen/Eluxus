@@ -36,17 +36,17 @@ export function AdminSidebar({
   view: AdminSidebarView;
 }) {
   return (
-    <aside className="overflow-hidden rounded-3xl border border-white/55 bg-white/[0.65] text-[#111827] shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl xl:sticky xl:top-4 xl:self-start">
+    <aside className="overflow-hidden rounded-3xl border border-white/55 bg-white/[0.65] text-[#111827] shadow-[0_8px_32px_rgba(0,113,194,0.08)] backdrop-blur-2xl xl:sticky xl:top-4 xl:self-start">
       <div className="border-b border-white/55 px-4 py-5">
         <div className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
             alt="Eluxus logo"
-            className="h-10 w-10 rounded-2xl object-contain shadow-[0_8px_20px_rgba(184,134,11,0.18)]"
+            className="h-10 w-10 rounded-2xl object-contain shadow-[0_8px_20px_rgba(0,113,194,0.18)]"
           />
           <div className="min-w-0">
-            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#b8860b]">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0071c2]">
               Eluxus
             </p>
             <p className="mt-1 text-[13px] font-semibold">Admin Panel</p>
@@ -67,7 +67,7 @@ export function AdminSidebar({
               className={cn(
                 "flex min-w-[8.75rem] snap-start items-center gap-2 rounded-2xl px-3 py-2.5 text-[13px] font-semibold transition duration-[250ms] xl:min-w-0",
                 isActive
-                  ? "bg-[#b8860b] text-white shadow-[0_8px_20px_rgba(184,134,11,0.18)]"
+                  ? "bg-[#0071c2] text-white shadow-[0_8px_20px_rgba(0,113,194,0.18)]"
                   : "text-[#6B7280] hover:-translate-y-0.5 hover:bg-white/70 hover:text-[#111827]"
               )}
             >
@@ -80,7 +80,7 @@ export function AdminSidebar({
 
       <div className="border-t border-white/55 px-4 py-4">
         <div className="mb-3 flex items-center justify-between gap-3">
-          <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#b8860b]">
+          <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0071c2]">
             I dag
           </p>
           <span className="rounded-full border border-[#10B981]/20 bg-[#10B981]/10 px-2.5 py-1 text-[12px] font-semibold text-[#047857]">

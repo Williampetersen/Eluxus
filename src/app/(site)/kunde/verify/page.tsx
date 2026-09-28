@@ -22,7 +22,7 @@ export default async function VerifyPage({
   if (!maskedEmail) {
     return (
       <main className="min-h-screen bg-[var(--page-bg)] px-4 py-10 sm:px-6">
-        <section className="mx-auto max-w-lg rounded-lg border border-[var(--line)] bg-white p-6 text-center shadow-[0_16px_42px_rgba(27,23,18,0.08)] sm:p-8">
+        <section className="mx-auto max-w-lg rounded-lg border border-[var(--line)] bg-white p-6 text-center shadow-[0_16px_42px_rgba(0,35,80,0.08)] sm:p-8">
           <h1 className="font-display text-2xl font-semibold text-[var(--ink)]">
             Linket er udlobet eller ugyldigt
           </h1>

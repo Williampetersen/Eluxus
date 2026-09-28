@@ -14,7 +14,7 @@ const REASONS = [
 ];
 
 const inputClass =
-  "w-full rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-sm text-[var(--ink)] shadow-sm placeholder:text-[var(--muted)] transition focus:border-[var(--brand)] focus:outline-none focus:ring-2 focus:ring-[#b8860b]/20";
+  "w-full rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-sm text-[var(--ink)] shadow-sm placeholder:text-[var(--muted)] transition focus:border-[var(--brand)] focus:outline-none focus:ring-2 focus:ring-[#0071c2]/20";
 
 export function ContactForm() {
   const router = useRouter();
@@ -133,7 +133,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)] disabled:cursor-not-allowed disabled:opacity-60"
+        className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(0,113,194,0.26)] transition hover:bg-[var(--cta-hover)] disabled:cursor-not-allowed disabled:opacity-60"
       >
         <Send className="h-4 w-4" />
         {loading ? "Sender..." : "Send besked"}

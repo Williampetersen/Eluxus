@@ -14,7 +14,7 @@ export default function TakPage() {
     <main className="flex min-h-[60vh] items-center justify-center px-4 py-16 sm:px-6">
       <div className="mx-auto max-w-lg text-center">
         <div className="flex justify-center">
-          <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#f3ead4] text-[var(--brand)]">
+          <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#e6f0fb] text-[var(--brand)]">
             <CheckCircle className="h-10 w-10" />
           </span>
         </div>
@@ -44,7 +44,7 @@ export default function TakPage() {
           </Link>
           <Link
             href="/booking"
-            className="inline-flex h-12 items-center justify-center rounded-xl bg-[var(--cta)] px-6 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)]"
+            className="inline-flex h-12 items-center justify-center rounded-xl bg-[var(--cta)] px-6 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(0,113,194,0.26)] transition hover:bg-[var(--cta-hover)]"
           >
             Book bilvask
           </Link>

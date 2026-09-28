@@ -46,9 +46,9 @@ export function VehicleConfirmModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby="vehicle-confirm-title"
-        className="relative w-full max-w-md overflow-hidden rounded-3xl border border-white/70 bg-white shadow-[0_30px_90px_rgba(27,23,18,0.28)]"
+        className="relative w-full max-w-md overflow-hidden rounded-3xl border border-white/70 bg-white shadow-[0_30px_90px_rgba(0,35,80,0.28)]"
       >
-        <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#b8860b,#caa036)]" />
+        <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#0071c2,#009fe3)]" />
 
         {rejected ? (
           <div className="px-5 pb-8 pt-8 text-center sm:px-7">
@@ -62,7 +62,7 @@ export function VehicleConfirmModal({
           </div>
         ) : (
           <div className="px-5 pb-6 pt-8 sm:px-7">
-            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#f3ead4] text-[var(--brand)]">
+            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e6f0fb] text-[var(--brand)]">
               <Car className="h-5 w-5" />
             </span>
             <h2
@@ -72,7 +72,7 @@ export function VehicleConfirmModal({
               Er disse oplysninger korrekte?
             </h2>
 
-            <div className="mt-5 rounded-2xl border border-[#b8860b]/25 bg-[#f3ead4] px-4 py-4">
+            <div className="mt-5 rounded-2xl border border-[#0071c2]/25 bg-[#e6f0fb] px-4 py-4">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--brand)]" />
                 <div>
@@ -89,7 +89,7 @@ export function VehicleConfirmModal({
               <button
                 type="button"
                 onClick={() => setRejected(true)}
-                className="inline-flex h-11 items-center justify-center rounded-xl border border-[var(--line)] bg-white px-4 text-sm font-semibold text-[var(--ink)] transition hover:bg-[#faf7f0]"
+                className="inline-flex h-11 items-center justify-center rounded-xl border border-[var(--line)] bg-white px-4 text-sm font-semibold text-[var(--ink)] transition hover:bg-[#f2f6fa]"
               >
                 Nej, det er forkert
               </button>

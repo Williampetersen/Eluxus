@@ -37,9 +37,9 @@ export default function KontaktPage() {
         </ol>
       </nav>
 
-      <section className="mx-auto mt-6 max-w-7xl overflow-hidden rounded-[2rem] bg-[var(--accent)] shadow-[0_28px_90px_rgba(27,23,18,0.22)]">
+      <section className="mx-auto mt-6 max-w-7xl overflow-hidden rounded-[2rem] bg-[var(--accent)] shadow-[0_28px_90px_rgba(0,35,80,0.22)]">
         <div className="relative px-6 py-12 text-white sm:px-10 lg:px-12 lg:py-14">
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(184,134,11,0.18),transparent_48%,rgba(202,160,54,0.10))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,113,194,0.18),transparent_48%,rgba(0,113,194,0.10))]" />
           <div className="relative max-w-2xl">
             <span className="inline-flex rounded-full border border-white/12 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
               Vi er klar til at hjælpe
@@ -58,13 +58,13 @@ export default function KontaktPage() {
 
       <div className="mx-auto mt-12 max-w-7xl grid gap-8 lg:grid-cols-[1fr_1.5fr] lg:items-start">
         <div className="space-y-5">
-          <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 px-6 py-8 shadow-[0_18px_60px_rgba(27,23,18,0.08)]">
+          <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 px-6 py-8 shadow-[0_18px_60px_rgba(0,35,80,0.08)]">
             <h2 className="font-display text-2xl font-semibold text-[var(--ink)]">
               Kontaktoplysninger
             </h2>
             <div className="mt-6 space-y-5">
               <a href={siteConfig.phoneHref} className="group flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[var(--brand)]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#e6f0fb] text-[var(--brand)]">
                   <Phone className="h-5 w-5" />
                 </span>
                 <div>
@@ -78,7 +78,7 @@ export default function KontaktPage() {
               </a>
 
               <a href={`mailto:${siteConfig.email}`} className="group flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[var(--brand)]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#e6f0fb] text-[var(--brand)]">
                   <Mail className="h-5 w-5" />
                 </span>
                 <div>
@@ -92,7 +92,7 @@ export default function KontaktPage() {
               </a>
 
               <div className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[var(--brand)]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#e6f0fb] text-[var(--brand)]">
                   <Clock className="h-5 w-5" />
                 </span>
                 <div>
@@ -107,7 +107,7 @@ export default function KontaktPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#f3ead4] text-[var(--brand)]">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#e6f0fb] text-[var(--brand)]">
                   <MapPin className="h-5 w-5" />
                 </span>
                 <div>
@@ -125,7 +125,7 @@ export default function KontaktPage() {
             </div>
           </div>
 
-          <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 px-6 py-8 shadow-[0_18px_60px_rgba(27,23,18,0.08)]">
+          <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 px-6 py-8 shadow-[0_18px_60px_rgba(0,35,80,0.08)]">
             <h2 className="font-display text-xl font-semibold text-[var(--ink)]">
               Klar til at booke?
             </h2>
@@ -134,14 +134,14 @@ export default function KontaktPage() {
             </p>
             <Link
               href="/booking"
-              className="mt-5 inline-flex h-11 items-center justify-center rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(202,160,54,0.24)] transition hover:bg-[var(--cta-hover)]"
+              className="mt-5 inline-flex h-11 items-center justify-center rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(0,113,194,0.24)] transition hover:bg-[var(--cta-hover)]"
             >
               Book bilvask
             </Link>
           </div>
         </div>
 
-        <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 px-6 py-8 shadow-[0_18px_60px_rgba(27,23,18,0.08)] sm:px-8">
+        <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 px-6 py-8 shadow-[0_18px_60px_rgba(0,35,80,0.08)] sm:px-8">
           <h2 className="font-display text-2xl font-semibold text-[var(--ink)]">
             Send os en besked
           </h2>

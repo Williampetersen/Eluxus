@@ -12,10 +12,16 @@ import {
   Star,
 } from "lucide-react";
 import { HomePlateForm } from "@/components/home-plate-form";
+import { QuickBooking } from "@/components/home/quick-booking";
 import { BookingStepsInfographic } from "@/components/BookingStepsInfographic";
 import { TypewriterCity } from "@/components/ui/TypewriterCity";
 import { JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site";
+import { getBookingSettingsFromSetup, getSetupAvailabilityBlocks } from "@/lib/server/booking-setup";
+import { plateLookupEnabled } from "@/lib/shared/vehicle-sizes";
+
+// The booking card shows live prices and closed days from the admin setup, so refresh them regularly.
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Bilvask med damp i København og på Sjælland",
@@ -171,7 +177,7 @@ const homeHowToSchema = {
   totalTime: "PT5M",
   step: [
     { "@type": "HowToStep", position: 1, name: "Vælg bilvask", text: "Gå til booking-siden og vælg udvendig vask, indvendig rengøring eller komplet bilpleje." },
-    { "@type": "HowToStep", position: 2, name: "Angiv bil og adresse", text: "Indtast nummerplade, din adresse og kontaktoplysninger." },
+    { "@type": "HowToStep", position: 2, name: "Angiv bil og adresse", text: "Vælg bilstørrelse, og angiv din adresse og kontaktoplysninger." },
     { "@type": "HowToStep", position: 3, name: "Vælg tidspunkt", text: "Vælg et ledigt tidspunkt, der passer ind i din kalender." },
     { "@type": "HowToStep", position: 4, name: "Få bilen vasket", text: "Eluxus møder op og vasker bilen professionelt. Du betaler kun, når bilen er ren." },
   ],
@@ -241,7 +247,12 @@ const homeLocalBusinessSchema = {
   vatID: siteConfig.cvr,
 };
 
-export default function HomePage() {
+const heroBookingSteps = ["Vælg din bil", "Vælg en tid", "Vi kommer til dig"];
+
+export default async function HomePage() {
+  const settings = await getBookingSettingsFromSetup();
+  const availabilityBlocks = await getSetupAvailabilityBlocks();
+
   return (
     <main id="top" className="px-4 pb-12 sm:px-6">
       <JsonLd data={homeHowToSchema} />
@@ -249,7 +260,7 @@ export default function HomePage() {
       <JsonLd data={homeVideoSchema} />
       <JsonLd data={homeLocalBusinessSchema} />
       <section className="-mx-4 -mt-24 sm:-mx-6">
-        <div className="relative overflow-hidden bg-[var(--page-bg)] pt-24">
+        <div className="relative overflow-hidden bg-[var(--color-primary)] pt-24">
           <video
             autoPlay
             muted
@@ -260,39 +271,78 @@ export default function HomePage() {
           >
             <source src="/videos/frontvideo.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(250,247,240,0.96)_0%,rgba(250,247,240,0.82)_50%,rgba(250,247,240,0.32)_100%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(180deg,transparent,rgba(250,247,240,0.94))]" />
+          {/* Booking.com-style navy band behind the hero */}
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,53,128,0.96)_0%,rgba(0,53,128,0.88)_50%,rgba(0,53,128,0.62)_100%)]" />
 
-          <div className="relative mx-auto flex min-h-[calc(100vh-4rem)] max-w-5xl flex-col justify-center px-4 py-16 sm:px-6 lg:px-10">
-            <div className="text-[var(--ink)]">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--brand)]">
+          {/* Phones: text, booking card, then badges. Desktop: text and badges left, card right. */}
+          <div className="relative mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl grid-cols-1 content-center gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,30rem)] lg:gap-x-14 lg:gap-y-0 lg:px-10 lg:py-16">
+            <div className="text-white lg:col-start-1 lg:row-start-1 lg:self-end">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#feba02]">
                 Eluxus · bilvask med damp
               </p>
               <h1
                 aria-label="Bilvask med damp i København og på Sjælland"
-                className="mt-4 max-w-3xl font-display text-[clamp(2rem,4.2vw,3.8rem)] font-semibold leading-[1.08] text-[var(--accent)]"
+                className="mt-4 max-w-3xl font-display text-[clamp(2rem,3.8vw,3.5rem)] font-semibold leading-[1.08] text-white"
               >
                 Bilvask med damp i{" "}
-                <TypewriterCity cities={heroCities} />{" "}
+                <TypewriterCity cities={heroCities} className="bg-white/10 text-[#feba02] ring-white/20" />{" "}
                 og på Sjælland
               </h1>
-              <p className="mt-4 max-w-xl text-base leading-7 text-[var(--muted)] sm:text-lg">
-                Skånsom, effektiv og miljøvenlig bilvask med over 7 års erfaring i Danmark.
+              <p className="mt-4 max-w-xl text-base leading-7 text-white/80 sm:text-lg">
+                Skånsom, effektiv og miljøvenlig bilvask med over 7 års erfaring i Danmark. Vælg din bil og en
+                ledig tid – vi kommer til dig.
               </p>
 
-              <HomePlateForm />
+              {plateLookupEnabled ? <HomePlateForm /> : null}
+            </div>
+
+            <div id="book" className="w-full min-w-0 scroll-mt-28 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:self-center">
+              <QuickBooking
+                catalog={settings.catalog}
+                workingDays={settings.workingDays}
+                maximumDaysAhead={Number(settings.maximumDaysAhead || 90)}
+                timeZone={settings.timeZone || "Europe/Copenhagen"}
+                availabilityBlocks={availabilityBlocks}
+              />
+            </div>
+
+            <div className="lg:col-start-1 lg:row-start-2 lg:self-start">
+              <ol className="hidden max-w-xl gap-3 sm:grid sm:grid-cols-3 lg:mt-6">
+                {heroBookingSteps.map((item, index) => (
+                  <li
+                    key={item}
+                    className="flex items-center gap-2.5 rounded-xl border border-[var(--line)] bg-white/88 px-3 py-2.5 shadow-[0_14px_34px_rgba(0,35,80,0.07)] backdrop-blur-sm"
+                  >
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--brand)] text-xs font-bold text-white">
+                      {index + 1}
+                    </span>
+                    <span className="text-sm font-semibold leading-tight text-[var(--ink)]">{item}</span>
+                  </li>
+                ))}
+              </ol>
 
               <div className="mt-5 flex flex-wrap gap-3">
                 {["Hurtig service", "Indvendig & udvendig", "København & omegn"].map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-2 rounded-xl border border-[var(--line)] bg-white/88 px-4 py-2.5 shadow-[0_14px_34px_rgba(27,23,18,0.07)] backdrop-blur-sm"
+                    className="flex items-center gap-2 rounded-xl border border-[var(--line)] bg-white/88 px-4 py-2.5 shadow-[0_14px_34px_rgba(0,35,80,0.07)] backdrop-blur-sm"
                   >
                     <Check className="h-4 w-4 text-[var(--brand)]" />
                     <span className="text-sm font-semibold text-[var(--ink)]">{item}</span>
                   </div>
                 ))}
               </div>
+
+              <p className="mt-6 text-sm text-white/75">
+                Hellere ringe?{" "}
+                <a
+                  href={siteConfig.phoneHref}
+                  className="inline-flex items-center gap-1.5 font-semibold text-white underline-offset-2 hover:text-[#feba02] hover:underline"
+                >
+                  <Phone className="h-3.5 w-3.5" />
+                  {siteConfig.phoneDisplay}
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -301,9 +351,9 @@ export default function HomePage() {
       <BookingStepsInfographic />
 
       <section className="mx-auto mt-12 max-w-7xl">
-        <div className="grid gap-3 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-[0_24px_70px_rgba(27,23,18,0.12)] backdrop-blur sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-3 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-[0_24px_70px_rgba(0,35,80,0.12)] backdrop-blur sm:grid-cols-2 lg:grid-cols-5">
           {benefits.map((item) => (
-            <div key={item} className="flex items-center gap-3 rounded-xl bg-[#f3ead4] px-4 py-3">
+            <div key={item} className="flex items-center gap-3 rounded-xl bg-[#e6f0fb] px-4 py-3">
               <ShieldCheck className="h-5 w-5 shrink-0 text-[var(--brand)]" />
               <span className="text-sm font-semibold text-[var(--ink)]">{item}</span>
             </div>
@@ -317,7 +367,7 @@ export default function HomePage() {
 
         {/* 01 — Udvendig bilvask */}
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="group relative overflow-hidden rounded-3xl shadow-[0_24px_80px_rgba(27,23,18,0.18)]">
+          <div className="group relative overflow-hidden rounded-3xl shadow-[0_24px_80px_rgba(0,35,80,0.18)]">
             <div className="relative aspect-[4/3]">
               <Image
                 src="/eluxus/exterior-wash.jpg"
@@ -358,7 +408,7 @@ export default function HomePage() {
             <div className="mt-8">
               <Link
                 href="/booking"
-                className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(202,160,54,0.28)]"
+                className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(0,113,194,0.22)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(0,113,194,0.28)]"
               >
                 Book udvendig bilvask
                 <ArrowRight className="h-4 w-4" />
@@ -391,14 +441,14 @@ export default function HomePage() {
             <div className="mt-8">
               <Link
                 href="/booking"
-                className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(202,160,54,0.28)]"
+                className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(0,113,194,0.22)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(0,113,194,0.28)]"
               >
                 Book indvendig rengøring
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
-          <div className="group relative overflow-hidden rounded-3xl shadow-[0_24px_80px_rgba(27,23,18,0.18)]">
+          <div className="group relative overflow-hidden rounded-3xl shadow-[0_24px_80px_rgba(0,35,80,0.18)]">
             <div className="relative aspect-[4/3]">
               <Image
                 src="/eluxus/after-trunk.jpg"
@@ -420,10 +470,10 @@ export default function HomePage() {
         </div>
 
         {/* 03 — Komplet bilvask (dark featured card) */}
-        <div className="overflow-hidden rounded-3xl bg-[var(--accent)] shadow-[0_32px_100px_rgba(27,23,18,0.35)]">
+        <div className="overflow-hidden rounded-3xl bg-[var(--accent)] shadow-[0_32px_100px_rgba(0,35,80,0.35)]">
           <div className="grid lg:grid-cols-2">
             <div className="p-8 text-white sm:p-10 lg:p-14">
-              <span className="inline-flex rounded-full bg-[#b8860b]/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-[#67e8f9]">
+              <span className="inline-flex rounded-full bg-[#0071c2]/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-[#67e8f9]">
                 03 — Anbefalet
               </span>
               <h2 className="mt-4 section-title text-white">Alt i én. Komplet bilvask.</h2>
@@ -436,7 +486,7 @@ export default function HomePage() {
                   "Perfekt til private og virksomheder",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-white/78">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#b8860b]/20 text-[#67e8f9]">
+                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0071c2]/20 text-[#67e8f9]">
                       <Check className="h-3 w-3" />
                     </span>
                     {item}
@@ -446,7 +496,7 @@ export default function HomePage() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/booking"
-                  className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.28)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(202,160,54,0.34)]"
+                  className="inline-flex h-11 items-center gap-2 rounded-lg bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(0,113,194,0.28)] transition hover:bg-[var(--cta-hover)] hover:shadow-[0_14px_36px_rgba(0,113,194,0.34)]"
                 >
                   Book komplet bilvask
                   <ArrowRight className="h-4 w-4" />
@@ -468,7 +518,7 @@ export default function HomePage() {
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover opacity-85 transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#1b1712]/50 via-[#1b1712]/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#003580]/50 via-[#003580]/10 to-transparent" />
             </div>
           </div>
         </div>
@@ -487,7 +537,7 @@ export default function HomePage() {
 
         <div className="mt-12 grid items-start gap-6 lg:grid-cols-3">
           {/* Udvendig */}
-          <div className="rounded-2xl border border-[var(--line)] bg-white p-8 shadow-[0_18px_48px_rgba(27,23,18,0.07)]">
+          <div className="rounded-2xl border border-[var(--line)] bg-white p-8 shadow-[0_18px_48px_rgba(0,35,80,0.07)]">
             <h3 className="font-display text-2xl font-semibold text-[var(--ink)]">Udvendig vask</h3>
             <div className="mt-4 flex items-baseline gap-1.5">
               <span className="text-sm text-[var(--muted)]">fra</span>
@@ -509,16 +559,16 @@ export default function HomePage() {
             </ul>
             <Link
               href="/booking"
-              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)]"
+              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_12px_30px_rgba(0,113,194,0.22)] transition hover:bg-[var(--cta-hover)]"
             >
               Vælg pakke <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
 
           {/* Komplet — featured */}
-          <div className="relative rounded-2xl bg-[var(--accent)] p-8 shadow-[0_32px_80px_rgba(27,23,18,0.30)] lg:-mt-4 lg:pb-10 lg:pt-12">
+          <div className="relative rounded-2xl bg-[var(--accent)] p-8 shadow-[0_32px_80px_rgba(0,35,80,0.30)] lg:-mt-4 lg:pb-10 lg:pt-12">
             <div className="absolute -top-4 left-0 right-0 flex justify-center">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--brand)] px-4 py-1.5 text-sm font-bold text-white shadow-[0_4px_16px_rgba(184,134,11,0.28)]">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--brand)] px-4 py-1.5 text-sm font-bold text-white shadow-[0_4px_16px_rgba(0,113,194,0.28)]">
                 <Sparkles className="h-3.5 w-3.5" />
                 Mest populær
               </span>
@@ -545,14 +595,14 @@ export default function HomePage() {
             </ul>
             <Link
               href="/booking"
-              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_8px_24px_rgba(202,160,54,0.32)] transition hover:bg-[var(--cta-hover)]"
+              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_8px_24px_rgba(0,113,194,0.32)] transition hover:bg-[var(--cta-hover)]"
             >
               Vælg pakke <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
 
           {/* Premium */}
-          <div className="rounded-2xl border border-[var(--line)] bg-white p-8 shadow-[0_18px_48px_rgba(27,23,18,0.07)]">
+          <div className="rounded-2xl border border-[var(--line)] bg-white p-8 shadow-[0_18px_48px_rgba(0,35,80,0.07)]">
             <h3 className="font-display text-2xl font-semibold text-[var(--ink)]">Premium bilpleje</h3>
             <div className="mt-4 flex items-baseline gap-1.5">
               <span className="text-sm text-[var(--muted)]">fra</span>
@@ -574,7 +624,7 @@ export default function HomePage() {
             </ul>
             <Link
               href="/booking"
-              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_12px_30px_rgba(202,160,54,0.22)] transition hover:bg-[var(--cta-hover)]"
+              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] text-sm font-semibold text-white shadow-[0_12px_30px_rgba(0,113,194,0.22)] transition hover:bg-[var(--cta-hover)]"
             >
               Vælg pakke <ArrowRight className="h-4 w-4" />
             </Link>
@@ -584,7 +634,7 @@ export default function HomePage() {
 
 
       <section className="mx-auto mt-16 grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
-        <div className="rounded-[2rem] bg-[var(--accent)] p-6 text-white shadow-[0_24px_70px_rgba(27,23,18,0.2)] sm:p-8">
+        <div className="rounded-[2rem] bg-[var(--accent)] p-6 text-white shadow-[0_24px_70px_rgba(0,35,80,0.2)] sm:p-8">
           <span className="inline-flex rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
             Hvorfor Eluxus
           </span>
@@ -600,7 +650,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-        <div className="group relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(27,23,18,0.18)]">
+        <div className="group relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(0,35,80,0.18)]">
           <div className="relative aspect-[4/3]">
             <Image
               src="/home/DeepSeat.jpg"
@@ -618,7 +668,7 @@ export default function HomePage() {
       </section>
 
       <section id="erhverv" className="mx-auto mt-16 max-w-7xl">
-        <div className="rounded-[2rem] border border-[var(--line)] bg-white/88 p-6 shadow-[0_24px_70px_rgba(27,23,18,0.1)] sm:p-8">
+        <div className="rounded-[2rem] border border-[var(--line)] bg-white/88 p-6 shadow-[0_24px_70px_rgba(0,35,80,0.1)] sm:p-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
             <div>
               <span className="eyebrow">Erhvervs bilvask</span>
@@ -629,7 +679,7 @@ export default function HomePage() {
               </p>
               <div className="mt-6 grid gap-2 sm:grid-cols-2">
                 {businessItems.map((item) => (
-                  <div key={item} className="flex items-center gap-3 rounded-xl bg-[#f3ead4] px-4 py-3">
+                  <div key={item} className="flex items-center gap-3 rounded-xl bg-[#e6f0fb] px-4 py-3">
                     <Building2 className="h-4 w-4 shrink-0 text-[var(--brand)]" />
                     <span className="text-sm font-semibold text-[var(--ink)]">{item}</span>
                   </div>
@@ -650,7 +700,7 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-            <div className="group relative overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(27,23,18,0.14)]">
+            <div className="group relative overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,35,80,0.14)]">
               <div className="relative aspect-[4/3]">
                 <Image
                   src="/home/roof.jpg"
@@ -680,7 +730,7 @@ export default function HomePage() {
           {faqs.map((faq) => (
             <details
               key={faq.question}
-              className="group rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_14px_32px_rgba(27,23,18,0.06)]"
+              className="group rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_14px_32px_rgba(0,35,80,0.06)]"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--ink)]">
                 {faq.question}
@@ -693,7 +743,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto mt-16 max-w-7xl">
-        <div className="relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(27,23,18,0.26)]">
+        <div className="relative overflow-hidden rounded-[2rem] shadow-[0_24px_80px_rgba(0,35,80,0.26)]">
           {/* Background image */}
           <Image
             src="/home/vinyl.jpg"
@@ -704,7 +754,7 @@ export default function HomePage() {
             className="object-cover object-center"
           />
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(27,23,18,0.91)_0%,rgba(184,134,11,0.80)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,35,80,0.91)_0%,rgba(0,113,194,0.80)_100%)]" />
           {/* Content */}
           <div className="relative px-6 py-12 text-white sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8 lg:py-14">
             <div>
@@ -721,7 +771,7 @@ export default function HomePage() {
             <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:mt-0 lg:shrink-0">
               <Link
                 href="/booking"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(202,160,54,0.32)] transition hover:bg-[var(--cta-hover)]"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(0,113,194,0.32)] transition hover:bg-[var(--cta-hover)]"
               >
                 <Search className="h-5 w-5" />
                 Book bilvask

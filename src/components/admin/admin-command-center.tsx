@@ -41,7 +41,7 @@ import {
 } from "@/lib/shared/booking";
 import { cn } from "@/lib/utils";
 
-const chartPrimary = "#b8860b";
+const chartPrimary = "#0071c2";
 
 export function AdminCommandCenter({
   dashboard,
@@ -232,8 +232,8 @@ function RevenueTrendCard({ bookings }: { bookings: DashboardBooking[] }) {
             className={cn(
               "h-7 rounded-xl px-3 text-[12px] font-semibold transition duration-[200ms]",
               range === r
-                ? "bg-[#b8860b] text-white shadow-[0_4px_12px_rgba(184,134,11,0.22)]"
-                : "border border-[#ece1c8] bg-white/60 text-[#6B7280] hover:bg-white hover:text-[#111827]"
+                ? "bg-[#0071c2] text-white shadow-[0_4px_12px_rgba(0,113,194,0.22)]"
+                : "border border-[#d9e3ee] bg-white/60 text-[#6B7280] hover:bg-white hover:text-[#111827]"
             )}
           >
             {RANGE_LABELS[r]}
@@ -245,14 +245,14 @@ function RevenueTrendCard({ bookings }: { bookings: DashboardBooking[] }) {
               type="date"
               value={customFrom}
               onChange={(e) => setCustomFrom(e.target.value)}
-              className="h-7 rounded-xl border border-[#ece1c8] bg-white/70 px-2 text-[12px] font-medium text-[#111827] outline-none focus:border-[#b8860b]"
+              className="h-7 rounded-xl border border-[#d9e3ee] bg-white/70 px-2 text-[12px] font-medium text-[#111827] outline-none focus:border-[#0071c2]"
             />
             <span className="text-[12px] text-[#94A3B8]">→</span>
             <input
               type="date"
               value={customTo}
               onChange={(e) => setCustomTo(e.target.value)}
-              className="h-7 rounded-xl border border-[#ece1c8] bg-white/70 px-2 text-[12px] font-medium text-[#111827] outline-none focus:border-[#b8860b]"
+              className="h-7 rounded-xl border border-[#d9e3ee] bg-white/70 px-2 text-[12px] font-medium text-[#111827] outline-none focus:border-[#0071c2]"
             />
           </div>
         )}
@@ -291,14 +291,14 @@ function RevenueTrendCard({ bookings }: { bookings: DashboardBooking[] }) {
               width={26}
             />
             <Tooltip
-              cursor={{ stroke: "#b8860b", strokeWidth: 1, strokeDasharray: "4 3" }}
+              cursor={{ stroke: "#0071c2", strokeWidth: 1, strokeDasharray: "4 3" }}
               formatter={(value) => [value, "Bookings"]}
               labelStyle={{ color: "#111827", fontWeight: 700, fontSize: 13 }}
               contentStyle={{
                 background: "rgba(255,255,255,0.97)",
-                border: "1px solid rgba(184,134,11,0.14)",
+                border: "1px solid rgba(0,113,194,0.14)",
                 borderRadius: "16px",
-                boxShadow: "0 16px 48px rgba(184,134,11,0.18)",
+                boxShadow: "0 16px 48px rgba(0,113,194,0.18)",
                 padding: "10px 16px",
               }}
             />
@@ -314,7 +314,7 @@ function RevenueTrendCard({ bookings }: { bookings: DashboardBooking[] }) {
                 fill: chartPrimary,
                 stroke: "#fff",
                 strokeWidth: 2.5,
-                style: { filter: "drop-shadow(0 0 8px rgba(184,134,11,0.65))" },
+                style: { filter: "drop-shadow(0 0 8px rgba(0,113,194,0.65))" },
               }}
               filter="url(#lineGlow)"
             />
@@ -357,12 +357,12 @@ function StatusDistributionCard({ bookings }: { bookings: DashboardBooking[] }) 
             />
             <YAxis allowDecimals={false} axisLine={false} tick={false} tickLine={false} />
             <Tooltip
-              cursor={{ fill: "rgba(184,134,11,0.06)" }}
+              cursor={{ fill: "rgba(0,113,194,0.06)" }}
               contentStyle={{
                 background: "rgba(255,255,255,0.92)",
                 border: "1px solid rgba(255,255,255,0.7)",
                 borderRadius: "16px",
-                boxShadow: "0 8px 32px rgba(184,134,11,0.12)",
+                boxShadow: "0 8px 32px rgba(0,113,194,0.12)",
               }}
             />
             <Bar dataKey="count" radius={[10, 10, 10, 10]}>
@@ -426,7 +426,7 @@ function BusinessSnapshotCard({
               key={item.label}
               className="flex items-center gap-3 rounded-2xl border border-white/55 bg-white/50 px-3 py-3"
             >
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl bg-[#f3ead4] text-[#b8860b]">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl bg-[#e6f0fb] text-[#0071c2]">
                 <Icon className="h-5 w-5" />
               </span>
               <span className="min-w-0">
@@ -505,10 +505,10 @@ function KpiBookingsModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={onClose} />
       <div
-        className="relative z-10 flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden rounded-3xl border border-white/55 bg-white/95 shadow-[0_32px_80px_rgba(184,134,11,0.18)] backdrop-blur-2xl"
+        className="relative z-10 flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden rounded-3xl border border-white/55 bg-white/95 shadow-[0_32px_80px_rgba(0,113,194,0.18)] backdrop-blur-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between gap-3 border-b border-[#ece1c8] px-5 py-4">
+        <div className="flex items-center justify-between gap-3 border-b border-[#d9e3ee] px-5 py-4">
           <div>
             <p className="text-[15px] font-semibold text-[#111827]">{KPI_TITLES[filter]}</p>
             <p className="mt-1 text-[12px] font-medium text-[#6B7280]">{filtered.length} records</p>
@@ -516,7 +516,7 @@ function KpiBookingsModal({
           <button
             type="button"
             onClick={onClose}
-            className="flex h-8 w-8 items-center justify-center rounded-2xl border border-[#ece1c8] bg-white/70 text-[#6B7280] transition hover:bg-[#f3ead4] hover:text-[#b8860b]"
+            className="flex h-8 w-8 items-center justify-center rounded-2xl border border-[#d9e3ee] bg-white/70 text-[#6B7280] transition hover:bg-[#e6f0fb] hover:text-[#0071c2]"
           >
             <X className="h-4 w-4" />
           </button>
@@ -525,7 +525,7 @@ function KpiBookingsModal({
         <div className="flex-1 overflow-y-auto">
           <table className="w-full min-w-[640px] text-left text-[13px]">
             <thead className="sticky top-0 bg-white/95 text-[12px] uppercase tracking-[0.1em] text-[#6B7280]">
-              <tr className="border-b border-[#ece1c8]">
+              <tr className="border-b border-[#d9e3ee]">
                 <th className="px-4 py-3 font-semibold">Customer</th>
                 <th className="px-4 py-3 font-semibold">Appointment</th>
                 <th className="px-4 py-3 font-semibold">Service</th>
@@ -536,12 +536,12 @@ function KpiBookingsModal({
             <tbody className="divide-y divide-[#F0F9FA]">
               {pageBookings.length > 0 ? (
                 pageBookings.map((booking) => (
-                  <tr key={booking.id} className="transition hover:bg-[#f3ead4]/60">
+                  <tr key={booking.id} className="transition hover:bg-[#e6f0fb]/60">
                     <td className="px-4 py-3">
                       <button
                         type="button"
                         onClick={() => onSelectBooking(booking)}
-                        className="text-left font-semibold text-[#111827] hover:text-[#b8860b]"
+                        className="text-left font-semibold text-[#111827] hover:text-[#0071c2]"
                       >
                         {booking.customerName || booking.customerEmail}
                       </button>
@@ -576,12 +576,12 @@ function KpiBookingsModal({
         </div>
 
         {totalPages > 1 && (
-          <div className="flex items-center justify-between border-t border-[#ece1c8] px-5 py-3">
+          <div className="flex items-center justify-between border-t border-[#d9e3ee] px-5 py-3">
             <button
               type="button"
               disabled={page === 0}
               onClick={() => setPage((p) => p - 1)}
-              className="flex items-center gap-1.5 rounded-2xl border border-[#ece1c8] bg-white/70 px-3 py-1.5 text-[12px] font-semibold text-[#6B7280] transition hover:border-[#b8860b] hover:text-[#b8860b] disabled:cursor-not-allowed disabled:opacity-40"
+              className="flex items-center gap-1.5 rounded-2xl border border-[#d9e3ee] bg-white/70 px-3 py-1.5 text-[12px] font-semibold text-[#6B7280] transition hover:border-[#0071c2] hover:text-[#0071c2] disabled:cursor-not-allowed disabled:opacity-40"
             >
               <ChevronLeft className="h-3.5 w-3.5" />
               Previous
@@ -593,7 +593,7 @@ function KpiBookingsModal({
               type="button"
               disabled={page === totalPages - 1}
               onClick={() => setPage((p) => p + 1)}
-              className="flex items-center gap-1.5 rounded-2xl border border-[#ece1c8] bg-white/70 px-3 py-1.5 text-[12px] font-semibold text-[#6B7280] transition hover:border-[#b8860b] hover:text-[#b8860b] disabled:cursor-not-allowed disabled:opacity-40"
+              className="flex items-center gap-1.5 rounded-2xl border border-[#d9e3ee] bg-white/70 px-3 py-1.5 text-[12px] font-semibold text-[#6B7280] transition hover:border-[#0071c2] hover:text-[#0071c2] disabled:cursor-not-allowed disabled:opacity-40"
             >
               Next
               <ChevronRight className="h-3.5 w-3.5" />
@@ -657,11 +657,11 @@ function getStatusColor(status: BookingStatus) {
     case "approved":
       return "#10B981";
     case "completed":
-      return "#b8860b";
+      return "#0071c2";
     case "cancelled":
       return "#EF4444";
     default:
-      return "#caa036";
+      return "#feba02";
   }
 }
 

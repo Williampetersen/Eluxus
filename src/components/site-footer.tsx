@@ -106,7 +106,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#feba02]">
               Genveje
             </h3>
             <div className="mt-5 grid gap-3 text-sm">
@@ -119,7 +119,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#feba02]">
               Services
             </h3>
             <div className="mt-5 grid gap-3 text-sm">
@@ -132,7 +132,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#feba02]">
               Områder
             </h3>
             <div className="mt-5 grid gap-3 text-sm">
@@ -145,7 +145,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#feba02]">
               Guides
             </h3>
             <div className="mt-5 grid gap-3 text-sm">
@@ -158,7 +158,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cta)]">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#feba02]">
               Kontakt
             </h3>
             <div className="mt-5 grid gap-3 text-sm">
@@ -173,7 +173,7 @@ export function SiteFooter() {
             </div>
             <Link
               href="/booking"
-              className="mt-6 inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-[var(--color-cta)] to-[#8a6c14] px-5 text-sm font-semibold text-[#171310] shadow-[0_14px_34px_rgba(184,134,11,0.3)] transition hover:brightness-110"
+              className="mt-6 inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-[#feba02] to-[#f5a800] px-5 text-sm font-semibold text-[#003580] shadow-[0_14px_34px_rgba(254,186,2,0.3)] transition hover:brightness-110"
             >
               Book bilvask
             </Link>

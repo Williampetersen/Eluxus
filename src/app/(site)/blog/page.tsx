@@ -48,9 +48,9 @@ export default function BlogIndexPage() {
         </ol>
       </nav>
 
-      <section className="mx-auto mt-6 max-w-7xl overflow-hidden rounded-[2rem] bg-[var(--accent)] shadow-[0_28px_90px_rgba(27,23,18,0.22)]">
+      <section className="mx-auto mt-6 max-w-7xl overflow-hidden rounded-[2rem] bg-[var(--accent)] shadow-[0_28px_90px_rgba(0,35,80,0.22)]">
         <div className="relative px-6 py-14 text-white sm:px-10 lg:px-12 lg:py-16">
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(184,134,11,0.18),transparent_48%,rgba(202,160,54,0.10))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,113,194,0.18),transparent_48%,rgba(0,113,194,0.10))]" />
           <div className="relative max-w-2xl">
             <span className="inline-flex rounded-full border border-white/12 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
               Eluxus blog
@@ -72,7 +72,7 @@ export default function BlogIndexPage() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}` as Route}
-              className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-[var(--line)] bg-white/88 shadow-[0_18px_50px_rgba(27,23,18,0.08)] transition hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(27,23,18,0.14)]"
+              className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-[var(--line)] bg-white/88 shadow-[0_18px_50px_rgba(0,35,80,0.08)] transition hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(0,35,80,0.14)]"
             >
               <div className="relative aspect-[16/10]">
                 <Image
@@ -107,7 +107,7 @@ export default function BlogIndexPage() {
       </div>
 
       <div className="mx-auto mt-16 max-w-7xl">
-        <section className="rounded-[2rem] bg-[linear-gradient(135deg,#1b1712,#b8860b)] px-6 py-10 text-white shadow-[0_24px_80px_rgba(27,23,18,0.22)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
+        <section className="rounded-[2rem] bg-[linear-gradient(135deg,#003580,#0071c2)] px-6 py-10 text-white shadow-[0_24px_80px_rgba(0,35,80,0.22)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/65">
               Book online
@@ -123,7 +123,7 @@ export default function BlogIndexPage() {
           <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:mt-0">
             <Link
               href="/booking"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)]"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(0,113,194,0.26)] transition hover:bg-[var(--cta-hover)]"
             >
               <Sparkles className="h-5 w-5" />
               Book bilvask

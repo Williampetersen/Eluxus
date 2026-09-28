@@ -89,7 +89,7 @@ function BlogHero({ post }: { post: BlogPost }) {
         </span>
       </div>
 
-      <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-[2rem] border border-[var(--line)] shadow-[0_28px_90px_rgba(27,23,18,0.18)]">
+      <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-[2rem] border border-[var(--line)] shadow-[0_28px_90px_rgba(0,35,80,0.18)]">
         <Image
           src={post.coverImage.src}
           alt={post.coverImage.alt}
@@ -107,7 +107,7 @@ function KeyTakeaways({ items }: { items: string[] }) {
   return (
     <section
       aria-labelledby="key-takeaways-heading"
-      className="rounded-[1.75rem] border border-[#b8860b]/25 bg-[#f3ead4] px-6 py-7 sm:px-8"
+      className="rounded-[1.75rem] border border-[#0071c2]/25 bg-[#e6f0fb] px-6 py-7 sm:px-8"
     >
       <h2 id="key-takeaways-heading" className="font-display text-2xl font-semibold text-[var(--ink)]">
         Kort fortalt
@@ -180,7 +180,7 @@ function RelatedLinks({ post }: { post: BlogPost }) {
           <Link
             key={link.href}
             href={link.href as Route}
-            className="flex min-h-16 items-center justify-between gap-4 rounded-lg border border-[var(--line)] bg-white/88 px-5 py-4 text-sm font-semibold text-[var(--ink)] shadow-[0_14px_32px_rgba(27,23,18,0.06)] transition hover:-translate-y-0.5 hover:bg-white"
+            className="flex min-h-16 items-center justify-between gap-4 rounded-lg border border-[var(--line)] bg-white/88 px-5 py-4 text-sm font-semibold text-[var(--ink)] shadow-[0_14px_32px_rgba(0,35,80,0.06)] transition hover:-translate-y-0.5 hover:bg-white"
           >
             {link.label}
             <ArrowRight className="h-4 w-4 shrink-0 text-[var(--brand)]" />
@@ -203,7 +203,7 @@ function RelatedPosts({ posts }: { posts: BlogPost[] }) {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}` as Route}
-            className="group overflow-hidden rounded-[1.5rem] border border-[var(--line)] bg-white/88 shadow-[0_16px_40px_rgba(27,23,18,0.08)] transition hover:-translate-y-1"
+            className="group overflow-hidden rounded-[1.5rem] border border-[var(--line)] bg-white/88 shadow-[0_16px_40px_rgba(0,35,80,0.08)] transition hover:-translate-y-1"
           >
             <div className="relative aspect-[16/9]">
               <Image
@@ -231,7 +231,7 @@ function RelatedPosts({ posts }: { posts: BlogPost[] }) {
 
 function BottomCta() {
   return (
-    <section className="rounded-[2rem] bg-[linear-gradient(135deg,#1b1712,#b8860b)] px-6 py-10 text-white shadow-[0_24px_80px_rgba(27,23,18,0.22)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
+    <section className="rounded-[2rem] bg-[linear-gradient(135deg,#003580,#0071c2)] px-6 py-10 text-white shadow-[0_24px_80px_rgba(0,35,80,0.22)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/65">
           Book online
@@ -247,7 +247,7 @@ function BottomCta() {
       <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:mt-0">
         <Link
           href="/booking"
-          className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)]"
+          className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(0,113,194,0.26)] transition hover:bg-[var(--cta-hover)]"
         >
           <Sparkles className="h-5 w-5" />
           Book bilvask

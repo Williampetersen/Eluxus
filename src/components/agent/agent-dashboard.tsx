@@ -84,17 +84,17 @@ export function AgentDashboard({
   const unread = data.notifications.filter((item) => !item.isRead).length;
 
   return (
-    <main className="min-h-screen bg-[#faf7f0] px-4 py-5 text-[#111827] sm:px-6">
+    <main className="min-h-screen bg-[#f2f6fa] px-4 py-5 text-[#111827] sm:px-6">
       <section className="mx-auto max-w-7xl">
         <div className="grid gap-4 xl:grid-cols-[16rem_minmax(0,1fr)]">
 
           {/* ─── Sidebar ─── */}
-          <aside className="overflow-hidden rounded-3xl border border-white/55 bg-white/[0.82] shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl xl:sticky xl:top-5 xl:self-start">
+          <aside className="overflow-hidden rounded-3xl border border-white/55 bg-white/[0.82] shadow-[0_8px_32px_rgba(0,113,194,0.08)] backdrop-blur-2xl xl:sticky xl:top-5 xl:self-start">
             <div className="border-b border-white/55 px-4 py-5">
               <div className="flex items-center gap-3">
                 <AgentAvatar name={data.agent.fullName} avatarUrl={data.agent.avatarUrl} />
                 <div className="min-w-0">
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#b8860b]">
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0071c2]">
                     Agent
                   </p>
                   <p className="mt-1 truncate text-[13px] font-semibold text-[#111827]">
@@ -119,7 +119,7 @@ export function AgentDashboard({
                     className={cn(
                       "flex min-w-[8.75rem] items-center gap-2 rounded-2xl px-3 py-2.5 text-[13px] font-semibold transition xl:min-w-0",
                       active
-                        ? "bg-[#b8860b] text-white shadow-[0_8px_20px_rgba(184,134,11,0.18)]"
+                        ? "bg-[#0071c2] text-white shadow-[0_8px_20px_rgba(0,113,194,0.18)]"
                         : "text-[#6B7280] hover:bg-white/70 hover:text-[#111827]"
                     )}
                   >
@@ -158,7 +158,7 @@ export function AgentDashboard({
                   "rounded-2xl border px-4 py-3 text-[13px] font-semibold",
                   error
                     ? "border-red-200 bg-red-50 text-red-700"
-                    : "border-[#ece1c8] bg-[#f3ead4] text-[#b8860b]"
+                    : "border-[#d9e3ee] bg-[#e6f0fb] text-[#0071c2]"
                 )}
               >
                 {error ? "Handlingen kunne ikke gennemføres." : "Ændringen er gemt."}
@@ -233,14 +233,14 @@ function Overview({ data }: { data: AgentDashboardData }) {
           const Icon = card.icon;
           const toneClass = {
             blue: "bg-[#EFF6FF] text-[#2563EB]",
-            orange: "bg-[#FFF7ED] text-[#96721a]",
-            violet: "bg-[#f3ead4] text-[#b8860b]",
+            orange: "bg-[#FFF7ED] text-[#00487a]",
+            violet: "bg-[#e6f0fb] text-[#0071c2]",
             green: "bg-[#ECFDF5] text-[#059669]",
           }[card.tone];
           return (
             <section
               key={card.label}
-              className="rounded-3xl border border-white/55 bg-white/[0.82] p-4 shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl"
+              className="rounded-3xl border border-white/55 bg-white/[0.82] p-4 shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl"
             >
               <div className="flex items-start justify-between gap-3">
                 <div>
@@ -263,7 +263,7 @@ function Overview({ data }: { data: AgentDashboardData }) {
         })}
       </div>
 
-      <section className="rounded-3xl border border-white/55 bg-white/[0.82] p-5 shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl">
+      <section className="rounded-3xl border border-white/55 bg-white/[0.82] p-5 shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl">
         <p className="text-[13px] font-semibold uppercase tracking-[0.1em] text-[#6B7280]">
           Statusoversigt
         </p>
@@ -294,8 +294,8 @@ function Overview({ data }: { data: AgentDashboardData }) {
 function NextJobCard({ booking }: { booking?: AgentBooking }) {
   if (!booking) {
     return (
-      <section className="rounded-3xl border border-white/55 bg-white/[0.82] p-5 shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl">
-        <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#b8860b]">
+      <section className="rounded-3xl border border-white/55 bg-white/[0.82] p-5 shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl">
+        <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0071c2]">
           Næste opgave
         </p>
         <h2 className="mt-2 text-xl font-bold text-[#111827]">Ingen aktive opgaver</h2>
@@ -307,10 +307,10 @@ function NextJobCard({ booking }: { booking?: AgentBooking }) {
   }
 
   return (
-    <section className="rounded-3xl border border-[#ece1c8] bg-white p-5 shadow-[0_12px_36px_rgba(184,134,11,0.10)]">
+    <section className="rounded-3xl border border-[#d9e3ee] bg-white p-5 shadow-[0_12px_36px_rgba(0,113,194,0.10)]">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
         <div className="min-w-0">
-          <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#b8860b]">
+          <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0071c2]">
             Næste opgave
           </p>
           <h2 className="mt-2 text-xl font-bold text-[#111827]">
@@ -334,7 +334,7 @@ function NextJobCard({ booking }: { booking?: AgentBooking }) {
         {booking.customerPhone ? (
           <a
             href={`tel:${booking.customerPhone.replace(/\s+/g, "")}`}
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-2xl bg-[#b8860b] px-4 text-[13px] font-semibold text-white shadow-[0_4px_14px_rgba(184,134,11,0.28)] transition hover:bg-[#8a6c14]"
+            className="inline-flex h-10 items-center justify-center gap-2 rounded-2xl bg-[#0071c2] px-4 text-[13px] font-semibold text-white shadow-[0_4px_14px_rgba(0,113,194,0.28)] transition hover:bg-[#00487a]"
           >
             <Phone className="h-4 w-4" />
             Ring til kunde
@@ -345,7 +345,7 @@ function NextJobCard({ booking }: { booking?: AgentBooking }) {
             href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(booking.customerAddress)}`}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-2xl border border-[#ece1c8] bg-white px-4 text-[13px] font-semibold text-[#111827] transition hover:border-[#b8860b] hover:text-[#b8860b]"
+            className="inline-flex h-10 items-center justify-center gap-2 rounded-2xl border border-[#d9e3ee] bg-white px-4 text-[13px] font-semibold text-[#111827] transition hover:border-[#0071c2] hover:text-[#0071c2]"
           >
             <MapPin className="h-4 w-4" />
             Åbn rute
@@ -353,7 +353,7 @@ function NextJobCard({ booking }: { booking?: AgentBooking }) {
         ) : null}
         <Link
           href={`/agent?view=tasks#booking-${booking.id}`}
-          className="inline-flex h-10 items-center justify-center rounded-2xl border border-[#ece1c8] bg-white px-4 text-[13px] font-semibold text-[#111827] transition hover:border-[#b8860b] hover:text-[#b8860b]"
+          className="inline-flex h-10 items-center justify-center rounded-2xl border border-[#d9e3ee] bg-white px-4 text-[13px] font-semibold text-[#111827] transition hover:border-[#0071c2] hover:text-[#0071c2]"
         >
           Åbn opgave
         </Link>
@@ -376,7 +376,7 @@ function CalendarView({ bookings }: { bookings: AgentBooking[] }) {
 
   return (
     <div className="space-y-5">
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl">
         <div className="border-b border-[#e8ebf5] px-5 py-4">
           <p className="text-[14px] font-semibold text-[#111827]">Kalender</p>
           <p className="mt-0.5 text-[12px] font-medium text-[#6B7280]">
@@ -442,7 +442,7 @@ function TasksView({
 }) {
   return (
     <div className="space-y-3">
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(27,23,18,0.06)]">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(0,35,80,0.06)]">
         {bookings.length > 0 ? (
           <>
             <div className="hidden grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_9rem_8rem] gap-4 border-b border-[#e8ebf5] px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8e95b5] lg:grid">
@@ -515,7 +515,7 @@ function TaskCard({
               content: (
                 <div className="grid gap-4 xl:grid-cols-2">
                   <div className="rounded-2xl border border-[#e4edf3] bg-[#f7fafd] px-4 py-4">
-                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#b8860b]">
+                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#0071c2]">
                       Kunde og booking
                     </p>
                     <div className="grid gap-2 sm:grid-cols-2">
@@ -552,7 +552,7 @@ function TaskCard({
                           {booking.addons.map((addon) => (
                             <span
                               key={addon.id}
-                              className="rounded-full border border-[#ece1c8] bg-white px-2.5 py-1 text-[12px] font-semibold text-[#374151]"
+                              className="rounded-full border border-[#d9e3ee] bg-white px-2.5 py-1 text-[12px] font-semibold text-[#374151]"
                             >
                               {addon.label}
                             </span>
@@ -619,7 +619,7 @@ function TaskCard({
                       <select
                         name="status"
                         defaultValue={booking.agentStatus || "accepted"}
-                        className="h-10 rounded-xl border border-[#ece1c8] bg-white px-3 text-[13px] font-medium text-[#111827] outline-none focus:border-[#b8860b] focus:ring-4 focus:ring-[#b8860b]/10"
+                        className="h-10 rounded-xl border border-[#d9e3ee] bg-white px-3 text-[13px] font-medium text-[#111827] outline-none focus:border-[#0071c2] focus:ring-4 focus:ring-[#0071c2]/10"
                       >
                         <option value="accepted">Accepteret</option>
                         <option value="in_progress">Igangværende</option>
@@ -663,7 +663,7 @@ function TaskCard({
 function AgentInvoicesView({ invoices }: { invoices: Invoice[] }) {
   return (
     <div className="space-y-3">
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(27,23,18,0.06)]">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(0,35,80,0.06)]">
         {invoices.length > 0 ? (
           <>
             <div className="hidden border-b border-[#e8ebf5] px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8e95b5] lg:grid lg:grid-cols-[1fr_1fr_9rem_auto] lg:gap-4">
@@ -709,7 +709,7 @@ function AgentInvoicesView({ invoices }: { invoices: Invoice[] }) {
                       href={invoice.publicUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex h-8 items-center justify-center rounded-lg border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
+                      className="inline-flex h-8 items-center justify-center rounded-lg border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#0071c2] transition hover:border-[#0071c2] hover:bg-[#e6f0fb]"
                     >
                       Vis / print
                     </a>
@@ -737,7 +737,7 @@ function AvailabilityView({ availability }: { availability: AgentAvailability[] 
 
   return (
     <div className="space-y-4">
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl">
         <div className="border-b border-[#e8ebf5] px-5 py-4">
           <p className="text-[14px] font-semibold text-[#111827]">Ugentlig tilgængelighed</p>
           <p className="mt-0.5 text-[12px] font-medium text-[#6B7280]">
@@ -800,7 +800,7 @@ function AvailabilityView({ availability }: { availability: AgentAvailability[] 
         </form>
       </div>
 
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl">
         <div className="border-b border-[#e8ebf5] px-5 py-4">
           <p className="text-[14px] font-semibold text-[#111827]">Bloker datoer</p>
           <p className="mt-0.5 text-[12px] font-medium text-[#6B7280]">
@@ -841,7 +841,7 @@ function AvailabilityView({ availability }: { availability: AgentAvailability[] 
 function ServicesView({ services }: { services: AgentService[] }) {
   return (
     <div className="space-y-4">
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl">
         <div className="border-b border-[#e8ebf5] px-5 py-4">
           <p className="text-[14px] font-semibold text-[#111827]">Mine ydelser</p>
           <p className="mt-0.5 text-[12px] font-medium text-[#6B7280]">
@@ -909,7 +909,7 @@ function ServicesView({ services }: { services: AgentService[] }) {
 function ChatView({ data }: { data: AgentDashboardData }) {
   return (
     <div className="space-y-4">
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl">
         <div className="border-b border-[#e8ebf5] px-5 py-4">
           <p className="text-[14px] font-semibold text-[#111827]">Beskeder</p>
           <p className="mt-0.5 text-[12px] font-medium text-[#6B7280]">
@@ -926,7 +926,7 @@ function ChatView({ data }: { data: AgentDashboardData }) {
                   className={cn(
                     "max-w-[80%] rounded-2xl border px-3 py-3 text-[13px]",
                     message.senderType === "agent"
-                      ? "ml-auto border-[#b8860b]/20 bg-[#b8860b]/10 text-[#1b1712]"
+                      ? "ml-auto border-[#0071c2]/20 bg-[#0071c2]/10 text-[#003580]"
                       : "border-[#e8ebf5] bg-white/80 text-[#374151]"
                   )}
                 >
@@ -949,7 +949,7 @@ function ChatView({ data }: { data: AgentDashboardData }) {
         >
           <select
             name="booking_id"
-            className="h-10 rounded-xl border border-[#ece1c8] bg-white px-3 text-[13px] font-medium text-[#111827] outline-none focus:border-[#b8860b] focus:ring-4 focus:ring-[#b8860b]/10"
+            className="h-10 rounded-xl border border-[#d9e3ee] bg-white px-3 text-[13px] font-medium text-[#111827] outline-none focus:border-[#0071c2] focus:ring-4 focus:ring-[#0071c2]/10"
           >
             <option value="">Generel besked</option>
             {data.bookings.map((booking) => (
@@ -979,11 +979,11 @@ function ChatView({ data }: { data: AgentDashboardData }) {
 function ProfileView({ data }: { data: AgentDashboardData }) {
   return (
     <div className="space-y-4">
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(184,134,11,0.07)] backdrop-blur-xl">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/[0.82] shadow-[0_8px_32px_rgba(0,113,194,0.07)] backdrop-blur-xl">
         <div className="flex items-center gap-4 border-b border-[#e8ebf5] px-5 py-5">
           <AgentAvatar name={data.agent.fullName} avatarUrl={data.agent.avatarUrl} large />
           <div>
-            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#b8860b]">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0071c2]">
               Agent
             </p>
             <h2 className="mt-1 text-xl font-bold text-[#111827]">{data.agent.fullName}</h2>
@@ -1028,7 +1028,7 @@ function AgentAvatar({
     <span
       className={cn(
         size,
-        "flex shrink-0 items-center justify-center rounded-2xl bg-[#f3ead4] font-bold text-[#b8860b]"
+        "flex shrink-0 items-center justify-center rounded-2xl bg-[#e6f0fb] font-bold text-[#0071c2]"
       )}
     >
       {(name || "A").slice(0, 2).toUpperCase()}
@@ -1059,7 +1059,7 @@ function AgentStatusPill({
 function InvoiceStatusBadge({ status }: { status: string }) {
   const label = invoiceStatusLabels[status] || status || "–";
   return (
-    <span className="rounded-full border border-[#ece1c8] bg-white/70 px-2.5 py-1 text-[12px] font-semibold text-[#4B5563]">
+    <span className="rounded-full border border-[#d9e3ee] bg-white/70 px-2.5 py-1 text-[12px] font-semibold text-[#4B5563]">
       {label}
     </span>
   );
@@ -1100,7 +1100,7 @@ function SmallStat({ label, value }: { label: string; value: string }) {
 
 function EmptyState({ text }: { text: string }) {
   return (
-    <div className="rounded-2xl border border-dashed border-[#ece1c8] bg-white/55 px-4 py-5 text-[13px] font-medium text-[#6B7280]">
+    <div className="rounded-2xl border border-dashed border-[#d9e3ee] bg-white/55 px-4 py-5 text-[13px] font-medium text-[#6B7280]">
       {text}
     </div>
   );
@@ -1119,7 +1119,7 @@ function getAgentStatusTone(status: string) {
     case "rejected":
       return "border-[#F97316]/20 bg-[#F97316]/10 text-[#C2410C]";
     default:
-      return "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]";
+      return "border-[#feba02]/20 bg-[#feba02]/10 text-[#92400E]";
   }
 }
 

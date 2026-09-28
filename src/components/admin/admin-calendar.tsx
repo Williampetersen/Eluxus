@@ -79,7 +79,7 @@ export function AdminCalendarPanel({
               <button
                 type="button"
                 onClick={() => setCalendarDate(today)}
-                className="h-9 rounded-2xl border border-[#ece1c8] bg-white/70 px-3 text-[12px] font-semibold text-[#374151] transition hover:border-[#b8860b] hover:text-[#b8860b]"
+                className="h-9 rounded-2xl border border-[#d9e3ee] bg-white/70 px-3 text-[12px] font-semibold text-[#374151] transition hover:border-[#0071c2] hover:text-[#0071c2]"
               >
                 I dag
               </button>
@@ -89,7 +89,7 @@ export function AdminCalendarPanel({
                 <button
                   type="button"
                   onClick={() => setCalendarDate(shiftDate(calendarDate, calendarMode, -1))}
-                  className="flex h-9 w-9 items-center justify-center rounded-2xl border border-[#ece1c8] bg-white/70 text-[#6B7280] transition hover:border-[#b8860b] hover:text-[#b8860b]"
+                  className="flex h-9 w-9 items-center justify-center rounded-2xl border border-[#d9e3ee] bg-white/70 text-[#6B7280] transition hover:border-[#0071c2] hover:text-[#0071c2]"
                   aria-label="Forrige"
                 >
                   <ChevronLeft className="h-4 w-4" />
@@ -98,12 +98,12 @@ export function AdminCalendarPanel({
                   type="date"
                   value={calendarDate}
                   onChange={(e) => setCalendarDate(e.target.value || today)}
-                  className="h-9 rounded-2xl border border-[#ece1c8] bg-white/70 px-3 text-[13px] font-medium text-[#111827] outline-none transition focus:border-[#b8860b] focus:ring-4 focus:ring-[#b8860b]/10"
+                  className="h-9 rounded-2xl border border-[#d9e3ee] bg-white/70 px-3 text-[13px] font-medium text-[#111827] outline-none transition focus:border-[#0071c2] focus:ring-4 focus:ring-[#0071c2]/10"
                 />
                 <button
                   type="button"
                   onClick={() => setCalendarDate(shiftDate(calendarDate, calendarMode, 1))}
-                  className="flex h-9 w-9 items-center justify-center rounded-2xl border border-[#ece1c8] bg-white/70 text-[#6B7280] transition hover:border-[#b8860b] hover:text-[#b8860b]"
+                  className="flex h-9 w-9 items-center justify-center rounded-2xl border border-[#d9e3ee] bg-white/70 text-[#6B7280] transition hover:border-[#0071c2] hover:text-[#0071c2]"
                   aria-label="Næste"
                 >
                   <ChevronRight className="h-4 w-4" />
@@ -111,7 +111,7 @@ export function AdminCalendarPanel({
               </div>
 
               {/* Mode toggle */}
-              <div className="rounded-2xl border border-[#ece1c8] bg-white/55 p-1">
+              <div className="rounded-2xl border border-[#d9e3ee] bg-white/55 p-1">
                 {(["day", "week"] as const).map((mode) => (
                   <button
                     key={mode}
@@ -120,7 +120,7 @@ export function AdminCalendarPanel({
                     className={cn(
                       "h-7 rounded-xl px-3 text-[12px] font-semibold transition duration-[250ms]",
                       calendarMode === mode
-                        ? "bg-[#b8860b] text-white shadow-[0_8px_20px_rgba(184,134,11,0.18)]"
+                        ? "bg-[#0071c2] text-white shadow-[0_8px_20px_rgba(0,113,194,0.18)]"
                         : "text-[#6B7280] hover:bg-white/70 hover:text-[#111827]"
                     )}
                   >
@@ -160,12 +160,12 @@ export function AdminCalendarPanel({
                       key={day.date}
                       className={cn(
                         "border-r border-white/55 px-3 py-3 last:border-r-0",
-                        isToday && "bg-[#b8860b]/5"
+                        isToday && "bg-[#0071c2]/5"
                       )}
                     >
                       <div className="flex items-start justify-between gap-2">
                         <div>
-                          <p className={cn("text-[13px] font-bold", isToday ? "text-[#b8860b]" : "text-[#111827]")}>
+                          <p className={cn("text-[13px] font-bold", isToday ? "text-[#0071c2]" : "text-[#111827]")}>
                             {day.label}
                           </p>
                           <p className="mt-0.5 text-[11px] font-medium text-[#9CA3AF]">{day.date}</p>
@@ -173,14 +173,14 @@ export function AdminCalendarPanel({
                         {dayBookings.length > 0 && (
                           <span className={cn(
                             "mt-0.5 flex h-5 min-w-[1.25rem] items-center justify-center rounded-full px-1.5 text-[10px] font-bold",
-                            isToday ? "bg-[#b8860b] text-white" : "bg-[#E5E7EB] text-[#374151]"
+                            isToday ? "bg-[#0071c2] text-white" : "bg-[#E5E7EB] text-[#374151]"
                           )}>
                             {dayBookings.length}
                           </span>
                         )}
                       </div>
                       {isToday && (
-                        <span className="mt-1 inline-block rounded-full bg-[#b8860b] px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
+                        <span className="mt-1 inline-block rounded-full bg-[#0071c2] px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
                           I dag
                         </span>
                       )}
@@ -217,13 +217,13 @@ export function AdminCalendarPanel({
                         key={`${day.date}-${slot}`}
                         className={cn(
                           "min-h-[4.5rem] border-r border-white/55 px-1.5 py-1.5 last:border-r-0",
-                          isToday && "bg-[#b8860b]/4",
-                          block && "bg-[#caa036]/6"
+                          isToday && "bg-[#0071c2]/4",
+                          block && "bg-[#feba02]/6"
                         )}
                       >
                         {block && (
-                          <div className="mb-1 flex items-center gap-1 rounded-xl border border-[#caa036]/30 bg-[#FEF3C7]/70 px-2 py-1">
-                            <span className="h-1.5 w-1.5 rounded-full bg-[#caa036]" />
+                          <div className="mb-1 flex items-center gap-1 rounded-xl border border-[#feba02]/30 bg-[#FEF3C7]/70 px-2 py-1">
+                            <span className="h-1.5 w-1.5 rounded-full bg-[#feba02]" />
                             <span className="truncate text-[10px] font-semibold text-[#92400E]">
                               {block.reason || "Blokeret"}
                             </span>
@@ -342,7 +342,7 @@ function CalendarMetric({
 }) {
   const toneClasses: Record<typeof tone, { bg: string; text: string; icon: string }> = {
     blue:   { bg: "bg-[#EFF6FF]", text: "text-[#1D4ED8]", icon: "text-[#3B82F6]" },
-    teal:   { bg: "bg-[#f3ead4]", text: "text-[#8a6c14]", icon: "text-[#b8860b]" },
+    teal:   { bg: "bg-[#e6f0fb]", text: "text-[#00487a]", icon: "text-[#0071c2]" },
     orange: { bg: "bg-[#FFF7ED]", text: "text-[#9A3412]", icon: "text-[#F97316]" },
     red:    { bg: "bg-[#FEF2F2]", text: "text-[#991B1B]", icon: "text-[#EF4444]" },
   };
@@ -375,10 +375,10 @@ function getStatusClasses(status: BookingStatus) {
       };
     case "completed":
       return {
-        borderClass: "border-[#b8860b]/25",
-        bgClass: "bg-[#f3ead4]",
-        textClass: "text-[#8a6c14]",
-        barClass: "bg-[#b8860b]",
+        borderClass: "border-[#0071c2]/25",
+        bgClass: "bg-[#e6f0fb]",
+        textClass: "text-[#00487a]",
+        barClass: "bg-[#0071c2]",
       };
     case "cancelled":
       return {
@@ -389,10 +389,10 @@ function getStatusClasses(status: BookingStatus) {
       };
     default:
       return {
-        borderClass: "border-[#caa036]/25",
+        borderClass: "border-[#feba02]/25",
         bgClass: "bg-[#FFFBEB]",
         textClass: "text-[#92400E]",
-        barClass: "bg-[#caa036]",
+        barClass: "bg-[#feba02]",
       };
   }
 }
@@ -400,9 +400,9 @@ function getStatusClasses(status: BookingStatus) {
 function statusDotClass(status: BookingStatus) {
   switch (status) {
     case "approved":  return "bg-[#10B981]";
-    case "completed": return "bg-[#b8860b]";
+    case "completed": return "bg-[#0071c2]";
     case "cancelled": return "bg-[#EF4444]";
-    default:          return "bg-[#caa036]";
+    default:          return "bg-[#feba02]";
   }
 }
 

@@ -3,6 +3,7 @@ import { BookingFlow } from "@/components/booking/booking-flow";
 import { getCopenhagenNow } from "@/lib/server/availability";
 import { getBookingSettingsFromSetup, getSetupAvailabilityBlocks } from "@/lib/server/booking-setup";
 import { sanitizePlate } from "@/lib/shared/booking";
+import { plateLookupEnabled } from "@/lib/shared/vehicle-sizes";
 
 export const metadata: Metadata = {
   title: "Book bilvask",
@@ -19,9 +20,14 @@ export default async function BookingPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const params = await searchParams;
-  const initialPlate = Array.isArray(params.plate) ? params.plate[0] : params.plate || "";
-  const initialCategory = Array.isArray(params.category) ? params.category[0] : params.category || "";
-  const manualMode = params.manual === "true" && Boolean(initialCategory);
+  const getParam = (key: string) => {
+    const value = params[key];
+    return (Array.isArray(value) ? value[0] : value) || "";
+  };
+  const initialPlate = plateLookupEnabled ? getParam("plate") : "";
+  const initialCategory = getParam("category");
+  // With plate lookup hidden, every booking picks the car by size.
+  const manualMode = !plateLookupEnabled || (params.manual === "true" && Boolean(initialCategory));
   const confirmedParam = Array.isArray(params.confirmed) ? params.confirmed[0] : params.confirmed;
   const autoConfirmVehicle = confirmedParam === "1" && Boolean(initialPlate) && !manualMode;
   const bookingSettings = await getBookingSettingsFromSetup();
@@ -32,6 +38,9 @@ export default async function BookingPage({
     <BookingFlow
       initialPlate={manualMode ? "" : sanitizePlate(initialPlate)}
       initialCategory={initialCategory}
+      initialPackage={getParam("package")}
+      initialDate={getParam("date")}
+      initialTime={getParam("time")}
       manualMode={manualMode}
       autoConfirmVehicle={autoConfirmVehicle}
       minDate={minDate}

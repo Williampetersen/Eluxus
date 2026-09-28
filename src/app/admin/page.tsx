@@ -163,7 +163,7 @@ function PaginationBar({
       {currentPage > 1 ? (
         <a
           href={buildHref(currentPage - 1)}
-          className="flex h-8 items-center justify-center rounded-xl border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#374151] shadow-sm transition hover:border-[#b8860b] hover:text-[#b8860b]"
+          className="flex h-8 items-center justify-center rounded-xl border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#374151] shadow-sm transition hover:border-[#0071c2] hover:text-[#0071c2]"
         >
           ← Forrige
         </a>
@@ -175,8 +175,8 @@ function PaginationBar({
           className={cn(
             "flex h-8 w-8 items-center justify-center rounded-xl text-[12px] font-bold transition",
             p === currentPage
-              ? "bg-[#b8860b] text-white shadow-[0_2px_8px_rgba(184,134,11,0.3)]"
-              : "border border-[#e8ebf5] bg-white text-[#374151] hover:border-[#b8860b] hover:text-[#b8860b]"
+              ? "bg-[#0071c2] text-white shadow-[0_2px_8px_rgba(0,113,194,0.3)]"
+              : "border border-[#e8ebf5] bg-white text-[#374151] hover:border-[#0071c2] hover:text-[#0071c2]"
           )}
         >
           {p}
@@ -185,7 +185,7 @@ function PaginationBar({
       {currentPage < totalPages ? (
         <a
           href={buildHref(currentPage + 1)}
-          className="flex h-8 items-center justify-center rounded-xl border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#374151] shadow-sm transition hover:border-[#b8860b] hover:text-[#b8860b]"
+          className="flex h-8 items-center justify-center rounded-xl border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#374151] shadow-sm transition hover:border-[#0071c2] hover:text-[#0071c2]"
         >
           Næste →
         </a>
@@ -205,7 +205,7 @@ const getTodayDateText = () => {
 type AdminView = (typeof navItems)[number]["id"];
 
 const selectClassName =
-  "h-10 w-full rounded-2xl border border-[#ece1c8] bg-white/70 px-3 text-[13px] font-medium text-[#111827] outline-none transition focus:border-[#b8860b] focus:ring-4 focus:ring-[#b8860b]/10";
+  "h-10 w-full rounded-2xl border border-[#d9e3ee] bg-white/70 px-3 text-[13px] font-medium text-[#111827] outline-none transition focus:border-[#0071c2] focus:ring-4 focus:ring-[#0071c2]/10";
 
 const statusMessages: Record<string, string> = {
   created: "Bookingen er oprettet.",
@@ -445,7 +445,7 @@ function GlassCard({
   return (
     <section
       className={cn(
-        "rounded-3xl border border-white/55 bg-white/[0.65] text-[#111827] shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl transition duration-[250ms] hover:-translate-y-0.5",
+        "rounded-3xl border border-white/55 bg-white/[0.65] text-[#111827] shadow-[0_8px_32px_rgba(0,113,194,0.08)] backdrop-blur-2xl transition duration-[250ms] hover:-translate-y-0.5",
         className
       )}
     >
@@ -468,10 +468,10 @@ function KpiCard({
   tone?: "violet" | "blue" | "green" | "orange";
 }) {
   const toneClass = {
-    violet: "bg-[#f3ead4] text-[#b8860b] ring-[#e8c468]/30",
-    blue: "bg-[#f3ead4] text-[#b8860b] ring-[#e8c468]/30",
+    violet: "bg-[#e6f0fb] text-[#0071c2] ring-[#feba02]/30",
+    blue: "bg-[#e6f0fb] text-[#0071c2] ring-[#feba02]/30",
     green: "bg-[#10B981]/10 text-[#047857] ring-[#10B981]/20",
-    orange: "bg-[#caa036]/10 text-[#92400E] ring-[#caa036]/20",
+    orange: "bg-[#feba02]/10 text-[#92400E] ring-[#feba02]/20",
   }[tone];
 
   return (
@@ -492,9 +492,9 @@ function KpiCard({
 
 function StatusBadge({ status }: { status: BookingStatus }) {
   const styles: Record<BookingStatus, string> = {
-    pending: "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]",
+    pending: "border-[#feba02]/20 bg-[#feba02]/10 text-[#92400E]",
     approved: "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]",
-    completed: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#8a6c14]",
+    completed: "border-[#0071c2]/20 bg-[#0071c2]/10 text-[#00487a]",
     cancelled: "border-[#EF4444]/20 bg-[#EF4444]/10 text-[#B91C1C]",
   };
 
@@ -721,9 +721,9 @@ function StatusDistributionCard({ bookings }: { bookings: DashboardBooking[] }) 
   const statuses: BookingStatus[] = ["pending", "approved", "completed", "cancelled"];
   const total = Math.max(1, bookings.length);
   const barColor: Record<BookingStatus, string> = {
-    pending: "bg-[#caa036]",
+    pending: "bg-[#feba02]",
     approved: "bg-[#10B981]",
-    completed: "bg-[#b8860b]",
+    completed: "bg-[#0071c2]",
     cancelled: "bg-[#EF4444]",
   };
 
@@ -749,7 +749,7 @@ function StatusDistributionCard({ bookings }: { bookings: DashboardBooking[] }) 
             >
               <div className="mb-1.5 flex items-center justify-between text-xs">
                 <StatusBadge status={status} />
-                <span className="font-bold text-white transition group-hover:text-[#b8860b]">{count}</span>
+                <span className="font-bold text-white transition group-hover:text-[#0071c2]">{count}</span>
               </div>
               <div className="h-2 overflow-hidden rounded-full bg-white/10">
                 <div
@@ -1516,7 +1516,7 @@ function BookingsView({
         action={
           <Link
             href="/admin/bookings/new"
-            className="inline-flex h-9 items-center gap-2 rounded-xl bg-[#b8860b] px-4 text-[12.5px] font-semibold text-white shadow-[0_4px_14px_rgba(184,134,11,0.28)] transition hover:bg-[#8a6c14]"
+            className="inline-flex h-9 items-center gap-2 rounded-xl bg-[#0071c2] px-4 text-[12.5px] font-semibold text-white shadow-[0_4px_14px_rgba(0,113,194,0.28)] transition hover:bg-[#00487a]"
           >
             <CalendarPlus className="h-3.5 w-3.5" />
             Ny booking
@@ -1535,9 +1535,9 @@ function BookingsView({
             key={item.label}
             href={item.status ? `?view=bookings&status=${item.status}&page=1` : "?view=bookings&page=1"}
             className={cn(
-              "block rounded-2xl border px-4 py-4 shadow-[0_2px_12px_rgba(184,134,11,0.07)] backdrop-blur-xl transition hover:-translate-y-0.5",
+              "block rounded-2xl border px-4 py-4 shadow-[0_2px_12px_rgba(0,113,194,0.07)] backdrop-blur-xl transition hover:-translate-y-0.5",
               statusFilter === item.status
-                ? "border-[#b8860b] bg-[#f3ead4]"
+                ? "border-[#0071c2] bg-[#e6f0fb]"
                 : "border-white/60 bg-white/80"
             )}
           >
@@ -1548,8 +1548,8 @@ function BookingsView({
               </div>
               <span className={cn("flex h-9 w-9 shrink-0 items-center justify-center rounded-xl", {
                 blue: "bg-[#EFF6FF] text-[#2563EB]",
-                orange: "bg-[#FFF7ED] text-[#96721a]",
-                violet: "bg-[#f3ead4] text-[#b8860b]",
+                orange: "bg-[#FFF7ED] text-[#00487a]",
+                violet: "bg-[#e6f0fb] text-[#0071c2]",
                 green: "bg-[#ECFDF5] text-[#059669]",
               }[item.tone])}>
                 <item.icon className="h-[18px] w-[18px]" />
@@ -1560,9 +1560,9 @@ function BookingsView({
       </div>
 
       {statusFilter ? (
-        <div className="flex items-center gap-3 rounded-2xl border border-[#b8860b]/20 bg-[#f3ead4] px-4 py-3">
+        <div className="flex items-center gap-3 rounded-2xl border border-[#0071c2]/20 bg-[#e6f0fb] px-4 py-3">
           <StatusPill status={statusFilter as BookingStatus} />
-          <p className="flex-1 text-[13px] font-semibold text-[#b8860b]">
+          <p className="flex-1 text-[13px] font-semibold text-[#0071c2]">
             Filtreret: {filtered.length} booking{filtered.length !== 1 ? "er" : ""}
           </p>
           <a href="?view=bookings&page=1" className="text-[12px] font-semibold text-[#6B7280] underline-offset-2 hover:underline">
@@ -1578,7 +1578,7 @@ function BookingsView({
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(27,23,18,0.06)]">
+        <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(0,35,80,0.06)]">
           <div className="hidden grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_9rem_8rem_auto_2rem] gap-4 border-b border-[#e8ebf5] px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8e95b5] lg:grid">
             <span>Kunde og bil</span>
             <span>Tid og service</span>
@@ -1685,7 +1685,7 @@ function CustomersView({
         <p className="text-[12px] font-medium text-[#6B7280]">
           Side {currentPage} af {totalPages} · {customers.length} kunder
         </p>
-        <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(27,23,18,0.06)]">
+        <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(0,35,80,0.06)]">
           <div className="hidden grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_8rem_8rem] gap-4 border-b border-[#e8ebf5] px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8e95b5] lg:grid">
             <span>Kunde</span>
             <span>Kontakt</span>
@@ -1779,7 +1779,7 @@ function ServicesView({ dashboard, tab }: { dashboard: DashboardData; tab: strin
             className={cn(
               "flex-1 rounded-xl py-2.5 text-center text-[13px] font-semibold transition",
               activeTab === t
-                ? "bg-[#b8860b] text-white shadow-[0_2px_8px_rgba(184,134,11,0.25)]"
+                ? "bg-[#0071c2] text-white shadow-[0_2px_8px_rgba(0,113,194,0.25)]"
                 : "text-[#6B7280] hover:text-[#111827]"
             )}
           >
@@ -1798,7 +1798,7 @@ function ServicesView({ dashboard, tab }: { dashboard: DashboardData; tab: strin
               {dashboard.settings.catalog.packages.map((pkg) => (
                 <article
                   key={pkg.id}
-                  className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]"
+                  className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]"
                 >
                   <div className="border-b border-[#e8ebf5] px-4 py-3">
                     <p className="text-[13px] font-semibold text-[#111827]">{pkg.title}</p>
@@ -1840,7 +1840,7 @@ function ServicesView({ dashboard, tab }: { dashboard: DashboardData; tab: strin
               {dashboard.settings.catalog.vehicleCategories.map((category) => (
                 <article
                   key={category.id}
-                  className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]"
+                  className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]"
                 >
                   <div className="border-b border-[#e8ebf5] px-4 py-3">
                     <p className="text-[13px] font-semibold text-[#111827]">{category.label}</p>
@@ -1873,7 +1873,7 @@ function ServicesView({ dashboard, tab }: { dashboard: DashboardData; tab: strin
         ) : (
           <section className="space-y-3">
             <div className="grid gap-4 xl:grid-cols-3">
-              <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+              <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
                 <div className="border-b border-[#e8ebf5] px-4 py-3">
                   <p className="text-[13px] font-semibold text-[#111827]">Indvendige tilvalg</p>
                 </div>
@@ -1893,7 +1893,7 @@ function ServicesView({ dashboard, tab }: { dashboard: DashboardData; tab: strin
                 </div>
               </div>
 
-              <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+              <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
                 <div className="border-b border-[#e8ebf5] px-4 py-3">
                   <p className="text-[13px] font-semibold text-[#111827]">Udvendige tilvalg</p>
                 </div>
@@ -1913,7 +1913,7 @@ function ServicesView({ dashboard, tab }: { dashboard: DashboardData; tab: strin
                 </div>
               </div>
 
-              <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+              <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
                 <div className="border-b border-[#e8ebf5] px-4 py-3">
                   <p className="text-[13px] font-semibold text-[#111827]">Manuelle tilvalg</p>
                 </div>
@@ -1996,7 +1996,7 @@ function AvailabilityView({
           <form
             action="/api/admin/settings"
             method="POST"
-            className="grid gap-4 rounded-[1.6rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(27,23,18,0.05)]"
+            className="grid gap-4 rounded-[1.6rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(0,35,80,0.05)]"
           >
             <input type="hidden" name="section" value="availability" />
             <input type="hidden" name="return_view" value="availability" />
@@ -2071,7 +2071,7 @@ function AvailabilityView({
           <form
             action="/api/admin/availability"
             method="POST"
-            className="grid gap-4 rounded-[1.6rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(27,23,18,0.05)]"
+            className="grid gap-4 rounded-[1.6rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(0,35,80,0.05)]"
           >
             <input type="hidden" name="return_view" value="availability" />
             <div className="grid gap-4 sm:grid-cols-2">
@@ -2102,7 +2102,7 @@ function AvailabilityView({
           title="Aktive blokeringer"
           description="Alle blokeringer kan fjernes enkeltvis."
         />
-        <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+        <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
           {dashboard.availabilityBlocks.length > 0 ? (
             <div className="divide-y divide-[#e8ebf5]">
               {dashboard.availabilityBlocks.map((block) => (
@@ -2111,7 +2111,7 @@ function AvailabilityView({
                   className="flex flex-wrap items-center justify-between gap-4 px-5 py-4"
                 >
                   <div className="flex items-center gap-4">
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#FFF7ED] text-[#96721a]">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#FFF7ED] text-[#00487a]">
                       <XCircle className="h-4 w-4" />
                     </span>
                     <div>
@@ -2134,7 +2134,7 @@ function AvailabilityView({
             </div>
           ) : (
             <div className="px-5 py-8 text-center">
-              <CalendarClock className="mx-auto h-8 w-8 text-[#ece1c8]" />
+              <CalendarClock className="mx-auto h-8 w-8 text-[#d9e3ee]" />
               <p className="mt-3 text-[13px] font-medium text-[#6B7280]">Ingen blokeringer oprettet endnu.</p>
             </div>
           )}
@@ -2216,7 +2216,7 @@ function EmailsView({
           <form
             action="/api/admin/settings"
             method="POST"
-            className="grid gap-3 rounded-[1.6rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(27,23,18,0.05)]"
+            className="grid gap-3 rounded-[1.6rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(0,35,80,0.05)]"
           >
             <input type="hidden" name="section" value="emails" />
             <input type="hidden" name="return_view" value="emails" />
@@ -2298,7 +2298,7 @@ function EmailsView({
           </form>
 
           <div className="rounded-2xl border border-white/60 bg-white/80 px-5 py-5">
-            <p className="text-[12px] font-bold uppercase tracking-[0.14em] text-[#b8860b]">Mailopsætning</p>
+            <p className="text-[12px] font-bold uppercase tracking-[0.14em] text-[#0071c2]">Mailopsætning</p>
             <div className="mt-3 divide-y divide-[#e8ebf5]">
               {[
                 ["SMTP host", process.env.SMTP_HOST || "Ikke sat"],
@@ -2403,7 +2403,7 @@ function AreasView({
             className={cn(
               "flex-1 rounded-xl py-2.5 text-center text-[13px] font-semibold transition",
               activeTab === t
-                ? "bg-[#b8860b] text-white shadow-[0_2px_8px_rgba(184,134,11,0.25)]"
+                ? "bg-[#0071c2] text-white shadow-[0_2px_8px_rgba(0,113,194,0.25)]"
                 : "text-[#6B7280] hover:text-[#111827]"
             )}
           >
@@ -2417,7 +2417,7 @@ function AreasView({
           <form
             action="/api/admin/settings"
             method="POST"
-            className="grid gap-4 rounded-[1.6rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(27,23,18,0.05)]"
+            className="grid gap-4 rounded-[1.6rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(0,35,80,0.05)]"
           >
             <p className="text-[13px] font-semibold text-[#374151]">Tilføj nyt serviceområde</p>
             <input type="hidden" name="section" value="areas" />
@@ -2479,7 +2479,7 @@ function AreasView({
           <p className="text-[12px] font-medium text-[#6B7280]">
             Side {routesCurrentPage} af {routesTotalPages} · {totalRoutes} rutedage
           </p>
-          <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(27,23,18,0.06)]">
+          <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(0,35,80,0.06)]">
             <div className="divide-y divide-[#e8ebf5]">
               {routesPageItems.length > 0 ? (
                 routesPageItems.map((day) => (
@@ -2502,7 +2502,7 @@ function AreasView({
                       {day.areas.map((area) => (
                         <div key={area.key} className="px-5 py-3">
                           <div className="flex items-center justify-between gap-3">
-                            <p className="text-[12px] font-bold uppercase tracking-[0.1em] text-[#b8860b]">
+                            <p className="text-[12px] font-bold uppercase tracking-[0.1em] text-[#0071c2]">
                               {area.label} · {area.count} job
                             </p>
                             <p className="text-[12px] font-semibold text-[#6B7280]">{formatPrice(area.totalRevenue)}</p>
@@ -2596,7 +2596,7 @@ function PaymentsView({
         <p className="text-[12px] font-medium text-[#6B7280]">
           Side {currentPage} af {totalPages} · {unpaidBookings.length} betalinger
         </p>
-        <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(27,23,18,0.06)]">
+        <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(0,35,80,0.06)]">
           <div className="hidden grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_9rem_8rem] gap-4 border-b border-[#e8ebf5] px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8e95b5] lg:grid">
             <span>Kunde</span>
             <span>Dato</span>
@@ -2677,7 +2677,7 @@ function SettingsView({
           <form
             action="/api/admin/settings"
             method="POST"
-            className="grid gap-4 overflow-hidden rounded-2xl border border-white/60 bg-white/80 px-5 py-5 shadow-[0_2px_12px_rgba(184,134,11,0.06)]"
+            className="grid gap-4 overflow-hidden rounded-2xl border border-white/60 bg-white/80 px-5 py-5 shadow-[0_2px_12px_rgba(0,113,194,0.06)]"
           >
             <input type="hidden" name="section" value="general" />
             <input type="hidden" name="return_view" value="settings" />
@@ -2719,8 +2719,8 @@ function SettingsView({
                         defaultChecked={dashboard.settings.defaultBookingStatus === option.value}
                         className="peer sr-only"
                       />
-                      <span className="flex items-start gap-3 rounded-xl border border-[var(--line)] bg-white px-4 py-3 transition peer-checked:border-[#b8860b] peer-checked:bg-[#f3ead4] peer-checked:shadow-[0_4px_16px_rgba(184,134,11,0.12)]">
-                        <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#f2f7fa] text-[#b8860b]">
+                      <span className="flex items-start gap-3 rounded-xl border border-[var(--line)] bg-white px-4 py-3 transition peer-checked:border-[#0071c2] peer-checked:bg-[#e6f0fb] peer-checked:shadow-[0_4px_16px_rgba(0,113,194,0.12)]">
+                        <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#f2f7fa] text-[#0071c2]">
                           <Icon className="h-4 w-4" />
                         </span>
                         <span className="min-w-0">
@@ -2739,7 +2739,7 @@ function SettingsView({
 
         <section className="space-y-4">
           <p className="text-[13px] font-semibold uppercase tracking-wide text-[#6B7280]">Virksomhedslogo</p>
-          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 px-5 py-5 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 px-5 py-5 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
             <p className="text-[13px] font-semibold text-[#111827]">Admin-logo / virksomhedsbillede</p>
             <p className="mt-1 text-[12px] font-medium text-[#6B7280]">
               Bruges i adminpanelet og e-mails. Max 4 MB · JPEG, PNG eller WebP.
@@ -2750,10 +2750,10 @@ function SettingsView({
                 <img
                   src={dashboard.settings.companyLogoUrl}
                   alt="Logo"
-                  className="h-20 w-20 rounded-2xl border border-[#ece1c8] object-contain bg-white p-1"
+                  className="h-20 w-20 rounded-2xl border border-[#d9e3ee] object-contain bg-white p-1"
                 />
               ) : (
-                <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-dashed border-[#ece1c8] bg-white/60 text-[#94A3B8]">
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-dashed border-[#d9e3ee] bg-white/60 text-[#94A3B8]">
                   <ImageIcon className="h-7 w-7" />
                 </div>
               )}
@@ -2764,17 +2764,17 @@ function SettingsView({
           </div>
 
           <p className="text-[13px] font-semibold uppercase tracking-wide text-[#6B7280]">Info</p>
-          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 px-5 py-4 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 px-5 py-4 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
             <p className="text-[13px] font-semibold text-[#111827]">Hvad betyder standardstatus?</p>
             <p className="mt-2 text-[13px] leading-5 text-[#6B7280]">
               {getAutoBookingStatusDescription(dashboard.settings.defaultBookingStatus)}
             </p>
-            <div className="mt-3 rounded-xl bg-[#f3ead4] px-4 py-3 text-[12px] text-[#b8860b]">
+            <div className="mt-3 rounded-xl bg-[#e6f0fb] px-4 py-3 text-[12px] text-[#0071c2]">
               Denne indstilling påvirker både website-bookinger og manuelle bookinger fra admin.
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
             <div className="border-b border-[#e8ebf5] px-5 py-3">
               <p className="text-[13px] font-semibold uppercase tracking-wide text-[#6B7280]">Mailmiljø</p>
             </div>
@@ -2897,7 +2897,7 @@ function BookingActionCard({
                                       ? "bg-[#ebf8f1] text-[#1f7a4b]"
                                       : email.status === "failed"
                                         ? "bg-[#fff0f0] text-[#c43d3d]"
-                                        : "bg-[#f3ead4] text-[#b8860b]"
+                                        : "bg-[#e6f0fb] text-[#0071c2]"
                                   )}
                                 >
                                   {getEmailStatusLabel(email.status)}
@@ -3136,7 +3136,7 @@ function CustomerCard({
             </p>
           </div>
           <div>
-            <span className="inline-flex rounded-full bg-[#f3ead4] px-2.5 py-1 text-[11px] font-semibold text-[#b8860b]">
+            <span className="inline-flex rounded-full bg-[#e6f0fb] px-2.5 py-1 text-[11px] font-semibold text-[#0071c2]">
               {customer.bookingsCount} booking{customer.bookingsCount !== 1 ? "er" : ""}
             </span>
           </div>
@@ -3204,7 +3204,7 @@ function CustomerCard({
 
 function AreaCard({ area }: { area: DashboardData["settings"]["serviceAreas"][number] }) {
   return (
-    <article className="rounded-[1.5rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(27,23,18,0.05)]">
+    <article className="rounded-[1.5rem] border border-[#d9e7f0] bg-white px-5 py-5 shadow-[0_14px_40px_rgba(0,35,80,0.05)]">
       <form action="/api/admin/settings" method="POST" className="grid gap-4">
         <input type="hidden" name="section" value="areas" />
         <input type="hidden" name="return_view" value="areas" />
@@ -3278,7 +3278,7 @@ function AdminInvoicesView({ invoices, page }: { invoices: Invoice[]; page: numb
       <p className="text-[12px] font-medium text-[#6B7280]">
         Side {currentPage} af {totalPages} · {invoices.length} fakturaer
       </p>
-      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(27,23,18,0.06)]">
+      <div className="overflow-hidden rounded-3xl border border-white/60 bg-white/65 shadow-[0_10px_32px_rgba(0,35,80,0.06)]">
         {pageItems.length > 0 ? (
           <>
             <div className="hidden border-b border-[#e8ebf5] px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8e95b5] lg:grid lg:grid-cols-[1fr_1fr_9rem_auto_auto] lg:gap-4">
@@ -3313,7 +3313,7 @@ function AdminInvoicesView({ invoices, page }: { invoices: Invoice[]; page: numb
                       href={invoice.publicUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex h-8 items-center justify-center rounded-lg border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
+                      className="inline-flex h-8 items-center justify-center rounded-lg border border-[#e8ebf5] bg-white px-3 text-[12px] font-semibold text-[#0071c2] transition hover:border-[#0071c2] hover:bg-[#e6f0fb]"
                     >
                       Vis / print
                     </a>
@@ -3372,7 +3372,7 @@ function CouponsView({ coupons }: { coupons: Coupon[] }) {
       </div>
 
       {/* Create new coupon */}
-      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
         <div className="border-b border-[#e8ebf5] px-5 py-4">
           <p className="text-[13px] font-semibold uppercase tracking-wide text-[#6B7280]">Opret ny rabatkode</p>
         </div>
@@ -3410,7 +3410,7 @@ function CouponsView({ coupons }: { coupons: Coupon[] }) {
       </div>
 
       {/* Coupon list */}
-      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
         {coupons.length === 0 ? (
           <div className="p-5"><EmptyState text="Ingen rabatkoder oprettet endnu." /></div>
         ) : (
@@ -3452,7 +3452,7 @@ function CouponsView({ coupons }: { coupons: Coupon[] }) {
                       <input type="hidden" name="return_view" value="coupons" />
                       <button
                         type="submit"
-                        className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
+                        className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#0071c2] transition hover:border-[#0071c2] hover:bg-[#e6f0fb]"
                       >
                         {coupon.is_active ? "Deaktiver" : "Aktiver"}
                       </button>
@@ -3502,7 +3502,7 @@ function AdminManagementView({
       </div>
 
       {/* Create new admin */}
-      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
         <div className="border-b border-[#e8ebf5] px-5 py-4">
           <p className="text-[13px] font-semibold uppercase tracking-wide text-[#6B7280]">Opret ny administrator</p>
         </div>
@@ -3521,7 +3521,7 @@ function AdminManagementView({
       </div>
 
       {/* Admin list */}
-      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
         {admins.length === 0 ? (
           <div className="p-5"><EmptyState text="Ingen administratorer oprettet endnu." /></div>
         ) : (
@@ -3556,7 +3556,7 @@ function AdminManagementView({
                         <button
                           type="submit"
                           disabled={isSelf}
-                          className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4] disabled:cursor-not-allowed disabled:opacity-40"
+                          className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#0071c2] transition hover:border-[#0071c2] hover:bg-[#e6f0fb] disabled:cursor-not-allowed disabled:opacity-40"
                         >
                           {admin.status === "active" ? "Deaktiver" : "Aktiver"}
                         </button>
@@ -3638,7 +3638,7 @@ function TrustpilotView({
         />
       </div>
 
-      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+      <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
         <div className="border-b border-[#e8ebf5] px-5 py-4">
           <p className="text-[13px] font-semibold uppercase tracking-wide text-[#6B7280]">Sådan virker det</p>
           <p className="mt-2 text-[13px] leading-6 text-[#6B7280]">
@@ -3647,7 +3647,7 @@ function TrustpilotView({
               href="https://dk.trustpilot.com/evaluate/www.eluxus.dk"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-[#b8860b]"
+              className="font-semibold text-[#0071c2]"
             >
               vores Trustpilot-side
             </a>
@@ -3673,7 +3673,7 @@ function TrustpilotView({
             title="Afsluttede bookinger"
             description="Send eller gensend Trustpilot-mailen til en enkelt kunde."
           />
-          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
             {completedBookings.length === 0 ? (
               <div className="p-5"><EmptyState text="Ingen afsluttede bookinger endnu." /></div>
             ) : (
@@ -3702,7 +3702,7 @@ function TrustpilotView({
                         <input type="hidden" name="return_view" value="trustpilot" />
                         <button
                           type="submit"
-                          className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
+                          className="rounded-lg border border-[#e8ebf5] bg-white px-2.5 py-1 text-[11px] font-semibold text-[#0071c2] transition hover:border-[#0071c2] hover:bg-[#e6f0fb]"
                         >
                           {booking.trustpilotReviewSentAt ? "Send igen" : "Send mail"}
                         </button>
@@ -3721,7 +3721,7 @@ function TrustpilotView({
             title="Vindere"
             description="Historik over ugentlige 30%-vindere."
           />
-          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(184,134,11,0.06)]">
+          <div className="overflow-hidden rounded-2xl border border-white/60 bg-white/80 shadow-[0_2px_12px_rgba(0,113,194,0.06)]">
             {draws.length === 0 ? (
               <div className="p-5"><EmptyState text="Der er endnu ikke trukket nogen vindere." /></div>
             ) : (
@@ -3733,7 +3733,7 @@ function TrustpilotView({
                     </p>
                     <p className="mt-0.5 text-[12px] text-[#6B7280]">
                       Uge {draw.weekStart} · kode{" "}
-                      <span className="font-mono font-semibold text-[#1b1712]">{draw.couponCode}</span>
+                      <span className="font-mono font-semibold text-[#003580]">{draw.couponCode}</span>
                     </p>
                   </div>
                 ))}
@@ -3880,15 +3880,15 @@ function MetricCard({
   tone?: "violet" | "green" | "orange" | "red" | "blue";
 }) {
   const iconStyles = {
-    violet: "bg-[#f3ead4] text-[#b8860b]",
+    violet: "bg-[#e6f0fb] text-[#0071c2]",
     green: "bg-[#ECFDF5] text-[#059669]",
-    orange: "bg-[#FFF7ED] text-[#96721a]",
+    orange: "bg-[#FFF7ED] text-[#00487a]",
     red: "bg-[#FEF2F2] text-[#DC2626]",
     blue: "bg-[#EFF6FF] text-[#2563EB]",
   }[tone];
 
   return (
-    <article className="rounded-2xl border border-white/60 bg-white/80 px-4 py-4 shadow-[0_2px_12px_rgba(184,134,11,0.07)] backdrop-blur-xl transition hover:-translate-y-0.5">
+    <article className="rounded-2xl border border-white/60 bg-white/80 px-4 py-4 shadow-[0_2px_12px_rgba(0,113,194,0.07)] backdrop-blur-xl transition hover:-translate-y-0.5">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#6B7280]">{label}</p>
@@ -3914,7 +3914,7 @@ function SectionHeading({
 }) {
   return (
     <div>
-      <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#b8860b]">{eyebrow}</p>
+      <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0071c2]">{eyebrow}</p>
       <h2 className="mt-1 text-lg font-bold text-[#111827] sm:text-xl">{title}</h2>
       {description ? (
         <p className="mt-1 max-w-2xl text-[12px] font-medium leading-5 text-[#6B7280]">{description}</p>
@@ -3935,9 +3935,9 @@ function ViewHeader({
   action?: ReactNode;
 }) {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-white/60 bg-white/80 px-5 py-4 shadow-[0_2px_12px_rgba(184,134,11,0.06)] backdrop-blur-xl">
+    <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-white/60 bg-white/80 px-5 py-4 shadow-[0_2px_12px_rgba(0,113,194,0.06)] backdrop-blur-xl">
       <div className="flex items-center gap-3">
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[#b8860b]">
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#e6f0fb] text-[#0071c2]">
           <Icon className="h-5 w-5" />
         </div>
         <div>
@@ -3969,8 +3969,8 @@ function Field({
 
 function InfoPanel({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <section className="rounded-3xl border border-white/55 bg-white/[0.65] px-4 py-4 shadow-[0_8px_32px_rgba(184,134,11,0.08)] backdrop-blur-2xl">
-      <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#b8860b]">{title}</p>
+    <section className="rounded-3xl border border-white/55 bg-white/[0.65] px-4 py-4 shadow-[0_8px_32px_rgba(0,113,194,0.08)] backdrop-blur-2xl">
+      <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0071c2]">{title}</p>
       <div className="mt-3">{children}</div>
     </section>
   );
@@ -3978,7 +3978,7 @@ function InfoPanel({ title, children }: { title: string; children: ReactNode }) 
 
 function DetailRow({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-white/55 bg-white/60 px-3 py-2.5 shadow-[0_8px_24px_rgba(184,134,11,0.06)]">
+    <div className="rounded-2xl border border-white/55 bg-white/60 px-3 py-2.5 shadow-[0_8px_24px_rgba(0,113,194,0.06)]">
       <p className="text-[12px] font-semibold uppercase tracking-[0.1em] text-[#6B7280]">{label}</p>
       <p className="mt-1 text-[13px] font-medium text-[#111827]">{value || "-"}</p>
     </div>
@@ -3987,9 +3987,9 @@ function DetailRow({ label, value }: { label: string; value: string }) {
 
 function StatusPill({ status }: { status: BookingStatus }) {
   const styles: Record<BookingStatus, string> = {
-    pending: "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]",
+    pending: "border-[#feba02]/20 bg-[#feba02]/10 text-[#92400E]",
     approved: "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]",
-    completed: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#8a6c14]",
+    completed: "border-[#0071c2]/20 bg-[#0071c2]/10 text-[#00487a]",
     cancelled: "border-[#EF4444]/20 bg-[#EF4444]/10 text-[#B91C1C]",
   };
 
@@ -4008,9 +4008,9 @@ function StatusPill({ status }: { status: BookingStatus }) {
 function PaymentPill({ status }: { status: (typeof paymentStatuses)[number] }) {
   const styles: Record<(typeof paymentStatuses)[number], string> = {
     unpaid: "border-[#EF4444]/20 bg-[#EF4444]/10 text-[#B91C1C]",
-    pending: "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]",
+    pending: "border-[#feba02]/20 bg-[#feba02]/10 text-[#92400E]",
     paid: "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]",
-    refunded: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#8a6c14]",
+    refunded: "border-[#0071c2]/20 bg-[#0071c2]/10 text-[#00487a]",
   };
 
   return (
@@ -4027,9 +4027,9 @@ function PaymentPill({ status }: { status: (typeof paymentStatuses)[number] }) {
 
 function InvoicePill({ status }: { status: (typeof invoiceStatuses)[number] }) {
   const styles: Record<(typeof invoiceStatuses)[number], string> = {
-    not_requested: "border-[#ece1c8] bg-white/60 text-[#6B7280]",
-    ready: "border-[#caa036]/20 bg-[#caa036]/10 text-[#92400E]",
-    sent: "border-[#b8860b]/20 bg-[#b8860b]/10 text-[#8a6c14]",
+    not_requested: "border-[#d9e3ee] bg-white/60 text-[#6B7280]",
+    ready: "border-[#feba02]/20 bg-[#feba02]/10 text-[#92400E]",
+    sent: "border-[#0071c2]/20 bg-[#0071c2]/10 text-[#00487a]",
     paid: "border-[#10B981]/20 bg-[#10B981]/10 text-[#047857]",
   };
 
@@ -4062,7 +4062,7 @@ function getEmailRecipientLabel(role: string) {
 
 function EmptyState({ text }: { text: string }) {
   return (
-    <div className="rounded-3xl border border-dashed border-[#ece1c8] bg-white/55 px-4 py-4 text-[13px] font-medium text-[#6B7280]">
+    <div className="rounded-3xl border border-dashed border-[#d9e3ee] bg-white/55 px-4 py-4 text-[13px] font-medium text-[#6B7280]">
       {text}
     </div>
   );

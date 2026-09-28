@@ -20,14 +20,14 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Retur leasebil | Afleveringsvask til leasebil – Eluxus",
   description:
-    "Aflever din leasebil syns-klar. Eluxus tilbyder retur- og afleveringsvask til leasebil fra 2.200 kr. Tjek pris med din nummerplade og book online.",
+    "Aflever din leasebil syns-klar. Eluxus tilbyder retur- og afleveringsvask til leasebil fra 2.200 kr. Vælg din bilstørrelse, se prisen og book online.",
   alternates: {
     canonical: "/retur-leasebil",
   },
   openGraph: {
     title: "Retur leasebil | Afleveringsvask til leasebil – Eluxus",
     description:
-      "Professionel retur- og afleveringsvask til leasebil. Indtast din nummerplade og se prisen med det samme.",
+      "Professionel retur- og afleveringsvask til leasebil. Vælg din bilstørrelse og se prisen med det samme.",
     url: "/retur-leasebil",
     type: "website",
     locale: "da_DK",
@@ -128,10 +128,10 @@ export default function ReturLeasebilPage() {
       </nav>
 
       {/* Hero */}
-      <section className="mx-auto mt-6 max-w-7xl overflow-hidden rounded-[2rem] bg-[var(--accent)] shadow-[0_28px_90px_rgba(27,23,18,0.22)]">
+      <section className="mx-auto mt-6 max-w-7xl overflow-hidden rounded-[2rem] bg-[var(--accent)] shadow-[0_28px_90px_rgba(0,35,80,0.22)]">
         <div className="grid lg:grid-cols-[1.02fr_0.98fr]">
           <div className="relative px-6 py-12 text-white sm:px-10 lg:px-12 lg:py-16">
-            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(184,134,11,0.20),transparent_48%,rgba(202,160,54,0.10))]" />
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,113,194,0.20),transparent_48%,rgba(0,113,194,0.10))]" />
             <div className="relative">
               <span className="inline-flex rounded-full border border-white/12 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
                 Kun én service — gjort ordentligt
@@ -146,9 +146,9 @@ export default function ReturLeasebilPage() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#tjek-pris"
-                  className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)]"
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(0,113,194,0.26)] transition hover:bg-[var(--cta-hover)]"
                 >
-                  Tjek pris med nummerplade
+                  Tjek pris for din bil
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
@@ -179,7 +179,7 @@ export default function ReturLeasebilPage() {
         <section id="tjek-pris" className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <LeasebilPriceChecker />
 
-          <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/88 p-6 shadow-[0_18px_40px_rgba(27,23,18,0.06)] sm:p-7">
+          <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/88 p-6 shadow-[0_18px_40px_rgba(0,35,80,0.06)] sm:p-7">
             <span className="eyebrow">Fast pris efter bilstørrelse</span>
             <h2 className="mt-4 font-display text-2xl font-semibold text-[var(--ink)]">Priser</h2>
             <div className="mt-5 space-y-3">
@@ -194,7 +194,7 @@ export default function ReturLeasebilPage() {
                 </div>
               ))}
             </div>
-            <div className="mt-5 flex items-center gap-3 rounded-xl bg-[#f3ead4] px-4 py-3 text-sm font-semibold text-[var(--ink)]">
+            <div className="mt-5 flex items-center gap-3 rounded-xl bg-[#e6f0fb] px-4 py-3 text-sm font-semibold text-[var(--ink)]">
               <Clock className="h-5 w-5 text-[var(--brand)]" />
               Tager ca. 2 timer — uanset bilstørrelse
             </div>
@@ -215,7 +215,7 @@ export default function ReturLeasebilPage() {
             {features.map((feature) => (
               <div
                 key={feature.text}
-                className="flex items-center gap-3 rounded-lg border border-[var(--line)] bg-white/88 px-5 py-4 shadow-[0_14px_32px_rgba(27,23,18,0.06)]"
+                className="flex items-center gap-3 rounded-lg border border-[var(--line)] bg-white/88 px-5 py-4 shadow-[0_14px_32px_rgba(0,35,80,0.06)]"
               >
                 <feature.icon className="h-5 w-5 shrink-0 text-[var(--brand)]" />
                 <span className="text-sm font-semibold text-[var(--ink)]">{feature.text}</span>
@@ -229,9 +229,9 @@ export default function ReturLeasebilPage() {
           {values.map((value) => (
             <article
               key={value.title}
-              className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(27,23,18,0.08)]"
+              className="rounded-lg border border-[var(--line)] bg-white/88 p-5 shadow-[0_18px_40px_rgba(0,35,80,0.08)]"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#f3ead4] text-[var(--brand)]">
+              <span className="flex h-11 w-11 items-center justify-center rounded-md bg-[#e6f0fb] text-[var(--brand)]">
                 <ShieldCheck className="h-5 w-5" />
               </span>
               <h3 className="mt-4 font-display text-2xl font-semibold text-[var(--ink)]">
@@ -262,7 +262,7 @@ export default function ReturLeasebilPage() {
         </section>
 
         {/* Bottom CTA */}
-        <section className="rounded-[2rem] bg-[linear-gradient(135deg,#1b1712,#b8860b)] px-6 py-10 text-white shadow-[0_24px_80px_rgba(27,23,18,0.22)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
+        <section className="rounded-[2rem] bg-[linear-gradient(135deg,#003580,#0071c2)] px-6 py-10 text-white shadow-[0_24px_80px_rgba(0,35,80,0.22)] sm:px-10 lg:flex lg:items-center lg:justify-between lg:gap-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white/65">
               Klar til aflevering
@@ -271,13 +271,13 @@ export default function ReturLeasebilPage() {
               Skal vi klargøre din leasebil?
             </h2>
             <p className="mt-4 max-w-2xl text-white/76">
-              Tjek prisen med din nummerplade, og book din retur leasebil-vask direkte online.
+              Vælg din bilstørrelse, se prisen, og book din retur leasebil-vask direkte online.
             </p>
           </div>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:mt-0">
             <a
               href="#tjek-pris"
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(202,160,54,0.26)] transition hover:bg-[var(--cta-hover)]"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[var(--cta)] px-5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(0,113,194,0.26)] transition hover:bg-[var(--cta-hover)]"
             >
               Tjek pris nu
               <ArrowRight className="h-4 w-4" />

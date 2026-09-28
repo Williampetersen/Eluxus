@@ -47,7 +47,7 @@ export function AdminSearch({ query }: { query: string }) {
         name="q"
         defaultValue={query}
         placeholder="Search bookings, customers, plates..."
-        className="h-10 rounded-2xl border-white/55 bg-white/60 pl-9 text-[13px] font-medium text-[#111827] placeholder:text-[#6B7280] focus:border-[#b8860b] focus:ring-[#b8860b]/10"
+        className="h-10 rounded-2xl border-white/55 bg-white/60 pl-9 text-[13px] font-medium text-[#111827] placeholder:text-[#6B7280] focus:border-[#0071c2] focus:ring-[#0071c2]/10"
       />
     </form>
   );

@@ -282,7 +282,7 @@ export function HtmlInvoiceManager({
                     ? "bg-[#E0F2FE] text-[#0369A1]"
                     : invoice.status === "cancelled"
                       ? "bg-[#FEF2F2] text-[#B91C1C]"
-                      : "bg-[#f3ead4] text-[#b8860b]"
+                      : "bg-[#e6f0fb] text-[#0071c2]"
               }`}
             >
               {STATUS_LABELS[invoice.status] || invoice.status}
@@ -296,7 +296,7 @@ export function HtmlInvoiceManager({
               href={invoice.publicUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-[#ece1c8] bg-white px-3 py-1.5 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-[#d9e3ee] bg-white px-3 py-1.5 text-[12px] font-semibold text-[#0071c2] transition hover:border-[#0071c2] hover:bg-[#e6f0fb]"
             >
               <ExternalLink className="h-3.5 w-3.5" />
               Vis / print faktura
@@ -328,15 +328,15 @@ export function HtmlInvoiceManager({
       ) : null}
 
       {unlocked ? (
-        <div className="rounded-lg border border-[#caa036]/30 bg-[#FFFBEB] px-3 py-2.5 text-[12px] font-semibold text-[#9A5B00]">
+        <div className="rounded-lg border border-[#feba02]/30 bg-[#FFFBEB] px-3 py-2.5 text-[12px] font-semibold text-[#9A5B00]">
           Redigeringstilstand aktiv — gem faktura for at anvende ændringer og nulstille status til "Klar".
         </div>
       ) : null}
 
       {/* ─── Line items editor ─── */}
-      <div className="overflow-hidden rounded-xl border border-[#ece1c8] bg-[#faf7f0]">
-        <div className="flex items-center justify-between gap-3 border-b border-[#ece1c8] px-4 py-3">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#b8860b]">
+      <div className="overflow-hidden rounded-xl border border-[#d9e3ee] bg-[#f2f6fa]">
+        <div className="flex items-center justify-between gap-3 border-b border-[#d9e3ee] px-4 py-3">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#0071c2]">
             Fakturalinjer
           </p>
           {isLocked ? (
@@ -413,7 +413,7 @@ export function HtmlInvoiceManager({
             <button
               type="button"
               onClick={addLine}
-              className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-dashed border-[#b8860b]/40 px-3 py-2 text-[12px] font-semibold text-[#b8860b] transition hover:border-[#b8860b] hover:bg-[#f3ead4]"
+              className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-dashed border-[#0071c2]/40 px-3 py-2 text-[12px] font-semibold text-[#0071c2] transition hover:border-[#0071c2] hover:bg-[#e6f0fb]"
             >
               <Plus className="h-3.5 w-3.5" />
               Tilføj linje
@@ -422,7 +422,7 @@ export function HtmlInvoiceManager({
         </div>
 
         {/* Live totals */}
-        <div className="mt-3 border-t border-[#ece1c8] px-4 py-3">
+        <div className="mt-3 border-t border-[#d9e3ee] px-4 py-3">
           <div className="ml-auto grid max-w-[18rem] gap-1.5">
             <div className="flex items-center justify-between gap-4">
               <span className="text-[13px] text-[#6B7280]">Pris u. moms</span>
@@ -432,7 +432,7 @@ export function HtmlInvoiceManager({
               <span className="text-[13px] text-[#6B7280]">Moms (25%)</span>
               <span className="text-[13px] font-medium text-[#374151]">{dkk(totals.moms)}</span>
             </div>
-            <div className="flex items-center justify-between gap-4 border-t border-[#ece1c8] pt-1.5">
+            <div className="flex items-center justify-between gap-4 border-t border-[#d9e3ee] pt-1.5">
               <span className="text-[14px] font-bold text-[#111827]">Total inkl. moms</span>
               <span className="text-[14px] font-bold text-[#111827]">{dkk(totals.totalIncl)}</span>
             </div>
@@ -441,7 +441,7 @@ export function HtmlInvoiceManager({
       </div>
 
       {/* ─── Options: email, status, notes ─── */}
-      <div className="grid gap-3 rounded-xl border border-[#ece1c8] bg-white p-4 md:grid-cols-[1fr_10rem]">
+      <div className="grid gap-3 rounded-xl border border-[#d9e3ee] bg-white p-4 md:grid-cols-[1fr_10rem]">
         <label className="grid gap-1 text-[12px] font-semibold text-[#6B7280]">
           Kundens e-mail
           <Input
@@ -459,7 +459,7 @@ export function HtmlInvoiceManager({
             value={status}
             onChange={(e) => setStatus(e.target.value as InvoiceStatus)}
             disabled={isLocked}
-            className="h-10 rounded-md border border-[#ece1c8] bg-white px-3 text-sm disabled:opacity-60"
+            className="h-10 rounded-md border border-[#d9e3ee] bg-white px-3 text-sm disabled:opacity-60"
           >
             <option value="draft">Kladde</option>
             <option value="ready">Klar</option>
@@ -500,7 +500,7 @@ export function HtmlInvoiceManager({
             href={invoice.publicUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex h-10 items-center gap-1.5 rounded-md border border-[#ece1c8] bg-white px-4 text-[13px] font-semibold text-[#374151] transition hover:border-[#b8860b] hover:text-[#b8860b]"
+            className="inline-flex h-10 items-center gap-1.5 rounded-md border border-[#d9e3ee] bg-white px-4 text-[13px] font-semibold text-[#374151] transition hover:border-[#0071c2] hover:text-[#0071c2]"
           >
             <ExternalLink className="h-4 w-4" />
             Vis / print
@@ -528,7 +528,7 @@ export function HtmlInvoiceManager({
             feedback.tone === "success"
               ? "border border-[#b7e6cb] bg-[#effaf4] text-[#16643f]"
               : feedback.tone === "warning"
-                ? "border border-[#caa036]/30 bg-[#FFFBEB] text-[#9A5B00]"
+                ? "border border-[#feba02]/30 bg-[#FFFBEB] text-[#9A5B00]"
                 : "border border-red-200 bg-red-50 text-red-700"
           }`}
         >

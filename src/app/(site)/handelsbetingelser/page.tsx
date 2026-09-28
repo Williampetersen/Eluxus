@@ -431,7 +431,7 @@ export default function HandelsbetingelserPage() {
           </Section>
 
           {/* Contact */}
-          <div className="rounded-2xl border border-[var(--line)] bg-[#faf7f0] px-6 py-6">
+          <div className="rounded-2xl border border-[var(--line)] bg-[#f2f6fa] px-6 py-6">
             <h2 className="font-display text-xl font-semibold text-[var(--ink)]">Spørgsmål?</h2>
             <p className="mt-2 text-sm leading-7 text-[var(--muted)]">
               Har du spørgsmål til handelsbetingelserne eller en konkret booking, er du velkommen

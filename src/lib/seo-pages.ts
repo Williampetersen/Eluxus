@@ -155,7 +155,7 @@ export const seoPages: SeoPageConfig[] = [
       },
       {
         title: "Angiv bil og tidspunkt",
-        text: "Udfyld nummerplade, kontaktoplysninger og ønsket tidspunkt, så bookingen kan planlægges.",
+        text: "Vælg bilstørrelse, og udfyld kontaktoplysninger og ønsket tidspunkt, så bookingen kan planlægges.",
       },
       {
         title: "Eluxus klargør opgaven",
@@ -297,7 +297,7 @@ export const seoPages: SeoPageConfig[] = [
       },
       {
         title: "Oplys bil og behov",
-        text: "Angiv nummerplade, kontaktoplysninger og relevante detaljer for opgaven.",
+        text: "Vælg bilstørrelse, og angiv kontaktoplysninger og relevante detaljer for opgaven.",
       },
       {
         title: "Vælg tidspunkt",
@@ -726,7 +726,7 @@ export const seoPages: SeoPageConfig[] = [
       },
       {
         title: "Oplys biltype",
-        text: "Nummerplade og biloplysninger hjælper med pris, tid og planlægning.",
+        text: "Bilstørrelse og biloplysninger hjælper med pris, tid og planlægning.",
       },
       {
         title: "Bilen håndvaskes",
@@ -847,7 +847,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus klargør", text: "Teamet forbereder service og rute ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil uden kø og uden transport til en vaskehal." },
     ],
@@ -1023,7 +1023,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Vælg service", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Angiv bil og tidspunkt", text: "Udfyld nummerplade, adresse og ønsket tidspunkt for bilvasken." },
+      { title: "Angiv bil og tidspunkt", text: "Vælg bilstørrelse, og udfyld adresse og ønsket tidspunkt for bilvasken." },
       { title: "Eluxus forbereder", text: "Teamet planlægger service og rute ud fra din booking." },
       { title: "Ren bil leveret", text: "Bilen bliver vasket professionelt uden kø og uden ventetid." },
     ],
@@ -1111,7 +1111,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus forbereder", text: "Teamet klargør service og rute ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
@@ -1199,7 +1199,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og behov", text: "Angiv nummerplade, adresse og ønsket tidspunkt for bilvasken." },
+      { title: "Oplys bil og behov", text: "Vælg bilstørrelse, og angiv adresse og ønsket tidspunkt for bilvasken." },
       { title: "Eluxus klargør", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
@@ -1287,7 +1287,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Professionelt resultat", text: "Bilen vaskes grundigt og afleveres med et pænt og præsentabelt udtryk." },
     ],
@@ -1549,7 +1549,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus klargør", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Ren bil", text: "Du får en renere bil uden kø og transport til vaskehal." },
     ],
@@ -1727,7 +1727,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes grundigt", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
@@ -1816,7 +1816,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
@@ -1905,7 +1905,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus klargør", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
@@ -2902,7 +2902,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus klargør", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes", text: "Du får en renere bil leveret professionelt uden ventetid." },
     ],
@@ -2991,7 +2991,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
@@ -3080,7 +3080,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
@@ -3167,7 +3167,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus planlægger", text: "Teamet forbereder rute og service ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
@@ -3254,7 +3254,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus planlægger", text: "Teamet vurderer rute og ledig kapacitet ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
@@ -3341,7 +3341,7 @@ export const seoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Book online", text: "Gå til booking-siden og vælg den bilvask, der passer til bilen." },
-      { title: "Oplys bil og adresse", text: "Angiv nummerplade, kontaktoplysninger og ønsket tidspunkt." },
+      { title: "Oplys bil og adresse", text: "Vælg bilstørrelse, og angiv kontaktoplysninger og ønsket tidspunkt." },
       { title: "Eluxus planlægger", text: "Teamet vurderer rute og ledig kapacitet ud fra din booking." },
       { title: "Bilen vaskes professionelt", text: "Du får en renere bil leveret uden kø og ventetid." },
     ],
@@ -3621,7 +3621,7 @@ const serviceSeoPages: SeoPageConfig[] = [
     ],
     process: [
       { title: "Vælg pakke", text: "Start med udvendig, indvendig eller komplet bilvask." },
-      { title: "Tilføj bilinfo", text: "Nummerplade og biltype hjælper med at beregne service og tid." },
+      { title: "Tilføj bilinfo", text: "Bilstørrelse og bilmodel hjælper med at beregne service og tid." },
       { title: "Se ledige tider", text: "Vælg et tidspunkt, der passer med din adresse og rute." },
       { title: "Bekræft booking", text: "Book online, når pris, pakke og tidspunkt passer." },
     ],

@@ -122,7 +122,9 @@ export async function POST(request: Request) {
     const normalizedPlates = submittedVehicles.map((vehicle) =>
       sanitizePlate(vehicle.registrationNumber || vehicle.plate)
     );
-    if (new Set(normalizedPlates).size !== normalizedPlates.length) {
+    // Size-picked cars have no plate, so only compare the plates that were given.
+    const givenPlates = normalizedPlates.filter(Boolean);
+    if (new Set(givenPlates).size !== givenPlates.length) {
       return json({ error: "Denne bil er allerede tilføjet." }, 400);
     }
 

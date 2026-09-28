@@ -83,7 +83,7 @@ export function BookingDetailDrawer({
             {/* Header */}
             <div className="flex items-start justify-between gap-4 border-b border-white/55 bg-white/40 px-5 py-5">
               <div className="min-w-0">
-                <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#b8860b]">
+                <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0071c2]">
                   Booking #{booking.id.slice(-8).toUpperCase()}
                 </p>
                 <h2 className="mt-1.5 truncate text-[20px] font-bold text-[#111827]">
@@ -119,7 +119,7 @@ export function BookingDetailDrawer({
                   className={cn(
                     "flex-1 py-3 text-[12px] font-semibold transition",
                     tab === t
-                      ? "border-b-2 border-[#b8860b] text-[#b8860b]"
+                      ? "border-b-2 border-[#0071c2] text-[#0071c2]"
                       : "text-[#6B7280] hover:text-[#111827]"
                   )}
                 >
@@ -220,7 +220,7 @@ function DetailsTab({
       {/* Multi-vehicle */}
       {booking.vehicles.length > 1 && (
         <div className="rounded-3xl border border-white/55 bg-white/50 p-4">
-          <p className="text-[12px] font-bold uppercase tracking-[0.1em] text-[#b8860b]">
+          <p className="text-[12px] font-bold uppercase tracking-[0.1em] text-[#0071c2]">
             Køretøjer ({booking.vehicles.length})
           </p>
           <div className="mt-3 grid gap-2">
@@ -246,7 +246,7 @@ function DetailsTab({
                       </p>
                     )}
                   </div>
-                  <span className="shrink-0 text-[13px] font-bold text-[#b8860b]">
+                  <span className="shrink-0 text-[13px] font-bold text-[#0071c2]">
                     {formatPrice(v.totalPrice)}
                   </span>
                 </div>
@@ -319,8 +319,8 @@ function ConfirmPanel({
 }) {
   const config = {
     approve:  { label: "Godkend booking",    color: "text-[#047857]", bg: "bg-[#F0FDF9]",  border: "border-[#10B981]/30", icon: CheckCircle2, btnClass: "bg-[#10B981] hover:bg-[#059669] text-white", desc: "Kunden modtager en bekræftelsesmail." },
-    complete: { label: "Afslut booking",     color: "text-[#8a6c14]", bg: "bg-[#f3ead4]",  border: "border-[#b8860b]/30", icon: CheckCircle2, btnClass: "bg-[#b8860b] hover:bg-[#8a6c14] text-white", desc: "Markerer bookingen som udført." },
-    cancel:   { label: "Annuller booking",   color: "text-[#B45309]", bg: "bg-[#FFFBEB]",  border: "border-[#caa036]/30", icon: AlertTriangle, btnClass: "bg-[#caa036] hover:bg-[#96721a] text-white", desc: "Kunden modtager en afbestillingsmail." },
+    complete: { label: "Afslut booking",     color: "text-[#00487a]", bg: "bg-[#e6f0fb]",  border: "border-[#0071c2]/30", icon: CheckCircle2, btnClass: "bg-[#0071c2] hover:bg-[#00487a] text-white", desc: "Markerer bookingen som udført." },
+    cancel:   { label: "Annuller booking",   color: "text-[#B45309]", bg: "bg-[#FFFBEB]",  border: "border-[#feba02]/30", icon: AlertTriangle, btnClass: "bg-[#feba02] hover:bg-[#e5a800] text-[#003580]", desc: "Kunden modtager en afbestillingsmail." },
     delete:   { label: "Slet booking",       color: "text-[#B91C1C]", bg: "bg-[#FEF2F2]",  border: "border-[#EF4444]/30", icon: Trash2,        btnClass: "bg-[#EF4444] hover:bg-[#DC2626] text-white", desc: "Bookingen slettes permanent og kan ikke gendannes." },
   }[action];
 
@@ -387,7 +387,7 @@ function ActionButton({
 }) {
   const toneClass = {
     green: "border-[#10B981]/20 bg-[#F0FDF9] text-[#047857] hover:bg-[#D1FAE5]",
-    blue:  "border-[#b8860b]/20 bg-[#f3ead4] text-[#8a6c14] hover:bg-[#CFFAFE]",
+    blue:  "border-[#0071c2]/20 bg-[#e6f0fb] text-[#00487a] hover:bg-[#CFFAFE]",
     red:   "border-[#EF4444]/20 bg-[#FEF2F2] text-[#B91C1C] hover:bg-[#FEE2E2]",
   }[tone];
 
@@ -479,7 +479,7 @@ function EditTab({ booking, timeSlots }: { booking: DashboardBooking; timeSlots:
             <select
               name="appointment_time"
               defaultValue={booking.appointmentTime}
-              className="h-10 rounded-2xl border border-white/55 bg-white/65 px-3 text-[13px] font-medium text-[#111827] outline-none transition focus:border-[#b8860b] focus:ring-2 focus:ring-[#b8860b]/20"
+              className="h-10 rounded-2xl border border-white/55 bg-white/65 px-3 text-[13px] font-medium text-[#111827] outline-none transition focus:border-[#0071c2] focus:ring-2 focus:ring-[#0071c2]/20"
             >
               {timeSlots.map((slot) => (
                 <option key={slot} value={slot}>{slot}</option>
@@ -503,7 +503,7 @@ function EditTab({ booking, timeSlots }: { booking: DashboardBooking; timeSlots:
             type="checkbox"
             name="notify_customer"
             defaultChecked
-            className="h-4 w-4 rounded border-[#ece1c8]"
+            className="h-4 w-4 rounded border-[#d9e3ee]"
           />
           Send opdateret bekræftelsesmail til kunden
         </label>
@@ -554,11 +554,11 @@ function ActivityTab({ booking }: { booking: DashboardBooking }) {
             <div key={i} className="relative flex gap-3 pl-8">
               <span className={cn(
                 "absolute left-0 top-1 flex h-7 w-7 items-center justify-center rounded-full border-2 border-white",
-                item.type === "email" ? "bg-[#EFF6FF]" : "bg-[#f3ead4]"
+                item.type === "email" ? "bg-[#EFF6FF]" : "bg-[#e6f0fb]"
               )}>
                 {item.type === "email"
                   ? <Mail className="h-3.5 w-3.5 text-[#3B82F6]" />
-                  : <History className="h-3.5 w-3.5 text-[#b8860b]" />
+                  : <History className="h-3.5 w-3.5 text-[#0071c2]" />
                 }
               </span>
               <div className="min-w-0 rounded-2xl border border-white/55 bg-white/50 px-3 py-2.5">
@@ -590,7 +590,7 @@ function DrawerInfo({
 }) {
   return (
     <div className="flex min-w-0 gap-3 rounded-3xl border border-white/55 bg-white/50 px-4 py-3">
-      <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#f3ead4] text-[#b8860b]">
+      <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#e6f0fb] text-[#0071c2]">
         <Icon className="h-4 w-4" />
       </span>
       <div className="min-w-0">

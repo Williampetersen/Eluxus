@@ -13,6 +13,7 @@ import {
   type VehicleCategory,
   type VehicleLookupResult,
 } from "@/lib/shared/booking";
+import { plateLookupEnabled } from "@/lib/shared/vehicle-sizes";
 import { cn } from "@/lib/utils";
 
 const LEASE_CATEGORIES: VehicleCategory[] = [
@@ -43,7 +44,7 @@ const LEASE_CATEGORIES: VehicleCategory[] = [
 ];
 
 const inputClass =
-  "w-full rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-sm text-[var(--ink)] shadow-sm placeholder:text-[var(--muted)] transition focus:border-[var(--brand)] focus:outline-none focus:ring-2 focus:ring-[#b8860b]/20";
+  "w-full rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-sm text-[var(--ink)] shadow-sm placeholder:text-[var(--muted)] transition focus:border-[var(--brand)] focus:outline-none focus:ring-2 focus:ring-[#0071c2]/20";
 
 type LookupStatus = { type: "error" | "info"; message: string } | null;
 
@@ -136,7 +137,7 @@ export function LeasebilPriceChecker() {
 
     const message = [
       "Forespørgsel om retur leasebil.",
-      `Nummerplade: ${vehicle?.registration_number ?? (plate || "Ikke angivet")}`,
+      plateLookupEnabled ? `Nummerplade: ${vehicle?.registration_number ?? (plate || "Ikke angivet")}` : null,
       `Bil: ${vehicleLine}`,
       `Bilstørrelse: ${category.label}`,
       `Pris: ${formatPrice(category.price)}`,
@@ -169,11 +170,11 @@ export function LeasebilPriceChecker() {
 
   if (category) {
     return (
-      <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 p-6 shadow-[0_18px_60px_rgba(27,23,18,0.08)] sm:p-8">
+      <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 p-6 shadow-[0_18px_60px_rgba(0,35,80,0.08)] sm:p-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--line)] bg-[#faf7f0] px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
+          <span className="inline-flex items-center gap-2 rounded-xl border border-[var(--line)] bg-[#f2f6fa] px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
             <Car className="h-4 w-4 text-[var(--brand)]" />
-            {vehicle?.registration_number ?? sanitizePlate(plate)} · {category.label}
+            {[vehicle?.registration_number ?? sanitizePlate(plate), category.label].filter(Boolean).join(" · ")}
           </span>
           <button
             type="button"
@@ -184,7 +185,7 @@ export function LeasebilPriceChecker() {
           </button>
         </div>
 
-        <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl bg-[#f3ead4] px-5 py-5 sm:flex-row sm:items-center">
+        <div className="mt-6 flex flex-col items-start justify-between gap-4 rounded-2xl bg-[#e6f0fb] px-5 py-5 sm:flex-row sm:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">Din pris</p>
             <p className="mt-1 font-display text-4xl font-semibold text-[var(--ink)]">
@@ -281,57 +282,65 @@ export function LeasebilPriceChecker() {
   }
 
   return (
-    <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 p-6 shadow-[0_18px_60px_rgba(27,23,18,0.08)] sm:p-8">
+    <div className="rounded-[1.5rem] border border-[var(--line)] bg-white/92 p-6 shadow-[0_18px_60px_rgba(0,35,80,0.08)] sm:p-8">
       <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">Tjek din pris</p>
       <h2 className="mt-2 font-display text-2xl font-semibold text-[var(--ink)] sm:text-3xl">
-        Indtast nummerplade
+        {plateLookupEnabled ? "Indtast nummerplade" : "Vælg bilstørrelse"}
       </h2>
       <p className="mt-2 text-sm leading-6 text-[var(--muted)]">
-        Vi finder automatisk bilens størrelse og viser prisen for retur-vask af din leasebil.
+        {plateLookupEnabled
+          ? "Vi finder automatisk bilens størrelse og viser prisen for retur-vask af din leasebil."
+          : "Vælg størrelsen på din bil og se prisen for retur-vask af din leasebil."}
       </p>
 
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          void runLookup(plate);
-        }}
-        className="mt-5 flex max-w-md gap-3"
-      >
-        <div className="flex w-full overflow-hidden rounded-md border border-[var(--line)] bg-white focus-within:border-[var(--brand)] focus-within:ring-4 focus-within:ring-[#b8860b]/15">
-          <Image src="/DKEU.svg" alt="DK" width={48} height={54} className="h-[3.5rem] w-12 shrink-0 object-cover" />
-          <Input
-            type="text"
-            inputMode="text"
-            autoComplete="off"
-            autoCapitalize="characters"
-            placeholder="AB12345"
-            maxLength={10}
-            value={plate}
-            onChange={(e) => setPlate(e.target.value)}
-            className="h-[3.5rem] rounded-none border-0 text-lg font-semibold uppercase tracking-[0.08em] focus:ring-0"
-          />
-        </div>
-        <Button type="submit" size="lg" disabled={isLookupPending} className="shrink-0">
-          {isLookupPending ? <LoaderCircle className="h-5 w-5 animate-spin" /> : <Search className="h-5 w-5" />}
-          {isLookupPending ? "Tjekker..." : "Se pris"}
-        </Button>
-      </form>
+      {plateLookupEnabled ? (
+        <>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              void runLookup(plate);
+            }}
+            className="mt-5 flex max-w-md gap-3"
+          >
+            <div className="flex w-full overflow-hidden rounded-md border border-[var(--line)] bg-white focus-within:border-[var(--brand)] focus-within:ring-4 focus-within:ring-[#0071c2]/15">
+              <Image src="/DKEU.svg" alt="DK" width={48} height={54} className="h-[3.5rem] w-12 shrink-0 object-cover" />
+              <Input
+                type="text"
+                inputMode="text"
+                autoComplete="off"
+                autoCapitalize="characters"
+                placeholder="AB12345"
+                maxLength={10}
+                value={plate}
+                onChange={(e) => setPlate(e.target.value)}
+                className="h-[3.5rem] rounded-none border-0 text-lg font-semibold uppercase tracking-[0.08em] focus:ring-0"
+              />
+            </div>
+            <Button type="submit" size="lg" disabled={isLookupPending} className="shrink-0">
+              {isLookupPending ? <LoaderCircle className="h-5 w-5 animate-spin" /> : <Search className="h-5 w-5" />}
+              {isLookupPending ? "Tjekker..." : "Se pris"}
+            </Button>
+          </form>
 
-      {lookupStatus ? (
-        <div className="mt-4 rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          {lookupStatus.message}
-        </div>
+          {lookupStatus ? (
+            <div className="mt-4 rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+              {lookupStatus.message}
+            </div>
+          ) : null}
+        </>
       ) : null}
 
-      <div className="mt-6 border-t border-[var(--line)] pt-5">
-        <p className="text-sm font-semibold text-[var(--ink)]">Eller vælg bilstørrelse manuelt</p>
+      <div className={plateLookupEnabled ? "mt-6 border-t border-[var(--line)] pt-5" : "mt-2"}>
+        {plateLookupEnabled ? (
+          <p className="text-sm font-semibold text-[var(--ink)]">Eller vælg bilstørrelse manuelt</p>
+        ) : null}
         <div className="mt-3 grid gap-2 sm:grid-cols-3">
           {[LEASE_CATEGORIES[0], LEASE_CATEGORIES[1], LEASE_CATEGORIES[2]].map((cat) => (
             <button
               key={cat.id}
               type="button"
               onClick={() => selectManualCategory(cat.id)}
-              className="flex flex-col items-start rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-left transition hover:border-[var(--brand)] hover:bg-[#faf7f0]"
+              className="flex flex-col items-start rounded-xl border border-[var(--line)] bg-white px-4 py-3 text-left transition hover:border-[var(--brand)] hover:bg-[#f2f6fa]"
             >
               <span className="flex items-center gap-2 text-sm font-semibold text-[var(--ink)]">
                 <CheckCircle2 className="h-4 w-4 text-[var(--brand)]" />

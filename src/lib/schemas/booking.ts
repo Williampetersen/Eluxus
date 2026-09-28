@@ -8,8 +8,9 @@ const addonSchema = z.object({
 
 const bookingVehicleSchema = z.object({
   id: z.string().trim().optional(),
-  plate: z.string().trim().min(2),
-  registrationNumber: z.string().trim().min(2),
+  // Website bookings pick a car size instead of a plate, so plates are optional.
+  plate: z.string().trim().optional().default(""),
+  registrationNumber: z.string().trim().optional().default(""),
   vehicleName: z.string().trim().min(1),
   vehicleYear: z.number().nullable().optional().default(null),
   vehicleType: z.string().trim().optional().default(""),
@@ -41,8 +42,8 @@ export const bookingCustomerSchema = z.object({
 
 export const bookingRequestSchema = z
   .object({
-    plate: z.string().trim().min(2),
-    registrationNumber: z.string().trim().min(2),
+    plate: z.string().trim().optional().default(""),
+    registrationNumber: z.string().trim().optional().default(""),
     vehicleName: z.string().trim().min(1),
     vehicleYear: z.number().nullable(),
     vehicleType: z.string().trim().default(""),

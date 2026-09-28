@@ -38,7 +38,7 @@ export default async function AgentLoginPage({
     <main className="px-4 pb-12 pt-10 sm:px-6">
       <section className="mx-auto max-w-5xl">
         <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
-          <div className="rounded-[2rem] bg-[linear-gradient(155deg,#1b1712,#2e2519_52%,#b8860b)] p-8 text-white shadow-[0_30px_80px_rgba(27,23,18,0.2)]">
+          <div className="rounded-[2rem] bg-[linear-gradient(155deg,#003580,#1a4d8f_52%,#0071c2)] p-8 text-white shadow-[0_30px_80px_rgba(0,35,80,0.2)]">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#67e8f9]">
               Eluxus Agents
             </p>
@@ -52,7 +52,7 @@ export default async function AgentLoginPage({
 
           <Card className="p-8">
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f3ead4] text-[var(--brand)]">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#e6f0fb] text-[var(--brand)]">
                 <LockKeyhole className="h-6 w-6" />
               </span>
               <div>
@@ -88,7 +88,7 @@ export default async function AgentLoginPage({
               </Button>
             </form>
 
-            <div className="mt-6 flex items-center gap-2 rounded-2xl bg-[#f3ead4] px-4 py-3 text-sm text-[var(--accent)]">
+            <div className="mt-6 flex items-center gap-2 rounded-2xl bg-[#e6f0fb] px-4 py-3 text-sm text-[var(--accent)]">
               <ShieldCheck className="h-4 w-4" />
               Agentadgang er separat fra admin-login.
             </div>
