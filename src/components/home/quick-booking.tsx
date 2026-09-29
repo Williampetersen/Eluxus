@@ -332,7 +332,7 @@ export function QuickBooking({ catalog, workingDays, maximumDaysAhead, timeZone,
         )}
       </div>
       <p className="mt-3 text-center text-xs text-[var(--muted)]">
-        Adresse og kontaktoplysninger udfylder du på næste side
+        Tilvalg og dine oplysninger vælger du på næste side
       </p>
     </div>
   );

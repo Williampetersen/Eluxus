@@ -197,15 +197,17 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
   const [selectedAppointmentTime, setSelectedAppointmentTime] = useState(quickBooking.time);
   const [liveAvailableTimeSlots, setLiveAvailableTimeSlots] = useState<string[]>([]);
   const [isAvailabilityLoading, setIsAvailabilityLoading] = useState(false);
+  const [hasLoadedSlots, setHasLoadedSlots] = useState(false);
   const [availabilityError, setAvailabilityError] = useState("");
   const [isLookupPending, setIsLookupPending] = useState(false);
   const [plateLookupOverlay, setPlateLookupOverlay] = useState<PlateLookupOverlayState | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [idempotencyKey, setIdempotencyKey] = useState("");
   const [isMobileSummaryOpen, setIsMobileSummaryOpen] = useState(false);
-  // Arriving from the quick booking with everything chosen jumps straight to "Dine oplysninger".
+  // Arriving from the quick booking with service, day and time chosen opens the add-ons
+  // step, so extras are still offered; the chosen time is kept and step 3 shows it as done.
   const [openStep, setOpenStep] = useState<1 | 2 | 3 | 4>(() =>
-    vehicle && quickBooking.packageId && quickBooking.time ? 4 : 1
+    vehicle && quickBooking.packageId && quickBooking.time ? 2 : 1
   );
   const [confirmation, setConfirmation] = useState<BookingConfirmation | null>(null);
   const [submitOverlay, setSubmitOverlay] = useState<{ phase: "loading" | "success"; progress: number } | null>(null);
@@ -446,14 +448,27 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
   const totalDiscount = multiCarDiscount + couponDiscount;
   const appointmentDateValue = appointmentDate ? format(appointmentDate, "yyyy-MM-dd") : "";
   const availableTimeSlots = liveAvailableTimeSlots;
-  const appointmentTime = useMemo(
-    () => (availableTimeSlots.includes(selectedAppointmentTime) ? selectedAppointmentTime : availableTimeSlots[0] || ""),
-    [availableTimeSlots, selectedAppointmentTime]
-  );
-  const appointmentLabel = useMemo(
-    () => (appointmentDateValue ? formatDateTimeLabel(appointmentDateValue, appointmentTime || "00:00") : "Vælg en ledig dag"),
-    [appointmentDateValue, appointmentTime]
-  );
+  // A time the customer picked (here or in the homepage quick booking) is kept while they
+  // change service, add-ons or cars, as long as it still fits the new duration. It is never
+  // swapped for another time behind their back.
+  const selectedTimeUnavailable =
+    Boolean(selectedAppointmentTime) &&
+    hasLoadedSlots &&
+    !isAvailabilityLoading &&
+    !availableTimeSlots.includes(selectedAppointmentTime);
+  const hasChosenTime = Boolean(selectedAppointmentTime) && !selectedTimeUnavailable;
+  const appointmentTime = useMemo(() => {
+    if (availableTimeSlots.includes(selectedAppointmentTime)) return selectedAppointmentTime;
+    if (selectedAppointmentTime) return "";
+    return availableTimeSlots[0] || "";
+  }, [availableTimeSlots, selectedAppointmentTime]);
+  const appointmentLabel = useMemo(() => {
+    if (!appointmentDate || !appointmentDateValue) return "Vælg en ledig dag";
+    const labelTime = appointmentTime || (hasChosenTime ? selectedAppointmentTime : "");
+    return labelTime
+      ? formatDateTimeLabel(appointmentDateValue, labelTime)
+      : `${format(appointmentDate, "d. MMMM yyyy", { locale: da })} · vælg tid`;
+  }, [appointmentDate, appointmentDateValue, appointmentTime, hasChosenTime, selectedAppointmentTime]);
   const appointmentDateLabel = useMemo(
     () => (appointmentDate ? format(appointmentDate, "d. MMMM yyyy", { locale: da }) : ""),
     [appointmentDate]
@@ -480,6 +495,7 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
     if (!appointmentDateValue || bookingVehicles.length === 0 || (hasSecondCar && !secondPackageData?.id)) {
       queueMicrotask(() => {
         setLiveAvailableTimeSlots([]);
+        setHasLoadedSlots(false);
         setAvailabilityError("");
       });
       return;
@@ -508,6 +524,7 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
       setIsAvailabilityLoading(true);
       setAvailabilityError("");
       setLiveAvailableTimeSlots([]);
+      setHasLoadedSlots(false);
 
       try {
         const response = await fetch(`/api/booking/availability?${params.toString()}`, {
@@ -524,6 +541,7 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
         }
 
         setLiveAvailableTimeSlots(Array.isArray(payload.slots) ? payload.slots : []);
+        setHasLoadedSlots(true);
       } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") {
           return;
@@ -556,11 +574,6 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
       refs[step - 1]?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 80);
   }, []);
-
-  const clearSelectedAppointmentTime = () => {
-    setSelectedAppointmentTime("");
-    setLiveAvailableTimeSlots([]);
-  };
 
   const clearPlateLookupTimers = useCallback(() => {
     if (plateLookupProgressTimerRef.current) { window.clearInterval(plateLookupProgressTimerRef.current); plateLookupProgressTimerRef.current = null; }
@@ -800,7 +813,6 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
       setActivePackage(packageId);
     }
     if (pkg) showToast(`${pkg.title} valgt`);
-    clearSelectedAppointmentTime();
     window.setTimeout(() => goToStep(2), 280);
   };
 
@@ -822,7 +834,6 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
       willBeAdded ? `${addon.label} tilføjet` : `${addon.label} fjernet`,
       willBeAdded ? "added" : "removed"
     );
-    clearSelectedAppointmentTime();
   };
 
   const handleConfirmSecondCar = (nextVehicle: VehicleLookupResult, nextVehicleName = "") => {
@@ -832,7 +843,6 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
     setSecondAddonIds([]);
     setActiveVehicleIndex(1);
     setIsAddCarModalOpen(false);
-    clearSelectedAppointmentTime();
     goToStep(1);
     window.setTimeout(() => step1Ref.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 120);
   };
@@ -843,7 +853,6 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
     setSecondPackage("");
     setSecondAddonIds([]);
     setActiveVehicleIndex(0);
-    clearSelectedAppointmentTime();
     setIsMobileSummaryOpen(false);
   };
 
@@ -859,7 +868,8 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
       goToStep(1);
       return;
     }
-    goToStep(3);
+    // A time chosen earlier that still fits goes straight to the details.
+    goToStep(hasChosenTime && appointmentTime ? 4 : 3);
   };
 
   const validateCoupon = async () => {
@@ -901,6 +911,11 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
       setFormError("Vælg bilvask til bil 2, før du fortsætter til bekræftelse.");
       setActiveVehicleIndex(1);
       setOpenStep(1);
+      return;
+    }
+    if (selectedTimeUnavailable) {
+      // Step 3 explains that the chosen time no longer fits.
+      goToStep(3);
       return;
     }
     if (!appointmentDateValue || !appointmentTime) {
@@ -1285,6 +1300,14 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
                 onEdit={() => goToStep(2)}
                 isLocked={openStep < 2}
               >
+                {hasChosenTime && appointmentTime ? (
+                  <p className="mb-4 flex items-start gap-2 rounded-xl bg-[#e6f0fb] px-4 py-3 text-sm text-[var(--ink)]">
+                    <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-[var(--brand)]" />
+                    <span>
+                      Din tid er valgt: <strong>{appointmentLabel}</strong>. Tilføj gerne ekstra behandlinger herunder.
+                    </span>
+                  </p>
+                ) : null}
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                   {allAddons.map((addon) => {
                     const isSelected = activeSelectionAddonIds.includes(addon.id);
@@ -1298,13 +1321,23 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
                     );
                   })}
                 </div>
+                {selectedTimeUnavailable ? (
+                  <p className="mt-6 rounded-xl border border-[#fde68a] bg-[#fffbeb] px-4 py-3 text-sm text-[#92400e]">
+                    Med dine valg passer kl. {selectedAppointmentTime} ikke længere. Du vælger en ny tid i næste trin.
+                  </p>
+                ) : null}
                 <div className="mt-6 flex justify-end">
                   <button
                     type="button"
                     onClick={handleContinueAfterAddons}
                     className="inline-flex items-center gap-2 rounded-xl bg-[var(--cta)] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(0,113,194,0.22)] transition hover:bg-[var(--cta-hover)]"
                   >
-                    {hasSecondCar && !secondPackageData ? "Vælg bilvask til bil 2" : "Videre til dato og tid"} <ArrowRight className="h-4 w-4" />
+                    {hasSecondCar && !secondPackageData
+                      ? "Vælg bilvask til bil 2"
+                      : hasChosenTime
+                        ? "Videre til dine oplysninger"
+                        : "Videre til dato og tid"}{" "}
+                    <ArrowRight className="h-4 w-4" />
                   </button>
                 </div>
               </BookingAccordion>
@@ -1335,7 +1368,7 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
                     <p className="text-sm font-semibold text-[var(--ink)]">Tilføj endnu en bil og spar 15%</p>
                     {hasSecondCar ? (
                       <p className="text-xs text-[var(--muted)]">
-                        Bil 2 er tilføjet: {secondVehicleName} · {secondVehicle?.registration_number}
+                        Bil 2 er tilføjet: {[secondVehicleName, secondVehicle?.registration_number].filter(Boolean).join(" · ")}
                       </p>
                     ) : (
                       <p className="text-xs text-[var(--muted)]">
@@ -1355,7 +1388,7 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
                     <button
                       type="button"
                       onClick={handleEditSecondCar}
-                      className="inline-flex h-10 items-center justify-center rounded-xl bg-[#e6f0fb] px-4 text-sm font-semibold text-[var(--brand)] transition hover:bg-[#f5edd8]"
+                      className="inline-flex h-10 items-center justify-center rounded-xl bg-[#e6f0fb] px-4 text-sm font-semibold text-[var(--brand)] transition hover:bg-[#d6e7f8]"
                     >
                       Rediger bil 2
                     </button>
@@ -1377,12 +1410,17 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
                 step={3}
                 title="Vælg dato og tid"
                 icon={<CalendarDays className="h-5 w-5" />}
-                summary={openStep > 3 ? appointmentLabel : undefined}
+                summary={openStep > 3 || hasChosenTime ? appointmentLabel : undefined}
                 isOpen={openStep === 3}
-                isCompleted={openStep > 3}
+                isCompleted={openStep > 3 || hasChosenTime}
                 onEdit={() => goToStep(3)}
-                isLocked={openStep < 3}
+                isLocked={openStep < 3 && !hasChosenTime}
               >
+                {selectedTimeUnavailable ? (
+                  <p className="mb-4 rounded-xl border border-[#fde68a] bg-[#fffbeb] px-4 py-3 text-sm text-[#92400e]">
+                    Kl. {selectedAppointmentTime} er ikke længere ledig med dine valg. Vælg en ny tid.
+                  </p>
+                ) : null}
                 <div className="grid gap-6 lg:grid-cols-2">
                   <div className="rounded-[1.5rem] border border-[var(--line)] p-4">
                     <DayPicker
