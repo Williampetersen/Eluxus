@@ -1575,16 +1575,6 @@ export function BookingFlow({ initialPlate, initialCategory, initialPackage = ""
                     </Field>
                   </div>
                   <div className="space-y-3 text-sm">
-                    <div className="rounded-[1.5rem] border border-[#cde6f6] bg-[#f6fbff] px-4 py-4 text-[#1a506d]">
-                      <p className="flex items-center gap-2 font-semibold text-[var(--ink)]">
-                        <Mail className="h-4 w-4 text-[var(--brand)]" /> Emailopdateringer
-                      </p>
-                      <p className="mt-2 leading-6">
-                        {settings.defaultBookingStatus === "approved"
-                          ? "Din booking bliver godkendt med det samme, og du får en endelig bekræftelse på email."
-                          : "Din booking starter som afventer. Du får en mail med det samme og en ny mail, når vi har godkendt tiden."}
-                      </p>
-                    </div>
                     <label className="flex items-start gap-3">
                       <input type="checkbox" className="mt-1 h-4 w-4 rounded border-[var(--line)]" {...form.register("acceptsTerms")} />
                       <span>
